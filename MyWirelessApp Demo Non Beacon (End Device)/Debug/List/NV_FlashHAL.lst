@@ -1,0 +1,526 @@
+###############################################################################
+#                                                                             #
+#                                                       12/Oct/2015  10:21:27 #
+# IAR ANSI C/C++ Compiler V5.50.7.22081/W32 EVALUATION for ARM                #
+# Copyright (C) 1999-2010 IAR Systems AB.                                     #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  C:\Documents and Settings\Administrator\Desktop\MyWirele #
+#                    ssApp Demo Non Beacon (End Device)\MyWirelessApp Demo    #
+#                    Non Beacon (End Device)\PLM\Source\NVM\NV_FlashHAL.c     #
+#    Command line =  "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\PLM\Source\NVM\NV_FlashHAL.c"    #
+#                    -D gMacStandAlone_d=1 -D gSAPMessagesEnableLlc_d=0 -D    #
+#                    gZtcIncluded_d=0 -D gTargetMC1322xSRB=1 --preprocess     #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\Debug\List\" -lC "C:\Documents   #
+#                    and Settings\Administrator\Desktop\MyWirelessApp Demo    #
+#                    Non Beacon (End Device)\MyWirelessApp Demo Non Beacon    #
+#                    (End Device)\Debug\List\" -lB "C:\Documents and          #
+#                    Settings\Administrator\Desktop\MyWirelessApp Demo Non    #
+#                    Beacon (End Device)\MyWirelessApp Demo Non Beacon (End   #
+#                    Device)\Debug\List\" --diag_suppress                     #
+#                    Pe014,Pe001,Pe991,Pa039,Pe520 -o "C:\Documents and       #
+#                    Settings\Administrator\Desktop\MyWirelessApp Demo Non    #
+#                    Beacon (End Device)\MyWirelessApp Demo Non Beacon (End   #
+#                    Device)\Debug\Obj\" --no_cse --no_unroll --no_inline     #
+#                    --no_code_motion --no_tbaa --no_clustering               #
+#                    --no_scheduling --debug --endian=little                  #
+#                    --cpu=ARM7TDMI-S --fpu=None --dlib_config "C:\Program    #
+#                    Files\IAR Systems\Embedded Workbench 5.4                 #
+#                    Evaluation\arm\INC\DLib_Config_Normal.h" -I              #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\MacPhy\Interface\" -I            #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\Application\Init\" -I            #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\Application\Interface\" -I       #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\Application\Configure\" -I       #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\Application\UartUtil\" -I        #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\Application\Source\" -I          #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\SSM\TS\Interface\" -I            #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\SSM\TS\Source\" -I               #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\SSM\ZTC\Interface\" -I           #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\SSM\ZTC\Source\" -I              #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\PLM\Interface\" -I               #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\PLM\LibInterface\" -I            #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\PLM\Source\Display\" -I          #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\PLM\Source\Keyboard\" -I         #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\PLM\Source\NVM\" -I              #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\PLM\Source\TMR\" -I              #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\PLM\Source\UART\" -I             #
+#                    "C:\Program Files\IAR Systems\Embedded Workbench 5.4     #
+#                    Evaluation\arm\INC\" --interwork --cpu_mode thumb -On    #
+#    List file    =  C:\Documents and Settings\Administrator\Desktop\MyWirele #
+#                    ssApp Demo Non Beacon (End Device)\MyWirelessApp Demo    #
+#                    Non Beacon (End Device)\Debug\List\NV_FlashHAL.lst       #
+#    Object file  =  C:\Documents and Settings\Administrator\Desktop\MyWirele #
+#                    ssApp Demo Non Beacon (End Device)\MyWirelessApp Demo    #
+#                    Non Beacon (End Device)\Debug\Obj\NV_FlashHAL.o          #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+C:\Documents and Settings\Administrator\Desktop\MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\PLM\Source\NVM\NV_FlashHAL.c
+      1          /*****************************************************************************
+      2          * Implementation of the non-volatile storage module flash controller HAL.
+      3          *
+      4          * (c) Copyright 2006, Freescale, Inc. All rights reserved.
+      5          *
+      6          *
+      7          * No part of this document must be reproduced in any form - including copied,
+      8          * transcribed, printed or by any electronic means - without specific written
+      9          * permission from Freescale Semiconductor.
+     10          *
+     11          *****************************************************************************/
+     12          
+     13          /* Unsigned char is sometimes used in this module instead of uint8_t. The
+     14           * C standard guarantees that sizeof(char) == 1, and that this is the most
+     15           * basic unit of memory. That guarantee is sometimes valuable when working
+     16           * with memory hardware.
+     17           */
+     18          
+     19          /* Power supply variations can make both reading an writing flash unreliable,
+     20           * but there is no means available to this code to monitor power.
+     21           */
+     22          
+     23          #include "EmbeddedTypes.h"
+     24          #include "NVM.h"
+     25          #include "NV_FlashHAL.h"
+     26          #include "Platform.h"
+     27          
+     28          /*****************************************************************************
+     29          ******************************************************************************
+     30          * Private macros
+     31          ******************************************************************************
+     32          *****************************************************************************/
+     33          
+     34          /*****************************************************************************
+     35          ******************************************************************************
+     36          * Private prototypes
+     37          ******************************************************************************
+     38          *****************************************************************************/
+     39          
+     40          
+     41          /*****************************************************************************
+     42          ******************************************************************************
+     43          * Private type definitions
+     44          ******************************************************************************
+     45          *****************************************************************************/
+     46          
+     47          /*****************************************************************************
+     48          ******************************************************************************
+     49          * Private memory declarations
+     50          ******************************************************************************
+     51          *****************************************************************************/
+     52          
+     53          
+     54          /* Define the NV storage pages. */
+     55          
+     56          /* To support one data set, there must be at least two pages available. */
+     57          #if gNvStorageIncluded_d
+     58          #define gNvSector0Address_c 0x1E000
+     59          #define gNvSector1Address_c 0x1D000
+     60          #endif
+     61          
+     62          
+     63          
+     64          /*****************************************************************************
+     65          ******************************************************************************
+     66          * Public memory definitions
+     67          ******************************************************************************
+     68          *****************************************************************************/
+     69          
+     70          
+     71          
+     72          #if gNvStorageIncluded_d
+
+   \                                 In section .rodata, align 4
+     73          NvRawSectorAddress_t const maNvRawSectorAddressTable[ gNvNumberOfRawSectors_c] = {
+   \                     maNvRawSectorAddressTable:
+   \   00000000   00E0010000D0       DC32 122880, 118784
+   \              0100        
+     74                                                                                             gNvSector0Address_c,
+     75                                                                                             gNvSector1Address_c
+     76                                                                                           };
+     77          #endif                                  /* #if gNvStorageIncluded_d */
+     78          /*****************************************************************************
+     79          ******************************************************************************
+     80          * Public functions
+     81          ******************************************************************************
+     82          *****************************************************************************/
+     83          
+     84          /* Erase a flash page, given an index in the NV storage page table
+     85           * (maNvRawPageAddressTable[]).
+     86           *
+     87          */
+     88          
+     89          
+
+   \                                 In section .text, align 2, keep-with-next
+     90          void NvHalEraseSector
+     91            (
+     92            NvRawSectorAddress_t NvRawSectorAddress
+     93            )
+     94          {
+   \                     NvHalEraseSector:
+   \   00000000   70B5               PUSH     {R4-R6,LR}
+   \   00000002   0600               MOVS     R6,R0
+     95          #if !gNvStorageIncluded_d
+     96            ( void ) NvRawSectorAddress;
+     97          #else
+     98            
+     99            uint32_t sector_bitfield;
+    100            index_t retries = mNvFlashCmdRetries_c;
+   \   00000004   2020               MOVS     R0,#+32
+   \   00000006   0400               MOVS     R4,R0
+    101            sector_bitfield = 1<<(NvRawSectorAddress>>12);  
+   \   00000008   0120               MOVS     R0,#+1
+   \   0000000A   3100               MOVS     R1,R6
+   \   0000000C   090B               LSRS     R1,R1,#+12
+   \   0000000E   8840               LSLS     R0,R0,R1
+   \   00000010   0500               MOVS     R5,R0
+    102            
+    103                while ( retries-- ) {
+   \                     ??NvHalEraseSector_0:
+   \   00000012   2000               MOVS     R0,R4
+   \   00000014   441E               SUBS     R4,R0,#+1
+   \   00000016   0006               LSLS     R0,R0,#+24       ;; ZeroExtS R0,R0,#+24,#+24
+   \   00000018   000E               LSRS     R0,R0,#+24
+   \   0000001A   0028               CMP      R0,#+0
+   \   0000001C   06D0               BEQ      ??NvHalEraseSector_1
+    104          
+    105                if(gNvmErrNoError_c == NVM_Erase(gNvmInterface_c, gNvmType_SST_c , sector_bitfield))
+   \   0000001E   2A00               MOVS     R2,R5
+   \   00000020   0121               MOVS     R1,#+1
+   \   00000022   0020               MOVS     R0,#+0
+   \   00000024   ........           BL       NVM_Erase
+   \   00000028   0028               CMP      R0,#+0
+   \   0000002A   F2D1               BNE      ??NvHalEraseSector_0
+    106                   break;
+    107                
+    108              }                                   
+    109                                                 
+    110          #endif                                  /* #if !gNvStorageIncluded_d #else */
+    111          }
+   \                     ??NvHalEraseSector_1:
+   \   0000002C   70BC               POP      {R4-R6}
+   \   0000002E   08BC               POP      {R3}
+   \   00000030   1847               BX       R3               ;; return
+    112          /*****************************************************************************/
+    113          
+    114          
+    115          
+
+   \                                 In section .text, align 2, keep-with-next
+    116          void NvHalInit ( void )
+    117          {
+    118          #if gNvStorageIncluded_d
+    119          if(gNvmInterface_c == gNvmExternalInterface_c)
+    120           {
+    121           	
+    122           GPIO.FuncSel0 &= (~0xFF00); 
+    123           GPIO.FuncSel0 |= 0x5500;
+    124           }  
+    125          #endif                                  /* #if gNvStorageIncluded_d */
+    126          }
+   \                     NvHalInit:
+   \   00000000   7047               BX       LR               ;; return
+    127          /****************************************************************************/
+    128          
+    129          /* Read data from a specified offset within a given page of NV storage. */
+
+   \                                 In section .text, align 2, keep-with-next
+    130          void NvHalRead
+    131            (
+    132            NvRawPageAddress_t nvRawPageAddress,
+    133            NvSize_t srcPageOffset,
+    134            unsigned char *pDst,
+    135            NvSize_t dstLen
+    136            )
+    137          {
+   \                     NvHalRead:
+   \   00000000   F8B5               PUSH     {R3-R7,LR}
+   \   00000002   0600               MOVS     R6,R0
+   \   00000004   0D00               MOVS     R5,R1
+   \   00000006   1700               MOVS     R7,R2
+   \   00000008   1C00               MOVS     R4,R3
+    138          #if !gNvStorageIncluded_d
+    139            ( void ) nvRawPageAddress;
+    140            ( void ) srcPageOffset;
+    141            ( void ) pDst;
+    142            ( void ) dstLen;
+    143          #else
+    144          
+    145            NVM_Read(gNvmInterface_c , gNvmType_SST_c, (void *)pDst , nvRawPageAddress + srcPageOffset, (uint32_t)dstLen);
+   \   0000000A   2404               LSLS     R4,R4,#+16       ;; ZeroExtS R4,R4,#+16,#+16
+   \   0000000C   240C               LSRS     R4,R4,#+16
+   \   0000000E   0094               STR      R4,[SP, #+0]
+   \   00000010   2D04               LSLS     R5,R5,#+16       ;; ZeroExtS R5,R5,#+16,#+16
+   \   00000012   2D0C               LSRS     R5,R5,#+16
+   \   00000014   7319               ADDS     R3,R6,R5
+   \   00000016   3A00               MOVS     R2,R7
+   \   00000018   0121               MOVS     R1,#+1
+   \   0000001A   0020               MOVS     R0,#+0
+   \   0000001C   ........           BL       NVM_Read
+    146          
+    147            
+    148            
+    149          #endif                                  /* #if !gNvStorageIncluded_d #else */
+    150          }                                       /* NvHalRead() */
+   \   00000020   F1BC               POP      {R0,R4-R7}
+   \   00000022   08BC               POP      {R3}
+   \   00000024   1847               BX       R3               ;; return
+    151          
+    152          /****************************************************************************/
+    153          
+    154          /* Write data to a specified offset within a given page of NV storage.
+    155           * The caller must insure that a full page of data is written, across
+    156           * more than one call to NvWrite() if necessary.
+    157           * Since this routine only writes partial pages, it does not do retries.
+    158           * Return TRUE if the write succeeded;
+    159           *        FALSE if the flash controller reported an error.
+    160           */
+    161          
+    162          
+    163          
+
+   \                                 In section .text, align 2, keep-with-next
+    164          bool_t NvHalWrite
+    165            (
+    166            NvRawPageAddress_t nvRawPageAddress,
+    167            NvSize_t dstPageOffset,
+    168            unsigned char *pSource,
+    169            NvSize_t sourceLen
+    170            )
+    171          {
+   \                     NvHalWrite:
+   \   00000000   F8B5               PUSH     {R3-R7,LR}
+   \   00000002   0600               MOVS     R6,R0
+   \   00000004   0D00               MOVS     R5,R1
+   \   00000006   1700               MOVS     R7,R2
+   \   00000008   1C00               MOVS     R4,R3
+    172          #if !gNvStorageIncluded_d
+    173            ( void ) nvRawPageAddress;
+    174            ( void ) dstPageOffset;
+    175            ( void ) pSource;
+    176            ( void ) sourceLen;
+    177            return FALSE;
+    178          #else
+    179          
+    180           if(gNvmErrNoError_c ==  NVM_Write(gNvmInterface_c, gNvmType_SST_c ,(void *)pSource, nvRawPageAddress + dstPageOffset, (uint32_t)sourceLen))
+   \   0000000A   2404               LSLS     R4,R4,#+16       ;; ZeroExtS R4,R4,#+16,#+16
+   \   0000000C   240C               LSRS     R4,R4,#+16
+   \   0000000E   0094               STR      R4,[SP, #+0]
+   \   00000010   2D04               LSLS     R5,R5,#+16       ;; ZeroExtS R5,R5,#+16,#+16
+   \   00000012   2D0C               LSRS     R5,R5,#+16
+   \   00000014   7319               ADDS     R3,R6,R5
+   \   00000016   3A00               MOVS     R2,R7
+   \   00000018   0121               MOVS     R1,#+1
+   \   0000001A   0020               MOVS     R0,#+0
+   \   0000001C   ........           BL       NVM_Write
+   \   00000020   0028               CMP      R0,#+0
+   \   00000022   01D1               BNE      ??NvHalWrite_0
+    181             return TRUE;
+   \   00000024   0120               MOVS     R0,#+1
+   \   00000026   00E0               B        ??NvHalWrite_1
+    182           
+    183           return FALSE;  
+   \                     ??NvHalWrite_0:
+   \   00000028   0020               MOVS     R0,#+0
+   \                     ??NvHalWrite_1:
+   \   0000002A   F2BC               POP      {R1,R4-R7}
+   \   0000002C   08BC               POP      {R3}
+   \   0000002E   1847               BX       R3               ;; return
+    184          
+    185          #endif                                  /* #if !gNvStorageIncluded_d #else */
+    186          }
+    187          
+    188          
+    189          
+
+   \                                 In section .text, align 2, keep-with-next
+    190          bool_t NvHalVerify
+    191            (
+    192            NvRawPageAddress_t nvRawPageAddress,
+    193            NvSize_t dstPageOffset,
+    194            unsigned char *pSource,
+    195            NvSize_t sourceLen
+    196            )
+    197          {
+   \                     NvHalVerify:
+   \   00000000   F8B5               PUSH     {R3-R7,LR}
+   \   00000002   0600               MOVS     R6,R0
+   \   00000004   0D00               MOVS     R5,R1
+   \   00000006   1700               MOVS     R7,R2
+   \   00000008   1C00               MOVS     R4,R3
+    198          #if !gNvStorageIncluded_d
+    199            ( void ) nvRawPageAddress;
+    200            ( void ) dstPageOffset;
+    201            ( void ) pSource;
+    202            ( void ) sourceLen;
+    203            return FALSE;
+    204          #else
+    205           
+    206           if(gNvmErrNoError_c ==  NVM_Verify(gNvmInterface_c , gNvmType_SST_c ,(void *)pSource, nvRawPageAddress + dstPageOffset , (uint32_t)sourceLen))
+   \   0000000A   2404               LSLS     R4,R4,#+16       ;; ZeroExtS R4,R4,#+16,#+16
+   \   0000000C   240C               LSRS     R4,R4,#+16
+   \   0000000E   0094               STR      R4,[SP, #+0]
+   \   00000010   2D04               LSLS     R5,R5,#+16       ;; ZeroExtS R5,R5,#+16,#+16
+   \   00000012   2D0C               LSRS     R5,R5,#+16
+   \   00000014   7319               ADDS     R3,R6,R5
+   \   00000016   3A00               MOVS     R2,R7
+   \   00000018   0121               MOVS     R1,#+1
+   \   0000001A   0020               MOVS     R0,#+0
+   \   0000001C   ........           BL       NVM_Verify
+   \   00000020   0028               CMP      R0,#+0
+   \   00000022   01D1               BNE      ??NvHalVerify_0
+    207             return TRUE;
+   \   00000024   0120               MOVS     R0,#+1
+   \   00000026   00E0               B        ??NvHalVerify_1
+    208           return FALSE;  
+   \                     ??NvHalVerify_0:
+   \   00000028   0020               MOVS     R0,#+0
+   \                     ??NvHalVerify_1:
+   \   0000002A   F2BC               POP      {R1,R4-R7}
+   \   0000002C   08BC               POP      {R3}
+   \   0000002E   1847               BX       R3               ;; return
+    209          
+    210          #endif                                  /* #if !gNvStorageIncluded_d #else */
+    211          }
+    212          
+    213          
+
+   \                                 In section .text, align 2, keep-with-next
+    214          bool_t NvHalIsBlank
+    215            (
+    216            NvRawPageAddress_t nvRawPageAddress,
+    217            NvSize_t dstPageOffset,
+    218            NvSize_t length
+    219            )
+    220          {
+   \                     NvHalIsBlank:
+   \   00000000   70B5               PUSH     {R4-R6,LR}
+   \   00000002   0600               MOVS     R6,R0
+   \   00000004   0D00               MOVS     R5,R1
+   \   00000006   1400               MOVS     R4,R2
+    221          #if !gNvStorageIncluded_d
+    222            ( void ) nvRawPageAddress;
+    223            ( void ) dstPageOffset;
+    224            ( void ) length;
+    225            return FALSE;
+    226          #else
+    227           
+    228           if(gNvmErrNoError_c == NVM_BlankCheck(gNvmInterface_c, gNvmType_SST_c, nvRawPageAddress + dstPageOffset, length))  
+   \   00000008   2404               LSLS     R4,R4,#+16       ;; ZeroExtS R4,R4,#+16,#+16
+   \   0000000A   240C               LSRS     R4,R4,#+16
+   \   0000000C   2300               MOVS     R3,R4
+   \   0000000E   2D04               LSLS     R5,R5,#+16       ;; ZeroExtS R5,R5,#+16,#+16
+   \   00000010   2D0C               LSRS     R5,R5,#+16
+   \   00000012   7219               ADDS     R2,R6,R5
+   \   00000014   0121               MOVS     R1,#+1
+   \   00000016   0020               MOVS     R0,#+0
+   \   00000018   ........           BL       NVM_BlankCheck
+   \   0000001C   0028               CMP      R0,#+0
+   \   0000001E   01D1               BNE      ??NvHalIsBlank_0
+    229             return TRUE;
+   \   00000020   0120               MOVS     R0,#+1
+   \   00000022   00E0               B        ??NvHalIsBlank_1
+    230           return FALSE;  
+   \                     ??NvHalIsBlank_0:
+   \   00000024   0020               MOVS     R0,#+0
+   \                     ??NvHalIsBlank_1:
+   \   00000026   70BC               POP      {R4-R6}
+   \   00000028   08BC               POP      {R3}
+   \   0000002A   1847               BX       R3               ;; return
+    231          
+    232          #endif                                  /* #if !gNvStorageIncluded_d #else */
+    233          }
+    234          /****************************************************************************/
+    235          
+    236          
+    237          
+    238          /****************************************************************************
+    239          * Giving a command to the flash controller may disturb read access to flash
+    240          * addresses. This function is copied into RAM so it can run even if flash is
+    241          * not accessible.
+    242          *
+    243          * Retries here are not a good idea, both because it would add mode code that
+    244          * would reside in scarce RAM, and because some commands cannot be retried
+    245          * without doing something else first. In particular, no byte of flash should
+    246          * be written more than once without an erase between the write commands.
+    247          *
+    248          * This function should only be called while interrupts are disabled.
+    249          *
+    250          * Returns TRUE  if the command worked;
+    251          *         FALSE if the flash controller reported an error.
+    252          *****************************************************************************/
+    253          
+
+   Maximum stack usage in bytes:
+
+     Function         .cstack
+     --------         -------
+     NvHalEraseSector     16
+     NvHalInit             0
+     NvHalIsBlank         16
+     NvHalRead            24
+     NvHalVerify          24
+     NvHalWrite           24
+
+
+   Section sizes:
+
+     Function/Label            Bytes
+     --------------            -----
+     maNvRawSectorAddressTable    8
+     NvHalEraseSector            50
+     NvHalInit                    2
+     NvHalRead                   38
+     NvHalWrite                  48
+     NvHalVerify                 48
+     NvHalIsBlank                44
+
+ 
+   8 bytes in section .rodata
+ 230 bytes in section .text
+ 
+ 230 bytes of CODE  memory
+   8 bytes of CONST memory
+
+Errors: none
+Warnings: none

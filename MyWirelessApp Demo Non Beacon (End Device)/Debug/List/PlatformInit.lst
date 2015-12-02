@@ -1,0 +1,561 @@
+###############################################################################
+#                                                                             #
+#                                                       12/Oct/2015  10:21:27 #
+# IAR ANSI C/C++ Compiler V5.50.7.22081/W32 EVALUATION for ARM                #
+# Copyright (C) 1999-2010 IAR Systems AB.                                     #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  C:\Documents and Settings\Administrator\Desktop\MyWirele #
+#                    ssApp Demo Non Beacon (End Device)\MyWirelessApp Demo    #
+#                    Non Beacon (End Device)\PLM\Source\Common\Sys\PlatformIn #
+#                    it.c                                                     #
+#    Command line =  "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\PLM\Source\Common\Sys\PlatformIn #
+#                    it.c" -D gMacStandAlone_d=1 -D                           #
+#                    gSAPMessagesEnableLlc_d=0 -D gZtcIncluded_d=0 -D         #
+#                    gTargetMC1322xSRB=1 --preprocess "C:\Documents and       #
+#                    Settings\Administrator\Desktop\MyWirelessApp Demo Non    #
+#                    Beacon (End Device)\MyWirelessApp Demo Non Beacon (End   #
+#                    Device)\Debug\List\" -lC "C:\Documents and               #
+#                    Settings\Administrator\Desktop\MyWirelessApp Demo Non    #
+#                    Beacon (End Device)\MyWirelessApp Demo Non Beacon (End   #
+#                    Device)\Debug\List\" -lB "C:\Documents and               #
+#                    Settings\Administrator\Desktop\MyWirelessApp Demo Non    #
+#                    Beacon (End Device)\MyWirelessApp Demo Non Beacon (End   #
+#                    Device)\Debug\List\" --diag_suppress                     #
+#                    Pe014,Pe001,Pe991,Pa039,Pe520 -o "C:\Documents and       #
+#                    Settings\Administrator\Desktop\MyWirelessApp Demo Non    #
+#                    Beacon (End Device)\MyWirelessApp Demo Non Beacon (End   #
+#                    Device)\Debug\Obj\" --no_cse --no_unroll --no_inline     #
+#                    --no_code_motion --no_tbaa --no_clustering               #
+#                    --no_scheduling --debug --endian=little                  #
+#                    --cpu=ARM7TDMI-S --fpu=None --dlib_config "C:\Program    #
+#                    Files\IAR Systems\Embedded Workbench 5.4                 #
+#                    Evaluation\arm\INC\DLib_Config_Normal.h" -I              #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\MacPhy\Interface\" -I            #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\Application\Init\" -I            #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\Application\Interface\" -I       #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\Application\Configure\" -I       #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\Application\UartUtil\" -I        #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\Application\Source\" -I          #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\SSM\TS\Interface\" -I            #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\SSM\TS\Source\" -I               #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\SSM\ZTC\Interface\" -I           #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\SSM\ZTC\Source\" -I              #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\PLM\Interface\" -I               #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\PLM\LibInterface\" -I            #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\PLM\Source\Display\" -I          #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\PLM\Source\Keyboard\" -I         #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\PLM\Source\NVM\" -I              #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\PLM\Source\TMR\" -I              #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\PLM\Source\UART\" -I             #
+#                    "C:\Program Files\IAR Systems\Embedded Workbench 5.4     #
+#                    Evaluation\arm\INC\" --interwork --cpu_mode thumb -On    #
+#    List file    =  C:\Documents and Settings\Administrator\Desktop\MyWirele #
+#                    ssApp Demo Non Beacon (End Device)\MyWirelessApp Demo    #
+#                    Non Beacon (End Device)\Debug\List\PlatformInit.lst      #
+#    Object file  =  C:\Documents and Settings\Administrator\Desktop\MyWirele #
+#                    ssApp Demo Non Beacon (End Device)\MyWirelessApp Demo    #
+#                    Non Beacon (End Device)\Debug\Obj\PlatformInit.o         #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+C:\Documents and Settings\Administrator\Desktop\MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\PLM\Source\Common\Sys\PlatformInit.c
+      1          /************************************************************************************
+      2          *
+      3          * (c) Copyright 2007, Freescale, Inc.  All rights reserved.
+      4          *
+      5          *
+      6          * No part of this document must be reproduced in any form - including copied,
+      7          * transcribed, printed or by any electronic means - without specific written
+      8          * permission from Freescale.
+      9          *
+     10          ************************************************************************************/
+     11          #include "Platform.h"
+     12          #include "PortConfig.h"
+     13          #include "PlatformInterrupts.h"
+     14          #include "Interrupt.h"
+     15          #include "PlatformInit.h"
+     16          #include "MsgSystem.h"
+     17          #include "NwkMacInterface.h"
+     18          #include "AppAspInterface.h"
+     19          #include "NV_Data.h"
+     20          #include "MacPhyInit.h"
+     21          #include "GPIO_Interface.h"
+     22          #include "AppAspInterface.h"
+     23          
+     24          
+     25          /* CRM register containing the control of NVM regulator */
+     26          #define VregCntl            (*((volatile unsigned long*)(0x80003048)))
+     27          #define VREG_1P8V_EN        0x00000080UL
+     28          #define BUCK_BYPASS_EN      0x00000004UL
+     29          #define BUCK_EN             0x00000001UL
+     30          
+     31          
+     32          extern void MacPhyInit_Initialize(void);
+     33          extern bool_t gbTaskMode;
+     34          
+     35          void Init_802_15_4(bool_t mUseTs);
+     36          static void PlatformInitGpio(void);
+     37          
+     38          /**************************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     39          void Platform_Init(void)
+     40          {
+   \                     Platform_Init:
+   \   00000000   80B5               PUSH     {R7,LR}
+     41            Asp_TrimReq( gHardwareParameters.gXtalFTune_c, gHardwareParameters.gXtalCTune_c );
+   \   00000002   ....               LDR      R0,??DataTable4
+   \   00000004   2430               ADDS     R0,R0,#+36
+   \   00000006   0178               LDRB     R1,[R0, #+0]
+   \   00000008   ....               LDR      R0,??DataTable4
+   \   0000000A   2530               ADDS     R0,R0,#+37
+   \   0000000C   0078               LDRB     R0,[R0, #+0]
+   \   0000000E   ........           BL       Asp_TrimReq
+     42          
+     43            PlatformInitGpio();
+   \   00000012   ........           BL       PlatformInitGpio
+     44            AppInterruptsInit();  // Initializes interrupts and Itc peripheral
+   \   00000016   ........           BL       AppInterruptsInit
+     45          }
+   \   0000001A   09BC               POP      {R0,R3}
+   \   0000001C   1847               BX       R3               ;; return
+     46          
+     47          /**************************************************************************************/
+     48          /*
+     49            Activates the NVM regulator via CRM
+     50          */
+
+   \                                 In section .text, align 2, keep-with-next
+     51          void StartNvmReg(void)
+     52          {
+   \                     StartNvmReg:
+   \   00000000   80B5               PUSH     {R7,LR}
+     53            volatile uint32_t counter;
+     54          
+     55            VregCntl &= (~BUCK_EN);
+   \   00000002   ....               LDR      R0,??DataTable4_1  ;; 0x80003048
+   \   00000004   0068               LDR      R0,[R0, #+0]
+   \   00000006   0121               MOVS     R1,#+1
+   \   00000008   8843               BICS     R0,R0,R1
+   \   0000000A   ....               LDR      R1,??DataTable4_1  ;; 0x80003048
+   \   0000000C   0860               STR      R0,[R1, #+0]
+     56            VregCntl |= BUCK_BYPASS_EN;
+   \   0000000E   ....               LDR      R0,??DataTable4_1  ;; 0x80003048
+   \   00000010   0068               LDR      R0,[R0, #+0]
+   \   00000012   0421               MOVS     R1,#+4
+   \   00000014   0143               ORRS     R1,R1,R0
+   \   00000016   ....               LDR      R0,??DataTable4_1  ;; 0x80003048
+   \   00000018   0160               STR      R1,[R0, #+0]
+     57          
+     58            counter = 18200;
+   \   0000001A   ....               LDR      R0,??DataTable4_2  ;; 0x4718
+   \   0000001C   0090               STR      R0,[SP, #+0]
+     59            while(counter--);
+   \                     ??StartNvmReg_0:
+   \   0000001E   0098               LDR      R0,[SP, #+0]
+   \   00000020   411E               SUBS     R1,R0,#+1
+   \   00000022   0091               STR      R1,[SP, #+0]
+   \   00000024   0028               CMP      R0,#+0
+   \   00000026   FAD1               BNE      ??StartNvmReg_0
+     60          
+     61            VregCntl |= VREG_1P8V_EN;
+   \   00000028   ....               LDR      R0,??DataTable4_1  ;; 0x80003048
+   \   0000002A   0068               LDR      R0,[R0, #+0]
+   \   0000002C   8021               MOVS     R1,#+128
+   \   0000002E   0143               ORRS     R1,R1,R0
+   \   00000030   ....               LDR      R0,??DataTable4_1  ;; 0x80003048
+   \   00000032   0160               STR      R1,[R0, #+0]
+     62            counter = 5200;
+   \   00000034   ....               LDR      R0,??DataTable4_3  ;; 0x1450
+   \   00000036   0090               STR      R0,[SP, #+0]
+     63            while(counter--);
+   \                     ??StartNvmReg_1:
+   \   00000038   0098               LDR      R0,[SP, #+0]
+   \   0000003A   411E               SUBS     R1,R0,#+1
+   \   0000003C   0091               STR      R1,[SP, #+0]
+   \   0000003E   0028               CMP      R0,#+0
+   \   00000040   FAD1               BNE      ??StartNvmReg_1
+     64          }
+   \   00000042   09BC               POP      {R0,R3}
+   \   00000044   1847               BX       R3               ;; return
+     65          
+     66          /**************************************************************************************/
+     67          /*
+     68            Stops the NVM regulator via CRM
+     69          */
+
+   \                                 In section .text, align 2, keep-with-next
+     70          void StopNvmReg(void)
+     71          {
+   \                     StopNvmReg:
+   \   00000000   80B5               PUSH     {R7,LR}
+     72            volatile uint32_t counter;
+     73          
+     74            VregCntl &= ~VREG_1P8V_EN;
+   \   00000002   ....               LDR      R0,??DataTable4_1  ;; 0x80003048
+   \   00000004   0068               LDR      R0,[R0, #+0]
+   \   00000006   8021               MOVS     R1,#+128
+   \   00000008   8843               BICS     R0,R0,R1
+   \   0000000A   ....               LDR      R1,??DataTable4_1  ;; 0x80003048
+   \   0000000C   0860               STR      R0,[R1, #+0]
+     75            counter = 5200;
+   \   0000000E   ....               LDR      R0,??DataTable4_3  ;; 0x1450
+   \   00000010   0090               STR      R0,[SP, #+0]
+     76            while(counter--);
+   \                     ??StopNvmReg_0:
+   \   00000012   0098               LDR      R0,[SP, #+0]
+   \   00000014   411E               SUBS     R1,R0,#+1
+   \   00000016   0091               STR      R1,[SP, #+0]
+   \   00000018   0028               CMP      R0,#+0
+   \   0000001A   FAD1               BNE      ??StopNvmReg_0
+     77          }
+   \   0000001C   09BC               POP      {R0,R3}
+   \   0000001E   1847               BX       R3               ;; return
+     78          
+     79          /************************************************************************************
+     80          * Initialize platform and stack. 
+     81          *
+     82          * This function is the main initialization procedure, which will be called from the 
+     83          * startup code of the project. 
+     84          * If the code is build as a stand-alone application, this function is
+     85          * called from main() below. 
+     86          *
+     87          * Interface assumptions:
+     88          *
+     89          * Return value:
+     90          *   NONE
+     91          *
+     92          *
+     93          ************************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     94          void Init_802_15_4(bool_t mUseTS)
+     95          {
+   \                     Init_802_15_4:
+   \   00000000   10B5               PUSH     {R4,LR}
+   \   00000002   0400               MOVS     R4,R0
+     96            gbTaskMode = mUseTS;
+   \   00000004   ....               LDR      R0,??DataTable4_4
+   \   00000006   0470               STRB     R4,[R0, #+0]
+     97          
+     98            MacPhyInit_Initialize();      // Init 802.15.4 MAC/PHY stack
+   \   00000008   ........           BL       MacPhyInit_Initialize
+     99          
+    100            MacPhyInit_WriteExtAddress((uint8_t*)(&(gHardwareParameters.MAC_Address[0]))); 
+   \   0000000C   ....               LDR      R0,??DataTable4
+   \   0000000E   C01D               ADDS     R0,R0,#+7
+   \   00000010   ........           BL       MacPhyInit_WriteExtAddress
+    101          
+    102            Asp_SetPowerLevel(gHardwareParameters.defaultPowerLevel);
+   \   00000014   ....               LDR      R0,??DataTable4
+   \   00000016   C07B               LDRB     R0,[R0, #+15]
+   \   00000018   ........           BL       Asp_SetPowerLevel
+    103            
+    104            {
+    105             uint32_t reg_value =  *((volatile uint32_t*)0x80009460);
+   \   0000001C   ....               LDR      R1,??DataTable4_5  ;; 0x80009460
+   \   0000001E   0968               LDR      R1,[R1, #+0]
+   \   00000020   0800               MOVS     R0,R1
+    106             reg_value &= (uint32_t)0xFF00FFFF; /* clear the cca threshold */
+   \   00000022   0100               MOVS     R1,R0
+   \   00000024   ....               LDR      R0,??DataTable4_6  ;; 0xff00ffff
+   \   00000026   0840               ANDS     R0,R0,R1
+    107             reg_value |= (uint32_t) gHardwareParameters.ccaThreshold << 16; /* set the cca threshold */
+   \   00000028   0100               MOVS     R1,R0
+   \   0000002A   ....               LDR      R0,??DataTable4
+   \   0000002C   2130               ADDS     R0,R0,#+33
+   \   0000002E   0078               LDRB     R0,[R0, #+0]
+   \   00000030   0004               LSLS     R0,R0,#+16
+   \   00000032   0843               ORRS     R0,R0,R1
+    108             *((volatile uint32_t*)0x80009460) = reg_value;
+   \   00000034   ....               LDR      R1,??DataTable4_5  ;; 0x80009460
+   \   00000036   0860               STR      R0,[R1, #+0]
+    109            } 
+    110          }
+   \   00000038   10BC               POP      {R4}
+   \   0000003A   08BC               POP      {R3}
+   \   0000003C   1847               BX       R3               ;; return
+    111          
+    112          /**************************************************************************************/
+    113          
+
+   \                                 In section .text, align 2, keep-with-next
+    114          static void PlatformInitGpio(void)
+    115          {
+    116            GPIO_REGS_P->DataLo = gDataLoValue_c;                  //MBAR_GPIO + 0x08
+   \                     PlatformInitGpio:
+   \   00000000   ....               LDR      R0,??DataTable4_7  ;; 0x80000008
+   \   00000002   F021               MOVS     R1,#+240
+   \   00000004   8904               LSLS     R1,R1,#+18       ;; #+62914560
+   \   00000006   0160               STR      R1,[R0, #+0]
+    117            GPIO_REGS_P->DataHi = gDataHiValue_c;                  //MBAR_GPIO + 0x0C
+   \   00000008   ....               LDR      R0,??DataTable4_8  ;; 0x8000000c
+   \   0000000A   0021               MOVS     R1,#+0
+   \   0000000C   0160               STR      R1,[R0, #+0]
+    118          
+    119            GPIO_REGS_P->DirLo =  gDirLoValue_c;                   //MBAR_GPIO + 0x00
+   \   0000000E   8020               MOVS     R0,#+128
+   \   00000010   0006               LSLS     R0,R0,#+24       ;; #-2147483648
+   \   00000012   F021               MOVS     R1,#+240
+   \   00000014   8904               LSLS     R1,R1,#+18       ;; #+62914560
+   \   00000016   0160               STR      R1,[R0, #+0]
+    120            GPIO_REGS_P->DirHi =  gDirHiValue_c;                   //MBAR_GPIO + 0x04
+   \   00000018   ....               LDR      R0,??DataTable4_9  ;; 0x80000004
+   \   0000001A   0021               MOVS     R1,#+0
+   \   0000001C   0160               STR      R1,[R0, #+0]
+    121          
+    122            GPIO_REGS_P->PuEnLo = gPuEnLoValue_c;                  //MBAR_GPIO + 0x10
+   \   0000001E   ....               LDR      R0,??DataTable4_10  ;; 0x80000010
+   \   00000020   0021               MOVS     R1,#+0
+   \   00000022   C943               MVNS     R1,R1            ;; #-1
+   \   00000024   0160               STR      R1,[R0, #+0]
+    123            GPIO_REGS_P->PuEnHi = gPuEnHiValue_c;                  //MBAR_GPIO + 0x14
+   \   00000026   ....               LDR      R0,??DataTable4_11  ;; 0x80000014
+   \   00000028   0021               MOVS     R1,#+0
+   \   0000002A   C943               MVNS     R1,R1            ;; #-1
+   \   0000002C   0160               STR      R1,[R0, #+0]
+    124            GPIO_REGS_P->FuncSel0 = gFuncSel0Value_c;              //MBAR_GPIO + 0x18
+   \   0000002E   ....               LDR      R0,??DataTable4_12  ;; 0x80000018
+   \   00000030   0021               MOVS     R1,#+0
+   \   00000032   0160               STR      R1,[R0, #+0]
+    125            GPIO_REGS_P->FuncSel1 = gFuncSel1Value_c;              //MBAR_GPIO + 0x1C
+   \   00000034   ....               LDR      R0,??DataTable4_13  ;; 0x8000001c
+   \   00000036   0021               MOVS     R1,#+0
+   \   00000038   0160               STR      R1,[R0, #+0]
+    126            GPIO_REGS_P->FuncSel2 = gFuncSel2Value_c;              //MBAR_GPIO + 0x20
+   \   0000003A   ....               LDR      R0,??DataTable4_14  ;; 0x80000020
+   \   0000003C   0021               MOVS     R1,#+0
+   \   0000003E   0160               STR      R1,[R0, #+0]
+    127            GPIO_REGS_P->FuncSel3 = gFuncSel3Value_c;              //MBAR_GPIO + 0x24
+   \   00000040   ....               LDR      R0,??DataTable4_15  ;; 0x80000024
+   \   00000042   0021               MOVS     R1,#+0
+   \   00000044   0160               STR      R1,[R0, #+0]
+    128            GPIO_REGS_P->InputDataSelLo = gInputDataSelLoValue_c;  //MBAR_GPIO + 0x28
+   \   00000046   ....               LDR      R0,??DataTable4_16  ;; 0x80000028
+   \   00000048   0021               MOVS     R1,#+0
+   \   0000004A   0160               STR      R1,[R0, #+0]
+    129            GPIO_REGS_P->InputDataSelHi = gInputDataSelHiValue_c;  //MBAR_GPIO + 0x2C
+   \   0000004C   ....               LDR      R0,??DataTable4_17  ;; 0x8000002c
+   \   0000004E   0021               MOVS     R1,#+0
+   \   00000050   0160               STR      R1,[R0, #+0]
+    130            GPIO_REGS_P->PuSelLo = gPuSelLoValue_c;                //MBAR_GPIO + 0x30
+   \   00000052   ....               LDR      R0,??DataTable4_18  ;; 0x80000030
+   \   00000054   C021               MOVS     R1,#+192
+   \   00000056   8901               LSLS     R1,R1,#+6        ;; #+12288
+   \   00000058   0160               STR      R1,[R0, #+0]
+    131            GPIO_REGS_P->PuSelHi = gPuSelHiValue_c;                //MBAR_GPIO + 0x34
+   \   0000005A   ....               LDR      R0,??DataTable4_19  ;; 0x80000034
+   \   0000005C   ....               LDR      R1,??DataTable4_20  ;; 0x8001c000
+   \   0000005E   0160               STR      R1,[R0, #+0]
+    132            GPIO_REGS_P->HystEnLo = gHystEnLoValue_c;              //MBAR_GPIO + 0x38
+   \   00000060   ....               LDR      R0,??DataTable4_21  ;; 0x80000038
+   \   00000062   0021               MOVS     R1,#+0
+   \   00000064   0160               STR      R1,[R0, #+0]
+    133            GPIO_REGS_P->HystEnHi = gHystEnHiValue_c;              //MBAR_GPIO + 0x3C
+   \   00000066   ....               LDR      R0,??DataTable4_22  ;; 0x8000003c
+   \   00000068   0021               MOVS     R1,#+0
+   \   0000006A   0160               STR      R1,[R0, #+0]
+    134            GPIO_REGS_P->PuKeepLo = gPuKeepLoValue_c;              //MBAR_GPIO + 0x40
+   \   0000006C   ....               LDR      R0,??DataTable4_23  ;; 0x80000040
+   \   0000006E   C021               MOVS     R1,#+192
+   \   00000070   0906               LSLS     R1,R1,#+24       ;; #-1073741824
+   \   00000072   0160               STR      R1,[R0, #+0]
+    135            GPIO_REGS_P->PuKeepHi = gPuKeepHiValue_c;              //MBAR_GPIO + 0x44 
+   \   00000074   ....               LDR      R0,??DataTable4_24  ;; 0x80000044
+   \   00000076   DF21               MOVS     R1,#+223
+   \   00000078   0160               STR      R1,[R0, #+0]
+    136          }
+   \   0000007A   7047               BX       LR               ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4:
+   \   00000000   ........           DC32     gHardwareParameters
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_1:
+   \   00000000   48300080           DC32     0x80003048
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_2:
+   \   00000000   18470000           DC32     0x4718
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_3:
+   \   00000000   50140000           DC32     0x1450
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_4:
+   \   00000000   ........           DC32     gbTaskMode
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_5:
+   \   00000000   60940080           DC32     0x80009460
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_6:
+   \   00000000   FFFF00FF           DC32     0xff00ffff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_7:
+   \   00000000   08000080           DC32     0x80000008
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_8:
+   \   00000000   0C000080           DC32     0x8000000c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_9:
+   \   00000000   04000080           DC32     0x80000004
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_10:
+   \   00000000   10000080           DC32     0x80000010
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_11:
+   \   00000000   14000080           DC32     0x80000014
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_12:
+   \   00000000   18000080           DC32     0x80000018
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_13:
+   \   00000000   1C000080           DC32     0x8000001c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_14:
+   \   00000000   20000080           DC32     0x80000020
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_15:
+   \   00000000   24000080           DC32     0x80000024
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_16:
+   \   00000000   28000080           DC32     0x80000028
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_17:
+   \   00000000   2C000080           DC32     0x8000002c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_18:
+   \   00000000   30000080           DC32     0x80000030
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_19:
+   \   00000000   34000080           DC32     0x80000034
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_20:
+   \   00000000   00C00180           DC32     0x8001c000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_21:
+   \   00000000   38000080           DC32     0x80000038
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_22:
+   \   00000000   3C000080           DC32     0x8000003c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_23:
+   \   00000000   40000080           DC32     0x80000040
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_24:
+   \   00000000   44000080           DC32     0x80000044
+
+   Maximum stack usage in bytes:
+
+     Function         .cstack
+     --------         -------
+     Init_802_15_4         8
+     PlatformInitGpio      0
+     Platform_Init         8
+     StartNvmReg           8
+     StopNvmReg            8
+
+
+   Section sizes:
+
+     Function/Label   Bytes
+     --------------   -----
+     Platform_Init      30
+     StartNvmReg        70
+     StopNvmReg         32
+     Init_802_15_4      62
+     PlatformInitGpio  124
+     ??DataTable4        4
+     ??DataTable4_1      4
+     ??DataTable4_2      4
+     ??DataTable4_3      4
+     ??DataTable4_4      4
+     ??DataTable4_5      4
+     ??DataTable4_6      4
+     ??DataTable4_7      4
+     ??DataTable4_8      4
+     ??DataTable4_9      4
+     ??DataTable4_10     4
+     ??DataTable4_11     4
+     ??DataTable4_12     4
+     ??DataTable4_13     4
+     ??DataTable4_14     4
+     ??DataTable4_15     4
+     ??DataTable4_16     4
+     ??DataTable4_17     4
+     ??DataTable4_18     4
+     ??DataTable4_19     4
+     ??DataTable4_20     4
+     ??DataTable4_21     4
+     ??DataTable4_22     4
+     ??DataTable4_23     4
+     ??DataTable4_24     4
+
+ 
+ 418 bytes in section .text
+ 
+ 418 bytes of CODE memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,1024 @@
+###############################################################################
+#                                                                             #
+#                                                       12/Oct/2015  10:21:26 #
+# IAR ANSI C/C++ Compiler V5.50.7.22081/W32 EVALUATION for ARM                #
+# Copyright (C) 1999-2010 IAR Systems AB.                                     #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  C:\Documents and Settings\Administrator\Desktop\MyWirele #
+#                    ssApp Demo Non Beacon (End Device)\MyWirelessApp Demo    #
+#                    Non Beacon (End Device)\PLM\Source\Keyboard\Keyboard.c   #
+#    Command line =  "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\PLM\Source\Keyboard\Keyboard.c"  #
+#                    -D gMacStandAlone_d=1 -D gSAPMessagesEnableLlc_d=0 -D    #
+#                    gZtcIncluded_d=0 -D gTargetMC1322xSRB=1 --preprocess     #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\Debug\List\" -lC "C:\Documents   #
+#                    and Settings\Administrator\Desktop\MyWirelessApp Demo    #
+#                    Non Beacon (End Device)\MyWirelessApp Demo Non Beacon    #
+#                    (End Device)\Debug\List\" -lB "C:\Documents and          #
+#                    Settings\Administrator\Desktop\MyWirelessApp Demo Non    #
+#                    Beacon (End Device)\MyWirelessApp Demo Non Beacon (End   #
+#                    Device)\Debug\List\" --diag_suppress                     #
+#                    Pe014,Pe001,Pe991,Pa039,Pe520 -o "C:\Documents and       #
+#                    Settings\Administrator\Desktop\MyWirelessApp Demo Non    #
+#                    Beacon (End Device)\MyWirelessApp Demo Non Beacon (End   #
+#                    Device)\Debug\Obj\" --no_cse --no_unroll --no_inline     #
+#                    --no_code_motion --no_tbaa --no_clustering               #
+#                    --no_scheduling --debug --endian=little                  #
+#                    --cpu=ARM7TDMI-S --fpu=None --dlib_config "C:\Program    #
+#                    Files\IAR Systems\Embedded Workbench 5.4                 #
+#                    Evaluation\arm\INC\DLib_Config_Normal.h" -I              #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\MacPhy\Interface\" -I            #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\Application\Init\" -I            #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\Application\Interface\" -I       #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\Application\Configure\" -I       #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\Application\UartUtil\" -I        #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\Application\Source\" -I          #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\SSM\TS\Interface\" -I            #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\SSM\TS\Source\" -I               #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\SSM\ZTC\Interface\" -I           #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\SSM\ZTC\Source\" -I              #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\PLM\Interface\" -I               #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\PLM\LibInterface\" -I            #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\PLM\Source\Display\" -I          #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\PLM\Source\Keyboard\" -I         #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\PLM\Source\NVM\" -I              #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\PLM\Source\TMR\" -I              #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\PLM\Source\UART\" -I             #
+#                    "C:\Program Files\IAR Systems\Embedded Workbench 5.4     #
+#                    Evaluation\arm\INC\" --interwork --cpu_mode thumb -On    #
+#    List file    =  C:\Documents and Settings\Administrator\Desktop\MyWirele #
+#                    ssApp Demo Non Beacon (End Device)\MyWirelessApp Demo    #
+#                    Non Beacon (End Device)\Debug\List\Keyboard.lst          #
+#    Object file  =  C:\Documents and Settings\Administrator\Desktop\MyWirele #
+#                    ssApp Demo Non Beacon (End Device)\MyWirelessApp Demo    #
+#                    Non Beacon (End Device)\Debug\Obj\Keyboard.o             #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+C:\Documents and Settings\Administrator\Desktop\MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\PLM\Source\Keyboard\Keyboard.c
+      1          /************************************************************************************
+      2          * Source file for keyboard driver.
+      3          *
+      4          * Copyright (c) 2007, Freescale, Inc. All rights reserved.
+      5          *
+      6          *
+      7          * No part of this document must be reproduced in any form - including copied,
+      8          * transcribed, printed or by any electronic means - without specific written
+      9          * permission from Freescale Semiconductor.
+     10          *
+     11          * This keyboard driver has the concept of short keys and long keys. A long key is
+     12          * press and hold on a key. 
+     13          *
+     14          * The keyboard handling logic can only understand one key at a time (pressing
+     15          * two keys at once will indicate only the first key).
+     16          *
+     17          ******************************************************************************/
+     18          #include "EmbeddedTypes.h"
+     19          #include "TMR_Interface.h"
+     20          #include "KeyboardHAL.h"
+     21          #include "Keyboard.h"
+     22          
+     23          #if (gSwitchModule_d == TRUE)
+     24          
+     25          /******************************************************************************
+     26          *******************************************************************************
+     27          * Private macros
+     28          *******************************************************************************
+     29          ******************************************************************************/
+     30          
+     31          /* Keyboard State */
+     32          enum {
+     33            mStateKeyIdle,        /* coming in for first time */
+     34            mStateKeyDetected,    /* got a key, waiting to see if it's a long key */
+     35            mStateKeyCheckRelease  /* got the long key, waiting for the release to go back to idle */
+     36          };
+     37          
+     38          /* The Switch task has a single event*/
+     39          #define mEventSW_c 0x01
+     40          #define mNoKey_c 0xFF
+     41          
+     42          
+     43          /******************************************************************************
+     44          *******************************************************************************
+     45          * Private prototypes
+     46          *******************************************************************************
+     47          ******************************************************************************/
+     48          static void KeyScan(uint8_t timerId);
+     49          static uint8_t KeySwitchPortGet(void);
+     50          
+     51          /******************************************************************************
+     52          *******************************************************************************
+     53          * Private type definitions
+     54          *******************************************************************************
+     55          ******************************************************************************/
+     56          /*None*/
+     57          
+     58          /******************************************************************************
+     59          *******************************************************************************
+     60          * Private memory declarations
+     61          *******************************************************************************
+     62          ******************************************************************************/
+
+   \                                 In section .bss, align 1
+     63          static uint8_t mKeyState = mStateKeyIdle;
+   \                     mKeyState:
+   \   00000000                      DS8 1
+
+   \                                 In section .bss, align 1
+     64          static uint8_t mSwitch_SCAN;
+   \                     mSwitch_SCAN:
+   \   00000000                      DS8 1
+
+   \                                 In section .bss, align 1
+     65          static uint8_t mLongKeyCount;
+   \                     mLongKeyCount:
+   \   00000000                      DS8 1
+     66          #if (gJoystickSupported_d == TRUE) 
+
+   \                                 In section .data, align 1
+     67           static bool_t  mPollTimerState = TRUE;
+   \                     mPollTimerState:
+   \   00000000   01                 DC8 1
+     68          #endif 
+     69          
+     70          #if gJoystickSupported_d
+
+   \                                 In section .bss, align 1
+     71          static uint8_t mLongCenterKeyCount;
+   \                     mLongCenterKeyCount:
+   \   00000000                      DS8 1
+     72          #endif /* gJoystickSupported_d */
+     73          
+
+   \                                 In section .bss, align 4
+     74          static KBDFunction_t mpfKeyFunction;
+   \                     mpfKeyFunction:
+   \   00000000                      DS8 4
+
+   \                                 In section .bss, align 1
+     75          static uint8_t mKeysStillPressed = 0;
+   \                     mKeysStillPressed:
+   \   00000000                      DS8 1
+
+   \                                 In section .data, align 1
+     76          tmrTimerID_t mKeyScanTimerID = gTmrInvalidTimerID_c;
+   \                     mKeyScanTimerID:
+   \   00000000   FF                 DC8 255
+     77          
+     78          /* No other code should ever post an event to the timer task. */
+
+   \                                 In section .bss, align 1
+     79          static tsTaskID_t mSwTaskID;
+   \                     mSwTaskID:
+   \   00000000                      DS8 1
+     80          
+     81          
+     82          /******************************************************************************
+     83          *******************************************************************************
+     84          * Public functions
+     85          *******************************************************************************/
+     86          
+     87          /******************************************************************************
+     88          * Initialize the keyboard handling. Works on on Freescale demo boards.
+     89          *******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     90          void KBD_Init
+     91          (
+     92          KBDFunction_t pfCallBackAdr /* IN: Pointer to callback function */
+     93          )
+     94          {
+   \                     KBD_Init:
+   \   00000000   10B5               PUSH     {R4,LR}
+   \   00000002   0400               MOVS     R4,R0
+     95            /* timer is used to determine short or long key press */
+     96            mKeyScanTimerID = TMR_AllocateTimer();
+   \   00000004   ........           BL       TMR_AllocateTimer
+   \   00000008   ....               LDR      R1,??DataTable4
+   \   0000000A   0870               STRB     R0,[R1, #+0]
+     97            
+     98            /* where to send the data */
+     99            mpfKeyFunction = pfCallBackAdr;
+   \   0000000C   ....               LDR      R0,??DataTable3
+   \   0000000E   0460               STR      R4,[R0, #+0]
+    100            /* Init all the Gpio pins for keyboard*/
+    101            KbGpioInit();
+   \   00000010   ........           BL       KbGpioInit
+    102            /*Init the CRM module for external interrupt capability*/
+    103            KbCrmInit();
+   \   00000014   ........           BL       KbCrmInit
+    104            /* Create a task for switches */
+    105            mSwTaskID = TS_CreateTask(gTsSwitchTaskPriority_c, KBD_Task);
+   \   00000018   ....               LDR      R1,??DataTable3_1
+   \   0000001A   1F20               MOVS     R0,#+31
+   \   0000001C   ........           BL       TS_CreateTask
+   \   00000020   ....               LDR      R1,??DataTable3_2
+   \   00000022   0870               STRB     R0,[R1, #+0]
+    106            
+    107            /*Start the timer to detect the center key for joystick*/
+    108          #if gJoystickSupported_d
+    109            TMR_StartIntervalTimer(mKeyScanTimerID, gKeyScanInterval_c, KeyScan);  
+   \   00000024   ....               LDR      R2,??DataTable4_1
+   \   00000026   3221               MOVS     R1,#+50
+   \   00000028   ....               LDR      R0,??DataTable4
+   \   0000002A   0078               LDRB     R0,[R0, #+0]
+   \   0000002C   ........           BL       TMR_StartIntervalTimer
+    110          #endif /* gJoystickSupported_d */
+    111            
+    112          }
+   \   00000030   10BC               POP      {R4}
+   \   00000032   08BC               POP      {R3}
+   \   00000034   1847               BX       R3               ;; return
+    113          
+    114          /******************************************************************************
+    115          * Keyboard ISR. 
+    116          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    117          void CrmKBDIsr(void)
+    118          {
+   \                     CrmKBDIsr:
+   \   00000000   80B5               PUSH     {R7,LR}
+    119            /*Disable all external interrupts and send the SW event to handle the key detection*/
+    120            KbDisableAllIrq();
+   \   00000002   ....               LDR      R0,??DataTable4_2  ;; 0x80003004
+   \   00000004   0068               LDR      R0,[R0, #+0]
+   \   00000006   ....               LDR      R1,??DataTable4_3  ;; 0xff0fffff
+   \   00000008   0140               ANDS     R1,R1,R0
+   \   0000000A   ....               LDR      R0,??DataTable4_2  ;; 0x80003004
+   \   0000000C   0160               STR      R1,[R0, #+0]
+    121            TS_SendEvent(mSwTaskID, mEventSW_c);
+   \   0000000E   0121               MOVS     R1,#+1
+   \   00000010   ....               LDR      R0,??DataTable3_2
+   \   00000012   0078               LDRB     R0,[R0, #+0]
+   \   00000014   ........           BL       TS_SendEvent
+    122            
+    123          }
+   \   00000018   09BC               POP      {R0,R3}
+   \   0000001A   1847               BX       R3               ;; return
+    124          
+    125          /******************************************************************************
+    126          * Keyboard Enable/Disable key scanning timer. 
+    127          * Used for Low Power mode
+    128          *
+    129          * Parameters:
+    130          *   bool_t enable: TRUE  - The Key Scan is enabled
+    131          *                  FALSE - The Key Scan is disabled
+    132          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    133          void KBD_EnableDisableKeyScan(bool_t enable)
+    134          {
+   \                     KBD_EnableDisableKeyScan:
+   \   00000000   10B5               PUSH     {R4,LR}
+   \   00000002   0400               MOVS     R4,R0
+    135          
+    136           if(mKeyScanTimerID != gTmrInvalidTimerID_c)
+   \   00000004   ....               LDR      R0,??DataTable4
+   \   00000006   0078               LDRB     R0,[R0, #+0]
+   \   00000008   FF28               CMP      R0,#+255
+   \   0000000A   13D0               BEQ      ??KBD_EnableDisableKeyScan_0
+    137           {  
+    138            if(enable == TRUE) 
+   \   0000000C   2406               LSLS     R4,R4,#+24       ;; ZeroExtS R4,R4,#+24,#+24
+   \   0000000E   240E               LSRS     R4,R4,#+24
+   \   00000010   012C               CMP      R4,#+1
+   \   00000012   04D1               BNE      ??KBD_EnableDisableKeyScan_1
+    139            {     
+    140              TMR_EnableTimer(mKeyScanTimerID);   
+   \   00000014   ....               LDR      R0,??DataTable4
+   \   00000016   0078               LDRB     R0,[R0, #+0]
+   \   00000018   ........           BL       TMR_EnableTimer
+   \   0000001C   0AE0               B        ??KBD_EnableDisableKeyScan_0
+    141            }
+    142            else
+    143            {
+    144              if(CRM_WU_CNTL.extWuIEn  == gSWITCH_MASK_c)
+   \                     ??KBD_EnableDisableKeyScan_1:
+   \   0000001E   ....               LDR      R0,??DataTable4_2  ;; 0x80003004
+   \   00000020   0068               LDR      R0,[R0, #+0]
+   \   00000022   000D               LSRS     R0,R0,#+20
+   \   00000024   0007               LSLS     R0,R0,#+28       ;; ZeroExtS R0,R0,#+28,#+28
+   \   00000026   000F               LSRS     R0,R0,#+28
+   \   00000028   0F28               CMP      R0,#+15
+   \   0000002A   03D1               BNE      ??KBD_EnableDisableKeyScan_0
+    145              {
+    146               /* disable scan timer here only if the KBD interrupts are all enabled.
+    147                * With this timer disabled, the low power mode can be enetered. 
+    148                * with the KBD interrupts disabled, the callback won't be called at the exist from low power
+    149                */
+    150               TMR_StopTimer(mKeyScanTimerID);
+   \   0000002C   ....               LDR      R0,??DataTable4
+   \   0000002E   0078               LDRB     R0,[R0, #+0]
+   \   00000030   ........           BL       TMR_StopTimer
+    151              }
+    152            }
+    153           }
+    154           #if (gJoystickSupported_d == TRUE) 
+    155            mPollTimerState = enable;
+   \                     ??KBD_EnableDisableKeyScan_0:
+   \   00000034   ....               LDR      R0,??DataTable4_4
+   \   00000036   0470               STRB     R4,[R0, #+0]
+    156           #endif 
+    157          }
+   \   00000038   10BC               POP      {R4}
+   \   0000003A   08BC               POP      {R3}
+   \   0000003C   1847               BX       R3               ;; return
+    158          
+    159          /******************************************************************************
+    160          *******************************************************************************
+    161          * Private functions
+    162          *******************************************************************************
+    163          ******************************************************************************/
+    164          
+    165          /******************************************************************************
+    166          * Keyboard task executed when an interrupt occur
+    167          ******************************************************************************/
+    168          
+
+   \                                 In section .text, align 2, keep-with-next
+    169          void KBD_Task(event_t events)
+    170          {
+   \                     KBD_Task:
+   \   00000000   10B5               PUSH     {R4,LR}
+   \   00000002   0400               MOVS     R4,R0
+    171            
+    172            mKeyState = mStateKeyIdle;
+   \   00000004   ....               LDR      R0,??DataTable4_5
+   \   00000006   0021               MOVS     R1,#+0
+   \   00000008   0170               STRB     R1,[R0, #+0]
+    173            /*Start the timer;*/
+    174            TMR_StartIntervalTimer(mKeyScanTimerID, gKeyScanInterval_c, KeyScan);  
+   \   0000000A   ....               LDR      R2,??DataTable4_1
+   \   0000000C   3221               MOVS     R1,#+50
+   \   0000000E   ....               LDR      R0,??DataTable4
+   \   00000010   0078               LDRB     R0,[R0, #+0]
+   \   00000012   ........           BL       TMR_StartIntervalTimer
+    175          }
+   \   00000016   10BC               POP      {R4}
+   \   00000018   08BC               POP      {R3}
+   \   0000001A   1847               BX       R3               ;; return
+    176          
+    177          
+    178          /******************************************************************************
+    179          * Called to get state of keyboard
+    180          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    181          static uint8_t KeySwitchPortGet
+    182          (
+    183          void
+    184          )
+    185          {
+   \                     KeySwitchPortGet:
+   \   00000000   38B5               PUSH     {R3-R5,LR}
+    186            return (uint8_t)SwitchGet;
+   \   00000002   ........           BL       KbReadPins
+   \   00000006   0500               MOVS     R5,R0
+   \   00000008   ........           BL       KbReadPins
+   \   0000000C   0400               MOVS     R4,R0
+   \   0000000E   ........           BL       KbReadPins
+   \   00000012   2900               MOVS     R1,R5
+   \   00000014   C907               LSLS     R1,R1,#+31       ;; ZeroExtS R1,R1,#+31,#+31
+   \   00000016   C90F               LSRS     R1,R1,#+31
+   \   00000018   0122               MOVS     R2,#+1
+   \   0000001A   4A40               EORS     R2,R2,R1
+   \   0000001C   0221               MOVS     R1,#+2
+   \   0000001E   2140               ANDS     R1,R1,R4
+   \   00000020   0223               MOVS     R3,#+2
+   \   00000022   4B40               EORS     R3,R3,R1
+   \   00000024   1343               ORRS     R3,R3,R2
+   \   00000026   0421               MOVS     R1,#+4
+   \   00000028   0140               ANDS     R1,R1,R0
+   \   0000002A   0424               MOVS     R4,#+4
+   \   0000002C   4C40               EORS     R4,R4,R1
+   \   0000002E   1C43               ORRS     R4,R4,R3
+   \   00000030   ........           BL       KbReadPins
+   \   00000034   0821               MOVS     R1,#+8
+   \   00000036   0140               ANDS     R1,R1,R0
+   \   00000038   0820               MOVS     R0,#+8
+   \   0000003A   4840               EORS     R0,R0,R1
+   \   0000003C   2043               ORRS     R0,R0,R4
+   \   0000003E   0006               LSLS     R0,R0,#+24       ;; ZeroExtS R0,R0,#+24,#+24
+   \   00000040   000E               LSRS     R0,R0,#+24
+   \   00000042   32BC               POP      {R1,R4,R5}
+   \   00000044   08BC               POP      {R3}
+   \   00000046   1847               BX       R3               ;; return
+    187          }
+    188          
+    189          /******************************************************************************
+    190          * Called when a key is pressed. Determines when the key is up (lifted).
+    191          ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    192          static void KeyScan
+    193          (
+    194          uint8_t timerId
+    195          )
+    196          {
+   \                     KeyScan:
+   \   00000000   F1B5               PUSH     {R0,R4-R7,LR}
+    197            uint8_t nowScan;
+    198            uint8_t keyBase = 0;
+   \   00000002   0020               MOVS     R0,#+0
+   \   00000004   0400               MOVS     R4,R0
+    199            uint8_t changedScan;
+    200            
+    201            /* Detect the center key from joystick */
+    202          #if gJoystickSupported_d
+    203            uint8_t centerKeyDetect;
+    204            static uint8_t markLongPress = FALSE;
+    205            /* Detect if a long or short press is done  */
+    206            centerKeyDetect = mNoKey_c; 
+   \   00000006   FF20               MOVS     R0,#+255
+   \   00000008   0600               MOVS     R6,R0
+    207            if( 0 == KbReadCenterKey() ) 
+   \   0000000A   ........           BL       KbReadCenterKey
+   \   0000000E   0028               CMP      R0,#+0
+   \   00000010   13D1               BNE      ??KeyScan_0
+    208            {
+    209              /*key is pressed*/
+    210              if(mLongCenterKeyCount > gLongKeyIterations_c) 
+   \   00000012   ....               LDR      R0,??DataTable4_6
+   \   00000014   0078               LDRB     R0,[R0, #+0]
+   \   00000016   1528               CMP      R0,#+21
+   \   00000018   09D3               BCC      ??KeyScan_1
+    211              {   
+    212                /*Is marked as being pressed?*/
+    213                if(!markLongPress)
+   \   0000001A   ....               LDR      R0,??DataTable4_7
+   \   0000001C   0078               LDRB     R0,[R0, #+0]
+   \   0000001E   0028               CMP      R0,#+0
+   \   00000020   1BD1               BNE      ??KeyScan_2
+    214                {
+    215                  /*long keypress*/
+    216                  #if gMapJoystickCenterKeyOnSW2
+    217                   centerKeyDetect = gKBD_EventLongSW2_c;
+    218                  #else
+    219                   centerKeyDetect = gJoystick_CenterKeyLong_c;
+   \   00000022   0A20               MOVS     R0,#+10
+   \   00000024   0600               MOVS     R6,R0
+    220                  #endif
+    221                  /*mark the key as being press to send only an event to call back*/
+    222                  markLongPress =TRUE;
+   \   00000026   ....               LDR      R0,??DataTable4_7
+   \   00000028   0121               MOVS     R1,#+1
+   \   0000002A   0170               STRB     R1,[R0, #+0]
+   \   0000002C   15E0               B        ??KeyScan_2
+    223                }
+    224              }
+    225              else
+    226              {
+    227                mLongCenterKeyCount++;
+   \                     ??KeyScan_1:
+   \   0000002E   ....               LDR      R0,??DataTable4_6
+   \   00000030   0078               LDRB     R0,[R0, #+0]
+   \   00000032   401C               ADDS     R0,R0,#+1
+   \   00000034   ....               LDR      R1,??DataTable4_6
+   \   00000036   0870               STRB     R0,[R1, #+0]
+   \   00000038   0FE0               B        ??KeyScan_2
+    228              }
+    229            }
+    230            /*the key is not pressed*/
+    231            else 
+    232            { 
+    233              /*It was a short key?*/ 
+    234              if ((0 < mLongCenterKeyCount)&& 
+    235                  (mLongCenterKeyCount < gLongKeyIterations_c))
+   \                     ??KeyScan_0:
+   \   0000003A   ....               LDR      R0,??DataTable4_6
+   \   0000003C   0078               LDRB     R0,[R0, #+0]
+   \   0000003E   0128               CMP      R0,#+1
+   \   00000040   05D3               BCC      ??KeyScan_3
+   \   00000042   ....               LDR      R0,??DataTable4_6
+   \   00000044   0078               LDRB     R0,[R0, #+0]
+   \   00000046   1428               CMP      R0,#+20
+   \   00000048   01D2               BCS      ??KeyScan_3
+    236              {
+    237                /* short keypress */
+    238                #if gMapJoystickCenterKeyOnSW2
+    239                 centerKeyDetect = gKBD_EventSW2_c;
+    240                #else
+    241                 centerKeyDetect = gJoystick_CenterKey_c;
+   \   0000004A   0920               MOVS     R0,#+9
+   \   0000004C   0600               MOVS     R6,R0
+    242                #endif
+    243              }
+    244              mLongCenterKeyCount = 0;  
+   \                     ??KeyScan_3:
+   \   0000004E   ....               LDR      R0,??DataTable4_6
+   \   00000050   0021               MOVS     R1,#+0
+   \   00000052   0170               STRB     R1,[R0, #+0]
+    245              /*mark as not being pressed*/  
+    246              markLongPress =FALSE;
+   \   00000054   ....               LDR      R0,??DataTable4_7
+   \   00000056   0021               MOVS     R1,#+0
+   \   00000058   0170               STRB     R1,[R0, #+0]
+    247            }
+    248            /*Send the detected event*/  
+    249            if( centerKeyDetect != mNoKey_c )
+   \                     ??KeyScan_2:
+   \   0000005A   3606               LSLS     R6,R6,#+24       ;; ZeroExtS R6,R6,#+24,#+24
+   \   0000005C   360E               LSRS     R6,R6,#+24
+   \   0000005E   FF2E               CMP      R6,#+255
+   \   00000060   06D0               BEQ      ??KeyScan_4
+    250            {
+    251              mpfKeyFunction(centerKeyDetect);
+   \   00000062   3000               MOVS     R0,R6
+   \   00000064   0006               LSLS     R0,R0,#+24       ;; ZeroExtS R0,R0,#+24,#+24
+   \   00000066   000E               LSRS     R0,R0,#+24
+   \   00000068   ....               LDR      R1,??DataTable4_8
+   \   0000006A   0968               LDR      R1,[R1, #+0]
+   \   0000006C   ........           BL       __iar_via_R1
+    252            }
+    253          #endif /* gJoystickSupported_d */
+    254            
+    255            /*Detect if a key is pressed or released;
+    256            Every key that is pressed is marked (when is relesed is unmarked)*/
+    257            switch(mKeyState) {
+   \                     ??KeyScan_4:
+   \   00000070   ....               LDR      R0,??DataTable4_5
+   \   00000072   0078               LDRB     R0,[R0, #+0]
+   \   00000074   0028               CMP      R0,#+0
+   \   00000076   04D0               BEQ      ??KeyScan_5
+   \   00000078   0228               CMP      R0,#+2
+   \   0000007A   00D1               BNE      .+4
+   \   0000007C   82E0               B        ??KeyScan_6
+   \   0000007E   16D3               BCC      ??KeyScan_7
+   \   00000080   A8E0               B        ??KeyScan_8
+    258              
+    259              /* got a fresh key */
+    260            case mStateKeyIdle:
+    261              /* Check if a fresh key is pressed and treat it (some keys can still be pressed) */
+    262              mSwitch_SCAN = KeySwitchPortGet() & (~mKeysStillPressed);
+   \                     ??KeyScan_5:
+   \   00000082   ........           BL       KeySwitchPortGet
+   \   00000086   ....               LDR      R1,??DataTable4_9
+   \   00000088   0978               LDRB     R1,[R1, #+0]
+   \   0000008A   8843               BICS     R0,R0,R1
+   \   0000008C   ....               LDR      R1,??DataTable4_10
+   \   0000008E   0870               STRB     R0,[R1, #+0]
+    263              if ( mSwitch_SCAN )
+   \   00000090   ....               LDR      R0,??DataTable4_10
+   \   00000092   0078               LDRB     R0,[R0, #+0]
+   \   00000094   0028               CMP      R0,#+0
+   \   00000096   06D0               BEQ      ??KeyScan_9
+    264              {   
+    265                mKeyState = mStateKeyDetected;
+   \   00000098   ....               LDR      R0,??DataTable4_5
+   \   0000009A   0121               MOVS     R1,#+1
+   \   0000009C   0170               STRB     R1,[R0, #+0]
+    266                mLongKeyCount = 0;  /* assume no key */
+   \   0000009E   ....               LDR      R0,??DataTable4_11
+   \   000000A0   0021               MOVS     R1,#+0
+   \   000000A2   0170               STRB     R1,[R0, #+0]
+   \   000000A4   96E0               B        ??KeyScan_10
+    267              }
+    268              else
+    269              {
+    270                /* No fresh key is pressed */
+    271                /*check if one or more keys was released and unmark those (update mKeysStillPressed) */
+    272                mKeyState = mStateKeyCheckRelease;
+   \                     ??KeyScan_9:
+   \   000000A6   ....               LDR      R0,??DataTable4_5
+   \   000000A8   0221               MOVS     R1,#+2
+   \   000000AA   0170               STRB     R1,[R0, #+0]
+   \   000000AC   92E0               B        ??KeyScan_10
+    273              }
+    274              break;
+    275              
+    276              /* A fresh key was detected. Has the key been released or is it still being pressed? */
+    277            case mStateKeyDetected:
+    278              nowScan = KeySwitchPortGet()& (~mKeysStillPressed);
+   \                     ??KeyScan_7:
+   \   000000AE   ........           BL       KeySwitchPortGet
+   \   000000B2   ....               LDR      R1,??DataTable4_9
+   \   000000B4   0978               LDRB     R1,[R1, #+0]
+   \   000000B6   8843               BICS     R0,R0,R1
+   \   000000B8   0500               MOVS     R5,R0
+    279              if( nowScan & mSwitch_SCAN ) {
+   \   000000BA   ....               LDR      R0,??DataTable4_10
+   \   000000BC   0078               LDRB     R0,[R0, #+0]
+   \   000000BE   0542               TST      R5,R0
+   \   000000C0   0BD0               BEQ      ??KeyScan_11
+    280                mLongKeyCount++;
+   \   000000C2   ....               LDR      R0,??DataTable4_11
+   \   000000C4   0078               LDRB     R0,[R0, #+0]
+   \   000000C6   401C               ADDS     R0,R0,#+1
+   \   000000C8   ....               LDR      R1,??DataTable4_11
+   \   000000CA   0870               STRB     R0,[R1, #+0]
+    281                
+    282                if(mLongKeyCount >= gLongKeyIterations_c) {
+   \   000000CC   ....               LDR      R0,??DataTable4_11
+   \   000000CE   0078               LDRB     R0,[R0, #+0]
+   \   000000D0   1428               CMP      R0,#+20
+   \   000000D2   04D3               BCC      ??KeyScan_12
+    283                  /*long keypress*/ 
+    284                  keyBase = gKBD_EventLongSW1_c;
+   \   000000D4   0520               MOVS     R0,#+5
+   \   000000D6   0400               MOVS     R4,R0
+   \   000000D8   01E0               B        ??KeyScan_12
+    285                }
+    286                
+    287              }
+    288              else {
+    289                /* short keypress */
+    290                keyBase = gKBD_EventSW1_c;
+   \                     ??KeyScan_11:
+   \   000000DA   0120               MOVS     R0,#+1
+   \   000000DC   0400               MOVS     R4,R0
+    291              }
+    292              
+    293              if(keyBase) {
+   \                     ??KeyScan_12:
+   \   000000DE   2406               LSLS     R4,R4,#+24       ;; ZeroExtS R4,R4,#+24,#+24
+   \   000000E0   240E               LSRS     R4,R4,#+24
+   \   000000E2   002C               CMP      R4,#+0
+   \   000000E4   76D0               BEQ      ??KeyScan_10
+    294                
+    295                /* does it match a key?; mark it as being pressed */
+    296                if(mSwitch_SCAN & gSWITCH1_MASK_c)
+   \   000000E6   ....               LDR      R0,??DataTable4_10
+   \   000000E8   0078               LDRB     R0,[R0, #+0]
+   \   000000EA   C007               LSLS     R0,R0,#+31
+   \   000000EC   0DD5               BPL      ??KeyScan_13
+    297                {
+    298                  mKeysStillPressed |= mSwitch_SCAN;
+   \   000000EE   ....               LDR      R0,??DataTable4_9
+   \   000000F0   0078               LDRB     R0,[R0, #+0]
+   \   000000F2   ....               LDR      R1,??DataTable4_10
+   \   000000F4   0978               LDRB     R1,[R1, #+0]
+   \   000000F6   0143               ORRS     R1,R1,R0
+   \   000000F8   ....               LDR      R0,??DataTable4_9
+   \   000000FA   0170               STRB     R1,[R0, #+0]
+    299                  mpfKeyFunction(keyBase + 0);
+   \   000000FC   2000               MOVS     R0,R4
+   \   000000FE   0006               LSLS     R0,R0,#+24       ;; ZeroExtS R0,R0,#+24,#+24
+   \   00000100   000E               LSRS     R0,R0,#+24
+   \   00000102   ....               LDR      R1,??DataTable4_8
+   \   00000104   0968               LDR      R1,[R1, #+0]
+   \   00000106   ........           BL       __iar_via_R1
+    300                }
+    301                if(mSwitch_SCAN & gSWITCH2_MASK_c)
+   \                     ??KeyScan_13:
+   \   0000010A   ....               LDR      R0,??DataTable4_10
+   \   0000010C   0078               LDRB     R0,[R0, #+0]
+   \   0000010E   8007               LSLS     R0,R0,#+30
+   \   00000110   0ED5               BPL      ??KeyScan_14
+    302                {
+    303                  mKeysStillPressed |= mSwitch_SCAN;
+   \   00000112   ....               LDR      R0,??DataTable4_9
+   \   00000114   0078               LDRB     R0,[R0, #+0]
+   \   00000116   ....               LDR      R1,??DataTable4_10
+   \   00000118   0978               LDRB     R1,[R1, #+0]
+   \   0000011A   0143               ORRS     R1,R1,R0
+   \   0000011C   ....               LDR      R0,??DataTable4_9
+   \   0000011E   0170               STRB     R1,[R0, #+0]
+    304                  mpfKeyFunction(keyBase + 1);
+   \   00000120   2000               MOVS     R0,R4
+   \   00000122   401C               ADDS     R0,R0,#+1
+   \   00000124   0006               LSLS     R0,R0,#+24       ;; ZeroExtS R0,R0,#+24,#+24
+   \   00000126   000E               LSRS     R0,R0,#+24
+   \   00000128   ....               LDR      R1,??DataTable4_8
+   \   0000012A   0968               LDR      R1,[R1, #+0]
+   \   0000012C   ........           BL       __iar_via_R1
+    305                }
+    306                if(mSwitch_SCAN & gSWITCH3_MASK_c)
+   \                     ??KeyScan_14:
+   \   00000130   ....               LDR      R0,??DataTable4_10
+   \   00000132   0078               LDRB     R0,[R0, #+0]
+   \   00000134   4007               LSLS     R0,R0,#+29
+   \   00000136   0ED5               BPL      ??KeyScan_15
+    307                {
+    308                  mKeysStillPressed |= mSwitch_SCAN;
+   \   00000138   ....               LDR      R0,??DataTable4_9
+   \   0000013A   0078               LDRB     R0,[R0, #+0]
+   \   0000013C   ....               LDR      R1,??DataTable4_10
+   \   0000013E   0978               LDRB     R1,[R1, #+0]
+   \   00000140   0143               ORRS     R1,R1,R0
+   \   00000142   ....               LDR      R0,??DataTable4_9
+   \   00000144   0170               STRB     R1,[R0, #+0]
+    309                  mpfKeyFunction(keyBase + 2);
+   \   00000146   2000               MOVS     R0,R4
+   \   00000148   801C               ADDS     R0,R0,#+2
+   \   0000014A   0006               LSLS     R0,R0,#+24       ;; ZeroExtS R0,R0,#+24,#+24
+   \   0000014C   000E               LSRS     R0,R0,#+24
+   \   0000014E   ....               LDR      R1,??DataTable4_8
+   \   00000150   0968               LDR      R1,[R1, #+0]
+   \   00000152   ........           BL       __iar_via_R1
+    310                }
+    311                if(mSwitch_SCAN & gSWITCH4_MASK_c)
+   \                     ??KeyScan_15:
+   \   00000156   ....               LDR      R0,??DataTable4_10
+   \   00000158   0078               LDRB     R0,[R0, #+0]
+   \   0000015A   0007               LSLS     R0,R0,#+28
+   \   0000015C   0ED5               BPL      ??KeyScan_16
+    312                {
+    313                  mKeysStillPressed |= mSwitch_SCAN;
+   \   0000015E   ....               LDR      R0,??DataTable4_9
+   \   00000160   0078               LDRB     R0,[R0, #+0]
+   \   00000162   ....               LDR      R1,??DataTable4_10
+   \   00000164   0978               LDRB     R1,[R1, #+0]
+   \   00000166   0143               ORRS     R1,R1,R0
+   \   00000168   ....               LDR      R0,??DataTable4_9
+   \   0000016A   0170               STRB     R1,[R0, #+0]
+    314                  mpfKeyFunction(keyBase + 3);
+   \   0000016C   2000               MOVS     R0,R4
+   \   0000016E   C01C               ADDS     R0,R0,#+3
+   \   00000170   0006               LSLS     R0,R0,#+24       ;; ZeroExtS R0,R0,#+24,#+24
+   \   00000172   000E               LSRS     R0,R0,#+24
+   \   00000174   ....               LDR      R1,??DataTable4_8
+   \   00000176   0968               LDR      R1,[R1, #+0]
+   \   00000178   ........           BL       __iar_via_R1
+    315                }
+    316                
+    317                /* go and check if it was released  */
+    318                mKeyState = mStateKeyCheckRelease;
+   \                     ??KeyScan_16:
+   \   0000017C   ....               LDR      R0,??DataTable4_5
+   \   0000017E   0221               MOVS     R1,#+2
+   \   00000180   0170               STRB     R1,[R0, #+0]
+   \   00000182   27E0               B        ??KeyScan_10
+    319              }
+    320              
+    321              break;
+    322              
+    323              /* check if one and more key was released;
+    324              only the keys marked as released are treated for next time*/
+    325            case mStateKeyCheckRelease:
+    326              /*No key are pressed, so stop the timer*/ 
+    327              if ( !mKeysStillPressed )
+   \                     ??KeyScan_6:
+   \   00000184   ....               LDR      R0,??DataTable4_9
+   \   00000186   0078               LDRB     R0,[R0, #+0]
+   \   00000188   0028               CMP      R0,#+0
+   \   0000018A   08D1               BNE      ??KeyScan_17
+    328              {      
+    329                /* Don't stop the timer for joystick to 
+    330                detect the center key that doesn't has external interrupt capability*/            
+    331          #if (gJoystickSupported_d == FALSE)
+    332                TMR_StopTimer(timerId);
+    333          #else
+    334                if(mPollTimerState == FALSE)
+   \   0000018C   ....               LDR      R0,??DataTable4_4
+   \   0000018E   0078               LDRB     R0,[R0, #+0]
+   \   00000190   0028               CMP      R0,#+0
+   \   00000192   17D1               BNE      ??KeyScan_18
+    335                {
+    336                 /* Stop timer if it was requested */ 
+    337                 TMR_StopTimer(timerId);
+   \   00000194   6846               MOV      R0,SP
+   \   00000196   0078               LDRB     R0,[R0, #+0]
+   \   00000198   ........           BL       TMR_StopTimer
+   \   0000019C   12E0               B        ??KeyScan_18
+    338                }      
+    339          #endif /* gJoystickSupported_d */
+    340                
+    341              }
+    342              
+    343              else
+    344              { 
+    345                
+    346                /* Check if one or more keys was released and notify this; only keys that are not 
+    347                still pressed are treated for next time*/
+    348                nowScan = KeySwitchPortGet();
+   \                     ??KeyScan_17:
+   \   0000019E   ........           BL       KeySwitchPortGet
+   \   000001A2   0500               MOVS     R5,R0
+    349                changedScan = (nowScan & mKeysStillPressed)^mKeysStillPressed;
+   \   000001A4   ....               LDR      R0,??DataTable4_9
+   \   000001A6   0078               LDRB     R0,[R0, #+0]
+   \   000001A8   2840               ANDS     R0,R0,R5
+   \   000001AA   ....               LDR      R1,??DataTable4_9
+   \   000001AC   0978               LDRB     R1,[R1, #+0]
+   \   000001AE   4140               EORS     R1,R1,R0
+   \   000001B0   0F00               MOVS     R7,R1
+    350                if(changedScan) { 
+   \   000001B2   3F06               LSLS     R7,R7,#+24       ;; ZeroExtS R7,R7,#+24,#+24
+   \   000001B4   3F0E               LSRS     R7,R7,#+24
+   \   000001B6   002F               CMP      R7,#+0
+   \   000001B8   04D0               BEQ      ??KeyScan_18
+    351                  mKeysStillPressed &=~changedScan;
+   \   000001BA   ....               LDR      R0,??DataTable4_9
+   \   000001BC   0078               LDRB     R0,[R0, #+0]
+   \   000001BE   B843               BICS     R0,R0,R7
+   \   000001C0   ....               LDR      R1,??DataTable4_9
+   \   000001C2   0870               STRB     R0,[R1, #+0]
+    352                }
+    353              }
+    354              /*Enable all interrupt but only the released (unmarked) keys will be treated*/
+    355              KbEnableAllIrq();
+   \                     ??KeyScan_18:
+   \   000001C4   ....               LDR      R0,??DataTable4_2  ;; 0x80003004
+   \   000001C6   0068               LDR      R0,[R0, #+0]
+   \   000001C8   F021               MOVS     R1,#+240
+   \   000001CA   0904               LSLS     R1,R1,#+16       ;; #+15728640
+   \   000001CC   0143               ORRS     R1,R1,R0
+   \   000001CE   ....               LDR      R0,??DataTable4_2  ;; 0x80003004
+   \   000001D0   0160               STR      R1,[R0, #+0]
+   \   000001D2   FFE7               B        ??KeyScan_10
+    356              
+    357              break;
+    358            default:
+    359              
+    360              break;
+    361            }
+    362          }
+   \                     ??KeyScan_8:
+   \                     ??KeyScan_10:
+   \   000001D4   F1BC               POP      {R0,R4-R7}
+   \   000001D6   08BC               POP      {R3}
+   \   000001D8   1847               BX       R3               ;; return
+
+   \                                 In section .bss, align 1
+   \                     ??markLongPress:
+   \   00000000                      DS8 1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3:
+   \   00000000   ........           DC32     mpfKeyFunction
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_1:
+   \   00000000   ........           DC32     KBD_Task
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_2:
+   \   00000000   ........           DC32     mSwTaskID
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4:
+   \   00000000   ........           DC32     mKeyScanTimerID
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_1:
+   \   00000000   ........           DC32     KeyScan
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_2:
+   \   00000000   04300080           DC32     0x80003004
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_3:
+   \   00000000   FFFF0FFF           DC32     0xff0fffff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_4:
+   \   00000000   ........           DC32     mPollTimerState
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_5:
+   \   00000000   ........           DC32     mKeyState
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_6:
+   \   00000000   ........           DC32     mLongCenterKeyCount
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_7:
+   \   00000000   ........           DC32     ??markLongPress
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_8:
+   \   00000000   ........           DC32     mpfKeyFunction
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_9:
+   \   00000000   ........           DC32     mKeysStillPressed
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_10:
+   \   00000000   ........           DC32     mSwitch_SCAN
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_11:
+   \   00000000   ........           DC32     mLongKeyCount
+    363          
+    364          /******************************************************************************
+    365          *******************************************************************************
+    366          * Private Debug stuff
+    367          *******************************************************************************
+    368          ******************************************************************************/
+    369          #else /* gSwitchModule_d  */
+    370          
+    371          /* Dummy functions*/
+    372          void KBD_Init
+    373          (
+    374          KBDFunction_t pfCallBackAdr /* IN: Pointer to callback function */
+    375          )
+    376          {
+    377            (void)pfCallBackAdr;
+    378          }
+    379          
+    380          /* The CRM callback to handle the external interrupt;
+    381          Also is called when the MCU is waked up from sleep mode*/
+    382          void CrmKBDIsr(void){}
+    383          
+    384          /* Main switch task. Process timer events in non-interrupt context. */
+    385          void KBD_Task(event_t events)
+    386          {
+    387            (void)events;
+    388          }
+    389          
+    390          #endif /* gSwitchModule_d */
+    391          
+
+   Maximum stack usage in bytes:
+
+     Function                 .cstack
+     --------                 -------
+     CrmKBDIsr                     8
+     KBD_EnableDisableKeyScan      8
+     KBD_Init                      8
+     KBD_Task                      8
+     KeyScan                      24
+     KeySwitchPortGet             16
+
+
+   Section sizes:
+
+     Function/Label           Bytes
+     --------------           -----
+     mKeyState                   1
+     mSwitch_SCAN                1
+     mLongKeyCount               1
+     mPollTimerState             1
+     mLongCenterKeyCount         1
+     mpfKeyFunction              4
+     mKeysStillPressed           1
+     mKeyScanTimerID             1
+     mSwTaskID                   1
+     KBD_Init                   54
+     CrmKBDIsr                  28
+     KBD_EnableDisableKeyScan   62
+     KBD_Task                   28
+     KeySwitchPortGet           72
+     KeyScan                   474
+     markLongPress               1
+     ??DataTable3                4
+     ??DataTable3_1              4
+     ??DataTable3_2              4
+     ??DataTable4                4
+     ??DataTable4_1              4
+     ??DataTable4_2              4
+     ??DataTable4_3              4
+     ??DataTable4_4              4
+     ??DataTable4_5              4
+     ??DataTable4_6              4
+     ??DataTable4_7              4
+     ??DataTable4_8              4
+     ??DataTable4_9              4
+     ??DataTable4_10             4
+     ??DataTable4_11             4
+      Others                     2
+
+ 
+  11 bytes in section .bss
+   2 bytes in section .data
+ 780 bytes in section .text
+ 
+ 778 bytes of CODE memory (+ 2 bytes shared)
+  13 bytes of DATA memory
+
+Errors: none
+Warnings: none
