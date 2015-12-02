@@ -8,7 +8,7 @@ Hi everybody! Remember a few simple rules for using the repository:
 
   git pull
 
-- If you want to upload some modify:
+- If you want to upload something:
 
   git add "file name"
 
