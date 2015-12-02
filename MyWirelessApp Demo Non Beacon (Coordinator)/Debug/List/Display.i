@@ -1,0 +1,4177 @@
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+typedef signed    char  int8_t;
+typedef unsigned  char  uint8_t;
+typedef signed    short int16_t;
+typedef unsigned  short uint16_t;
+typedef signed    long  int32_t;
+typedef unsigned  long  uint32_t;
+typedef signed    long long int64_t;
+typedef unsigned  long long uint64_t;
+
+typedef signed    char  intn8_t;
+typedef unsigned  char  uintn8_t;
+typedef signed    short intn16_t;
+typedef unsigned  short uintn16_t;
+typedef signed    long  intn32_t;
+typedef unsigned  long  uintn32_t;
+typedef signed    long long intn64_t;
+typedef unsigned  long long uintn64_t;
+
+ 
+typedef uint8_t   bool_t;
+typedef uintn8_t  booln_t;
+ 
+typedef uint8_t   index_t;
+
+
+
+
+
+typedef uint32_t zbClock32_t;
+typedef uint32_t zbClock24_t;
+typedef uint16_t zbClock16_t;
+
+
+void Set2Bytes(void *ptr, uint16_t val);
+bool_t IsEqual2BytesInt(void *ptr, uint16_t val);
+void Inc4Bytes(uint8_t* aVal1, uint32_t Val2);
+
+ 
+
+ 
+typedef uint8_t assertCode_t;
+
+void BeeAppAssert(assertCode_t code);
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+ 
+typedef struct 
+{
+  const uint16_t* pFontIndexTable;
+  const uint8_t*  pFontCharTable;
+  uint8_t         fontHeight;
+} font_t;
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+extern const uint16_t gLCDNormalIndex[];
+extern const uint8_t  gLCDNormalFont[];
+extern const uint16_t gLCDVerdanaIndex[];
+extern const uint8_t  gLCDVerdanaFont[];
+
+
+
+
+
+
+ 
+ 
+
+ 
+ 
+
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+typedef enum {
+    gLCD_HexFormat_c,
+    gLCD_DecFormat_c
+}LCD_t;
+
+typedef enum lcdFontType_tag
+{
+  gLCD_NormalFont_c = 0,
+  gLCD_VerdanaFont_c,
+  gLCD_MaxFont_c = 2
+}lcdFontType_t;
+
+typedef enum lcdError_tag
+{
+  gLCD_NoError_c = 0,
+  gLCD_QueueFull_c
+}lcdError_t;
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+extern const font_t aLCDFont[2];
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+extern void LCD_Init(void);
+
+
+
+
+
+
+
+
+
+
+
+ 
+extern void LCD_ClearDisplay(void);
+
+
+
+
+
+
+
+
+
+
+
+ 
+extern void LCD_WriteString(
+  uint8_t line,   
+  uint8_t *pstr	  
+);
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+extern void LCD_WriteStringValue
+  (
+  uint8_t *pstr, 		  
+  uint16_t value, 	  
+  uint8_t line, 		   
+  LCD_t numberFormat  
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+extern void LCD_WriteBytes
+(
+	uint8_t   *pstr,    
+	uint8_t   *value,   
+	uint8_t   line,     
+	uint8_t   length    
+);
+
+
+
+
+
+
+
+
+
+
+
+ 
+extern void LCD_WriteCommand(uint8_t command);
+
+
+
+
+
+
+
+
+
+
+
+ 
+extern void LCD_WriteData(uint8_t data);
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+extern bool_t LCD_SetFont(lcdFontType_t font);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+extern lcdError_t LCD_CheckError(void);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+extern void LCD_WriteBitmap(                      
+  uint8_t *pstr,	   
+  uint8_t len,       
+  uint8_t line,      
+  uint8_t *bitmap 	     
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+ 
+
+ 
+typedef uint16_t event_t;
+
+ 
+ 
+ 
+typedef index_t tsTaskID_t;
+
+ 
+ 
+ 
+typedef uint8_t tsTaskPriority_t;
+
+ 
+typedef void ( *pfTsTaskEventHandler_t )( event_t );
+
+ 
+ 
+ 
+ 
+ 
+extern void IdleTask( event_t );
+
+
+
+
+
+ 
+
+ 
+ 
+extern tsTaskID_t gIdleTaskID;
+ 
+extern tsTaskID_t gMacTaskID_c;
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+void TS_ClearEvent
+  (
+  tsTaskID_t taskID,                     
+  event_t events                         
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+tsTaskID_t TS_CreateTask
+  (
+  tsTaskPriority_t taskPriority,                 
+  pfTsTaskEventHandler_t pfTaskEventHandler      
+  );
+
+
+
+
+
+ 
+void TS_DestroyTask
+  (
+  tsTaskID_t taskId                      
+  );
+
+
+
+
+
+ 
+void TS_Init( void );
+
+
+
+
+
+
+ 
+bool_t TS_PendingEvents( void );
+
+
+
+
+
+ 
+void TS_Scheduler( void );
+
+
+
+
+
+ 
+void TS_SendEvent
+  (
+  tsTaskID_t taskID,                     
+  event_t events                         
+  );
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+typedef volatile union
+{
+  uint32_t word;
+  struct
+  {
+    uint32_t pwrSource:2;
+    uint32_t pads1P8VSel:1;
+    uint32_t spiF1P8VSel:1;
+    uint32_t jtagEn:1;
+    uint32_t xtal32Exists:1;
+    uint32_t:2;
+    uint32_t xtalClkDiv:6;
+  } bit;
+} crmSysCntlReg_t;
+
+
+typedef volatile union
+{
+  uint32_t word;
+  struct
+  {
+    uint32_t timerWuEn:1;
+    uint32_t rtcWuEn:1;
+    uint32_t hostWake:1;
+    uint32_t autoADC:1;
+    uint32_t extWuEn:4;
+    uint32_t extWuEdge:4;
+    uint32_t extWuPol:4;
+    uint32_t timerWuIEn:1;
+    uint32_t rtcWuIEn:1;
+    uint32_t:2;
+    uint32_t extWuIEn:4;
+    uint32_t:4;
+    uint32_t extOutPol:4;
+  } bit;
+} crmWuCntlReg_t;
+
+
+typedef volatile union
+{
+  uint32_t word;
+  struct
+  {
+    uint32_t hib:1;
+    uint32_t doze:1;
+    uint32_t :2;
+    uint32_t ramRet:2;
+    uint32_t mcuRet:1;
+    uint32_t digPadEn:1;
+  } bit;
+} crmSleepCntlReg_t;
+
+
+typedef volatile union
+{
+  uint32_t word;
+  struct
+  {
+    uint32_t bsEn :1;
+    uint32_t wait4Irq:1;
+    uint32_t bsManEn:1;
+    uint32_t armClkGEn:1;
+    uint32_t :4;
+    uint32_t armOffTime:6;              
+  } bit;
+} crmBSCntlReg_t;
+
+
+typedef volatile union
+{
+  uint32_t word;
+  struct
+  {
+    uint32_t copEn:1;
+    uint32_t copOut:1;
+    uint32_t copWP:1;
+    uint32_t :5;
+    uint32_t copTimeOut:7;
+    uint32_t :1;
+    uint32_t copCount:7;                 
+  } bit;
+} crmCopCntlReg_t;
+
+
+typedef volatile union
+{
+  uint32_t word;
+  struct
+  {
+    uint32_t sleepSync:1;
+    uint32_t hibWuEvt:1;
+    uint32_t dozeWuEvt:1;
+    uint32_t rtcWuEvt:1;
+    uint32_t extWuEvt:4;
+    uint32_t xtal32Rdy:1;
+    uint32_t calDone:1;
+    uint32_t copEvt:1;
+    uint32_t :5;
+    uint32_t xtal32Exists:1;
+    uint32_t vRegBuckRdy:1;
+    uint32_t vReg1P8VRdy:1;
+    uint32_t vReg1P5VRdy:1;
+  } bit;
+} crmStatusReg_t;
+
+
+typedef volatile union
+{
+  uint32_t word;
+  struct
+  {
+    uint32_t calTimeout :16;
+    uint32_t calEn:1;
+    uint32_t calIEn:1;
+  } bit;
+} crmCalCntlReg_t;
+
+
+typedef volatile union
+{
+  uint32_t word;
+  struct
+  {
+    uint32_t rOscEn :1;
+    uint32_t rOscBiasSel:3;
+    uint32_t rOscFTune:5;
+    uint32_t rOscCTune:4;
+  } bit;
+} crmRingOsclCntlReg_t;
+
+
+typedef volatile union
+{
+  uint32_t word;
+  struct
+  {
+    uint32_t wp:1;
+    uint32_t smallSig:1;
+    uint32_t startupDelayBypass:1;
+    uint32_t:1;
+    uint32_t startupDelaySel:3;
+    uint32_t:1;
+    uint32_t iBiasSel:4; 
+    uint32_t:4;
+    uint32_t fTune:5;
+    uint32_t cTune:5;
+    uint32_t:6;
+  } bit;
+} crmXtalCntlReg_t;
+
+
+typedef volatile union
+{
+  uint32_t word;
+  struct
+  {
+    uint32_t xtal32En:1;
+    uint32_t:3;
+    uint32_t xtal32Gain:2;
+  } bit;
+} crmXtal32CntlReg_t;
+
+
+typedef volatile union
+{
+  uint32_t word;
+  struct
+  {
+    uint32_t buckEn:1;
+    uint32_t buckSyncRecEn:1;
+    uint32_t buckBypassEn:1;
+    uint32_t vReg1P5VEn:2;
+    uint32_t vReg1P5VISel:2;
+    uint32_t vReg1P8VEn:1;
+    uint32_t buckClkDiv:4;
+  } bit;
+} crmVRegCntlReg_t;
+
+
+typedef volatile union
+{
+  uint32_t word;
+  struct
+  {
+    uint32_t bgapBattTrim:4;
+    uint32_t bgap1P8VTrim:4;
+    uint32_t vReg0P9VTrim:4;
+    uint32_t vReg0P9ITrim:4;
+    uint32_t vRegXtalTrim:4;
+    uint32_t vRegOscTrim:4;
+  } bit;
+} crmVRegTrimReg_t;
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+typedef union
+{
+ uint32_t word;
+ struct
+ {
+   uint32_t SSIEN        :1;
+   uint32_t TE           :1;
+   uint32_t RE           :1;
+   uint32_t NET          :1;
+   uint32_t              :1;
+   uint32_t I2S_MODE     :2;
+   uint32_t              :2;
+   uint32_t CLK_IST      :1;
+   uint32_t TFR_CLK_DIS  :1;
+   uint32_t RFR_CLK_DIS  :1;
+ }bit;
+}SsiCntlReg_t;
+
+typedef union
+{
+ uint32_t word;
+ struct
+ {
+  uint32_t TFE            :1;
+  uint32_t                :1;
+  uint32_t RFF            :1;
+  uint32_t                :1;
+  uint32_t RLS            :1;
+  uint32_t TLS            :1;
+  uint32_t RFS            :1;
+  uint32_t TFS            :1;
+  uint32_t TUE            :1;
+  uint32_t                :1;
+  uint32_t ROE            :1;
+  uint32_t                :1;
+  uint32_t TDE            :1;
+  uint32_t                :1;
+  uint32_t RDR            :1;
+  uint32_t                :8;
+  uint32_t TFRC           :1;
+  uint32_t RFRC           :1;
+ }bit;
+}SsiISReg_t;
+
+typedef union
+{
+ uint32_t word;
+ struct
+ {
+  uint32_t TFE_EN         :1;
+  uint32_t                :1;
+  uint32_t RFF_EN         :1;
+  uint32_t                :1;
+  uint32_t RLS_EN         :1;
+  uint32_t TLS_EN         :1;
+  uint32_t RFS_EN         :1;
+  uint32_t TFS_EN         :1;
+  uint32_t TUE_EN         :1;
+  uint32_t                :1;
+  uint32_t ROE_EN         :1;
+  uint32_t                :1;
+  uint32_t TDE_EN         :1;
+  uint32_t                :1;
+  uint32_t RDR_EN         :1;
+  uint32_t                :4;
+  uint32_t TIE            :1;
+  uint32_t                :1;
+  uint32_t RIE            :1;
+  uint32_t                :8;
+  uint32_t TFRC_EN        :1;
+  uint32_t RFRC_EN        :1;
+ }bit;
+}SsiIEReg_t;
+
+typedef union
+{
+ uint32_t word;
+ struct
+ {
+  uint32_t TEFS           :1;
+  uint32_t TFSL           :1;
+  uint32_t TFSI           :1;
+  uint32_t TSCKP          :1;
+  uint32_t TSHFD          :1;
+  uint32_t TXDIR          :1;
+  uint32_t TFDIR          :1;
+  uint32_t TFEN           :1;
+  uint32_t                :1;
+  uint32_t TXBIT0         :1; 
+ }bit;
+}SsiTCReg_t;
+
+typedef union
+{
+ uint32_t word;
+ struct
+ {
+  uint32_t REFS           :1;
+  uint32_t RFSL           :1;
+  uint32_t RFSI           :1;
+  uint32_t RSCKP          :1;
+  uint32_t RSHFD          :1;
+  uint32_t RXDIR          :1;
+  uint32_t RFDIR          :1;
+  uint32_t RFEN           :1;
+  uint32_t                :1;
+  uint32_t RXBIT0         :1; 
+  uint32_t RXEXT          :1;
+ }bit;
+}SsiRCReg_t;
+
+typedef union
+{
+ uint32_t word;
+ struct
+ {
+  uint32_t PM             :8;
+  uint32_t DC             :5;
+  uint32_t WL             :4;
+  uint32_t PSR            :1;
+  uint32_t DIV2           :1;
+ }bit;
+}SsiTCCReg_t;
+
+typedef union
+{
+ uint32_t word;
+ struct
+ {
+  uint32_t TFWM0          :4;
+  uint32_t RFWM0          :4;
+  uint32_t TFCNT0         :4;
+  uint32_t RFCNT0         :4;
+ }bit;
+}SsiFCSReg_t;
+
+typedef union
+{
+ uint32_t word;
+ struct
+ {
+  uint32_t SYNRST         :1;
+  uint32_t                :2;
+  uint32_t INIT           :1;
+  uint32_t CLKOFF         :1;  
+ }bit;
+}SsiOptReg_t;
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+typedef struct
+{  
+  volatile unsigned long DirLo;             
+  volatile unsigned long DirHi;             
+  volatile unsigned long DataLo;            
+  volatile unsigned long DataHi;            
+  volatile unsigned long PuEnLo;            
+  volatile unsigned long PuEnHi;            
+  volatile unsigned long FuncSel0;          
+  volatile unsigned long FuncSel1;          
+  volatile unsigned long FuncSel2;          
+  volatile unsigned long FuncSel3;          
+  volatile unsigned long InputDataSelLo;    
+  volatile unsigned long InputDataSelHi;    
+  volatile unsigned long PuSelLo;           
+  volatile unsigned long PuSelHi;           
+  volatile unsigned long HystEnLo;          
+  volatile unsigned long HystEnHi;          
+  volatile unsigned long PuKeepLo;          
+  volatile unsigned long PuKeepHi;          
+  
+  volatile unsigned long DataSetLo;         
+  volatile unsigned long DataSetHi;         
+  volatile unsigned long DataResetLo;       
+  volatile unsigned long DataResetHi;       
+  volatile unsigned long DirSetLo;          
+  volatile unsigned long DirSetHi;          
+  volatile unsigned long DirResetLo;        
+  volatile unsigned long DirResetHi;        
+} GpioRegs_t;
+
+
+
+typedef struct
+{
+  volatile unsigned long SysCntl;            
+  volatile unsigned long WuCntl;             
+  volatile unsigned long SleepCntl;          
+  volatile unsigned long BsCntl;             
+  volatile unsigned long CopCntl;            
+  volatile unsigned long CopService;         
+  volatile unsigned long Status;             
+  volatile unsigned long ModStatus;          
+  volatile unsigned long WuCount;            
+  volatile unsigned long WuTimeout;          
+  volatile unsigned long RtcCount;           
+  volatile unsigned long RtcTimeout;         
+  volatile unsigned long reserved;           
+  volatile unsigned long CalCntl;            
+  volatile unsigned long CalXtalCnt;         
+  volatile unsigned long RingOsclCntl;       
+  volatile unsigned long XtalCntl;           
+  volatile unsigned long Xtal32Cntl;         
+  volatile unsigned long VregCntl;           
+  volatile unsigned long VregTrim;           
+  volatile unsigned long SwRst;              
+} CrmRegs_t;
+
+
+typedef struct
+{
+  volatile unsigned long IntCntl;           
+  volatile unsigned long NiMask;            
+  volatile unsigned long IntEnNum;          
+  volatile unsigned long IntDisNum;         
+  volatile unsigned long IntEnable;         
+  volatile unsigned long IntType;           
+  volatile unsigned long reserved3;         
+  volatile unsigned long reserved2;         
+  volatile unsigned long reserved1;         
+  volatile unsigned long reserved0;         
+  volatile unsigned long NiVector;          
+  volatile unsigned long FiVector;          
+  volatile unsigned long IntSrc;            
+  volatile unsigned long IntFrc;            
+  volatile unsigned long NiPend;             
+  volatile unsigned long FiPend;             
+} ItcRegs_t, AitcRegs_t;
+
+
+typedef struct
+{
+  volatile unsigned long Ucon;              
+  volatile unsigned long Ustat;             
+  volatile unsigned long Udata;             
+  volatile unsigned long Urxcon;            
+  volatile unsigned long Utxcon;            
+  volatile unsigned long Ucts;              
+  volatile unsigned long Ubr;               
+} UartRegs_t;
+
+
+typedef struct
+{
+  volatile unsigned long TxData;            
+  volatile unsigned long RxData;            
+  volatile unsigned long ClkCtrl;           
+  volatile unsigned long Setup;             
+  volatile unsigned long Status;            
+} SpiRegs_t;
+
+
+typedef struct
+{
+  volatile unsigned short Comp1;            
+  volatile unsigned short Comp2;            
+  volatile unsigned short Capt;             
+  volatile unsigned short Load;             
+  volatile unsigned short Hold;             
+  volatile unsigned short Cntr;             
+  volatile unsigned short Ctrl;             
+  volatile unsigned short StatCtrl;         
+  volatile unsigned short CmpLd1;           
+  volatile unsigned short CmpLd2;           
+  volatile unsigned short CompStatCtrl;     
+  volatile unsigned short reserved0;        
+  volatile unsigned short reserved1;        
+  volatile unsigned short reserved2;        
+  volatile unsigned short reserved3;        
+  volatile unsigned short reserved4;        
+} TmrRegs_t;
+
+
+typedef struct
+{
+  volatile unsigned long Key0;             
+  volatile unsigned long Key1;             
+  volatile unsigned long Key2;             
+  volatile unsigned long Key3;             
+  volatile unsigned long Data0;            
+  volatile unsigned long Data1;            
+  volatile unsigned long Data2;            
+  volatile unsigned long Data3;            
+  volatile unsigned long Ctr0;             
+  volatile unsigned long Ctr1;             
+  volatile unsigned long Ctr2;             
+  volatile unsigned long Ctr3;             
+  volatile unsigned long Ctr_result0;      
+  volatile unsigned long Ctr_result1;      
+  volatile unsigned long Ctr_result2;      
+  volatile unsigned long Ctr_result3;      
+  volatile unsigned long Cbc_result0;      
+  volatile unsigned long Cbc_result1;      
+  volatile unsigned long Cbc_result2;      
+  volatile unsigned long Cbc_result3;      
+  volatile unsigned long Control0;         
+  volatile unsigned long Control1;         
+  volatile unsigned long Status;           
+  volatile unsigned long Undef0;           
+  volatile unsigned long Mac0;             
+  volatile unsigned long Mac1;             
+  volatile unsigned long Mac2;             
+  volatile unsigned long Mac3;             
+} AsmRegs_t;
+
+
+typedef struct
+{
+  volatile unsigned char Address;        
+  unsigned char dummy0;
+  unsigned char dummy1;
+  unsigned char dummy2;
+  volatile unsigned char FreqDiv;        
+  unsigned char dummy3;
+  unsigned char dummy4;
+  unsigned char dummy5;
+  volatile unsigned char Control;        
+  unsigned char dummy6;
+  unsigned char dummy7;
+  unsigned char dummy8;
+  volatile unsigned char Status;         
+  unsigned char dummy9;
+  unsigned char dummy10;
+  unsigned char dummy11;
+  volatile unsigned char Data;           
+  unsigned char dummy12;
+  unsigned char dummy13;
+  unsigned char dummy14;
+  volatile unsigned char DigitalFilter;  
+  unsigned char dummy15;
+  unsigned char dummy16;
+  unsigned char dummy17;
+  volatile unsigned char ClockEn;        
+  unsigned char dummy18;
+  unsigned char dummy19;
+  unsigned char dummy20;
+} I2cRegs_t;
+
+
+typedef struct
+{
+  volatile unsigned long  STX;        
+           unsigned long  dummy1;     
+  volatile unsigned long  SRX;        
+           unsigned long  dummy2;     
+  volatile unsigned long  SCR;        
+  volatile unsigned long  SISR;       
+  volatile unsigned long  SIER;       
+  volatile unsigned long  STCR;       
+  volatile unsigned long  SRCR;       
+  volatile unsigned long  STCCR;      
+           unsigned long  dummy3;     
+  volatile unsigned long  SFCSR;      
+  volatile unsigned long  STR;        
+  volatile unsigned long  SOR;        
+           unsigned long  dummy4;     
+           unsigned long  dummy5;     
+           unsigned long  dummy6;     
+           unsigned long  dummy7;     
+  volatile unsigned long  STMSK;      
+  volatile unsigned long  SRMSK;      
+}SsiRegs_t;
+
+
+typedef struct
+{
+  volatile unsigned short Comp0;            
+  volatile unsigned short Comp1;            
+  volatile unsigned short Comp2;            
+  volatile unsigned short Comp3;            
+  volatile unsigned short Comp4;            
+  volatile unsigned short Comp5;            
+  volatile unsigned short Comp6;            
+  volatile unsigned short Comp7;            
+  volatile unsigned short BattCompOver;     
+  volatile unsigned short BattCompUnder;    
+  volatile unsigned short Seq1;             
+  volatile unsigned short Seq2;             
+  volatile unsigned short Control;          
+  volatile unsigned short Triggers;         
+  volatile unsigned short Prescale;         
+  volatile unsigned short reserved1;        
+  volatile unsigned short FifoRead;         
+  volatile unsigned short FifoCtrl;         
+  volatile unsigned short FifoStatus;       
+  volatile unsigned short reserved2;        
+  volatile unsigned short reserved3;        
+  volatile unsigned short reserved4;        
+  volatile unsigned short reserved5;        
+  volatile unsigned short reserved6;        
+  volatile unsigned short Sr1High;          
+  volatile unsigned short Sr1Low;           
+  volatile unsigned short Sr2High;          
+  volatile unsigned short Sr2Low;           
+  volatile unsigned short OnTime;           
+  volatile unsigned short ConvTime;         
+  volatile unsigned short ClkDiv;           
+  volatile unsigned short reserved7;        
+  volatile unsigned short Override;         
+  volatile unsigned short Irq;              
+  volatile unsigned short Mode;             
+  volatile unsigned short Adc1Result;       
+  volatile unsigned short Adc2Result;       
+} AdcRegs_t;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+typedef enum
+{
+  gGpioPort0_c = 0,
+  gGpioPort1_c,
+  gGpioPortMax_c
+} GpioPort_t;
+
+typedef enum
+{
+  gGpioDirIn_c = 0,
+  gGpioDirOut_c,
+  gGpioDirMax_c
+} GpioDirection_t;
+
+typedef enum
+{
+  gGpioPinStateLow_c = 0,
+  gGpioPinStateHigh_c,
+  gGpioPinStateMax_c,
+} GpioPinState_t;
+
+typedef enum
+{
+  gGpioPinReadPad_c = 0,
+  gGpioPinReadReg_c,
+  gGpioPinReadMax_c
+} GpioPinReadSel_t;
+
+typedef enum
+{
+  gGpioPinPulldown_c = 0,
+  gGpioPinPullup_c,
+  gGpioPinPullupMax_c,
+} GpioPinPullupSel_t;
+
+typedef enum
+{
+  gGpioPin0_c,   gGpioPin1_c,  gGpioPin2_c,  gGpioPin3_c,  gGpioPin4_c,  gGpioPin5_c,  gGpioPin6_c, gGpioPin7_c,
+  gGpioPin8_c,   gGpioPin9_c, gGpioPin10_c, gGpioPin11_c, gGpioPin12_c, gGpioPin13_c, gGpioPin14_c, gGpioPin15_c,
+  gGpioPin16_c, gGpioPin17_c, gGpioPin18_c, gGpioPin19_c, gGpioPin20_c, gGpioPin21_c, gGpioPin22_c, gGpioPin23_c,
+  gGpioPin24_c, gGpioPin25_c, gGpioPin26_c, gGpioPin27_c, gGpioPin28_c, gGpioPin29_c, gGpioPin30_c, gGpioPin31_c,
+  gGpioPin32_c, gGpioPin33_c, gGpioPin34_c, gGpioPin35_c, gGpioPin36_c, gGpioPin37_c, gGpioPin38_c, gGpioPin39_c,
+  gGpioPin40_c, gGpioPin41_c, gGpioPin42_c, gGpioPin43_c, gGpioPin44_c, gGpioPin45_c, gGpioPin46_c, gGpioPin47_c,
+  gGpioPin48_c, gGpioPin49_c, gGpioPin50_c, gGpioPin51_c, gGpioPin52_c, gGpioPin53_c, gGpioPin54_c, gGpioPin55_c,
+  gGpioPin56_c, gGpioPin57_c, gGpioPin58_c, gGpioPin59_c, gGpioPin60_c, gGpioPin61_c, gGpioPin62_c, gGpioPin63_c,
+  gGpioPinMax_c
+} GpioPin_t;
+
+typedef enum {
+  gGpioNormalMode_c = 0,
+  gGpioAlternate1Mode_c,
+  gGpioAlternate2Mode_c,
+  gGpioAlternate3Mode_c,
+  gGpioFunctionModeMax_c
+} GpioFunctionMode_t;
+
+typedef enum {
+  gGpioErrNoError_c = 0,
+  gGpioErrInvalidParameter_c
+} GpioErr_t;
+
+typedef enum {
+  gGpioDirAttr_c = 0,
+  gGpioDataAttr_c ,
+  gGpioInputDataSelAttr_c,
+  gGpioPullUpEnAttr_c ,
+  gGpioPullUpSelAttr_c,
+  gGpioHystEnAttr_c,
+  gGpioPullUpKeepAttr_c,
+  gGpioMaxAttr_c
+}GpioPortAttr_t;
+
+typedef struct{
+  uint32_t portDir;
+  uint32_t portData;
+  uint32_t portInputDataSel;
+  uint32_t portPuEn;
+  uint32_t portPuSel;
+  uint32_t portHystEn;
+  uint32_t portPuKeepEn;
+}GpioPortInit_t;
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+ 
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+extern GpioErr_t Gpio_InitPort(GpioPort_t gpioPort, GpioPortInit_t* gpioPortInit);
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+extern GpioErr_t Gpio_WrPortSetting(GpioPort_t gpioPort, GpioPortAttr_t portAttr, uint32_t portAttrValue, uint32_t mask);
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+extern GpioErr_t Gpio_RdPortSetting(GpioPort_t gpioPort, GpioPortAttr_t portAttr, uint32_t* portAttrValue);
+
+ 
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+extern GpioErr_t Gpio_SetPortDir(GpioPort_t gpioPort, uint32_t portDir, uint32_t mask);
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+extern GpioErr_t Gpio_GetPortDir(GpioPort_t gpioPort, uint32_t* portDir);
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+extern GpioErr_t Gpio_SetPinDir(GpioPin_t gpioPin, GpioDirection_t gpioPinDir);
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+extern GpioErr_t Gpio_GetPinDir(GpioPin_t gpioPin, GpioDirection_t* gpioPinDir);
+
+ 
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+extern GpioErr_t Gpio_SetPortData(GpioPort_t gpioPort, uint32_t portData, uint32_t mask);
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+extern GpioErr_t Gpio_GetPortData(GpioPort_t gpioPort, uint32_t* portData);
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+extern GpioErr_t Gpio_SetPinData(GpioPin_t gpioPin, GpioPinState_t gpioPinState);
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+extern GpioErr_t Gpio_GetPinData(GpioPin_t gpioPin, GpioPinState_t* gpioPinState);
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+extern GpioErr_t Gpio_TogglePin(GpioPin_t gpioPin);
+
+ 
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+extern GpioErr_t Gpio_SetPinReadSource(GpioPin_t gpioPin, GpioPinReadSel_t gpioReadSource);
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+extern GpioErr_t Gpio_GetPinReadSource(GpioPin_t gpioPin, GpioPinReadSel_t* gpioReadSource);
+
+ 
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+extern GpioErr_t Gpio_EnPinPullup(GpioPin_t gpioPin, bool_t gpioEnPinPu);
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+extern GpioErr_t Gpio_IsPinPullupEn(GpioPin_t gpioPin, bool_t* gpioEnPinPu);
+
+ 
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+extern GpioErr_t Gpio_SelectPinPullup(GpioPin_t gpioPin, GpioPinPullupSel_t gpioPinPuSel);
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+extern GpioErr_t Gpio_GetPinPullupSel(GpioPin_t gpioPin, GpioPinPullupSel_t* gpioPinPuSel);
+
+ 
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+extern GpioErr_t Gpio_EnPinPuKeeper(GpioPin_t gpioPin, bool_t gpioEnPinPuKeep);
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+extern GpioErr_t Gpio_IsPinPuKeeperEn(GpioPin_t gpioPin, bool_t* gpioEnPinPuKeep);
+
+ 
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+extern GpioErr_t Gpio_EnPinHyst(GpioPin_t gpioPin, bool_t gpioEnPinHyst);
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+extern GpioErr_t Gpio_IsPinHystEn(GpioPin_t gpioPin, bool_t* gpioEnPinHyst);
+
+ 
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+extern GpioErr_t Gpio_SetPortFunction(GpioPort_t gpioPort, GpioFunctionMode_t gpioPortFunction, uint32_t mask);
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+extern GpioErr_t Gpio_SetPinFunction(GpioPin_t gpioPin, GpioFunctionMode_t gpioPinFunction);
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+extern GpioErr_t Gpio_GetPinFunction(GpioPin_t gpioPin, GpioFunctionMode_t* gpioPinFunction);
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+extern void DelayMs(uint32_t ms);
+extern void DelayUs(uint32_t us);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+void FLib_MemCpy
+  (
+  void *pDst,     
+  void *pSrc,     
+  uint16_t cBytes 
+  );
+
+
+
+
+
+
+
+
+
+
+
+ 
+ void FLib_MemSet
+  (
+  void *pData,    
+  uint8_t value,  
+  uint16_t cBytes 
+  );
+
+
+
+
+
+
+
+
+
+
+
+ 
+void FLib_MemCpyReverseOrder
+  (
+  void *pDst, 
+  void *pSrc, 
+  uint8_t n   
+  );
+
+
+
+
+
+
+
+
+
+
+
+ 
+bool_t FLib_MemCmp
+  (
+  void *pData1,   
+  void *pData2,   
+  uint16_t cBytes 
+  );
+
+
+
+
+
+
+
+
+
+
+ 
+void FLib_MemInPlaceCpy
+  (
+  void *pDst, 
+  void *pSrc, 
+  uint8_t n   
+  );
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+ 
+typedef uint32_t tmrTimeInMilliseconds_t;
+
+ 
+typedef uint16_t tmrTimeInMinutes_t;       
+
+ 
+typedef uint16_t tmrTimeInSeconds_t;
+ 
+typedef uint8_t tmrTimerID_t;
+
+ 
+
+ 
+typedef uint8_t tmrTimerType_t;
+
+ 
+ 
+ 
+ 
+
+ 
+typedef void (*pfTmrCallBack_t)(tmrTimerID_t);
+
+
+
+
+
+ 
+
+ 
+ 
+ 
+extern tmrTimerID_t TMR_AllocateTimer(void);
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+extern bool_t TMR_AreAllTimersOff(void);
+
+ 
+extern void TMR_FreeTimer(tmrTimerID_t timerID);
+
+ 
+extern void TMR_Init(void);
+
+ 
+extern bool_t TMR_IsTimerActive(tmrTimerID_t timerID);
+
+ 
+ 
+ 
+extern void TMR_StartTimer
+  (
+  tmrTimerID_t timerId,
+  tmrTimerType_t timerType,
+  tmrTimeInMilliseconds_t timeInMilliseconds,
+  void (*pfTmrCallBack)(tmrTimerID_t)
+  );
+
+ 
+ 
+ 
+
+
+
+
+
+ 
+ 
+extern void TMR_StartLowPowerTimer
+  (
+  tmrTimerID_t timerId,
+  tmrTimerType_t timerType,
+  uint32_t timeIn,
+  void (*pfTmrCallBack)(tmrTimerID_t)
+  );
+
+ 
+extern void TMR_StartIntervalTimer
+  (
+  tmrTimerID_t timerId,
+  tmrTimeInMilliseconds_t timeInMilliseconds,
+  void (*pfTmrCallBack)(tmrTimerID_t)
+  );
+
+ 
+extern void TMR_StartSingleShotTimer
+  (
+  tmrTimerID_t timerId,
+  tmrTimeInMilliseconds_t timeInMilliseconds,
+  void (*pfTmrCallBack)(tmrTimerID_t)
+  );
+
+ 
+ 
+extern void TMR_StartMinuteTimer
+  (
+  tmrTimerID_t timerId, 
+  tmrTimeInMinutes_t timeInMinutes, 
+  void (*pfTmrCallBack)(tmrTimerID_t)
+  );
+  
+ 
+ 
+extern void TMR_StartSecondTimer
+  (
+  tmrTimerID_t timerId, 
+  tmrTimeInSeconds_t timeInSeconds, 
+  void (*pfTmrCallBack)(tmrTimerID_t)
+  ); 
+ 
+ 
+ 
+ 
+ 
+extern void TMR_StopTimer(tmrTimerID_t timerID);
+
+ 
+  
+ 
+extern void TMR_SyncLpmTimers(uint32_t sleepDurationTmrTicks);
+
+
+
+
+
+ 
+uint16_t TMR_NotCountedTicksBeforeSleep(void);
+
+ 
+
+ 
+
+ 
+extern void TMR_Task(event_t events);
+
+
+
+ 
+extern void TMR_NotifyClkChanged(uint32_t clkKhz);
+
+
+ 
+ 
+ 
+extern void TMR_EnableTimer(tmrTimerID_t tmrID);
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+ 
+ 
+
+ 
+extern tsTaskID_t gMacTaskID_c; extern void TS_PlaceHolderTaskInit( void ); extern void Mlme_Main( event_t );
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+
+
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+ 
+ 
+
+typedef struct displayParams_tag{
+  uint8_t currentXCoord;
+  uint8_t currentYCoord;
+  uint8_t currentLine;
+  
+
+
+ 
+  uint8_t writtenLines;
+  
+
+
+ 
+  uint8_t linesToWrite;  
+  uint8_t linesWidthWritten[8];
+  uint8_t currentFontType;
+  uint8_t currentStringIndex;
+  uint8_t currentString[8][16];
+  uint8_t currentBitmap[8][16];  
+}displayParams_t;
+
+typedef struct lineParams_tag{
+  uint8_t xCoord;
+  uint8_t yCoord;
+  uint8_t page;  
+}lineParams_t;
+
+typedef struct pageParams_tag{
+  uint8_t xStartCoord;
+  uint8_t xEndCoord;
+  uint8_t yCoord;
+  uint8_t line;
+}pageParams_t;
+
+typedef enum operation_tag{
+  gLCD_WriteOp_c = 0,
+  gLCD_ClearDisplayOp_c,
+  gLCD_ClearLineOp_c,
+  gLCD_WriteBitmapOp_c,  
+  gLCD_MaxOp_c = 0xFF
+}operation_t;
+
+typedef struct opLine_tag{
+  operation_t opQueue;
+  uint8_t lineQueue;  
+}opLine_t;
+
+typedef struct queue_tag{
+  uint8_t head;
+  uint8_t tail;
+  opLine_t opLine[45];
+}queue_t;
+
+ 
+
+
+
+
+
+ 
+
+void LCD_Task(event_t events);
+void LCD_TaskInit(void);
+void LCD_SetBacklight(uint8_t brightnessValue);
+void LCD_WritePixel(uint8_t xStartCoord, uint8_t yStartCoord, bool_t mode);
+void LCD_WriteCharacter(uint8_t symbol, uint8_t xCoord, uint8_t yCoord);
+void LCD_WriteSymbol(uint8_t index, uint8_t xCoord, uint8_t yCoord, uint8_t* bitmap);
+void LCD_ClearPage(uint8_t startXCoord, uint8_t endXCoord, uint8_t yCoord);
+uint8_t LCD_ClearLine(uint8_t line);
+
+static void ProcessOperation(opLine_t operationAndLine); 
+static void SendData(uint8_t data);
+static void SetHiZ(void);
+static void SetOutput(void);
+static void InitDisplayWrite(uint8_t xStartCoord, uint8_t yStartCoord);
+static uint8_t ReadData(void);
+static uint8_t GetData(void);
+static uint8_t GetStrlen(const uint8_t *pString);
+
+static void     InitQueue(void);
+static bool_t   AddToQueue(opLine_t operationLine);
+static opLine_t RemoveFromQueue(void);
+static bool_t   IsQueueEmpty(void);
+static bool_t   IsQueueFull(void);
+
+
+
+
+
+ 
+
+static displayParams_t mDisplayParams = {
+   
+  0x00,
+   
+  0x00,
+   
+  0x00,
+   
+  0xFF,
+   
+  0x00,
+   
+  0x00,
+   
+  0x00,
+   
+  0x00,  
+   
+  0x00,
+   
+  0x00
+};
+
+static lineParams_t mLineParams[8] = {
+  {0, 0, 0},
+  {0, 8, 1},
+  {0, 16, 2},
+  {0, 24, 3},
+  {0, 32, 4},
+  {0, 40, 5},
+  {0, 48, 6},
+  {0, 56, 7},
+};  
+
+static bool_t mOperationCompleted = 1;
+
+static queue_t mQueue;
+
+ 
+static bool_t mIsLcdInitialized = 0;
+
+ 
+static volatile lcdError_t mErrorIndicator = gLCD_NoError_c;
+
+static uint8_t* mReceivedBitmap = (( void * )( 0 ));
+static uint8_t  mBitmapSpace[] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
+
+
+
+
+
+ 
+
+tsTaskID_t gLCDTaskID;
+const uint8_t gaHexValue[] = "0123456789ABCDEF";
+
+const font_t aLCDFont[2] = 
+{
+    
+  {gLCDNormalIndex,  gLCDNormalFont,  1},
+    
+  {gLCDVerdanaIndex, gLCDVerdanaFont, 2}   
+};
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+void LCD_Init(void)
+{
+
+    Gpio_SetPinFunction(gGpioPin9_c, gGpioNormalMode_c);
+    Gpio_SetPinFunction(gGpioPin20_c, gGpioNormalMode_c);
+    Gpio_SetPinFunction(gGpioPin8_c, gGpioNormalMode_c);
+    Gpio_SetPinFunction(gGpioPin21_c, gGpioNormalMode_c);
+    Gpio_SetPinFunction(gGpioPin45_c, gGpioNormalMode_c);
+    Gpio_SetPinFunction(gGpioPin19_c, gGpioNormalMode_c);
+
+    Gpio_SetPinData(gGpioPin9_c, gGpioPinStateLow_c);
+    Gpio_SetPinData(gGpioPin20_c, gGpioPinStateLow_c);
+    Gpio_SetPinData(gGpioPin8_c, gGpioPinStateLow_c);
+    Gpio_SetPinData(gGpioPin21_c, gGpioPinStateHigh_c);
+    Gpio_SetPinData(gGpioPin45_c, gGpioPinStateHigh_c);
+    Gpio_SetPinData(gGpioPin19_c, gGpioPinStateHigh_c);
+
+     
+    (void)Gpio_SetPinReadSource(gGpioPin20_c,     gGpioPinReadReg_c);
+    (void)Gpio_SetPinReadSource(gGpioPin21_c,     gGpioPinReadReg_c);
+    (void)Gpio_SetPinReadSource(gGpioPin8_c,     gGpioPinReadReg_c);
+    (void)Gpio_SetPinReadSource(gGpioPin9_c,     gGpioPinReadReg_c);
+    (void)Gpio_SetPinReadSource(gGpioPin10_c, gGpioPinReadReg_c);
+    (void)Gpio_SetPinReadSource(gGpioPin45_c,   gGpioPinReadReg_c);
+    (void)Gpio_SetPinReadSource(gGpioPin19_c,   gGpioPinReadReg_c);
+
+    (void)Gpio_SetPinDir(gGpioPin20_c,     gGpioDirOut_c);
+    (void)Gpio_SetPinDir(gGpioPin21_c,     gGpioDirOut_c);
+    (void)Gpio_SetPinDir(gGpioPin8_c,     gGpioDirOut_c);
+    (void)Gpio_SetPinDir(gGpioPin9_c,     gGpioDirOut_c);
+    (void)Gpio_SetPinDir(gGpioPin10_c, gGpioDirOut_c);
+    (void)Gpio_SetPinDir(gGpioPin45_c,   gGpioDirOut_c);
+    (void)Gpio_SetPinDir(gGpioPin19_c,   gGpioDirOut_c);
+
+     
+    Gpio_SetPortFunction(gGpioPort0_c, gGpioNormalMode_c, 0x000000F0);
+    Gpio_SetPortFunction(gGpioPort1_c, gGpioNormalMode_c, 0x0000000F);
+
+    Gpio_WrPortSetting(gGpioPort0_c, gGpioPullUpEnAttr_c, 0x000000F0, 0x000000F0);
+    Gpio_WrPortSetting(gGpioPort1_c, gGpioPullUpEnAttr_c, 0x0000000F, 0x0000000F);
+
+    Gpio_WrPortSetting(gGpioPort0_c, gGpioPullUpSelAttr_c, 0x000000F0, 0x000000F0);
+    Gpio_WrPortSetting(gGpioPort1_c, gGpioPullUpSelAttr_c, 0x0000000F, 0x0000000F);
+
+    Gpio_WrPortSetting(gGpioPort0_c, gGpioPullUpKeepAttr_c, 0x000000F0, 0x000000F0);
+    Gpio_WrPortSetting(gGpioPort1_c, gGpioPullUpKeepAttr_c, 0x0000000F, 0x0000000F);
+    
+    Gpio_WrPortSetting(gGpioPort0_c, gGpioInputDataSelAttr_c, ~0x000000F0, 0x000000F0);
+    Gpio_WrPortSetting(gGpioPort1_c, gGpioInputDataSelAttr_c, ~0x0000000F, 0x0000000F);
+    
+    Gpio_SetPortDir(gGpioPort0_c, ~0x000000F0, 0x000000F0);
+    Gpio_SetPortDir(gGpioPort1_c, ~0x0000000F, 0x0000000F);
+
+
+  Gpio_SetPinData(gGpioPin45_c, gGpioPinStateLow_c);
+  Gpio_SetPinData(gGpioPin19_c, gGpioPinStateLow_c);
+  DelayUs(10);
+  Gpio_SetPinData(gGpioPin45_c, gGpioPinStateHigh_c);
+  Gpio_SetPinData(gGpioPin19_c, gGpioPinStateHigh_c);
+  DelayMs(1);
+
+     
+     
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+     
+    LCD_WriteCommand(0xE2);
+    DelayUs(10);
+
+     
+    LCD_WriteCommand(0xA2);
+
+     
+     
+    LCD_WriteCommand(0xA1);
+
+     
+    LCD_WriteCommand(0xC0);
+
+     
+    LCD_WriteCommand( 0x20 | (4 & 0x07) );
+
+     
+     
+    LCD_WriteCommand(0x81);
+    
+    LCD_WriteCommand(0x30);
+
+
+     
+    LCD_WriteCommand(0x2F);
+    DelayUs(10);
+     
+    LCD_WriteCommand(0xAF);
+    DelayUs(10);
+    
+     
+    LCD_TaskInit();
+    
+     
+    LCD_SetBacklight(1);
+    
+     
+    (void)LCD_SetFont(gLCD_NormalFont_c);
+    InitQueue();  
+    mIsLcdInitialized = 0;
+     
+    LCD_ClearDisplay();
+}
+
+
+
+
+
+
+
+
+
+
+
+ 
+void LCD_ClearDisplay(void)
+{
+  opLine_t operationLine;
+  
+   
+  mErrorIndicator = gLCD_NoError_c;
+  
+  operationLine.opQueue   = gLCD_ClearDisplayOp_c;
+  operationLine.lineQueue = 8;
+  
+  if(1 == AddToQueue(operationLine))
+  {
+     
+    TS_SendEvent(gLCDTaskID, (1 << 0));       
+  }
+  else
+  {
+     
+    mErrorIndicator = gLCD_QueueFull_c;
+  }  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+void LCD_WriteString(uint8_t line, uint8_t *pstr)
+{
+  uint8_t stringWidth = 0;
+  uint8_t len, i;
+  uint8_t ctr;
+  uint8_t auxLine;
+  const uint8_t error[] = "Wrong line";
+  opLine_t operationLine;
+  
+   
+  mErrorIndicator = gLCD_NoError_c;
+  
+     
+  if(pstr == (( void * )( 0 )))
+  {
+    return;
+  }  
+  
+  auxLine = line;
+  
+   
+  if(aLCDFont[mDisplayParams.currentFontType].fontHeight > 1)
+  {
+    switch(auxLine)
+    {
+      case 0:
+      case 1:
+      case 2:
+      case 3:        
+        auxLine *= aLCDFont[mDisplayParams.currentFontType].fontHeight;
+        break;      
+      default:
+        auxLine = aLCDFont[mDisplayParams.currentFontType].fontHeight;
+        pstr = (uint8_t*)error; 
+        break;      
+    }        
+  }
+  else
+  {
+    if(line >= 8)   
+    {
+      auxLine = 1;
+      pstr = (uint8_t*)error; 
+    }
+  }
+  
+  len = GetStrlen(pstr);
+
+  FLib_MemCpy(&mDisplayParams.currentString[auxLine], pstr, len);
+  
+   
+  if(len < 16)
+  {
+    for(ctr = len; ctr < 16;ctr++)
+    {
+      mDisplayParams.currentString[auxLine][ctr]=' ';      
+    }
+  }
+
+   
+  for(i=0; i<16; i++)
+  {
+    stringWidth += (aLCDFont[mDisplayParams.currentFontType].pFontIndexTable[mDisplayParams.currentString[auxLine][i] - 32 + 1] -                      aLCDFont[mDisplayParams.currentFontType].pFontIndexTable[mDisplayParams.currentString[auxLine][i] - 32]);    
+  }
+  
+
+ 
+  if(stringWidth >= mDisplayParams.linesWidthWritten[auxLine])
+  {
+     
+    for(i = 0; i < aLCDFont[mDisplayParams.currentFontType].fontHeight; i++)
+    {
+      mDisplayParams.linesToWrite |= (1<<(auxLine+i));     
+    }  
+  }
+  else
+  {
+     
+      
+    for(i = 0; i < aLCDFont[mDisplayParams.currentFontType].fontHeight; i++)
+    {
+      operationLine.opQueue   = gLCD_ClearLineOp_c;
+      operationLine.lineQueue = auxLine + i;  
+      if(0 == AddToQueue(operationLine))
+      {
+         
+        mErrorIndicator = gLCD_QueueFull_c;
+        return;
+      }
+    }  
+  }
+
+   
+    
+  operationLine.opQueue   = gLCD_WriteOp_c;
+  operationLine.lineQueue = auxLine;  
+
+  if(1 == AddToQueue(operationLine))
+  {
+    TS_SendEvent(gLCDTaskID, (1 << 0));  
+  }  
+  else
+  {
+     
+    mErrorIndicator = gLCD_QueueFull_c;
+    return;        
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+void LCD_WriteBitmap(                      
+  uint8_t *pstr,	   
+  uint8_t len,       
+  uint8_t line,      
+  uint8_t *bitmap 	    
+)
+{
+  uint8_t symbolWidth = 0;
+  uint8_t ctr;
+  opLine_t operationLine;
+  const uint8_t error[] = "Wrong line";
+  
+     
+  if((pstr == (( void * )( 0 ))) || (bitmap == (( void * )( 0 ))))
+  {
+    return;
+  }
+  
+   
+  if(line >= 8)
+  {
+    LCD_WriteString(1, (uint8_t *)&error);
+    return;
+  }
+  
+   
+   
+  if(len > 16)
+  {
+    len = 16;
+  }
+ 
+   
+  mErrorIndicator = gLCD_NoError_c;
+   
+  mReceivedBitmap = bitmap;
+
+  FLib_MemCpy(&mDisplayParams.currentBitmap[line], pstr, len);
+  
+   
+  if(len < 16)
+  {
+    for(ctr = len; ctr < 16;ctr++)
+    {
+      mDisplayParams.currentBitmap[line][ctr] = 0xFF;      
+    }
+  }
+
+   
+  symbolWidth = 16 * 8;
+
+  
+
+ 
+  if(symbolWidth >= mDisplayParams.linesWidthWritten[line])
+  {
+     
+    mDisplayParams.linesToWrite |= (1<<line);         
+  }
+  else
+  {
+     
+      
+    operationLine.opQueue   = gLCD_ClearLineOp_c;
+    operationLine.lineQueue = line;  
+    if(0 == AddToQueue(operationLine))
+    {
+       
+      mErrorIndicator = gLCD_QueueFull_c;
+      return;
+    }
+  }
+
+   
+    
+  operationLine.opQueue   = gLCD_WriteBitmapOp_c;
+  operationLine.lineQueue = line;  
+
+  if(1 == AddToQueue(operationLine))
+  {
+    TS_SendEvent(gLCDTaskID, (1 << 0));  
+  }  
+  else
+  {
+     
+    mErrorIndicator = gLCD_QueueFull_c;
+    return;        
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+void LCD_WriteStringValue
+  (
+  uint8_t *pstr,      
+  uint16_t value,     
+  uint8_t line, 	    
+  LCD_t numberFormat  
+  )
+{
+
+  int16_t divDec=10000, divHex=16;
+  uint8_t loop=5, i=0,counter=0, aH[6], aHex[6];
+  uint8_t aDec[6], aString[17];
+  
+   
+  mErrorIndicator = gLCD_NoError_c;
+
+ if(numberFormat == gLCD_DecFormat_c) {
+    if(value < 100) {
+      loop = 2;
+      divDec = 10;
+    }
+    else if(value >= 100 && value <1000) {
+      loop = 3;
+      divDec = 100;
+    }
+    else if(value >= 1000 && value <9999) {
+      loop = 4;
+      divDec = 1000;
+    }
+
+    for(i=0; i<loop; i++) {
+      if((value/divDec)!= 0) {
+        aDec[counter++] = (value/divDec) + 0x30;
+        value = value % divDec;
+      }
+      else {
+        aDec[counter++] = 0x30;
+      }
+      divDec = divDec/10;
+    }
+    aDec[counter]='\0';
+    counter=0;
+    while (*pstr != '\0' && counter <16 ) {
+      aString[counter++]=*pstr;
+      pstr++;
+    }
+    i=0;
+    while (aDec[i] != '\0' && counter <16 ) {
+      aString[counter++]=aDec[i++];
+    }
+    aString[counter]='\0';
+    LCD_WriteString( line, aString );
+  }
+  else if(numberFormat == gLCD_HexFormat_c) {
+    do{
+      aH[i]=gaHexValue[value % divHex];
+      value=value / divHex;
+      i++;
+    }
+    while(value > 15);
+    aH[i]=gaHexValue[value];
+    counter=0;
+    while(i > 0){
+      aHex[counter++]=aH[i--];
+    }
+
+    aHex[counter++]=aH[0];
+    aHex[counter]='\0';
+
+    counter=0;
+    while (*pstr != '\0' && counter <16 ) {
+      aString[counter++]=*pstr;
+      pstr++;
+    }
+    i=0;
+    while (aHex[i] != '\0' && counter <16 ) {
+      aString[counter++]=aHex[i++];
+    }
+    aString[counter]='\0';
+    LCD_WriteString( line, aString );
+  }
+  else {
+    LCD_WriteString( line, "Format unknow" );
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+void LCD_WriteBytes
+(
+	uint8_t   *pstr,    
+	uint8_t   *value,   
+	uint8_t   line,     
+	uint8_t   length    
+)
+{
+
+	uint8_t i=0,counter=0, cIndex,auxIndex;
+	uint8_t aString[17];
+
+	uint8_t  hexIndex;
+	uint8_t aHex[16]={'S','i','z','e',' ','N','o','t',' ','V','a','l','i','d','*','*'};
+
+   
+  mErrorIndicator = gLCD_NoError_c;
+  
+	counter=0;
+	while (*pstr != '\0' && counter <16 )
+	{
+		aString[counter++]=*pstr;
+		pstr++;
+	}
+	if ((((length*2)+counter) <= 16) && ((length*2) > 0))
+	{
+		for (cIndex =0,auxIndex = 0; cIndex < length; cIndex++,auxIndex+=2)
+		{
+			hexIndex = value[cIndex]&0xf0;
+			hexIndex = hexIndex>>4;
+			aHex[auxIndex] = gaHexValue[hexIndex];
+			hexIndex = value[cIndex] & 0x0f;
+			aHex[auxIndex + 1] = gaHexValue[hexIndex];
+		}
+		aHex[(length * 2)]='\0';
+	}
+	else
+		counter = 0;
+
+	i=0;
+	while (aHex[i] != '\0' && counter <16 )
+		aString[counter++]=aHex[i++];
+
+	aString[counter]='\0';
+	LCD_WriteString( line, aString );
+}
+
+
+
+
+
+
+
+
+
+
+
+ 
+void LCD_WriteCommand(uint8_t command)
+{
+   
+  mErrorIndicator = gLCD_NoError_c;
+  
+  Gpio_SetPinData(gGpioPin21_c, gGpioPinStateHigh_c);
+  SetOutput();
+  Gpio_SetPinData(gGpioPin20_c, gGpioPinStateHigh_c);
+  Gpio_SetPinData(gGpioPin9_c, gGpioPinStateHigh_c);
+  SendData(command);
+  DelayUs(1);
+  Gpio_SetPinData(gGpioPin9_c, gGpioPinStateLow_c);
+  Gpio_SetPinData(gGpioPin20_c, gGpioPinStateLow_c);
+  SetHiZ();
+  DelayUs(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+ 
+void LCD_WriteData(uint8_t data)
+{
+   
+  mErrorIndicator = gLCD_NoError_c;
+
+  Gpio_SetPinData(gGpioPin21_c, gGpioPinStateLow_c);
+  Gpio_SetPinData(gGpioPin20_c, gGpioPinStateHigh_c);
+  SetOutput();
+  SendData(data);
+  Gpio_SetPinData(gGpioPin9_c, gGpioPinStateHigh_c);
+  DelayUs(1);
+  Gpio_SetPinData(gGpioPin9_c, gGpioPinStateLow_c);
+  Gpio_SetPinData(gGpioPin20_c, gGpioPinStateLow_c);
+  SetHiZ();
+  DelayUs(1);  
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+bool_t LCD_SetFont(lcdFontType_t font)
+{
+   
+  mErrorIndicator = gLCD_NoError_c;
+
+  if(2 > font)
+  {
+    mDisplayParams.currentFontType = font;
+    return 1;
+  }
+  else
+  {
+    return 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+lcdError_t LCD_CheckError(void)
+{
+  return mErrorIndicator;
+}
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+void LCD_Task(event_t events)
+{
+  static opLine_t mOperationLine;
+  (void)events;
+
+   
+  if(mOperationCompleted)
+  {
+    mOperationLine = RemoveFromQueue();     
+  }
+
+  ProcessOperation(mOperationLine);  
+
+  if(!IsQueueEmpty())
+  {
+     
+    TS_SendEvent(gLCDTaskID, (1 << 0));     
+  }
+  
+} 
+
+
+
+
+
+
+
+
+
+
+
+ 
+void LCD_TaskInit(void)
+{
+  gLCDTaskID = TS_CreateTask(0x03, LCD_Task);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+void LCD_SetBacklight(uint8_t brightnessValue)
+{
+ 
+    GpioPinState_t backLightState;
+    backLightState = (0 != brightnessValue) ? gGpioPinStateHigh_c : gGpioPinStateLow_c;
+    Gpio_SetPinData(gGpioPin10_c,  backLightState);
+}
+
+
+
+
+
+
+
+
+
+
+
+ 
+void LCD_WritePixel(uint8_t xStartCoord, uint8_t yStartCoord, bool_t mode)
+{
+  uint8_t page;
+  uint8_t read;
+
+  if (xStartCoord>=128 || yStartCoord>=64)
+  {
+    return;  
+  }
+
+  page = yStartCoord >> 3;
+  yStartCoord %= 8;
+
+  LCD_WriteCommand(0x40);
+  LCD_WriteCommand(0xB0 + page);
+  LCD_WriteCommand(0x10 | ((xStartCoord & 0xF0)>>4));
+  LCD_WriteCommand(0x00 | (xStartCoord & 0x0F));       
+
+  read = ReadData(); 
+  read = ReadData();
+
+  LCD_WriteCommand(0x40);
+  LCD_WriteCommand(0xB0 + page);
+  LCD_WriteCommand(0x10 | ((xStartCoord & 0xF0)>>4));
+  LCD_WriteCommand(0x00 | (xStartCoord & 0x0F));
+
+  if( 1 == mode )
+  {
+    LCD_WriteData((read | (1 << yStartCoord)));
+  }
+  else
+  {  
+    LCD_WriteData((read & ~(1 << yStartCoord)));  
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+void LCD_WriteCharacter(uint8_t symbol, uint8_t xCoord, uint8_t yCoord)
+{
+  uint16_t arrayLocation=0; 
+  uint8_t i, maxLength;
+ 
+   
+  if((xCoord >= 128) && (yCoord >= 64))
+  {
+    return;
+  }
+    
+  arrayLocation = symbol - 32;
+  maxLength = aLCDFont[mDisplayParams.currentFontType].fontHeight;
+  
+
+
+
+ 
+  while(maxLength > 0)
+  {
+    maxLength--;      
+    InitDisplayWrite(xCoord,yCoord);        
+     
+    mDisplayParams.writtenLines |= (1<<(yCoord>>3));   
+    for(i = 0;
+        i < ((aLCDFont[mDisplayParams.currentFontType].pFontIndexTable[arrayLocation+1] - 
+              aLCDFont[mDisplayParams.currentFontType].pFontIndexTable[arrayLocation]) *
+              aLCDFont[mDisplayParams.currentFontType].fontHeight);
+        i += aLCDFont[mDisplayParams.currentFontType].fontHeight)        
+    {
+      
+
+
+ 
+      LCD_WriteData(aLCDFont[mDisplayParams.currentFontType].pFontCharTable[aLCDFont[mDisplayParams.currentFontType].pFontIndexTable[arrayLocation]*aLCDFont[mDisplayParams.currentFontType].fontHeight + i + maxLength]);
+    }
+    yCoord += 8;
+  }    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+void LCD_WriteSymbol(uint8_t index, uint8_t xCoord, uint8_t yCoord, uint8_t* bitmap)
+{ 
+  uint8_t i;
+ 
+   
+  if((xCoord >= 128) && (yCoord >= 64))
+  {
+    return;
+  }
+   
+  if(bitmap == (( void * )( 0 )))
+  {
+    return;
+  }  
+
+  
+
+
+     
+  InitDisplayWrite(xCoord,yCoord);        
+   
+  mDisplayParams.writtenLines |= (1<<(yCoord>>3));   
+  for(i = 0; i < 8; i++)        
+  {
+     
+    LCD_WriteData(bitmap[index * 8 + i]);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+void LCD_ClearPage(uint8_t startXCoord, uint8_t endXCoord, uint8_t yCoord)
+{
+  uint8_t i;
+  
+  InitDisplayWrite(startXCoord, yCoord);
+  for(i = startXCoord; i < endXCoord; i++)
+  {
+    LCD_WriteData(0);    
+  }    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+uint8_t LCD_ClearLine(uint8_t line)
+{
+  static pageParams_t pageToDelete;
+  static bool_t isPageDeleted = 1;
+  
+  if(line < 8)
+  {
+     
+    if(isPageDeleted)
+    {
+      pageToDelete.xStartCoord = mLineParams[line].xCoord;
+      pageToDelete.xEndCoord   = 128;
+      pageToDelete.yCoord      = mLineParams[line].yCoord;
+      pageToDelete.line        = line; 
+    }
+    
+     
+    if(((pageToDelete.xEndCoord - pageToDelete.xStartCoord) >= 32))
+    {
+       
+      isPageDeleted            = 0;
+      TS_SendEvent(gLCDTaskID, (1 << 0)); 
+      LCD_ClearPage(pageToDelete.xStartCoord, 
+                    pageToDelete.xStartCoord + 32, 
+                    pageToDelete.yCoord); 
+       
+      pageToDelete.xStartCoord = pageToDelete.xStartCoord + 32;        
+      return 0;  
+    }
+    else
+    {    
+      LCD_ClearPage(pageToDelete.xStartCoord, 
+                    pageToDelete.xEndCoord, 
+                    pageToDelete.yCoord);
+      isPageDeleted            = 1;
+      return 1;  
+    } 
+  }
+  else
+  {
+    return 0xFF;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+ 
+static void ProcessOperation(opLine_t operationAndLine)
+{
+  static uint8_t linesToClear = 0x00;
+  uint8_t line, i, deleteWriteLines = 0xFF;
+  switch(operationAndLine.opQueue)
+  {  
+    case gLCD_WriteOp_c:  
+      if(mOperationCompleted)
+      {
+        line = operationAndLine.lineQueue;
+          
+        mDisplayParams.currentLine = line;
+        mDisplayParams.currentXCoord = mLineParams[line].xCoord;;  
+        mDisplayParams.currentYCoord = mLineParams[line].yCoord; 
+        mDisplayParams.currentStringIndex = 0;
+        mOperationCompleted               = 0;  
+      }      
+       
+      for(i = 0; ((i < 3)&&(mDisplayParams.currentStringIndex < 16)); i++)
+      {
+         
+        LCD_WriteCharacter(mDisplayParams.currentString[mDisplayParams.currentLine][mDisplayParams.currentStringIndex], 
+                           mDisplayParams.currentXCoord, 
+                           mDisplayParams.currentYCoord);             
+         
+        mDisplayParams.currentXCoord += (aLCDFont[mDisplayParams.currentFontType].pFontIndexTable[mDisplayParams.currentString[mDisplayParams.currentLine][mDisplayParams.currentStringIndex] - 32 + 1] - 
+                                         aLCDFont[mDisplayParams.currentFontType].pFontIndexTable[mDisplayParams.currentString[mDisplayParams.currentLine][mDisplayParams.currentStringIndex] - 32]);
+        mDisplayParams.currentStringIndex++;  
+      }
+        
+       
+      if(mDisplayParams.currentStringIndex < 16)
+      {
+        TS_SendEvent(gLCDTaskID, (1 << 0));
+      }
+      else
+      {        
+        mDisplayParams.linesWidthWritten[mDisplayParams.currentLine] = mDisplayParams.currentXCoord;
+        mDisplayParams.currentStringIndex = 0;       
+        for(i = 0; i < aLCDFont[mDisplayParams.currentFontType].fontHeight; i++)
+        { 
+           
+          mDisplayParams.linesToWrite &=(~(1<<(mDisplayParams.currentLine+i)));
+           
+          mDisplayParams.writtenLines |= (1<<(mDisplayParams.currentLine+i)); 
+        }        
+        mDisplayParams.currentLine        = 8;
+        mOperationCompleted               = 1;        
+      }          
+      break;
+      
+    case gLCD_ClearDisplayOp_c:
+      if(mOperationCompleted)
+      {
+            
+        linesToClear = mDisplayParams.writtenLines;  
+        if(mIsLcdInitialized == 1)
+        {
+           
+          deleteWriteLines = linesToClear & mDisplayParams.linesToWrite;
+          if(deleteWriteLines)
+          {  
+             
+            linesToClear &= ~(deleteWriteLines);  
+          }
+        }
+        mOperationCompleted               = 0;
+      }
+      
+      line = 0;
+       
+      while((!((linesToClear>>line)&0x01))&&(line<8))
+      {
+        line++;
+      }
+      if(line!= 8)
+      {
+         
+        if(1 == LCD_ClearLine(line))
+        {
+           
+          mDisplayParams.writtenLines &= ~(1 << line);
+          linesToClear &= ~(1 << line);
+           
+          if(linesToClear)
+          {
+             
+            TS_SendEvent(gLCDTaskID, (1 << 0));          
+          }
+          else
+          {
+            mOperationCompleted = 1;
+            mIsLcdInitialized   = 1;
+          }          
+        }
+      }
+      else
+      {
+        mOperationCompleted = 1;   
+        mIsLcdInitialized   = 1;
+      }
+      break; 
+      
+    case gLCD_ClearLineOp_c:      
+      if(mOperationCompleted)
+      {
+         
+        mOperationCompleted               = 0;
+      }
+       
+      if(1 == LCD_ClearLine(operationAndLine.lineQueue))
+      {
+         
+        mDisplayParams.writtenLines &= ~(1 << operationAndLine.lineQueue);
+          
+        mOperationCompleted = 1;          
+      }
+      break;
+      
+    case gLCD_WriteBitmapOp_c:  
+      if(mOperationCompleted)
+      {
+        line = operationAndLine.lineQueue;
+          
+        mDisplayParams.currentLine = line;
+        mDisplayParams.currentXCoord = mLineParams[line].xCoord;;  
+        mDisplayParams.currentYCoord = mLineParams[line].yCoord; 
+        mDisplayParams.currentStringIndex = 0;
+        mOperationCompleted               = 0;  
+      }      
+       
+      for(i = 0; ((i < 3)&&(mDisplayParams.currentStringIndex < 16)); i++)
+      {
+         
+         
+        if(mDisplayParams.currentBitmap[mDisplayParams.currentLine][mDisplayParams.currentStringIndex] != 0xFF)
+        {
+          LCD_WriteSymbol(mDisplayParams.currentBitmap[mDisplayParams.currentLine][mDisplayParams.currentStringIndex], 
+                          mDisplayParams.currentXCoord, 
+                          mDisplayParams.currentYCoord,
+                          mReceivedBitmap); 
+        }
+        else
+        {
+          LCD_WriteSymbol(0x00, 
+                          mDisplayParams.currentXCoord, 
+                          mDisplayParams.currentYCoord,
+                          mBitmapSpace); 
+        }          
+         
+        mDisplayParams.currentXCoord += (8);
+        mDisplayParams.currentStringIndex++;  
+      }
+        
+       
+      if(mDisplayParams.currentStringIndex < 16)
+      {
+        TS_SendEvent(gLCDTaskID, (1 << 0));
+      }
+      else
+      {        
+        mDisplayParams.linesWidthWritten[mDisplayParams.currentLine] = mDisplayParams.currentXCoord;
+        mDisplayParams.currentStringIndex = 0;       
+         
+        mDisplayParams.linesToWrite &=(~(1<<mDisplayParams.currentLine));
+         
+        mDisplayParams.writtenLines |= (1<<mDisplayParams.currentLine);        
+        mDisplayParams.currentLine        = 8;
+        mOperationCompleted               = 1;        
+      }          
+      break;
+
+    default: 
+      break;    
+  }    
+}
+
+
+
+
+
+
+
+
+
+
+
+ 
+static void SendData(uint8_t data)
+{
+    Gpio_SetPortData(gGpioPort0_c, (data)<<4, 0x000000F0); 
+    Gpio_SetPortData(gGpioPort1_c, (data)>>4, 0x0000000F);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+ 
+static void SetHiZ(void)
+{
+     
+    Gpio_SetPortDir(gGpioPort0_c, ~0x000000F0, 0x000000F0); 
+    Gpio_SetPortDir(gGpioPort1_c, ~0x0000000F, 0x0000000F); 
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+ 
+static void SetOutput(void)
+{
+   
+   
+    Gpio_SetPortDir(gGpioPort0_c, 0x000000F0, 0x000000F0);      
+    Gpio_SetPortDir(gGpioPort1_c, 0x0000000F, 0x0000000F);         
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+ 
+static void InitDisplayWrite(uint8_t xStartCoord, uint8_t yStartCoord)
+{
+
+  uint8_t page;  
+  
+  page = yStartCoord >> 3;
+
+  LCD_WriteCommand(0x40);
+  LCD_WriteCommand(0xB0 + page);
+  LCD_WriteCommand(0x10 | ((xStartCoord & 0xF0)>>4));
+  LCD_WriteCommand(0x00 | (xStartCoord & 0x0F));         
+}
+
+
+
+
+
+
+
+
+
+
+
+ 
+static uint8_t ReadData(void)
+{
+  uint8_t ReturnValue;
+  Gpio_SetPinData(gGpioPin21_c, gGpioPinStateLow_c);
+  Gpio_SetPinData(gGpioPin20_c, gGpioPinStateHigh_c);
+  DelayUs(1);
+  Gpio_SetPinData(gGpioPin8_c, gGpioPinStateHigh_c);
+  DelayUs(1);
+  ReturnValue = GetData();
+  Gpio_SetPinData(gGpioPin8_c, gGpioPinStateLow_c);
+  Gpio_SetPinData(gGpioPin20_c, gGpioPinStateLow_c);
+  DelayUs(1);
+  return ReturnValue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+static uint8_t GetData(void)
+{
+    uint8_t        ReturnValue = 0;
+    uint32_t temp;
+    Gpio_GetPortData(gGpioPort0_c, &temp);
+    ReturnValue = (0x000000F0 & temp)>>4;
+    Gpio_GetPortData(gGpioPort1_c, &temp);
+    ReturnValue |= (0x0000000F & temp)<<4;
+
+    
+    return ReturnValue;
+}
+
+
+
+
+
+
+
+
+
+
+
+ 
+static uint8_t GetStrlen
+  (
+  const uint8_t *pString  
+  )
+{
+  int8_t count=0, length=0;
+
+  while (*pString != '\0' && count <16 ) {
+    count++;
+    length++;
+    pString++;
+  }
+
+   
+  if ( length > 16 ) {
+    length = 16;
+  }
+
+  return length;
+}
+
+
+
+
+
+
+
+
+
+
+ 
+static void InitQueue(void)
+{
+  uint8_t i;
+  
+  mQueue.head = 0;
+  mQueue.tail = 0;
+  for(i=0; i<45; i++)
+  {
+    mQueue.opLine[i].opQueue   = (operation_t)0xFF;    
+    mQueue.opLine[i].lineQueue = 0xFF;   
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+static bool_t AddToQueue(opLine_t operationLine)
+{
+  if(!IsQueueFull())
+  { 
+    mQueue.opLine[mQueue.tail].opQueue   = operationLine.opQueue;   
+    mQueue.opLine[mQueue.tail].lineQueue = operationLine.lineQueue;   
+    if(++mQueue.tail == 45)
+    {
+      mQueue.tail = 0;      
+    }
+    return 1;
+  }
+  else
+  {
+    return 0;    
+  }  
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+static opLine_t RemoveFromQueue(void)
+{
+  opLine_t returnValue = {(operation_t)0xFF, 0xFF};
+  if(!IsQueueEmpty())
+  {
+    returnValue.opQueue   = mQueue.opLine[mQueue.head].opQueue;
+    returnValue.lineQueue = mQueue.opLine[mQueue.head].lineQueue;
+    mQueue.opLine[mQueue.head].opQueue   = (operation_t)0xFF;
+    mQueue.opLine[mQueue.head].lineQueue = 0xFF;
+    if(++mQueue.head == 45)
+    {
+      mQueue.head = 0;      
+    }    
+  }
+  return  returnValue;
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+static bool_t IsQueueEmpty(void)
+{
+  if((mQueue.head == mQueue.tail)&&
+     (mQueue.opLine[mQueue.head].opQueue   == 0xFF)&&
+     (mQueue.opLine[mQueue.head].lineQueue == 0xFF))
+  {
+    return 1;      
+  }
+  else
+  {
+    return 0;
+  }  
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+static bool_t IsQueueFull(void)
+{
+  if((mQueue.head == mQueue.tail)&&
+     (mQueue.opLine[mQueue.head].opQueue   != 0xFF)&&
+     (mQueue.opLine[mQueue.head].lineQueue != 0xFF))
+  {
+    return 1;   
+  }
+  else
+  {
+    return 0;
+  }  
+}  
+

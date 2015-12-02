@@ -1,0 +1,371 @@
+###############################################################################
+#                                                                             #
+#                                                       15/Oct/2012  16:29:12 #
+# IAR ANSI C/C++ Compiler V5.50.7.22081/W32 EVALUATION for ARM                #
+# Copyright (C) 1999-2010 IAR Systems AB.                                     #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  C:\Documents and Settings\Administrator\My               #
+#                    Documents\MyWirelessApp Demo Non Beacon                  #
+#                    (Coordinator)\MyWirelessApp Demo Non Beacon              #
+#                    (Coordinator)\PLM\Source\Keyboard\KeyboardHAL.c          #
+#    Command line =  "C:\Documents and Settings\Administrator\My              #
+#                    Documents\MyWirelessApp Demo Non Beacon                  #
+#                    (Coordinator)\MyWirelessApp Demo Non Beacon              #
+#                    (Coordinator)\PLM\Source\Keyboard\KeyboardHAL.c" -D      #
+#                    gMacStandAlone_d=1 -D gSAPMessagesEnableLlc_d=0 -D       #
+#                    gZtcIncluded_d=0 -D gTargetMC1322xNCB=1 --preprocess     #
+#                    "C:\Documents and Settings\Administrator\My              #
+#                    Documents\MyWirelessApp Demo Non Beacon                  #
+#                    (Coordinator)\MyWirelessApp Demo Non Beacon              #
+#                    (Coordinator)\Debug\List\" -lC "C:\Documents and         #
+#                    Settings\Administrator\My Documents\MyWirelessApp Demo   #
+#                    Non Beacon (Coordinator)\MyWirelessApp Demo Non Beacon   #
+#                    (Coordinator)\Debug\List\" -lB "C:\Documents and         #
+#                    Settings\Administrator\My Documents\MyWirelessApp Demo   #
+#                    Non Beacon (Coordinator)\MyWirelessApp Demo Non Beacon   #
+#                    (Coordinator)\Debug\List\" --diag_suppress               #
+#                    Pe014,Pe001,Pe991,Pa039,Pe520 -o "C:\Documents and       #
+#                    Settings\Administrator\My Documents\MyWirelessApp Demo   #
+#                    Non Beacon (Coordinator)\MyWirelessApp Demo Non Beacon   #
+#                    (Coordinator)\Debug\Obj\" --no_cse --no_unroll           #
+#                    --no_inline --no_code_motion --no_tbaa --no_clustering   #
+#                    --no_scheduling --debug --endian=little                  #
+#                    --cpu=ARM7TDMI-S --fpu=None --dlib_config "C:\Program    #
+#                    Files\IAR Systems\Embedded Workbench 5.4                 #
+#                    Evaluation\arm\INC\DLib_Config_Normal.h" -I              #
+#                    "C:\Documents and Settings\Administrator\My              #
+#                    Documents\MyWirelessApp Demo Non Beacon                  #
+#                    (Coordinator)\MyWirelessApp Demo Non Beacon              #
+#                    (Coordinator)\MacPhy\Interface\" -I "C:\Documents and    #
+#                    Settings\Administrator\My Documents\MyWirelessApp Demo   #
+#                    Non Beacon (Coordinator)\MyWirelessApp Demo Non Beacon   #
+#                    (Coordinator)\Application\Init\" -I "C:\Documents and    #
+#                    Settings\Administrator\My Documents\MyWirelessApp Demo   #
+#                    Non Beacon (Coordinator)\MyWirelessApp Demo Non Beacon   #
+#                    (Coordinator)\Application\Interface\" -I "C:\Documents   #
+#                    and Settings\Administrator\My Documents\MyWirelessApp    #
+#                    Demo Non Beacon (Coordinator)\MyWirelessApp Demo Non     #
+#                    Beacon (Coordinator)\Application\Configure\" -I          #
+#                    "C:\Documents and Settings\Administrator\My              #
+#                    Documents\MyWirelessApp Demo Non Beacon                  #
+#                    (Coordinator)\MyWirelessApp Demo Non Beacon              #
+#                    (Coordinator)\Application\UartUtil\" -I "C:\Documents    #
+#                    and Settings\Administrator\My Documents\MyWirelessApp    #
+#                    Demo Non Beacon (Coordinator)\MyWirelessApp Demo Non     #
+#                    Beacon (Coordinator)\Application\Source\" -I             #
+#                    "C:\Documents and Settings\Administrator\My              #
+#                    Documents\MyWirelessApp Demo Non Beacon                  #
+#                    (Coordinator)\MyWirelessApp Demo Non Beacon              #
+#                    (Coordinator)\SSM\TS\Interface\" -I "C:\Documents and    #
+#                    Settings\Administrator\My Documents\MyWirelessApp Demo   #
+#                    Non Beacon (Coordinator)\MyWirelessApp Demo Non Beacon   #
+#                    (Coordinator)\SSM\TS\Source\" -I "C:\Documents and       #
+#                    Settings\Administrator\My Documents\MyWirelessApp Demo   #
+#                    Non Beacon (Coordinator)\MyWirelessApp Demo Non Beacon   #
+#                    (Coordinator)\SSM\ZTC\Interface\" -I "C:\Documents and   #
+#                    Settings\Administrator\My Documents\MyWirelessApp Demo   #
+#                    Non Beacon (Coordinator)\MyWirelessApp Demo Non Beacon   #
+#                    (Coordinator)\SSM\ZTC\Source\" -I "C:\Documents and      #
+#                    Settings\Administrator\My Documents\MyWirelessApp Demo   #
+#                    Non Beacon (Coordinator)\MyWirelessApp Demo Non Beacon   #
+#                    (Coordinator)\PLM\Interface\" -I "C:\Documents and       #
+#                    Settings\Administrator\My Documents\MyWirelessApp Demo   #
+#                    Non Beacon (Coordinator)\MyWirelessApp Demo Non Beacon   #
+#                    (Coordinator)\PLM\LibInterface\" -I "C:\Documents and    #
+#                    Settings\Administrator\My Documents\MyWirelessApp Demo   #
+#                    Non Beacon (Coordinator)\MyWirelessApp Demo Non Beacon   #
+#                    (Coordinator)\PLM\Source\Display\" -I "C:\Documents and  #
+#                    Settings\Administrator\My Documents\MyWirelessApp Demo   #
+#                    Non Beacon (Coordinator)\MyWirelessApp Demo Non Beacon   #
+#                    (Coordinator)\PLM\Source\Keyboard\" -I "C:\Documents     #
+#                    and Settings\Administrator\My Documents\MyWirelessApp    #
+#                    Demo Non Beacon (Coordinator)\MyWirelessApp Demo Non     #
+#                    Beacon (Coordinator)\PLM\Source\NVM\" -I "C:\Documents   #
+#                    and Settings\Administrator\My Documents\MyWirelessApp    #
+#                    Demo Non Beacon (Coordinator)\MyWirelessApp Demo Non     #
+#                    Beacon (Coordinator)\PLM\Source\TMR\" -I "C:\Documents   #
+#                    and Settings\Administrator\My Documents\MyWirelessApp    #
+#                    Demo Non Beacon (Coordinator)\MyWirelessApp Demo Non     #
+#                    Beacon (Coordinator)\PLM\Source\UART\" -I "C:\Program    #
+#                    Files\IAR Systems\Embedded Workbench 5.4                 #
+#                    Evaluation\arm\INC\" --interwork --cpu_mode thumb -On    #
+#    List file    =  C:\Documents and Settings\Administrator\My               #
+#                    Documents\MyWirelessApp Demo Non Beacon                  #
+#                    (Coordinator)\MyWirelessApp Demo Non Beacon              #
+#                    (Coordinator)\Debug\List\KeyboardHAL.lst                 #
+#    Object file  =  C:\Documents and Settings\Administrator\My               #
+#                    Documents\MyWirelessApp Demo Non Beacon                  #
+#                    (Coordinator)\MyWirelessApp Demo Non Beacon              #
+#                    (Coordinator)\Debug\Obj\KeyboardHAL.o                    #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+C:\Documents and Settings\Administrator\My Documents\MyWirelessApp Demo Non Beacon (Coordinator)\MyWirelessApp Demo Non Beacon (Coordinator)\PLM\Source\Keyboard\KeyboardHAL.c
+      1          /************************************************************************************
+      2          * Source file for keyboard driver.
+      3          *
+      4          * Copyright (c) 2006, Freescale, Inc. All rights reserved.
+      5          *
+      6          *
+      7          * No part of this document must be reproduced in any form - including copied,
+      8          * transcribed, printed or by any electronic means - without specific written
+      9          * permission from Freescale Semiconductor.
+     10          *
+     11          * This keyboard driver has the concept of short keys and long keys. A long key is
+     12          * press and hold on a key. 
+     13          *
+     14          * The keyboard handling logic can only understand one key at a time (pressing
+     15          * two keys at once will indicate only the first key).
+     16          *
+     17          ******************************************************************************/
+     18          #include "KeyboardHAL.h"
+     19          #include "Keyboard.h"
+     20          
+     21          
+     22          /******************************************************************************
+     23          *******************************************************************************
+     24          * Private macros
+     25          *******************************************************************************
+     26          ******************************************************************************/
+     27          
+     28          
+     29          
+     30          
+     31          /******************************************************************************
+     32          *******************************************************************************
+     33          * Private prototypes
+     34          *******************************************************************************
+     35          ******************************************************************************/
+     36          
+     37          
+     38          /******************************************************************************
+     39          *******************************************************************************
+     40          * Private type definitions
+     41          *******************************************************************************
+     42          ******************************************************************************/
+     43          
+     44          /******************************************************************************
+     45          *******************************************************************************
+     46          * Private memory declarations
+     47          *******************************************************************************
+     48          ******************************************************************************/
+     49          
+     50          
+     51          /******************************************************************************
+     52          *******************************************************************************
+     53          * Public functions
+     54          *******************************************************************************/
+     55          #if gSwitchModule_d  
+     56          /*Init the GPIO as input, normal functin mode, pull up enable and read from pads */
+
+   \                                 In section .text, align 2, keep-with-next
+     57          void KbGpioInit(void)
+     58          {
+   \                     KbGpioInit:
+   \   00000000   80B5               PUSH     {R7,LR}
+     59            /* Configure the the Switch Pins */
+     60            
+     61            /* Set as input*/
+     62            (void)Gpio_SetPortDir(gKbGpioPort_c, gKbGpioAllZeros_c, gKbGpioMask_c);
+   \   00000002   F022               MOVS     R2,#+240
+   \   00000004   9205               LSLS     R2,R2,#+22       ;; #+1006632960
+   \   00000006   0021               MOVS     R1,#+0
+   \   00000008   0020               MOVS     R0,#+0
+   \   0000000A   ........           BL       Gpio_SetPortDir
+     63            /* Pullup enable and select pullup*/
+     64            (void)Gpio_WrPortSetting(gKbGpioPort_c, gGpioPullUpEnAttr_c, gKbGpioAllOnes_c, gKbGpioMask_c);
+   \   0000000E   F023               MOVS     R3,#+240
+   \   00000010   9B05               LSLS     R3,R3,#+22       ;; #+1006632960
+   \   00000012   0022               MOVS     R2,#+0
+   \   00000014   D243               MVNS     R2,R2            ;; #-1
+   \   00000016   0321               MOVS     R1,#+3
+   \   00000018   0020               MOVS     R0,#+0
+   \   0000001A   ........           BL       Gpio_WrPortSetting
+     65            (void)Gpio_WrPortSetting(gKbGpioPort_c, gGpioPullUpSelAttr_c, gKbGpioAllOnes_c, gKbGpioMask_c);
+   \   0000001E   F023               MOVS     R3,#+240
+   \   00000020   9B05               LSLS     R3,R3,#+22       ;; #+1006632960
+   \   00000022   0022               MOVS     R2,#+0
+   \   00000024   D243               MVNS     R2,R2            ;; #-1
+   \   00000026   0421               MOVS     R1,#+4
+   \   00000028   0020               MOVS     R0,#+0
+   \   0000002A   ........           BL       Gpio_WrPortSetting
+     66            /*Read from pads*/
+     67            (void)Gpio_WrPortSetting(gKbGpioPort_c, gGpioInputDataSelAttr_c, gKbGpioAllZeros_c, gKbGpioMask_c); 
+   \   0000002E   F023               MOVS     R3,#+240
+   \   00000030   9B05               LSLS     R3,R3,#+22       ;; #+1006632960
+   \   00000032   0022               MOVS     R2,#+0
+   \   00000034   0221               MOVS     R1,#+2
+   \   00000036   0020               MOVS     R0,#+0
+   \   00000038   ........           BL       Gpio_WrPortSetting
+     68            
+     69            Gpio_SetPinDir(gCenterKey_c, gGpioDirIn_c);
+   \   0000003C   0021               MOVS     R1,#+0
+   \   0000003E   1620               MOVS     R0,#+22
+   \   00000040   ........           BL       Gpio_SetPinDir
+     70            Gpio_EnPinPullup(gCenterKey_c, TRUE);
+   \   00000044   0121               MOVS     R1,#+1
+   \   00000046   1620               MOVS     R0,#+22
+   \   00000048   ........           BL       Gpio_EnPinPullup
+     71            Gpio_SelectPinPullup(gCenterKey_c, gGpioPinPullup_c);
+   \   0000004C   0121               MOVS     R1,#+1
+   \   0000004E   1620               MOVS     R0,#+22
+   \   00000050   ........           BL       Gpio_SelectPinPullup
+     72            Gpio_SetPinReadSource(gCenterKey_c, gGpioPinReadPad_c);
+   \   00000054   0021               MOVS     R1,#+0
+   \   00000056   1620               MOVS     R0,#+22
+   \   00000058   ........           BL       Gpio_SetPinReadSource
+     73          }
+   \   0000005C   09BC               POP      {R0,R3}
+   \   0000005E   1847               BX       R3               ;; return
+     74          
+     75          /* Enable ext. interrupt,  low level sense, wake up polarity to be negative edge,
+     76          enable interrupts for all keys and register the Crm callback to handle interrupts */
+
+   \                                 In section .text, align 2, keep-with-next
+     77          void KbCrmInit(void)
+     78          {
+   \                     KbCrmInit:
+   \   00000000   E0B5               PUSH     {R5-R7,LR}
+     79            crmWuCtrl_t WuCtrl;
+     80            
+     81            /* Enable ext. interrupt,  low level sense, wake up polarity to be negative edge, enable interrupts for all keys*/
+     82            WuCtrl.wuSource = gExtWu_c;
+   \   00000002   6846               MOV      R0,SP
+   \   00000004   0021               MOVS     R1,#+0
+   \   00000006   0170               STRB     R1,[R0, #+0]
+     83            WuCtrl.KBI_WU_EN = gKbiWuEN_c;
+   \   00000008   0198               LDR      R0,[SP, #+4]
+   \   0000000A   0F21               MOVS     R1,#+15
+   \   0000000C   0143               ORRS     R1,R1,R0
+   \   0000000E   0191               STR      R1,[SP, #+4]
+     84            WuCtrl.KBI_WU_EVENT = gKbiWuEVENT_c;
+   \   00000010   0198               LDR      R0,[SP, #+4]
+   \   00000012   F021               MOVS     R1,#+240
+   \   00000014   0143               ORRS     R1,R1,R0
+   \   00000016   0191               STR      R1,[SP, #+4]
+     85            WuCtrl.KBI_WU_POL = gKbiWuPOL_c;
+   \   00000018   0198               LDR      R0,[SP, #+4]
+   \   0000001A   ....               LDR      R1,??DataTable0  ;; 0xfffff0ff
+   \   0000001C   0140               ANDS     R1,R1,R0
+   \   0000001E   0191               STR      R1,[SP, #+4]
+     86            WuCtrl.KBI_INT_EN = gKbiIntEN_c;
+   \   00000020   0198               LDR      R0,[SP, #+4]
+   \   00000022   F021               MOVS     R1,#+240
+   \   00000024   0902               LSLS     R1,R1,#+8        ;; #+61440
+   \   00000026   0143               ORRS     R1,R1,R0
+   \   00000028   0191               STR      R1,[SP, #+4]
+     87            CRM_WuCntl(&WuCtrl);
+   \   0000002A   6846               MOV      R0,SP
+   \   0000002C   ........           BL       CRM_WuCntl
+     88            
+     89            /*Register call back*/
+     90            CRM_RegisterISR(gCrmKB4WuEvent_c,CrmKBDIsr);
+   \   00000030   ....               LDR      R1,??DataTable0_1
+   \   00000032   0220               MOVS     R0,#+2
+   \   00000034   ........           BL       CRM_RegisterISR
+     91            CRM_RegisterISR(gCrmKB5WuEvent_c,CrmKBDIsr);
+   \   00000038   ....               LDR      R1,??DataTable0_1
+   \   0000003A   0320               MOVS     R0,#+3
+   \   0000003C   ........           BL       CRM_RegisterISR
+     92            CRM_RegisterISR(gCrmKB6WuEvent_c,CrmKBDIsr);
+   \   00000040   ....               LDR      R1,??DataTable0_1
+   \   00000042   0420               MOVS     R0,#+4
+   \   00000044   ........           BL       CRM_RegisterISR
+     93            CRM_RegisterISR(gCrmKB7WuEvent_c,CrmKBDIsr);
+   \   00000048   ....               LDR      R1,??DataTable0_1
+   \   0000004A   0520               MOVS     R0,#+5
+   \   0000004C   ........           BL       CRM_RegisterISR
+     94          }
+   \   00000050   0FBC               POP      {R0-R3}
+   \   00000052   1847               BX       R3               ;; return
+     95          
+     96          
+     97          /* Read the port and shift it with 26 for better use */
+
+   \                                 In section .text, align 2, keep-with-next
+     98          uint8_t KbReadPins(void)
+     99          {
+   \                     KbReadPins:
+   \   00000000   80B5               PUSH     {R7,LR}
+    100            uint32_t portData;
+    101            (void)Gpio_GetPortData(gKbGpioPort_c, &portData);
+   \   00000002   6946               MOV      R1,SP
+   \   00000004   0020               MOVS     R0,#+0
+   \   00000006   ........           BL       Gpio_GetPortData
+    102            return (uint8_t)(portData >> 26);
+   \   0000000A   0098               LDR      R0,[SP, #+0]
+   \   0000000C   800E               LSRS     R0,R0,#+26
+   \   0000000E   0006               LSLS     R0,R0,#+24       ;; ZeroExtS R0,R0,#+24,#+24
+   \   00000010   000E               LSRS     R0,R0,#+24
+   \   00000012   0ABC               POP      {R1,R3}
+   \   00000014   1847               BX       R3               ;; return
+    103          }
+    104          
+    105          /*Read the joystick's center key pin*/
+
+   \                                 In section .text, align 2, keep-with-next
+    106          uint8_t KbReadCenterKey(void) 
+    107          {
+   \                     KbReadCenterKey:
+   \   00000000   80B5               PUSH     {R7,LR}
+    108            GpioPinState_t pioPinState;
+    109            
+    110            Gpio_GetPinData (gCenterKey_c,&pioPinState);
+   \   00000002   6946               MOV      R1,SP
+   \   00000004   1620               MOVS     R0,#+22
+   \   00000006   ........           BL       Gpio_GetPinData
+    111            
+    112            return pioPinState;
+   \   0000000A   6846               MOV      R0,SP
+   \   0000000C   0078               LDRB     R0,[R0, #+0]
+   \   0000000E   0ABC               POP      {R1,R3}
+   \   00000010   1847               BX       R3               ;; return
+    113            
+    114          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0:
+   \   00000000   FFF0FFFF           DC32     0xfffff0ff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0_1:
+   \   00000000   ........           DC32     CrmKBDIsr
+    115          #endif
+    116          
+    117          /******************************************************************************
+    118          *******************************************************************************
+    119          * Private functions
+    120          *******************************************************************************
+    121          ******************************************************************************/
+
+   Maximum stack usage in bytes:
+
+     Function        .cstack
+     --------        -------
+     KbCrmInit           16
+     KbGpioInit           8
+     KbReadCenterKey      8
+     KbReadPins           8
+
+
+   Section sizes:
+
+     Function/Label  Bytes
+     --------------  -----
+     KbGpioInit        96
+     KbCrmInit         84
+     KbReadPins        22
+     KbReadCenterKey   18
+     ??DataTable0       4
+     ??DataTable0_1     4
+
+ 
+ 228 bytes in section .text
+ 
+ 228 bytes of CODE memory
+
+Errors: none
+Warnings: none

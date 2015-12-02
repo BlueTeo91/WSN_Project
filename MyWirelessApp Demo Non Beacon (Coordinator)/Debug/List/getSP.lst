@@ -1,0 +1,91 @@
+###############################################################################
+#                                                                             #
+#     IAR Assembler V5.50.7.52081/W32 for ARM 15/Oct/2012  16:29:14           #
+#     Copyright (C) 1999-2010 IAR Systems AB.                                 #
+#                                                                             #
+#           Source file   =  C:\Documents and Settings\Administrator\My Documents\MyWirelessApp Demo Non Beacon (Coordinator)\MyWirelessApp Demo Non Beacon (Coordinator)\Application\Configure\getSP.s#
+#           List file     =  C:\Documents and Settings\Administrator\My Documents\MyWirelessApp Demo Non Beacon (Coordinator)\MyWirelessApp Demo Non Beacon (Coordinator)\Debug\List\getSP.lst#
+#           Object file   =  C:\Documents and Settings\Administrator\My Documents\MyWirelessApp Demo Non Beacon (Coordinator)\MyWirelessApp Demo Non Beacon (Coordinator)\Debug\Obj\getSP.o#
+#           Command line  =  C:\Documents and Settings\Administrator\My Documents\MyWirelessApp Demo Non Beacon (Coordinator)\MyWirelessApp Demo Non Beacon (Coordinator)\Application\Configure\getSP.s #
+#                            -OC:\Documents and Settings\Administrator\My Documents\MyWirelessApp Demo Non Beacon (Coordinator)\MyWirelessApp Demo Non Beacon (Coordinator)\Debug\Obj\ #
+#                            -s+ -M<> -w+ -r -DUSE_INTERRUPTS                 #
+#                            -DUSE_EXCEPTIONS                                 #
+#                            -LC:\Documents and Settings\Administrator\My Documents\MyWirelessApp Demo Non Beacon (Coordinator)\MyWirelessApp Demo Non Beacon (Coordinator)\Debug\List\ #
+#                            -cAOM -i -B -t8 --cpu ARM7TDMI-S --fpu None      #
+#                                                                             #
+###############################################################################
+
+    1                          ///////////////////////////////////////////////
+                               ////////////////////////////////
+    2                          //                                             
+                                                              /
+    3                          // IAR ARM ANSI C/C++ Compiler V5.10.5.333/W32 
+                                        17/Sep/2007  18:23:55 /
+    4                          // Copyright 1999-2007 IAR Systems. All rights
+                                reserved.                      /
+    5                          //                                             
+                                                              /
+    6                          //    Cpu mode     =  thumb                    
+                                                              /
+    7                          //    Endian       =  little                   
+                                                              /
+    8                          //                                             
+                                                              /
+    9                          ///////////////////////////////////////////////
+                               ////////////////////////////////
+   10                          
+   11                                  NAME skeleton
+   12                          
+   13                                  PUBLIC getSP
+   14                                  
+   15                                  CFI Names cfiNames0
+   16                                  CFI StackFrame CFA R13 DATA
+   17                                  CFI Resource R0:32, R1:32, R2:32,
+                                R3:32, R4:32, R5:32, R6:32, R7:32
+   18                                  CFI Resource R8:32, R9:32, R10:32,
+                                R11:32, R12:32, R13:32, R14:32
+   19                                  CFI EndNames cfiNames0
+   20                                  
+   21                                  CFI Common cfiCommon0 Using cfiNames0
+   22                                  CFI CodeAlign 2
+   23                                  CFI DataAlign 4
+   24                                  CFI ReturnAddress R14 CODE
+   25                                  CFI CFA R13+0
+   26                                  CFI R0 Undefined
+   27                                  CFI R1 Undefined
+   28                                  CFI R2 Undefined
+   29                                  CFI R3 Undefined
+   30                                  CFI R4 SameValue
+   31                                  CFI R5 SameValue
+   32                                  CFI R6 SameValue
+   33                                  CFI R7 SameValue
+   34                                  CFI R8 SameValue
+   35                                  CFI R9 SameValue
+   36                                  CFI R10 SameValue
+   37                                  CFI R11 SameValue
+   38                                  CFI R12 Undefined
+   39                                  CFI R14 SameValue
+   40                                  CFI EndCommon cfiCommon0
+   41                                  
+   42                          
+   43                                  SECTION `.text`:CODE:NOROOT(2)
+   44                                  CFI Block cfiBlock0 Using cfiCommon0
+   45                                  CFI Function getSP
+   46                                  THUMB
+   47                          getSP:
+   48    00000000 0020                 MOVS     R0, #0
+   49    00000002 6844                 ADD      R0, SP, R0
+   50    00000004 7047                 BX       LR               ;; return
+   51                                  CFI EndBlock cfiBlock0
+   52                          
+   53                                  END
+##############################
+#           CRC:0            #
+#        Errors:   0         #
+#        Warnings: 0         #
+#          Bytes: 6          #
+##############################
+
+
+
+

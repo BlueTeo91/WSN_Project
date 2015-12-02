@@ -1,0 +1,285 @@
+###############################################################################
+#                                                                             #
+#     IAR Assembler V5.50.7.52081/W32 for ARM 15/Oct/2012  16:29:12           #
+#     Copyright (C) 1999-2010 IAR Systems AB.                                 #
+#                                                                             #
+#           Source file   =  C:\Documents and Settings\Administrator\My Documents\MyWirelessApp Demo Non Beacon (Coordinator)\MyWirelessApp Demo Non Beacon (Coordinator)\PLM\Source\Common\Sys\Init-IAR.S#
+#           List file     =  C:\Documents and Settings\Administrator\My Documents\MyWirelessApp Demo Non Beacon (Coordinator)\MyWirelessApp Demo Non Beacon (Coordinator)\Debug\List\Init-IAR.lst#
+#           Object file   =  C:\Documents and Settings\Administrator\My Documents\MyWirelessApp Demo Non Beacon (Coordinator)\MyWirelessApp Demo Non Beacon (Coordinator)\Debug\Obj\Init-IAR.o#
+#           Command line  =  C:\Documents and Settings\Administrator\My Documents\MyWirelessApp Demo Non Beacon (Coordinator)\MyWirelessApp Demo Non Beacon (Coordinator)\PLM\Source\Common\Sys\Init-IAR.S #
+#                            -OC:\Documents and Settings\Administrator\My Documents\MyWirelessApp Demo Non Beacon (Coordinator)\MyWirelessApp Demo Non Beacon (Coordinator)\Debug\Obj\ #
+#                            -s+ -M<> -w+ -r -DUSE_INTERRUPTS                 #
+#                            -DUSE_EXCEPTIONS                                 #
+#                            -LC:\Documents and Settings\Administrator\My Documents\MyWirelessApp Demo Non Beacon (Coordinator)\MyWirelessApp Demo Non Beacon (Coordinator)\Debug\List\ #
+#                            -cAOM -i -B -t8 --cpu ARM7TDMI-S --fpu None      #
+#                                                                             #
+###############################################################################
+
+    1                          ;##############################################
+                               #######################
+    2                          ;# Description:
+    3                          ;#   - Interrupt vectors and C-init
+    4                          ;##############################################
+                               #######################
+    5                          
+    6                          F_Bit      EQU   0x40
+    7                          I_Bit      EQU   0x80
+    8                          
+    9                          Mode_Uvc   EQU   0x10  ; // user mode - has
+                                same registers as system mode
+   10                          Mode_Fvc   EQU   0x11  ; // FIQ mode
+   11                          Mode_Ivc   EQU   0x12  ; // IRQ mode
+   12                          Mode_Svc   EQU   0x13  ; // supervisor
+                                mode
+   13                          Mode_Avc   EQU   0x17  ; // Abort mode
+   14                          Mode_und   EQU   0x1B  ; // undefined instr
+                                mode
+   15                          Mode_sys   EQU   0x1F  ; // system mode
+   16                          
+   17                          __USR_stack_size     EQU  256*4
+   18                          __IRQ_stack_size     EQU   96*4
+   19                          __FIQ_stack_size     EQU  128*4
+   20                          __UND_stack_size     EQU    8*4
+   21                          __ABT_stack_size     EQU    8*4
+   22                          __SUP_stack_size     EQU    8*4
+   23                          
+   24                            EXPORT _start_vector_
+   25                          
+   26                            IMPORT Main
+   27                            IMPORT RP_Vector_Init
+   28                            
+   29                          #if (__VER__ >= 5020000 )
+   30                            IMPORT __iar_data_init2
+   31                          #else
+   33                          #endif  
+   34                          
+   35                            IMPORT __rom_data_init
+   36                            
+   37                            IMPORT Region$$Table$$Base
+   38                            IMPORT Region$$Table$$Limit
+   39                            IMPORT Region_ROM_Table_ROM_Base
+   40                            IMPORT Region_ROM_Table_ROM_Limit
+   41                          
+   42                            IMPORT  RP_Vector_Thumb_0
+   43                            IMPORT  RP_Vector_Thumb_1
+   44                            IMPORT  RP_Vector_Thumb_2
+   45                            IMPORT  RP_Vector_Thumb_3
+   46                            
+   47                          #ifndef NO_USE_INTERRUPTS
+   48                              IMPORT IrqHandler
+   49                              IMPORT FiqHandler
+   50                          #endif
+   51                          
+   52                          #ifndef NO_USE_EXCEPTIONS
+   53                            ;imported from ItcDriver.c
+   54                              IMPORT mExceptionHandlerPrefetchAbort
+   55                              IMPORT mExceptionHandlerDataAbort
+   56                              IMPORT mExceptionHandlerUndefined
+   57                              IMPORT mExceptionHandlerSupervisor
+   58                          #endif
+   59                          
+   60                          #ifdef BOOT_SOURCE_IDENTIFICATION
+   63                          #endif
+   64                          
+   65                            SECTION .vect: CODE
+   66                          
+   67                          ;//--Entry point-------------------------------
+                               ------------------  
+   68                          
+   69                              CODE32 
+   70                          
+   71                          _start_vector_
+   72    00000000 ........         B       __start_                      ; //
+                                                                          reset
+   73                          
+   74                          #ifdef NO_USE_EXCEPTIONS
+   79                          #else
+   80    00000004 ........         B       __UndefInstructionHndlr_      ; //
+                                                                          undef
+                                                                         ined
+                                                                          instr
+                                                                         uction
+   81    00000008 ........         B       __SupervisorHndlr_            ; //
+                                                                          super
+                                                                         visor
+   82    0000000C ........         B       __PrefetchAbtHndlr_           ; //
+                                                                          prefe
+                                                                         tch
+                                                                          abort
+   83    00000010 ........         B       __DataAbtHndlr_               ; //
+                                                                          data
+                                                                          abort
+   84                          #endif
+   85    00000014 ........         B       __reserved_                   ; //
+                                                                          reser
+                                                                         ved
+   86                          #ifdef NO_USE_INTERRUPTS
+   89                          #else
+   90    00000018 ........         B       IrqHandler                    ; //
+                                                                          IRQ
+   91    0000001C ........         B       FiqHandler                    ; //
+                                                                          FIQ
+   92                          #endif
+   93                          
+   94                            SECTION .text: CODE
+   95                          
+   96                          __start_
+   97                          
+   98                          #ifdef BOOT_SOURCE_IDENTIFICATION
+  103                          #endif
+  104                          
+  105    00000000 00119FE5         LDR     r1,=system_stack
+  106    00000004 D300A0E3         MOV     r0, #Mode_Svc | F_Bit | I_Bit   ;//
+                                                supervisor mode, disable all
+                                                interrupts
+  107    00000008 00F021E1         MSR     cpsr_c,r0
+  108    0000000C 201081E2         ADD     r1,r1,#__SUP_stack_size
+  109    00000010 01D0A0E1         MOV     sp,r1
+  110                          
+  111    00000014 D200A0E3         MOV     r0, #Mode_Ivc | F_Bit | I_Bit   ;//
+                                                IRQ mode, disable all
+                                                interrupts
+  112    00000018 00F021E1         MSR     cpsr_c,r0
+  113    0000001C 601F81E2         ADD     r1,r1,#__IRQ_stack_size
+  114    00000020 01D0A0E1         MOV     sp,r1
+  115                              
+  116    00000024 D100A0E3         MOV     r0, #Mode_Fvc | F_Bit | I_Bit   ;//
+                                                FIQ mode, disable all
+                                                interrupts
+  117    00000028 00F021E1         MSR     cpsr_c,r0
+  118    0000002C 801F81E2         ADD     r1,r1,#__FIQ_stack_size
+  119    00000030 01D0A0E1         MOV     sp,r1  
+  120                          
+  121    00000034 DB00A0E3         MOV     r0, #Mode_und | F_Bit | I_Bit   ;//
+                                                UND mode, disable all
+                                                interrupts
+  122    00000038 00F021E1         MSR     cpsr_c,r0
+  123    0000003C 201081E2         ADD     r1,r1,#__UND_stack_size
+  124    00000040 01D0A0E1         MOV     sp,r1
+  125                          
+  126    00000044 D700A0E3         MOV     r0, #Mode_Avc | F_Bit | I_Bit   ;//
+                                                ABT mode, disable all
+                                                interrupts
+  127    00000048 00F021E1         MSR     cpsr_c,r0
+  128    0000004C 201081E2         ADD     r1,r1,#__ABT_stack_size
+  129    00000050 01D0A0E1         MOV     sp,r1
+  130                          
+  131    00000054 DF00A0E3         MOV     r0, #Mode_sys | F_Bit | I_Bit   ;//
+                                                system mode, disable all
+                                                interrupts
+  132    00000058 00F021E1         MSR     cpsr_c,r0
+  133    0000005C 401E81E2         ADD     r1,r1,#__USR_stack_size
+  134    00000060 01D0A0E1         MOV     sp,r1
+  135                          
+  136                          ;    MOV     r0, #Mode_Uvc | F_Bit | I_Bit  
+                                ;// user mode, disable all interrupts
+  137                          ;    MSR     cpsr_c,r0
+  138                          
+  139                          ;    // See if we need to initialize the ROM
+                                variables
+  140    00000064 A0009FE5         LDR     r0, =Region_ROM_Table_ROM_Base
+  141    00000068 A0309FE5         LDR     r3, =Region_ROM_Table_ROM_Limit
+  142    0000006C 030050E1         CMP     r0, r3
+  143                          ;    // If Region_ROM_Table_ROM_Base and
+                                Region_ROM_Table_ROM_Limit are equal, then the
+                                ROM image is loaded in RAM (simulation)
+  144                          ;    // No need to init the ROM variables.
+  145    00000070 0000000A         BEQ     __ram_init
+  146    00000074 ........         BL      __rom_data_init
+  147                          
+  148                          __ram_init
+  149                          
+  150                          #if (__VER__ >= 5020000 )
+  151    00000078 ........         BL      __iar_data_init2
+  152                          #else
+  154                          #endif  
+  155                          ;// the main function was renamed to Main in
+                                order to avoid inclusion of C library code for
+                                supplementary initializations
+  156    0000007C ........         BL      RP_Vector_Init
+  157    00000080 ........         B       Main         ; // jump to "Main()"
+  158                          
+  159                          __reserved_
+  160    00000084 0EF0B0E1         MOVS     pc,lr
+  161                          
+  162                          #ifndef NO_USE_EXCEPTIONS
+  163                          
+  164                          __UndefInstructionHndlr_
+  165    00000088 FF5F2DE9         STMFD    r13!, {r0-r12,r14}
+  166    0000008C 80009FE5         LDR      r0, =mExceptionHandlerUndefined
+  167    00000090 000090E5         LDR      r0,[r0,#0]
+  168    00000094 000050E3         CMP      r0,#0
+  169    00000098 0FE0A011         MOVNE    r14,pc
+  170    0000009C 10FF2F11         BXNE     r0
+  171    000000A0 FF5FBDE8         LDMFD    r13!, {r0-r12,r14}
+  172    000000A4 0EF0B0E1         MOVS     PC, R14
+  173                          
+  174                          __SupervisorHndlr_
+  175    000000A8 FF5F2DE9         STMFD    r13!, {r0-r12,r14}
+  176    000000AC 64009FE5         LDR      r0, =mExceptionHandlerSupervisor
+  177    000000B0 000090E5         LDR      r0,[r0,#0]
+  178    000000B4 000050E3         CMP      r0,#0
+  179    000000B8 0FE0A011         MOVNE    r14,pc
+  180    000000BC 10FF2F11         BXNE     r0
+  181    000000C0 FF5FBDE8         LDMFD    r13!, {r0-r12,r14}
+  182    000000C4 0EF0B0E1         MOVS     PC, R14
+  183                          
+  184                          __PrefetchAbtHndlr_
+  185    000000C8 FF5F2DE9         STMFD    r13!,{r0-r12,r14}
+  186    000000CC 48009FE5         LDR      r0, =mExceptionHandlerPrefetchAbort
+  187    000000D0 000090E5         LDR      r0,[r0,#0]
+  188    000000D4 000050E3         CMP      r0,#0
+  189    000000D8 0FE0A011         MOVNE    r14,pc
+  190    000000DC 10FF2F11         BXNE     r0
+  191    000000E0 FF5FBDE8         LDMFD    r13!,{r0-r12,r14}
+  192    000000E4 04F05EE2         SUBS     PC, r14, #4
+  193                          
+  194                          __DataAbtHndlr_
+  195    000000E8 FF5F2DE9         STMFD    r13!,{r0-r12,r14}
+  196    000000EC 2C009FE5         LDR      r0, =mExceptionHandlerDataAbort
+  197    000000F0 000090E5         LDR      r0,[r0,#0]
+  198    000000F4 000050E3         CMP      r0,#0
+  199    000000F8 0FE0A011         MOVNE    r14,pc
+  200    000000FC 10FF2F11         BXNE     r0
+  201    00000100 FF5FBDE8         LDMFD    r13!,{r0-r12,r14}
+  202    00000104 04F05EE2         SUBS     PC, r14, #4
+  203                          
+  204                          #endif
+  205                          
+  206                            SECTION .stack:DATA(2)   ;// stack in
+                                internal RAM
+  206.1                                 TABLE
+  206.2  00000108 ........             Reference on line 105 
+  206.3  0000010C ........             Reference on line 140 
+  206.4  00000110 ........             Reference on line 141 
+  206.5  00000114 ........             Reference on line 166 
+  206.6  00000118 ........             Reference on line 176 
+  206.7  0000011C ........             Reference on line 186 
+  206.8  00000120 ........             Reference on line 196 
+  206.9                                RSEG (including table)
+  206                            SECTION .stack:DATA(2)   ;// stack in
+                                internal RAM
+  207                          system_stack
+  208                              DS8  __USR_stack_size+__IRQ_stack_size+__FI
+                               Q_stack_size+__UND_stack_size+__ABT_stack_size+_
+                               _SUP_stack_size
+  209                          
+  210                          #ifdef BOOT_SOURCE_IDENTIFICATION
+  214                          #endif
+  215                          
+  216                           ;// force the ROM patching referencing
+  217                            REQUIRE RP_Vector_Thumb_0
+  218                            REQUIRE RP_Vector_Thumb_1
+  219                            REQUIRE RP_Vector_Thumb_2
+  220                            REQUIRE RP_Vector_Thumb_3
+  221                              END
+##############################
+#           CRC:0            #
+#        Errors:   0         #
+#        Warnings: 0         #
+#        Bytes: 2340         #
+##############################
+
+
+
+
