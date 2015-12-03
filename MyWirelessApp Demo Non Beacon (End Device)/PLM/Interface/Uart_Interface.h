@@ -53,7 +53,7 @@
 #endif  /* gTsUartTaskPriority_c */
 
 /* The ARM has two SCI/UART hardware interfaces. Define the one(s) in use. */
-  
+//WSNProject  
 #ifndef gUart1_Enabled_d
   #define gUart1_Enabled_d    FALSE
 #endif /* gUart1_Enabled_d */
