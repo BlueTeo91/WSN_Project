@@ -84,6 +84,7 @@ typedef enum {StackPS_Running=122, StackPS_Sleep, StackPS_DeepSleep}      PWRLib
 
 //---------------------------------------------------------------------------//
 //--- Wakeup reason UNION definitions                                     ---//
+//WSNProject struttura che viene richiamata da una funzione, fa return dello status, credo includa la possibility di un timer
 typedef  union {
   uint8_t AllBits;
   struct {
@@ -155,6 +156,7 @@ extern void PWRLib_Reset(void);
 * None
 *
 *****************************************************************************/ 
+//WSNProject
 void PWR_AllowDeviceToSleep(void);
 
 /*****************************************************************************
@@ -210,6 +212,7 @@ bool_t PWR_CheckIfDeviceCanGoToSleep( void );
 * Output      : PWRLib_WakeupReason_t status
 * Errors      : Not handled
 ******************************************************************************/
+//WSNProject, eccola qui, questa quella che ho trovato per mandare il nodo in sleep
 PWRLib_WakeupReason_t PWR_EnterLowPower(void);
 /*****************************************************************************/
 
@@ -222,6 +225,7 @@ PWRLib_WakeupReason_t PWR_EnterLowPower(void);
 * Output      : None
 * Errors      : Not handled
 ******************************************************************************/
+//credo sia la funzione per inizializzare tutte le funzioni e procedure per power management
 void PWR_CheckForAndEnterNewPowerState_Init(void);
 
 /******************************************************************************
