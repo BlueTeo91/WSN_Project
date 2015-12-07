@@ -1,158 +1,119 @@
 ###############################################################################
 #                                                                             #
-# IAR ELF Linker V5.50.7.52081/W32 for ARM              22/Nov/2015  11:38:51 #
+# IAR ELF Linker V5.50.7.52081/W32 for ARM              08/Dec/2015  00:39:21 #
 # Copyright (C) 2007-2010 IAR Systems AB.                                     #
 #                                                                             #
-#    Output file  =  C:\Documents and Settings\Administrator\Desktop\WSN      #
-#                    Project\To use\TRUE MyWirelessApp Demo Non Beacon (End   #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#    Output file  =  C:\Documents and Settings\Administrator\Desktop\WSN_Proj #
+#                    ect\ENDDEV\MyWirelessApp Demo Non Beacon (End            #
 #                    Device)\Debug\Exe\MyWirelessApp Demo Non Beacon (End     #
 #                    Device).out                                              #
-#    Map file     =  C:\Documents and Settings\Administrator\Desktop\WSN      #
-#                    Project\To use\TRUE MyWirelessApp Demo Non Beacon (End   #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#    Map file     =  C:\Documents and Settings\Administrator\Desktop\WSN_Proj #
+#                    ect\ENDDEV\MyWirelessApp Demo Non Beacon (End            #
 #                    Device)\Debug\List\MyWirelessApp Demo Non Beacon (End    #
 #                    Device).map                                              #
-#    Command line =  "C:\Documents and Settings\Administrator\Desktop\WSN     #
-#                    Project\To use\TRUE MyWirelessApp Demo Non Beacon (End   #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#    Command line =  "C:\Documents and Settings\Administrator\Desktop\WSN_Pro #
+#                    ject\ENDDEV\MyWirelessApp Demo Non Beacon (End           #
 #                    Device)\Debug\Obj\Delay.o" "C:\Documents and             #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWire #
+#                    lessApp Demo Non Beacon (End                             #
 #                    Device)\Debug\Obj\Display.o" "C:\Documents and           #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWire #
+#                    lessApp Demo Non Beacon (End                             #
 #                    Device)\Debug\Obj\GlobalVars.o" "C:\Documents and        #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWire #
+#                    lessApp Demo Non Beacon (End                             #
 #                    Device)\Debug\Obj\Init-IAR.o" "C:\Documents and          #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWire #
+#                    lessApp Demo Non Beacon (End                             #
 #                    Device)\Debug\Obj\Keyboard.o" "C:\Documents and          #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWire #
+#                    lessApp Demo Non Beacon (End                             #
 #                    Device)\Debug\Obj\KeyboardHAL.o" "C:\Documents and       #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
-#                    Device)\Debug\Obj\Led.o" "C:\Documents and               #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWire #
+#                    lessApp Demo Non Beacon (End Device)\Debug\Obj\Led.o"    #
+#                    "C:\Documents and Settings\Administrator\Desktop\WSN_Pro #
+#                    ject\ENDDEV\MyWirelessApp Demo Non Beacon (End           #
 #                    Device)\Debug\Obj\MApp.o" "C:\Documents and              #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWire #
+#                    lessApp Demo Non Beacon (End                             #
 #                    Device)\Debug\Obj\MApp_init.o" "C:\Documents and         #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWire #
+#                    lessApp Demo Non Beacon (End                             #
 #                    Device)\Debug\Obj\MacInit.o" "C:\Documents and           #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWire #
+#                    lessApp Demo Non Beacon (End                             #
 #                    Device)\Debug\Obj\NV_Data.o" "C:\Documents and           #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWire #
+#                    lessApp Demo Non Beacon (End                             #
 #                    Device)\Debug\Obj\NV_Flash.o" "C:\Documents and          #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWire #
+#                    lessApp Demo Non Beacon (End                             #
 #                    Device)\Debug\Obj\NV_FlashHAL.o" "C:\Documents and       #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
-#                    Device)\Debug\Obj\PWR.o" "C:\Documents and               #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWire #
+#                    lessApp Demo Non Beacon (End Device)\Debug\Obj\PWR.o"    #
+#                    "C:\Documents and Settings\Administrator\Desktop\WSN_Pro #
+#                    ject\ENDDEV\MyWirelessApp Demo Non Beacon (End           #
 #                    Device)\Debug\Obj\PlatformInit.o" "C:\Documents and      #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWire #
+#                    lessApp Demo Non Beacon (End                             #
 #                    Device)\Debug\Obj\PlatformInterrupts.o" "C:\Documents    #
-#                    and Settings\Administrator\Desktop\WSN Project\To        #
-#                    use\TRUE MyWirelessApp Demo Non Beacon (End              #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    and Settings\Administrator\Desktop\WSN_Project\ENDDEV\My #
+#                    WirelessApp Demo Non Beacon (End                         #
 #                    Device)\Debug\Obj\Sound.o" "C:\Documents and             #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWire #
+#                    lessApp Demo Non Beacon (End                             #
 #                    Device)\Debug\Obj\TS_kernel.o" "C:\Documents and         #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
-#                    Device)\Debug\Obj\Timer.o" "C:\Documents and             #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWire #
+#                    lessApp Demo Non Beacon (End Device)\Debug\Obj\Timer.o"  #
+#                    "C:\Documents and Settings\Administrator\Desktop\WSN_Pro #
+#                    ject\ENDDEV\MyWirelessApp Demo Non Beacon (End           #
 #                    Device)\Debug\Obj\Uart.o" "C:\Documents and              #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWire #
+#                    lessApp Demo Non Beacon (End                             #
 #                    Device)\Debug\Obj\UartUtil.o" "C:\Documents and          #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWire #
+#                    lessApp Demo Non Beacon (End                             #
 #                    Device)\Debug\Obj\ZtcClientCommunication.o"              #
-#                    "C:\Documents and Settings\Administrator\Desktop\WSN     #
-#                    Project\To use\TRUE MyWirelessApp Demo Non Beacon (End   #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    "C:\Documents and Settings\Administrator\Desktop\WSN_Pro #
+#                    ject\ENDDEV\MyWirelessApp Demo Non Beacon (End           #
 #                    Device)\Debug\Obj\ZtcCopyData.o" "C:\Documents and       #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWire #
+#                    lessApp Demo Non Beacon (End                             #
 #                    Device)\Debug\Obj\ZtcIBManagement.o" "C:\Documents and   #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWire #
+#                    lessApp Demo Non Beacon (End                             #
 #                    Device)\Debug\Obj\ZtcMain.o" "C:\Documents and           #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWire #
+#                    lessApp Demo Non Beacon (End                             #
 #                    Device)\Debug\Obj\ZtcMsgTypeInfo.o" "C:\Documents and    #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWire #
+#                    lessApp Demo Non Beacon (End                             #
 #                    Device)\Debug\Obj\ZtcSAPHandlerInfo.o" "C:\Documents     #
-#                    and Settings\Administrator\Desktop\WSN Project\To        #
-#                    use\TRUE MyWirelessApp Demo Non Beacon (End              #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    and Settings\Administrator\Desktop\WSN_Project\ENDDEV\My #
+#                    WirelessApp Demo Non Beacon (End                         #
 #                    Device)\Debug\Obj\getSP.o" "C:\Documents and             #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWire #
+#                    lessApp Demo Non Beacon (End                             #
 #                    Device)\MacPhy\Libs\MACPHY_MC13224.a" "C:\Documents and  #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWire #
+#                    lessApp Demo Non Beacon (End                             #
 #                    Device)\PLM\Lib\LLC_ROM\LLC_MC13224.a" -o "C:\Documents  #
-#                    and Settings\Administrator\Desktop\WSN Project\To        #
-#                    use\TRUE MyWirelessApp Demo Non Beacon (End              #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    and Settings\Administrator\Desktop\WSN_Project\ENDDEV\My #
+#                    WirelessApp Demo Non Beacon (End                         #
 #                    Device)\Debug\Exe\MyWirelessApp Demo Non Beacon (End     #
 #                    Device).out" --redirect _Printf=_PrintfTiny --redirect   #
 #                    _Scanf=_ScanfSmall --map "C:\Documents and               #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWire #
+#                    lessApp Demo Non Beacon (End                             #
 #                    Device)\Debug\List\MyWirelessApp Demo Non Beacon (End    #
 #                    Device).map" --log initialization,modules,sections,venee #
 #                    rs --log_file "C:\Documents and                          #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWire #
+#                    lessApp Demo Non Beacon (End                             #
 #                    Device)\Debug\List\MyWirelessApp Demo Non Beacon (End    #
 #                    Device).log" --config "C:\Documents and                  #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWire #
+#                    lessApp Demo Non Beacon (End                             #
 #                    Device)\PLM\Icf\MC13224\MC1322x-RAM-ROM.icf"             #
 #                    --diag_suppress Lt010,Lt018 --entry _start_vector_       #
 #                                                                             #
@@ -198,199 +159,213 @@
   nv_data_init_struct  const    0x00400800    0x88  NV_Data.o [1]
                               - 0x00400888    0x88
 
-"P2":                                       0x439c
+"P2":                                       0x4c08
   Veneer               ro code  0x00400900    0x10  - Linker created -
   Veneer               ro code  0x00400910    0x10  - Linker created -
   Veneer               ro code  0x00400920    0x10  - Linker created -
   .text                ro code  0x00400930   0x926  MApp.o [1]
   .text                ro code  0x00401258   0x8c6  NV_Flash.o [1]
   Veneer               ro code  0x00401b20    0x10  - Linker created -
-  .text                ro code  0x00401b30   0x5a8  Timer.o [1]
-  Veneer               ro code  0x004020d8    0x10  - Linker created -
-  .text                ro code  0x004020e8   0x410  Uart.o [1]
-  .text                ro code  0x004024f8   0x2d0  Keyboard.o [1]
-  .text                ro code  0x004027c8   0x248  SeqSM_patched.o [4]
-  .text                ro code  0x00402a10   0x228  Phy_Patched.o [4]
-  .text                ro code  0x00402c38   0x21c  MlmeScan_patched.o [4]
-  .text                ro code  0x00402e54   0x210  MacRamLib.o [4]
-  .text                ro code  0x00403064   0x200  PhyIsr_Patched.o [4]
-  .text                ro code  0x00403264   0x1d0  Led.o [1]
-  .text                ro code  0x00403434   0x1cc  TS_kernel.o [1]
-  .text                ro code  0x00403600   0x168  GlobalVars.o [1]
-  .text                ro code  0x00403768   0x154  UartUtil.o [1]
-  .rodata              const    0x004038bc   0x150  PhySettingsRam.o [4]
-  .text                ro code  0x00403a0c   0x134  PlatformInit.o [1]
-  Veneer               ro code  0x00403b40     0xc  - Linker created -
-  Veneer               ro code  0x00403b4c     0xc  - Linker created -
-  .text                ro code  0x00403b58   0x124  Init-IAR.o [1]
-  .rodata              const    0x00403c7c    0xe8  PhySettingsRam.o [4]
-  .text                ro code  0x00403d64    0xe6  NV_FlashHAL.o [1]
-  Veneer               ro code  0x00403e4c    0x10  - Linker created -
-  Veneer               ro code  0x00403e5c    0x10  - Linker created -
-  .text                ro code  0x00403e6c    0xe4  KeyboardHAL.o [1]
-  .text                ro code  0x00403f50    0xe4  MApp_init.o [1]
-  .text                ro code  0x00404034    0xe0  PlatformInterrupts.o [1]
-  .text                ro code  0x00404114    0xc0  MlmeMain_patched.o [4]
-  .text                ro code  0x004041d4    0xa8  AsmDriver_Patched.o [3]
-  .text                ro code  0x0040427c    0x98  rp_vector_IAR.o [3]
-  .text                ro code  0x00404314    0x94  ASPMain_patched.o [4]
-  .text                ro code  0x004043a8    0x78  MacInit.o [1]
-  .text                ro code  0x00404420    0x74  MemScan_patched.o [4]
-  .text                ro code  0x00404494    0x68  Init_Utils_patched.o [3]
-  Veneer               ro code  0x004044fc    0x10  - Linker created -
-  .text                ro code  0x0040450c    0x58  UartDriver_Patched.o [3]
-  .rodata              const    0x00404564    0x54  MApp.o [1]
-  .text                ro code  0x004045b8    0x54  data_init3.o [6]
-  .rodata              const    0x0040460c    0x48  ASPMain_patched.o [4]
-  .rodata              const    0x00404654    0x40  MApp.o [1]
-  .rodata              const    0x00404694    0x40  PhySettingsRam.o [4]
-  .rodata              const    0x004046d4    0x3c  MApp.o [1]
-  .rodata              const    0x00404710    0x38  MApp.o [1]
-  .rodata              const    0x00404748    0x38  MApp.o [1]
-  .rodata              const    0x00404780    0x38  MApp.o [1]
-  .rodata              const    0x004047b8    0x38  MApp.o [1]
-  .rodata              const    0x004047f0    0x34  MApp.o [1]
-  .text                ro code  0x00404824    0x34  rp_vector_tables.o [3]
-  .rodata              const    0x00404858    0x30  MApp.o [1]
-  .rodata              const    0x00404888    0x30  MApp.o [1]
-  .rodata              const    0x004048b8    0x30  MApp.o [1]
-  .rodata              const    0x004048e8    0x30  MApp.o [1]
-  .text                ro code  0x00404918    0x2e  copy_init3.o [6]
-  .rodata              const    0x00404948    0x2c  MApp.o [1]
-  .rodata              const    0x00404974    0x2c  MApp.o [1]
-  .rodata              const    0x004049a0    0x28  MApp.o [1]
-  .rodata              const    0x004049c8    0x28  MApp.o [1]
-  .text                ro code  0x004049f0    0x28  zero_init3.o [6]
-  .rodata              const    0x00404a18    0x24  ASPMain_patched.o [4]
-  .rodata              const    0x00404a3c    0x24  ASPMain_patched.o [4]
-  .iar.init_table      const    0x00404a60    0x24  - Linker created -
-  .rodata              const    0x00404a84    0x20  MApp.o [1]
-  .rodata              const    0x00404aa4    0x20  rp_vector_tables.o [3]
-  .rodata              const    0x00404ac4    0x18  MApp.o [1]
-  .rodata              const    0x00404adc    0x18  MApp.o [1]
-  .rodata              const    0x00404af4    0x18  MApp.o [1]
-  .rodata              const    0x00404b0c    0x18  MApp.o [1]
-  .rodata              const    0x00404b24    0x18  MApp.o [1]
-  .rodata              const    0x00404b3c    0x18  MApp.o [1]
-  .rodata              const    0x00404b54    0x14  MApp.o [1]
-  .rodata              const    0x00404b68    0x10  MApp.o [1]
-  .rodata              const    0x00404b78    0x10  MApp.o [1]
-  .rodata              const    0x00404b88    0x10  MApp.o [1]
-  .rodata              const    0x00404b98    0x10  MApp.o [1]
-  .rodata              const    0x00404ba8    0x10  MApp.o [1]
-  .rodata              const    0x00404bb8    0x10  MApp.o [1]
-  .rodata              const    0x00404bc8    0x10  MApp.o [1]
-  .rodata              const    0x00404bd8    0x10  MacInit.o [1]
-  .rodata              const    0x00404be8    0x10  NV_Data.o [1]
-  .rodata              const    0x00404bf8     0xc  MApp.o [1]
-  .rodata              const    0x00404c04     0xc  MApp.o [1]
-  .rodata              const    0x00404c10     0xc  MApp.o [1]
-  .text                ro code  0x00404c1c     0xa  Init_Delay_patched.o [3]
-  .rodata              const    0x00404c28     0x8  MApp.o [1]
-  .rodata              const    0x00404c30     0x8  MApp.o [1]
-  .rodata              const    0x00404c38     0x8  MApp.o [1]
-  .rodata              const    0x00404c40     0x8  MApp.o [1]
-  .rodata              const    0x00404c48     0x8  MApp_init.o [1]
-  .rodata              const    0x00404c50     0x8  NV_Data.o [1]
-  .rodata              const    0x00404c58     0x8  NV_FlashHAL.o [1]
-  .text                ro code  0x00404c60     0x2  ZtcMain.o [1]
-  .text                ro code  0x00404c64     0x2  MlmeMain_patched.o [4]
-  .text                ro code  0x00404c68     0x2  MlmeMain_patched.o [4]
-  .rodata              const    0x00404c6a     0x2  PhySettingsRam.o [4]
-  .rodata              const    0x00404c6c     0x2  PhySettingsRam.o [4]
-  .rodata              const    0x00404c6e     0x2  PhySettingsRam.o [4]
-  .text                ro code  0x00404c70     0x2  Keyboard.o [1]
-  .text                ro code  0x00404c72     0x2  MacInit.o [1]
-  .text                ro code  0x00404c74     0x2  Timer.o [1]
-  .text                ro code  0x00404c76     0x2  Uart.o [1]
-  .text                ro code  0x00404c78     0x2  Uart.o [1]
-  .rodata              const    0x00404c7a     0x1  GlobalVars.o [1]
-  Initializer bytes    ro data  0x00404c7c    0x20  <for P3 s0> (used: 0x1f)
-                              - 0x00404c9c  0x439c
+  .text                ro code  0x00401b30   0x694  Timer.o [1]
+  .text                ro code  0x004021c4   0x48c  PWR.o [1]
+  Veneer               ro code  0x00402650    0x10  - Linker created -
+  .text                ro code  0x00402660   0x410  Uart.o [1]
+  .text                ro code  0x00402a70   0x2d0  Keyboard.o [1]
+  .text                ro code  0x00402d40   0x248  SeqSM_patched.o [4]
+  .text                ro code  0x00402f88   0x228  Phy_Patched.o [4]
+  .text                ro code  0x004031b0   0x21c  MlmeScan_patched.o [4]
+  .text                ro code  0x004033cc   0x210  MacRamLib.o [4]
+  .text                ro code  0x004035dc   0x20c  TS_kernel.o [1]
+  .text                ro code  0x004037e8   0x200  PhyIsr_Patched.o [4]
+  Veneer               ro code  0x004039e8     0x4  - Linker created -
+  .text                ro code  0x004039ec   0x1f8  DblMul.o [6]
+  .text                ro code  0x00403be4   0x1d0  Led.o [1]
+  .text                ro code  0x00403db4   0x168  GlobalVars.o [1]
+  .text                ro code  0x00403f1c   0x154  UartUtil.o [1]
+  .rodata              const    0x00404070   0x150  PhySettingsRam.o [4]
+  .text                ro code  0x004041c0   0x134  PlatformInit.o [1]
+  Veneer               ro code  0x004042f4     0xc  - Linker created -
+  Veneer               ro code  0x00404300     0xc  - Linker created -
+  .text                ro code  0x0040430c   0x124  Init-IAR.o [1]
+  .text                ro code  0x00404430    0xf4  MApp_init.o [1]
+  .rodata              const    0x00404524    0xe8  PhySettingsRam.o [4]
+  .text                ro code  0x0040460c    0xe6  NV_FlashHAL.o [1]
+  Veneer               ro code  0x004046f4    0x10  - Linker created -
+  Veneer               ro code  0x00404704    0x10  - Linker created -
+  .text                ro code  0x00404714    0xe4  KeyboardHAL.o [1]
+  .text                ro code  0x004047f8    0xe0  PlatformInterrupts.o [1]
+  .text                ro code  0x004048d8    0xc0  MlmeMain_patched.o [4]
+  .text                ro code  0x00404998    0xa8  AsmDriver_Patched.o [3]
+  .text                ro code  0x00404a40    0x98  rp_vector_IAR.o [3]
+  .text                ro code  0x00404ad8    0x94  ASPMain_patched.o [4]
+  .text                ro code  0x00404b6c    0x78  MacInit.o [1]
+  .text                ro code  0x00404be4    0x74  MemScan_patched.o [4]
+  .text                ro code  0x00404c58    0x68  Init_Utils_patched.o [3]
+  Veneer               ro code  0x00404cc0    0x10  - Linker created -
+  .text                ro code  0x00404cd0    0x58  UartDriver_Patched.o [3]
+  .text                ro code  0x00404d28    0x58  S32ToDbl.o [6]
+  .rodata              const    0x00404d80    0x54  MApp.o [1]
+  .text                ro code  0x00404dd4    0x54  data_init3.o [6]
+  .rodata              const    0x00404e28    0x48  ASPMain_patched.o [4]
+  .rodata              const    0x00404e70    0x40  MApp.o [1]
+  .rodata              const    0x00404eb0    0x40  PhySettingsRam.o [4]
+  .rodata              const    0x00404ef0    0x3c  MApp.o [1]
+  Veneer               ro code  0x00404f2c     0x4  - Linker created -
+  .text                ro code  0x00404f30    0x3c  DblToU32.o [6]
+  .rodata              const    0x00404f6c    0x38  MApp.o [1]
+  .rodata              const    0x00404fa4    0x38  MApp.o [1]
+  .rodata              const    0x00404fdc    0x38  MApp.o [1]
+  .rodata              const    0x00405014    0x38  MApp.o [1]
+  .rodata              const    0x0040504c    0x34  MApp.o [1]
+  .text                ro code  0x00405080    0x34  rp_vector_tables.o [3]
+  .rodata              const    0x004050b4    0x30  MApp.o [1]
+  .rodata              const    0x004050e4    0x30  MApp.o [1]
+  .rodata              const    0x00405114    0x30  MApp.o [1]
+  .rodata              const    0x00405144    0x30  MApp.o [1]
+  .text                ro code  0x00405174    0x2e  copy_init3.o [6]
+  .rodata              const    0x004051a4    0x2c  MApp.o [1]
+  .rodata              const    0x004051d0    0x2c  MApp.o [1]
+  .rodata              const    0x004051fc    0x28  MApp.o [1]
+  .rodata              const    0x00405224    0x28  MApp.o [1]
+  .text                ro code  0x0040524c    0x28  zero_init3.o [6]
+  .rodata              const    0x00405274    0x24  ASPMain_patched.o [4]
+  .rodata              const    0x00405298    0x24  ASPMain_patched.o [4]
+  .iar.init_table      const    0x004052bc    0x24  - Linker created -
+  .rodata              const    0x004052e0    0x20  MApp.o [1]
+  .rodata              const    0x00405300    0x20  rp_vector_tables.o [3]
+  .rodata              const    0x00405320    0x18  MApp.o [1]
+  .rodata              const    0x00405338    0x18  MApp.o [1]
+  .rodata              const    0x00405350    0x18  MApp.o [1]
+  .rodata              const    0x00405368    0x18  MApp.o [1]
+  .rodata              const    0x00405380    0x18  MApp.o [1]
+  .rodata              const    0x00405398    0x18  MApp.o [1]
+  .rodata              const    0x004053b0    0x14  MApp.o [1]
+  .rodata              const    0x004053c4    0x10  MApp.o [1]
+  .rodata              const    0x004053d4    0x10  MApp.o [1]
+  .rodata              const    0x004053e4    0x10  MApp.o [1]
+  .rodata              const    0x004053f4    0x10  MApp.o [1]
+  .rodata              const    0x00405404    0x10  MApp.o [1]
+  .rodata              const    0x00405414    0x10  MApp.o [1]
+  .rodata              const    0x00405424    0x10  MApp.o [1]
+  .rodata              const    0x00405434    0x10  MacInit.o [1]
+  .rodata              const    0x00405444    0x10  NV_Data.o [1]
+  .rodata              const    0x00405454     0xc  MApp.o [1]
+  .rodata              const    0x00405460     0xc  MApp.o [1]
+  .rodata              const    0x0040546c     0xc  MApp.o [1]
+  Veneer               ro code  0x00405478     0x4  - Linker created -
+  .text                ro code  0x0040547c     0xc  U32ToDbl.o [6]
+  .text                ro code  0x00405488     0xa  Init_Delay_patched.o [3]
+  .rodata              const    0x00405494     0x8  MApp.o [1]
+  .rodata              const    0x0040549c     0x8  MApp.o [1]
+  .rodata              const    0x004054a4     0x8  MApp.o [1]
+  .rodata              const    0x004054ac     0x8  MApp.o [1]
+  .rodata              const    0x004054b4     0x8  MApp_init.o [1]
+  .rodata              const    0x004054bc     0x8  NV_Data.o [1]
+  .rodata              const    0x004054c4     0x8  NV_FlashHAL.o [1]
+  .text                ro code  0x004054cc     0x2  ZtcMain.o [1]
+  .text                ro code  0x004054d0     0x2  MlmeMain_patched.o [4]
+  .text                ro code  0x004054d4     0x2  MlmeMain_patched.o [4]
+  .rodata              const    0x004054d6     0x2  PhySettingsRam.o [4]
+  .rodata              const    0x004054d8     0x2  PhySettingsRam.o [4]
+  .rodata              const    0x004054da     0x2  PhySettingsRam.o [4]
+  .text                ro code  0x004054dc     0x2  Keyboard.o [1]
+  .text                ro code  0x004054de     0x2  MacInit.o [1]
+  .text                ro code  0x004054e0     0x2  Timer.o [1]
+  .text                ro code  0x004054e2     0x2  Uart.o [1]
+  .text                ro code  0x004054e4     0x2  Uart.o [1]
+  .rodata              const    0x004054e6     0x1  GlobalVars.o [1]
+  Initializer bytes    ro data  0x004054e8    0x20  <for P3 s0> (used: 0x1f)
+                              - 0x00405508  0x4c08
 
 "P3", part 1 of 3:                           0x7e0
-  .stack               uninit   0x00404c9c   0x7e0  Init-IAR.o [1]
-                              - 0x0040547c   0x7e0
+  .stack               uninit   0x00405508   0x7e0  Init-IAR.o [1]
+                              - 0x00405ce8   0x7e0
 
 "P3", part 2 of 3:                            0x20
-  P3 s0                         0x0040547c    0x20  <Init block>
-    .data              inited   0x0040547c     0xc  GlobalVars.o [1]
-    .data              inited   0x00405488     0x4  GlobalVars.o [1]
-    .data              inited   0x0040548c     0x4  GlobalVars.o [1]
-    .data              inited   0x00405490     0x4  Timer.o [1]
-    .data              inited   0x00405494     0x2  NV_Flash.o [1]
-    .data              inited   0x00405496     0x1  GlobalVars.o [1]
-    .data              inited   0x00405497     0x1  Keyboard.o [1]
-    .data              inited   0x00405498     0x1  Keyboard.o [1]
-    .data              inited   0x00405499     0x1  Led.o [1]
-    .data              inited   0x0040549a     0x1  MApp.o [1]
-                              - 0x0040549c    0x20
+  P3 s0                         0x00405ce8    0x20  <Init block>
+    .data              inited   0x00405ce8     0xc  GlobalVars.o [1]
+    .data              inited   0x00405cf4     0x4  GlobalVars.o [1]
+    .data              inited   0x00405cf8     0x4  GlobalVars.o [1]
+    .data              inited   0x00405cfc     0x4  Timer.o [1]
+    .data              inited   0x00405d00     0x2  NV_Flash.o [1]
+    .data              inited   0x00405d02     0x1  GlobalVars.o [1]
+    .data              inited   0x00405d03     0x1  Keyboard.o [1]
+    .data              inited   0x00405d04     0x1  Keyboard.o [1]
+    .data              inited   0x00405d05     0x1  Led.o [1]
+    .data              inited   0x00405d06     0x1  MApp.o [1]
+                              - 0x00405d08    0x20
 
-"P3", part 3 of 3:                           0x9f0
-  .bss                 zero     0x0040549c   0x460  GlobalVars.o [1]
-  .bss                 zero     0x004058fc   0x198  Timer.o [1]
-  .bss                 zero     0x00405a94   0x100  rp_vector_tables.o [3]
-  .bss                 zero     0x00405b94    0xbc  GlobalVars.o [1]
-  .bss                 zero     0x00405c50    0xa0  GlobalVars.o [1]
-  .bss                 zero     0x00405cf0    0x70  TS_kernel.o [1]
-  .bss                 zero     0x00405d60    0x24  GlobalVars.o [1]
-  .bss                 zero     0x00405d84    0x24  Timer.o [1]
-  .bss                 zero     0x00405da8    0x20  Uart.o [1]
-  .bss                 zero     0x00405dc8    0x18  MApp.o [1]
-  .bss                 zero     0x00405de0    0x18  Uart.o [1]
-  .bss                 zero     0x00405df8    0x18  Uart.o [1]
-  .bss                 zero     0x00405e10    0x10  TS_kernel.o [1]
-  .bss                 zero     0x00405e20     0xc  NV_Flash.o [1]
-  .bss                 zero     0x00405e2c     0x8  MApp.o [1]
-  .bss                 zero     0x00405e34     0x8  MApp.o [1]
-  .bss                 zero     0x00405e3c     0x8  MApp.o [1]
-  .bss                 zero     0x00405e44     0x4  Keyboard.o [1]
-  .bss                 zero     0x00405e48     0x4  MApp.o [1]
-  .bss                 zero     0x00405e4c     0x4  NV_Flash.o [1]
-  .bss                 zero     0x00405e50     0x4  NV_Flash.o [1]
-  .bss                 zero     0x00405e54     0x4  Timer.o [1]
-  .bss                 zero     0x00405e58     0x4  Uart.o [1]
-  .bss                 zero     0x00405e5c     0x4  Uart.o [1]
-  .bss                 zero     0x00405e60     0x2  MApp.o [1]
-  .bss                 zero     0x00405e62     0x2  Timer.o [1]
-  .bss                 zero     0x00405e64     0x2  Timer.o [1]
-  .bss                 zero     0x00405e66     0x1  GlobalVars.o [1]
-  .bss                 zero     0x00405e67     0x1  Keyboard.o [1]
-  .bss                 zero     0x00405e68     0x1  Keyboard.o [1]
-  .bss                 zero     0x00405e69     0x1  Keyboard.o [1]
-  .bss                 zero     0x00405e6a     0x1  Keyboard.o [1]
-  .bss                 zero     0x00405e6b     0x1  Keyboard.o [1]
-  .bss                 zero     0x00405e6c     0x1  Keyboard.o [1]
-  .bss                 zero     0x00405e6d     0x1  Keyboard.o [1]
-  .bss                 zero     0x00405e6e     0x1  Led.o [1]
-  .bss                 zero     0x00405e6f     0x1  Led.o [1]
-  .bss                 zero     0x00405e70     0x1  MApp.o [1]
-  .bss                 zero     0x00405e71     0x1  MApp.o [1]
-  .bss                 zero     0x00405e72     0x1  MApp.o [1]
-  .bss                 zero     0x00405e73     0x1  MApp.o [1]
-  .bss                 zero     0x00405e74     0x1  MApp.o [1]
-  .bss                 zero     0x00405e75     0x1  MApp.o [1]
-  .bss                 zero     0x00405e76     0x1  MApp.o [1]
-  .bss                 zero     0x00405e77     0x1  MApp.o [1]
-  .bss                 zero     0x00405e78     0x1  MApp_init.o [1]
-  .bss                 zero     0x00405e79     0x1  MacInit.o [1]
-  .bss                 zero     0x00405e7a     0x1  NV_Flash.o [1]
-  .bss                 zero     0x00405e7b     0x1  TS_kernel.o [1]
-  .bss                 zero     0x00405e7c     0x1  Timer.o [1]
-  .bss                 zero     0x00405e7d     0x1  Timer.o [1]
-  .bss                 zero     0x00405e7e     0x1  Timer.o [1]
-  .bss                 zero     0x00405e7f     0x1  Timer.o [1]
-  .bss                 zero     0x00405e80     0x1  Uart.o [1]
-  .bss                 zero     0x00405e81     0x1  Uart.o [1]
-  .bss                 zero     0x00405e82     0x1  Uart.o [1]
-  .bss                 zero     0x00405e83     0x1  Uart.o [1]
-  .bss                 zero     0x00405e84     0x1  Uart.o [1]
-  .bss                 zero     0x00405e85     0x1  Uart.o [1]
-  .bss                 zero     0x00405e86     0x1  Uart.o [1]
-  .bss                 zero     0x00405e87     0x1  Uart.o [1]
-  .bss                 zero     0x00405e88     0x1  Phy_Patched.o [4]
-  .bss                 zero     0x00405e89     0x1  Init_Utils_patched.o [3]
-                              - 0x00405e8a   0x9ee
+"P3", part 3 of 3:                           0x9fc
+  .bss                 zero     0x00405d08   0x460  GlobalVars.o [1]
+  .bss                 zero     0x00406168   0x198  Timer.o [1]
+  .bss                 zero     0x00406300   0x100  rp_vector_tables.o [3]
+  .bss                 zero     0x00406400    0xbc  GlobalVars.o [1]
+  .bss                 zero     0x004064bc    0xa0  GlobalVars.o [1]
+  .bss                 zero     0x0040655c    0x70  TS_kernel.o [1]
+  .bss                 zero     0x004065cc    0x24  GlobalVars.o [1]
+  .bss                 zero     0x004065f0    0x24  Timer.o [1]
+  .bss                 zero     0x00406614    0x20  Uart.o [1]
+  .bss                 zero     0x00406634    0x18  MApp.o [1]
+  .bss                 zero     0x0040664c    0x18  Uart.o [1]
+  .bss                 zero     0x00406664    0x18  Uart.o [1]
+  .bss                 zero     0x0040667c    0x10  TS_kernel.o [1]
+  .bss                 zero     0x0040668c     0xc  NV_Flash.o [1]
+  .bss                 zero     0x00406698     0x8  MApp.o [1]
+  .bss                 zero     0x004066a0     0x8  MApp.o [1]
+  .bss                 zero     0x004066a8     0x8  MApp.o [1]
+  .bss                 zero     0x004066b0     0x4  Keyboard.o [1]
+  .bss                 zero     0x004066b4     0x4  MApp.o [1]
+  .bss                 zero     0x004066b8     0x4  NV_Flash.o [1]
+  .bss                 zero     0x004066bc     0x4  NV_Flash.o [1]
+  .bss                 zero     0x004066c0     0x4  PWR.o [1]
+  .bss                 zero     0x004066c4     0x4  PWR.o [1]
+  .bss                 zero     0x004066c8     0x4  Timer.o [1]
+  .bss                 zero     0x004066cc     0x4  Uart.o [1]
+  .bss                 zero     0x004066d0     0x4  Uart.o [1]
+  .bss                 zero     0x004066d4     0x2  MApp.o [1]
+  .bss                 zero     0x004066d6     0x2  PWR.o [1]
+  .bss                 zero     0x004066d8     0x2  Timer.o [1]
+  .bss                 zero     0x004066da     0x2  Timer.o [1]
+  .bss                 zero     0x004066dc     0x1  GlobalVars.o [1]
+  .bss                 zero     0x004066dd     0x1  Keyboard.o [1]
+  .bss                 zero     0x004066de     0x1  Keyboard.o [1]
+  .bss                 zero     0x004066df     0x1  Keyboard.o [1]
+  .bss                 zero     0x004066e0     0x1  Keyboard.o [1]
+  .bss                 zero     0x004066e1     0x1  Keyboard.o [1]
+  .bss                 zero     0x004066e2     0x1  Keyboard.o [1]
+  .bss                 zero     0x004066e3     0x1  Keyboard.o [1]
+  .bss                 zero     0x004066e4     0x1  Led.o [1]
+  .bss                 zero     0x004066e5     0x1  Led.o [1]
+  .bss                 zero     0x004066e6     0x1  MApp.o [1]
+  .bss                 zero     0x004066e7     0x1  MApp.o [1]
+  .bss                 zero     0x004066e8     0x1  MApp.o [1]
+  .bss                 zero     0x004066e9     0x1  MApp.o [1]
+  .bss                 zero     0x004066ea     0x1  MApp.o [1]
+  .bss                 zero     0x004066eb     0x1  MApp.o [1]
+  .bss                 zero     0x004066ec     0x1  MApp.o [1]
+  .bss                 zero     0x004066ed     0x1  MApp.o [1]
+  .bss                 zero     0x004066ee     0x1  MApp_init.o [1]
+  .bss                 zero     0x004066ef     0x1  MacInit.o [1]
+  .bss                 zero     0x004066f0     0x1  NV_Flash.o [1]
+  .bss                 zero     0x004066f1     0x1  PWR.o [1]
+  .bss                 zero     0x004066f2     0x1  PWR.o [1]
+  .bss                 zero     0x004066f3     0x1  PWR.o [1]
+  .bss                 zero     0x004066f4     0x1  TS_kernel.o [1]
+  .bss                 zero     0x004066f5     0x1  Timer.o [1]
+  .bss                 zero     0x004066f6     0x1  Timer.o [1]
+  .bss                 zero     0x004066f7     0x1  Timer.o [1]
+  .bss                 zero     0x004066f8     0x1  Timer.o [1]
+  .bss                 zero     0x004066f9     0x1  Uart.o [1]
+  .bss                 zero     0x004066fa     0x1  Uart.o [1]
+  .bss                 zero     0x004066fb     0x1  Uart.o [1]
+  .bss                 zero     0x004066fc     0x1  Uart.o [1]
+  .bss                 zero     0x004066fd     0x1  Uart.o [1]
+  .bss                 zero     0x004066fe     0x1  Uart.o [1]
+  .bss                 zero     0x004066ff     0x1  Uart.o [1]
+  .bss                 zero     0x00406700     0x1  Uart.o [1]
+  .bss                 zero     0x00406701     0x1  Phy_Patched.o [4]
+  .bss                 zero     0x00406702     0x1  Init_Utils_patched.o [3]
+                              - 0x00406703   0x9fb
 
 
 *******************************************************************************
@@ -400,14 +375,14 @@
           Address     Size
           -------     ----
 Zero (__iar_zero_init3)
-    1 destination range, total size 0x9ee:
-          0x0040549c  0x9ee
+    1 destination range, total size 0x9fb:
+          0x00405d08  0x9fb
 
 Copy (__iar_copy_init3)
     1 source range, total size 0x20 (103% of destination):
-          0x00404c7c   0x20
+          0x004054e8   0x20
     1 destination range, total size 0x1f:
-          0x0040547c   0x1f
+          0x00405ce8   0x1f
 
 
 *******************************************************************************
@@ -416,27 +391,28 @@ Copy (__iar_copy_init3)
 
     Module                ro code  ro data  rw data
     ------                -------  -------  -------
-C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj: [1]
+C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj: [1]
     GlobalVars.o              360       22    1 526
     Init-IAR.o                324             2 016
     Keyboard.o                722        2       13
     KeyboardHAL.o             228
     Led.o                     464        1        3
     MApp.o                  2 342    1 221       63
-    MApp_init.o               228        8        1
+    MApp_init.o               244        8        1
     MacInit.o                 122       16        1
     NV_Data.o                          160
     NV_Flash.o              2 246        2       23
     NV_FlashHAL.o             230        8
+    PWR.o                   1 164                13
     PlatformInit.o            308
     PlatformInterrupts.o      224
-    TS_kernel.o               460               129
-    Timer.o                 1 450        4      460
+    TS_kernel.o               524               129
+    Timer.o                 1 686        4      460
     Uart.o                  1 044                96
     UartUtil.o                340
     ZtcMain.o                   2
     -----------------------------------------------
-    Total:                 11 094    1 444    4 331
+    Total:                 12 574    1 444    4 344
 
 command line: [2]
     -----------------------------------------------
@@ -470,16 +446,20 @@ dl4t_tl_in.a: [5]
     Total:
 
 rt4t_al.a: [6]
+    DblMul.o                  504
+    DblToU32.o                 60
+    S32ToDbl.o                 88
+    U32ToDbl.o                 12
     copy_init3.o               46
     data_init3.o               84
     zero_init3.o               40
     -----------------------------------------------
-    Total:                    170
+    Total:                    834
 
     Gaps                       10        4        1
-    Linker created            152       38
+    Linker created            164       38
 ---------------------------------------------------
-    Grand Total:           15 228    2 300    4 590
+    Grand Total:           17 384    2 300    4 603
 
 
 *******************************************************************************
@@ -505,7 +485,7 @@ Adc_SetConfig           0x0000c30d         Code  Gb  rom-symbols-LLC.o [3]
 Adc_SetConvCtrl         0x0000c385         Code  Gb  rom-symbols-LLC.o [3]
 Adc_SetFifoCtrl         0x0000c475         Code  Gb  rom-symbols-LLC.o [3]
 Adc_StartManualConv     0x0000c4f9         Code  Gb  rom-symbols-LLC.o [3]
-AppInterruptsInit       0x00404035   0x6c  Code  Gb  PlatformInterrupts.o [1]
+AppInterruptsInit       0x004047f9   0x6c  Code  Gb  PlatformInterrupts.o [1]
 AppPollWaitTimeout      0x004010e5   0x66  Code  Lc  MApp.o [1]
 AppTask                 0x004009d9  0x2e8  Code  Gb  MApp.o [1]
 App_HandleAssociateConfirm
@@ -525,7 +505,7 @@ Asm_CbcMacEncryptDecrypt
 Asm_Ccm                 0x0000ecb9         Code  Gb  rom-symbols-LLC.o [3]
 Asm_CcmEncryptDecrypt   0x0000ec95         Code  Gb  rom-symbols-LLC.o [3]
 Asm_CtrEncryptDecrypt   0x0000ec39         Code  Gb  rom-symbols-LLC.o [3]
-Asm_Init                0x004041d5   0xa8  Code  Gb  AsmDriver_Patched.o [3]
+Asm_Init                0x00404999   0xa8  Code  Gb  AsmDriver_Patched.o [3]
 Asp_AcomaReq            0x0000a131         Code  Gb  rom-symbols-MAC.o [4]
 Asp_AutoDozeReq         0x0000a0d9         Code  Gb  rom-symbols-MAC.o [4]
 Asp_ByteArrayToZbClock32
@@ -549,7 +529,7 @@ Asp_PortReq             0x0000a191         Code  Gb  rom-symbols-MAC.o [4]
 Asp_SendBeaconStateInd  0x0000a1c1         Code  Gb  rom-symbols-MAC.o [4]
 Asp_SetMinDozeTimeReq   0x0000a199         Code  Gb  rom-symbols-MAC.o [4]
 Asp_SetNotifyReq        0x0000a1a5         Code  Gb  rom-symbols-MAC.o [4]
-Asp_SetPowerLevel       0x00404315   0x88  Code  Gb  ASPMain_patched.o [4]
+Asp_SetPowerLevel       0x00404ad9   0x88  Code  Gb  ASPMain_patched.o [4]
 Asp_SetRandomSeed       0x00009fc5         Code  Gb  rom-symbols-MAC.o [4]
 Asp_TrimReq             0x0000a155         Code  Gb  rom-symbols-MAC.o [4]
 Asp_WakeReq             0x0000a27d         Code  Gb  rom-symbols-MAC.o [4]
@@ -598,9 +578,11 @@ CopyPendingAddressFieldsToBeaconFrame
                         0x00009209         Code  Gb  rom-symbols-MAC.o [4]
 CreatePendingAddressList
                         0x00009145         Code  Gb  rom-symbols-MAC.o [4]
-CrmKBDIsr               0x0040252f   0x1c  Code  Gb  Keyboard.o [1]
-DisableMacaInt          0x004040ad    0xc  Code  Gb  PlatformInterrupts.o [1]
-EnableMacaInt           0x004040a1    0xc  Code  Gb  PlatformInterrupts.o [1]
+CrmKBDIsr               0x00402aa7   0x1c  Code  Gb  Keyboard.o [1]
+DeepSleepWakeupStackProc
+                        0x004011b9    0x2  Code  Gb  MApp.o [1]
+DisableMacaInt          0x00404871    0xc  Code  Gb  PlatformInterrupts.o [1]
+EnableMacaInt           0x00404865    0xc  Code  Gb  PlatformInterrupts.o [1]
 FLib_AddrModeToLength   0x0000f7f9         Code  Gb  rom-symbols-MAC.o [4]
 FLib_ArrayAddArray      0x0000f879         Code  Gb  rom-symbols-MAC.o [4]
 FLib_ArrayAddByte       0x0000f8cd         Code  Gb  rom-symbols-MAC.o [4]
@@ -636,7 +618,7 @@ GetInitTranslationTablePtr
 GetRandomNumber         0x000108d5         Code  Gb  rom-symbols-MAC.o [4]
 GetRandomRange          0x000108dd         Code  Gb  rom-symbols-MAC.o [4]
 GetStackLevel           0x00010021         Code  Gb  rom-symbols-MAC.o [4]
-GpioUart2Init           0x0040248d   0x32  Code  Gb  Uart.o [1]
+GpioUart2Init           0x00402a05   0x32  Code  Gb  Uart.o [1]
 Gpio_EnPinHyst          0x0000869d         Code  Gb  rom-symbols-LLC.o [3]
 Gpio_EnPinPuKeeper      0x00008655         Code  Gb  rom-symbols-LLC.o [3]
 Gpio_EnPinPullup        0x000085c1         Code  Gb  rom-symbols-LLC.o [3]
@@ -662,7 +644,7 @@ Gpio_SetPortDir         0x0000837d         Code  Gb  rom-symbols-LLC.o [3]
 Gpio_SetPortFunction    0x000086e5         Code  Gb  rom-symbols-LLC.o [3]
 Gpio_TogglePin          0x0000850d         Code  Gb  rom-symbols-LLC.o [3]
 Gpio_WrPortSetting      0x000082d9         Code  Gb  rom-symbols-LLC.o [3]
-HexToAscii              0x004037d3   0x1e  Code  Lc  UartUtil.o [1]
+HexToAscii              0x00403f87   0x1e  Code  Lc  UartUtil.o [1]
 I2c_CancelTransfer      0x00004b5d         Code  Gb  rom-symbols-LLC.o [3]
 I2c_Disable             0x000049f9         Code  Gb  rom-symbols-LLC.o [3]
 I2c_Enable              0x000049c5         Code  Gb  rom-symbols-LLC.o [3]
@@ -680,16 +662,16 @@ ITC_EnableInterrupt     0x0000ffc5         Code  Gb  rom-symbols-LLC.o [3]
 ITC_Init                0x0000fe9d         Code  Gb  rom-symbols-LLC.o [3]
 ITC_SetIrqMinimumLevel  0x0000fffd         Code  Gb  rom-symbols-LLC.o [3]
 ITC_SetPriority         0x0000fee9         Code  Gb  rom-symbols-LLC.o [3]
-IdleTask                0x00403fb1    0xe  Code  Gb  MApp_init.o [1]
-InitExecuteEntry        0x00404495   0x68  Code  Gb  Init_Utils_patched.o [3]
+IdleTask                0x00404495   0x1a  Code  Gb  MApp_init.o [1]
+InitExecuteEntry        0x00404c59   0x68  Code  Gb  Init_Utils_patched.o [3]
 InitFromFlash           0x0000f97d         Code  Gb  rom-symbols-MAC.o [4]
 InitFromMemory          0x0000faa5         Code  Gb  rom-symbols-LLC.o [3]
-Init_802_15_4           0x00403a2b   0x3e  Code  Gb  PlatformInit.o [1]
-Init_Delay              0x00404c1d         Code  Gb  Init_Delay_patched.o [3]
+Init_802_15_4           0x004041df   0x3e  Code  Gb  PlatformInit.o [1]
+Init_Delay              0x00405489         Code  Gb  Init_Delay_patched.o [3]
 Init_MacExtendedAddress
-                        0x00403fbf   0x64  Code  Gb  MApp_init.o [1]
+                        0x004044af   0x64  Code  Gb  MApp_init.o [1]
 InitializeMac           0x000109b1         Code  Gb  rom-symbols-MAC.o [4]
-InitializePhy           0x00402a11  0x168  Code  Gb  Phy_Patched.o [4]
+InitializePhy           0x00402f89  0x168  Code  Gb  Phy_Patched.o [4]
 IntAssignHandler        0x0000ff25         Code  Gb  rom-symbols-LLC.o [3]
 IntDisableAll           0x000107f8         Code  Gb  rom-symbols-LLC.o [3]
 IntDisableFIQ           0x000107e0         Code  Gb  rom-symbols-LLC.o [3]
@@ -700,22 +682,22 @@ IntRestoreFIQ           0x00010780         Code  Gb  rom-symbols-LLC.o [3]
 IntRestoreIRQ           0x00010798         Code  Gb  rom-symbols-LLC.o [3]
 InterruptInit           0x0000fe85         Code  Gb  rom-symbols-LLC.o [3]
 IrqHandler              0x00010810         Code  Gb  rom-symbols-LLC.o [3]
-IsMacaIntAsserted       0x004040c5    0xc  Code  Gb  PlatformInterrupts.o [1]
-IsMacaIntEnabled        0x004040b9    0xc  Code  Gb  PlatformInterrupts.o [1]
-KBD_Init                0x004024f9   0x36  Code  Gb  Keyboard.o [1]
-KBD_Task                0x0040254b   0x1c  Code  Gb  Keyboard.o [1]
-KbCrmInit               0x00403ecd   0x54  Code  Gb  KeyboardHAL.o [1]
-KbGpioInit              0x00403e6d   0x60  Code  Gb  KeyboardHAL.o [1]
-KbReadCenterKey         0x00403f3f   0x12  Code  Gb  KeyboardHAL.o [1]
-KbReadPins              0x00403f29   0x16  Code  Gb  KeyboardHAL.o [1]
-KeyScan                 0x004025bd  0x1da  Code  Lc  Keyboard.o [1]
-KeySwitchPortGet        0x00402575   0x48  Code  Lc  Keyboard.o [1]
-LED_FlashTimeout        0x004033b1   0x74  Code  Lc  Led.o [1]
-LED_Init                0x00403265   0x18  Code  Gb  Led.o [1]
-LED_StartFlash          0x0040335d   0x20  Code  Gb  Led.o [1]
-LED_StopFlash           0x0040337d   0x2e  Code  Gb  Led.o [1]
-LED_TurnOffAllLeds      0x00403351    0xc  Code  Gb  Led.o [1]
-LED_TurnOffLed          0x00403317   0x3a  Code  Gb  Led.o [1]
+IsMacaIntAsserted       0x00404889    0xc  Code  Gb  PlatformInterrupts.o [1]
+IsMacaIntEnabled        0x0040487d    0xc  Code  Gb  PlatformInterrupts.o [1]
+KBD_Init                0x00402a71   0x36  Code  Gb  Keyboard.o [1]
+KBD_Task                0x00402ac3   0x1c  Code  Gb  Keyboard.o [1]
+KbCrmInit               0x00404775   0x54  Code  Gb  KeyboardHAL.o [1]
+KbGpioInit              0x00404715   0x60  Code  Gb  KeyboardHAL.o [1]
+KbReadCenterKey         0x004047e7   0x12  Code  Gb  KeyboardHAL.o [1]
+KbReadPins              0x004047d1   0x16  Code  Gb  KeyboardHAL.o [1]
+KeyScan                 0x00402b35  0x1da  Code  Lc  Keyboard.o [1]
+KeySwitchPortGet        0x00402aed   0x48  Code  Lc  Keyboard.o [1]
+LED_FlashTimeout        0x00403d31   0x74  Code  Lc  Led.o [1]
+LED_Init                0x00403be5   0x18  Code  Gb  Led.o [1]
+LED_StartFlash          0x00403cdd   0x20  Code  Gb  Led.o [1]
+LED_StopFlash           0x00403cfd   0x2e  Code  Gb  Led.o [1]
+LED_TurnOffAllLeds      0x00403cd1    0xc  Code  Gb  Led.o [1]
+LED_TurnOffLed          0x00403c97   0x3a  Code  Gb  Led.o [1]
 LQIParams               0x004001d4         Data  Gb  rom-symbols-MAC.o [4]
 List_AddHead            0x0000a44d         Code  Gb  rom-symbols-MAC.o [4]
 List_AddTail            0x0000a3ed         Code  Gb  rom-symbols-MAC.o [4]
@@ -725,15 +707,15 @@ List_GetNext            0x0000a595         Code  Gb  rom-symbols-MAC.o [4]
 List_Remove             0x0000a4f5         Code  Gb  rom-symbols-MAC.o [4]
 List_RemoveHead         0x0000a4a9         Code  Gb  rom-symbols-MAC.o [4]
 LowLevelReadClockSync   0x0000f6c5         Code  Gb  rom-symbols-MAC.o [4]
-MACA_Interrupt          0x00403065  0x200  Code  Gb  PhyIsr_Patched.o [4]
+MACA_Interrupt          0x004037e9  0x200  Code  Gb  PhyIsr_Patched.o [4]
 MApp_init               0x00400931   0x7a  Code  Gb  MApp.o [1]
 MCPS_NWK_SapHandler     0x004011dd   0x1e  Code  Gb  MApp.o [1]
 MEM_ASP_SapHandler      0x00009e59         Code  Gb  rom-symbols-MAC.o [4]
 MEM_MLME_SapHandler     0x00005c99         Code  Gb  rom-symbols-MAC.o [4]
 MLME_MEM_SapHandler     0x0000dbcd         Code  Gb  rom-symbols-MAC.o [4]
-MLME_NWK_SapHandler     0x004011b9   0x1e  Code  Gb  MApp.o [1]
+MLME_NWK_SapHandler     0x004011bb   0x1e  Code  Gb  MApp.o [1]
 MM_AddMsgToTrackingArray
-                        0x00403621   0x1e  Code  Gb  GlobalVars.o [1]
+                        0x00403dd5   0x1e  Code  Gb  GlobalVars.o [1]
 MM_AddToPool            0x0000a5e1         Code  Gb  rom-symbols-MAC.o [4]
 MM_Alloc                0x0000a689         Code  Gb  rom-symbols-MAC.o [4]
 MM_AllocFast            0x0000a73d         Code  Gb  rom-symbols-MAC.o [4]
@@ -741,24 +723,24 @@ MM_AllocPool            0x0000a631         Code  Gb  rom-symbols-MAC.o [4]
 MM_Free                 0x0000a6c1         Code  Gb  rom-symbols-MAC.o [4]
 MM_GetLinkRegister      0x0000a325         Code  Gb  rom-symbols-MAC.o [4]
 MM_GetMacPool           0x0000a609         Code  Gb  rom-symbols-MAC.o [4]
-MM_GetMsgIndex          0x0040363f   0x48  Code  Gb  GlobalVars.o [1]
-MM_InitMsgTracking      0x00403601   0x20  Code  Gb  GlobalVars.o [1]
+MM_GetMsgIndex          0x00403df3   0x48  Code  Gb  GlobalVars.o [1]
+MM_InitMsgTracking      0x00403db5   0x20  Code  Gb  GlobalVars.o [1]
 MM_SetPrivatePool       0x0000a7b9         Code  Gb  rom-symbols-MAC.o [4]
-MM_UpdateMsgTracking    0x00403687   0xd4  Code  Gb  GlobalVars.o [1]
+MM_UpdateMsgTracking    0x00403e3b   0xd4  Code  Gb  GlobalVars.o [1]
 MPIB_GetPointer         0x0000fd7d         Code  Gb  rom-symbols-MAC.o [4]
 MPIB_Init               0x0000fcbd         Code  Gb  rom-symbols-MAC.o [4]
 MPIB_SecAclEntry        0x0000fe41         Code  Gb  rom-symbols-MAC.o [4]
 MPIB_SecMaterial        0x0000fe69         Code  Gb  rom-symbols-MAC.o [4]
-MacInit                 0x004043a9    0xa  Code  Gb  MacInit.o [1]
-MacPhyInit_Initialize   0x00402e55  0x210  Code  Gb  MacRamLib.o [4]
+MacInit                 0x00404b6d    0xa  Code  Gb  MacInit.o [1]
+MacPhyInit_Initialize   0x004033cd  0x210  Code  Gb  MacRamLib.o [4]
 MacPhyInit_ReadExtAddress
                         0x00010a0d         Code  Gb  rom-symbols-MAC.o [4]
 MacPhyInit_WriteExtAddress
                         0x000109f1         Code  Gb  rom-symbols-MAC.o [4]
 MacSeqInit              0x0000f665         Code  Gb  rom-symbols-MAC.o [4]
-MacTaskInit             0x004043b5   0x68  Code  Gb  MacInit.o [1]
-MacTaskTable            0x00404bd8   0x10  Data  Gb  MacInit.o [1]
-Main                    0x00403f51   0x60  Code  Gb  MApp_init.o [1]
+MacTaskInit             0x00404b79   0x68  Code  Gb  MacInit.o [1]
+MacTaskTable            0x00405434   0x10  Data  Gb  MacInit.o [1]
+Main                    0x00404431   0x64  Code  Gb  MApp_init.o [1]
 Mcps_GetLengthOfMcpsDataInd
                         0x0000e34d         Code  Gb  rom-symbols-MAC.o [4]
 MemBeaconBcnCoordWfTxComplete
@@ -937,7 +919,7 @@ MemScanChannelRx        0x0000d001         Code  Gb  rom-symbols-MAC.o [4]
 MemScanOrphanRx         0x0000d09d         Code  Gb  rom-symbols-MAC.o [4]
 MemScan_CalcScanDuration
                         0x0000cf61         Code  Gb  rom-symbols-MAC.o [4]
-MemScan_InitEd          0x00404421   0x74  Code  Gb  MemScan_patched.o [4]
+MemScan_InitEd          0x00404be5   0x74  Code  Gb  MemScan_patched.o [4]
 MemScan_InitPassiveScan
                         0x0000cf29         Code  Gb  rom-symbols-MAC.o [4]
 MemScan_InitScan        0x0000ce61         Code  Gb  rom-symbols-MAC.o [4]
@@ -960,7 +942,7 @@ MemSmLib_StartSeqAction
 MemTimer_StartWait      0x00010949         Code  Gb  rom-symbols-MAC.o [4]
 Mem_Init                0x0000db01         Code  Gb  rom-symbols-MAC.o [4]
 MlmeActivePassiveScan_Patched
-                        0x00402d69   0xc8  Code  Gb  MlmeScan_patched.o [4]
+                        0x004032e1   0xc8  Code  Gb  MlmeScan_patched.o [4]
 MlmeAssociateIgnorePollConfirm
                         0x0000c1cd         Code  Gb  rom-symbols-MAC.o [4]
 MlmeAssociateWaitTimeout
@@ -1036,7 +1018,7 @@ MlmeOrphan_SendNotification
                         0x0000ba35         Code  Gb  rom-symbols-MAC.o [4]
 MlmePanIdConflictDetected
                         0x00010a15         Code  Gb  rom-symbols-MAC.o [4]
-MlmeScan_InitScan       0x00402c39  0x130  Code  Gb  MlmeScan_patched.o [4]
+MlmeScan_InitScan       0x004031b1  0x130  Code  Gb  MlmeScan_patched.o [4]
 MlmeScan_ProcessBeacon  0x00009555         Code  Gb  rom-symbols-MAC.o [4]
 MlmeScan_StartScan      0x000094c1         Code  Gb  rom-symbols-MAC.o [4]
 MlmeSmIdle              0x0000bbe5         Code  Gb  rom-symbols-MAC.o [4]
@@ -1061,7 +1043,7 @@ Mlme_HandleSetGetReq    0x00006095         Code  Gb  rom-symbols-MAC.o [4]
 Mlme_Main               0x00005d55         Code  Gb  rom-symbols-MAC.o [4]
 Mlme_Reset              0x00006049         Code  Gb  rom-symbols-MAC.o [4]
 Mlme_VerifyNwkInput     0x00006185         Code  Gb  rom-symbols-MAC.o [4]
-MsgTrackingArray        0x00405b94   0xbc  Data  Gb  GlobalVars.o [1]
+MsgTrackingArray        0x00406400   0xbc  Data  Gb  GlobalVars.o [1]
 NVM_BlankCheck          0x0000701d         Code  Gb  rom-symbols-LLC.o [3]
 NVM_Detect              0x00006cb9         Code  Gb  rom-symbols-LLC.o [3]
 NVM_Erase               0x00006e05         Code  Gb  rom-symbols-LLC.o [3]
@@ -1070,24 +1052,24 @@ NVM_SetSVar             0x00007085         Code  Gb  rom-symbols-LLC.o [3]
 NVM_Verify              0x00006f85         Code  Gb  rom-symbols-LLC.o [3]
 NVM_Write               0x00006ec5         Code  Gb  rom-symbols-LLC.o [3]
 NWK_MCPS_SapHandler     0x00005cd1         Code  Gb  rom-symbols-MAC.o [4]
-NWK_MLME_SapHandler     0x00404115   0xc0  Code  Gb  MlmeMain_patched.o [4]
-NoOfWrongAddrs          0x00405e66    0x1  Data  Gb  GlobalVars.o [1]
+NWK_MLME_SapHandler     0x004048d9   0xc0  Code  Gb  MlmeMain_patched.o [4]
+NoOfWrongAddrs          0x004066dc    0x1  Data  Gb  GlobalVars.o [1]
 NvCopyDataSet           0x00401971   0xd8  Code  Lc  NV_Flash.o [1]
 NvCopyTheRemainsDataSets
                         0x00401a55   0xca  Code  Lc  NV_Flash.o [1]
 NvDataSetIndexFromID    0x00401437   0x46  Code  Lc  NV_Flash.o [1]
-NvDataSetTable          0x00404be8   0x10  Data  Gb  NV_Data.o [1]
+NvDataSetTable          0x00405444   0x10  Data  Gb  NV_Data.o [1]
 NvGetFirstBlankPageInfo
                         0x0040157d   0x4a  Code  Lc  NV_Flash.o [1]
 NvGetSectorPageInfo     0x004015c9   0x60  Code  Lc  NV_Flash.o [1]
 NvGetSectorSequenceNumber
                         0x00401629   0x1c  Code  Lc  NV_Flash.o [1]
-NvHalEraseSector        0x00403d65   0x32  Code  Gb  NV_FlashHAL.o [1]
-NvHalInit               0x00403d97    0x2  Code  Gb  NV_FlashHAL.o [1]
-NvHalIsBlank            0x00403e1f   0x2c  Code  Gb  NV_FlashHAL.o [1]
-NvHalRead               0x00403d99   0x26  Code  Gb  NV_FlashHAL.o [1]
-NvHalVerify             0x00403def   0x30  Code  Gb  NV_FlashHAL.o [1]
-NvHalWrite              0x00403dbf   0x30  Code  Gb  NV_FlashHAL.o [1]
+NvHalEraseSector        0x0040460d   0x32  Code  Gb  NV_FlashHAL.o [1]
+NvHalInit               0x0040463f    0x2  Code  Gb  NV_FlashHAL.o [1]
+NvHalIsBlank            0x004046c7   0x2c  Code  Gb  NV_FlashHAL.o [1]
+NvHalRead               0x00404641   0x26  Code  Gb  NV_FlashHAL.o [1]
+NvHalVerify             0x00404697   0x30  Code  Gb  NV_FlashHAL.o [1]
+NvHalWrite              0x00404667   0x30  Code  Gb  NV_FlashHAL.o [1]
 NvIdle                  0x00401259   0x3c  Code  Gb  NV_Flash.o [1]
 NvIsValidPage           0x0040147d   0x84  Code  Lc  NV_Flash.o [1]
 NvIsValidSector         0x00401501   0x36  Code  Lc  NV_Flash.o [1]
@@ -1097,21 +1079,42 @@ NvOpen_Validate_Sector  0x00401537   0x40  Code  Lc  NV_Flash.o [1]
 NvSaveDataSet           0x00401711  0x25c  Code  Lc  NV_Flash.o [1]
 NvSaveDataSetLowLevel   0x0040165d   0x9e  Code  Lc  NV_Flash.o [1]
 PATCH_Ret_InitExecuteEntry
-                        0x00404303         Code  Gb  rp_vector_IAR.o [3]
+                        0x00404ac7         Code  Gb  rp_vector_IAR.o [3]
 PATCH_Ret_InitializePhy
-                        0x004042cf         Code  Gb  rp_vector_IAR.o [3]
+                        0x00404a93         Code  Gb  rp_vector_IAR.o [3]
 PATCH_Ret_MemScan_InitEd
-                        0x004042f3         Code  Gb  rp_vector_IAR.o [3]
+                        0x00404ab7         Code  Gb  rp_vector_IAR.o [3]
 PATCH_Ret_MlmeActivePassiveScan
-                        0x0040429f         Code  Gb  rp_vector_IAR.o [3]
+                        0x00404a63         Code  Gb  rp_vector_IAR.o [3]
 PATCH_Ret_MlmeScan_InitScan
-                        0x00404289         Code  Gb  rp_vector_IAR.o [3]
+                        0x00404a4d         Code  Gb  rp_vector_IAR.o [3]
 PATCH_Ret_PhyPlmeSetCurrentChannelRequest
-                        0x004042bd         Code  Gb  rp_vector_IAR.o [3]
+                        0x00404a81         Code  Gb  rp_vector_IAR.o [3]
 PATCH_Ret_SeqTxAutoRxState
-                        0x004042af         Code  Gb  rp_vector_IAR.o [3]
+                        0x00404a73         Code  Gb  rp_vector_IAR.o [3]
 PATCH_Ret_SeqTxPollState
-                        0x004042dd         Code  Gb  rp_vector_IAR.o [3]
+                        0x00404aa1         Code  Gb  rp_vector_IAR.o [3]
+PWRLib_MCU_WakeupReason
+                        0x004066c4    0x4  Data  Gb  PWR.o [1]
+PWRLib_Reset            0x004021f7    0x8  Code  Gb  PWR.o [1]
+PWRLib_StackPS          0x004066f3    0x1  Data  Gb  PWR.o [1]
+PWR_AllOff              0x00402273   0x30  Code  Gb  PWR.o [1]
+PWR_CallBeforeSleep     0x00402209    0xa  Code  Lc  PWR.o [1]
+PWR_CheckForAndEnterNewPowerState
+                        0x00402475   0x70  Code  Gb  PWR.o [1]
+PWR_CheckIfDeviceCanGoToSleep
+                        0x004021df   0x18  Code  Gb  PWR.o [1]
+PWR_DeepSleepAllowed    0x0040232f   0x20  Code  Gb  PWR.o [1]
+PWR_DisallowDeviceToSleep
+                        0x004021c5   0x1a  Code  Gb  PWR.o [1]
+PWR_EnterLowPower       0x00402511   0x6e  Code  Gb  PWR.o [1]
+PWR_HandleDeepSleep     0x0040237f   0xb4  Code  Gb  PWR.o [1]
+PWR_HandleSleep         0x00402433   0x32  Code  Gb  PWR.o [1]
+PWR_MCUSleep            0x00402213   0x60  Code  Gb  PWR.o [1]
+PWR_MCUWait             0x004021ff    0xa  Code  Gb  PWR.o [1]
+PWR_MacaTimerUpdate     0x00402591   0x90  Code  Lc  PWR.o [1]
+PWR_RunAgain            0x004022a3   0x8c  Code  Gb  PWR.o [1]
+PWR_SleepAllowed        0x0040234f   0x30  Code  Gb  PWR.o [1]
 PacLib_CreatePollPacket
                         0x0000d5f1         Code  Gb  rom-symbols-MAC.o [4]
 PacLib_CreateZeroLengthDataPacket
@@ -1140,26 +1143,26 @@ PacMan_SetDirectRouteFlag
                         0x00007c4d         Code  Gb  rom-symbols-MAC.o [4]
 PhyPlmeGetLQI           0x0000e04d         Code  Gb  rom-symbols-MAC.o [4]
 PhyPlmeSetCurrentChannelRequest
-                        0x00402b79   0xb8  Code  Gb  Phy_Patched.o [4]
+                        0x004030f1   0xb8  Code  Gb  Phy_Patched.o [4]
 PhyPlmeSetLongAddress   0x0000e029         Code  Gb  rom-symbols-MAC.o [4]
 PhyPlmeSetPanId         0x0000dff1         Code  Gb  rom-symbols-MAC.o [4]
 PhyPlmeSetShortAddress  0x0000e00d         Code  Gb  rom-symbols-MAC.o [4]
-PlatformInitGpio        0x00403a69   0x7c  Code  Lc  PlatformInit.o [1]
-Platform_Init           0x00403a0d   0x1e  Code  Gb  PlatformInit.o [1]
+PlatformInitGpio        0x0040421d   0x7c  Code  Lc  PlatformInit.o [1]
+Platform_Init           0x004041c1   0x1e  Code  Gb  PlatformInit.o [1]
 PowerDownNVM            0x0040141d   0x1a  Code  Gb  NV_Flash.o [1]
 PowerUpNVM              0x004013f1   0x2c  Code  Gb  NV_Flash.o [1]
 ProcessRxBeacon         0x000092d5         Code  Gb  rom-symbols-MAC.o [4]
 PulsePrbsMain           0x0000e8f5         Code  Gb  rom-symbols-MAC.o [4]
-RP_Tables_AddrTable_1   0x00404aa4   0x20  Data  Gb  rp_vector_tables.o [3]
-RP_Tables_IdxTable_1    0x00405a94  0x100  Data  Gb  rp_vector_tables.o [3]
-RP_Tables_Init          0x00404825   0x34  Code  Gb  rp_vector_tables.o [3]
-RP_Vector_Init          0x0040427d         Code  Gb  rp_vector_IAR.o [3]
+RP_Tables_AddrTable_1   0x00405300   0x20  Data  Gb  rp_vector_tables.o [3]
+RP_Tables_IdxTable_1    0x00406300  0x100  Data  Gb  rp_vector_tables.o [3]
+RP_Tables_Init          0x00405081   0x34  Code  Gb  rp_vector_tables.o [3]
+RP_Vector_Init          0x00404a41         Code  Gb  rp_vector_IAR.o [3]
 RP_Vector_Thumb_0       0x00400021         Code  Gb  rp_vector_IAR.o [3]
 RP_Vector_Thumb_1       0x00400061         Code  Gb  rp_vector_IAR.o [3]
 RP_Vector_Thumb_2       0x004000a1         Code  Gb  rp_vector_IAR.o [3]
 RP_Vector_Thumb_3       0x004000e1         Code  Gb  rp_vector_IAR.o [3]
-Region$$Table$$Base     0x00404a60          --   Gb  - Linker created -
-Region$$Table$$Limit    0x00404a84          --   Gb  - Linker created -
+Region$$Table$$Base     0x004052bc          --   Gb  - Linker created -
+Region$$Table$$Limit    0x004052e0          --   Gb  - Linker created -
 Region_ROM_Table_ROM_Base
                         0x00011788         Data  Gb  rom-symbols-LLC.o [3]
 Region_ROM_Table_ROM_Limit
@@ -1225,9 +1228,9 @@ SeqSetHibernateMode     0x0000f4f1         Code  Gb  rom-symbols-MAC.o [4]
 SeqSpreadModemEdVal     0x0000f059         Code  Gb  rom-symbols-MAC.o [4]
 SeqTxAutoRxState        0x000056f9         Code  Gb  rom-symbols-MAC.o [4]
 SeqTxAutoRxState_Patched
-                        0x00402909   0xf0  Code  Gb  SeqSM_patched.o [4]
+                        0x00402e81   0xf0  Code  Gb  SeqSM_patched.o [4]
 SeqTxPollState          0x000053fd         Code  Gb  rom-symbols-MAC.o [4]
-SeqTxPollState_Patched  0x004027c9  0x140  Code  Gb  SeqSM_patched.o [4]
+SeqTxPollState_Patched  0x00402d41  0x140  Code  Gb  SeqSM_patched.o [4]
 SeqTxState              0x000052fd         Code  Gb  rom-symbols-MAC.o [4]
 SeqWaitForCCAResultState
                         0x00005885         Code  Gb  rom-symbols-MAC.o [4]
@@ -1236,31 +1239,36 @@ SeqWaitForRxBufferState
 SeqWaitState            0x00005695         Code  Gb  rom-symbols-MAC.o [4]
 SeqWakeFromPowerSaveMode
                         0x0000f519         Code  Gb  rom-symbols-MAC.o [4]
-Set_Pins                0x0040327d   0x9a  Code  Gb  Led.o [1]
+Set_Pins                0x00403bfd   0x9a  Code  Gb  Led.o [1]
 SetupWaitForRxBufferFree
                         0x0000ef5d         Code  Gb  rom-symbols-MAC.o [4]
 SmApi_UndefState        0x00010b49         Code  Gb  rom-symbols-MAC.o [4]
 TMR_AllocateTimer       0x00401b6d   0x32  Code  Gb  Timer.o [1]
-TMR_EnableTimer         0x00401f15   0x66  Code  Gb  Timer.o [1]
-TMR_GetTimerStatus      0x00402071    0xe  Code  Lc  Timer.o [1]
-TMR_GetTimerType        0x00402097    0xe  Code  Lc  Timer.o [1]
+TMR_AreAllTimersOff     0x00401b9f   0x18  Code  Gb  Timer.o [1]
+TMR_EnableTimer         0x00401f2d   0x66  Code  Gb  Timer.o [1]
+TMR_GetTimerStatus      0x00402155    0xe  Code  Lc  Timer.o [1]
+TMR_GetTimerType        0x0040217b    0xe  Code  Lc  Timer.o [1]
 TMR_Init                0x00401b31   0x3c  Code  Gb  Timer.o [1]
-TMR_IsTimerActive       0x00401bb3   0x22  Code  Gb  Timer.o [1]
-TMR_SetReg              0x00401f91   0xd6  Code  Lc  Timer.o [1]
-TMR_SetTimerStatus      0x0040207f   0x18  Code  Lc  Timer.o [1]
-TMR_SetTimerType        0x004020a9   0x18  Code  Lc  Timer.o [1]
-TMR_StartIntervalTimer  0x00401c3d   0x1e  Code  Gb  Timer.o [1]
+TMR_IsTimerActive       0x00401bcb   0x22  Code  Gb  Timer.o [1]
+TMR_NotCountedTicksBeforeSleep
+                        0x00401f93   0x30  Code  Gb  Timer.o [1]
+TMR_SetReg              0x00402075   0xd6  Code  Lc  Timer.o [1]
+TMR_SetTimerStatus      0x00402163   0x18  Code  Lc  Timer.o [1]
+TMR_SetTimerType        0x0040218d   0x18  Code  Lc  Timer.o [1]
+TMR_StartIntervalTimer  0x00401c55   0x1e  Code  Gb  Timer.o [1]
 TMR_StartSingleShotTimer
-                        0x00401c5b   0x1e  Code  Gb  Timer.o [1]
-TMR_StartTimer          0x00401bd5   0x68  Code  Gb  Timer.o [1]
-TMR_StopTimer           0x00401c79   0x86  Code  Gb  Timer.o [1]
-TMR_Task                0x00401d21  0x1f4  Code  Gb  Timer.o [1]
-TS_CreateTask           0x00403435   0xdc  Code  Gb  TS_kernel.o [1]
-TS_Init                 0x00403511   0x26  Code  Gb  TS_kernel.o [1]
-TS_PlaceHolderTaskInit  0x004043b3    0x2  Code  Gb  MacInit.o [1]
-TS_Scheduler            0x0040356d   0x82  Code  Gb  TS_kernel.o [1]
-TS_SendEvent            0x00403537   0x36  Code  Gb  TS_kernel.o [1]
-TmrCompEvCallBack       0x00401b9f   0x14  Code  Gb  Timer.o [1]
+                        0x00401c73   0x1e  Code  Gb  Timer.o [1]
+TMR_StartTimer          0x00401bed   0x68  Code  Gb  Timer.o [1]
+TMR_StopTimer           0x00401c91   0x86  Code  Gb  Timer.o [1]
+TMR_SyncLpmTimers       0x00401fd1   0x9c  Code  Gb  Timer.o [1]
+TMR_Task                0x00401d39  0x1f4  Code  Gb  Timer.o [1]
+TS_CreateTask           0x004035dd   0xdc  Code  Gb  TS_kernel.o [1]
+TS_Init                 0x004036b9   0x26  Code  Gb  TS_kernel.o [1]
+TS_PendingEvents        0x004036df   0x3e  Code  Gb  TS_kernel.o [1]
+TS_PlaceHolderTaskInit  0x00404b77    0x2  Code  Gb  MacInit.o [1]
+TS_Scheduler            0x00403753   0x82  Code  Gb  TS_kernel.o [1]
+TS_SendEvent            0x0040371d   0x36  Code  Gb  TS_kernel.o [1]
+TmrCompEvCallBack       0x00401bb7   0x14  Code  Gb  Timer.o [1]
 TmrDisable              0x0000a865         Code  Gb  rom-symbols-LLC.o [3]
 TmrEnable               0x0000a82d         Code  Gb  rom-symbols-LLC.o [3]
 TmrGetCompStatusControl
@@ -1278,19 +1286,19 @@ TmrSetConfig            0x0000a901         Code  Gb  rom-symbols-LLC.o [3]
 TmrSetMode              0x0000a8a5         Code  Gb  rom-symbols-LLC.o [3]
 TmrSetStatusControl     0x0000a975         Code  Gb  rom-symbols-LLC.o [3]
 TmrTicksFromMilliseconds
-                        0x00402067    0xa  Code  Lc  Timer.o [1]
+                        0x0040214b    0xa  Code  Lc  Timer.o [1]
 TmrWriteValue           0x0000aa2d         Code  Gb  rom-symbols-LLC.o [3]
-TotalNoOfMsgs_c         0x00404c7a    0x1  Data  Gb  GlobalVars.o [1]
+TotalNoOfMsgs_c         0x004054e6    0x1  Data  Gb  GlobalVars.o [1]
 Uart2_GetByteFromRxBuffer
-                        0x004020e9   0x2a  Code  Gb  Uart.o [1]
-Uart2_IsTxActive        0x00402113   0x20  Code  Gb  Uart.o [1]
-Uart2_RxIsr             0x004021cd   0x1a  Code  Gb  Uart.o [1]
-Uart2_SetBaud           0x0040220f   0x80  Code  Gb  Uart.o [1]
-Uart2_SetRxCallBack     0x004021e7   0x28  Code  Gb  Uart.o [1]
-Uart2_Transmit          0x0040228f   0x96  Code  Gb  Uart.o [1]
-Uart2_TxInProgress      0x00405e83    0x1  Data  Gb  Uart.o [1]
-Uart2_TxIsr             0x0040232d   0xbc  Code  Gb  Uart.o [1]
-UartCancelReadData      0x0040450d   0x58  Code  Gb  UartDriver_Patched.o [3]
+                        0x00402661   0x2a  Code  Gb  Uart.o [1]
+Uart2_IsTxActive        0x0040268b   0x20  Code  Gb  Uart.o [1]
+Uart2_RxIsr             0x00402745   0x1a  Code  Gb  Uart.o [1]
+Uart2_SetBaud           0x00402787   0x80  Code  Gb  Uart.o [1]
+Uart2_SetRxCallBack     0x0040275f   0x28  Code  Gb  Uart.o [1]
+Uart2_Transmit          0x00402807   0x96  Code  Gb  Uart.o [1]
+Uart2_TxInProgress      0x004066fc    0x1  Data  Gb  Uart.o [1]
+Uart2_TxIsr             0x004028a5   0xbc  Code  Gb  Uart.o [1]
+UartCancelReadData      0x00404cd1   0x58  Code  Gb  UartDriver_Patched.o [3]
 UartCancelWriteData     0x000030f5         Code  Gb  rom-symbols-LLC.o [3]
 UartClearErrors         0x000033ad         Code  Gb  rom-symbols-LLC.o [3]
 UartClose               0x00003219         Code  Gb  rom-symbols-LLC.o [3]
@@ -1317,35 +1325,40 @@ UartSetReceiverThreshold
                         0x00002e59         Code  Gb  rom-symbols-LLC.o [3]
 UartSetTransmitterThreshold
                         0x00002f21         Code  Gb  rom-symbols-LLC.o [3]
-UartUtil_Print          0x00403791   0x42  Code  Gb  UartUtil.o [1]
-UartUtil_PrintHex       0x004037f1   0xc6  Code  Gb  UartUtil.o [1]
-UartUtil_Tx             0x0040376b   0x26  Code  Gb  UartUtil.o [1]
-UartUtil_TxCallback     0x00403769    0x2  Code  Gb  UartUtil.o [1]
+UartUtil_Print          0x00403f45   0x42  Code  Gb  UartUtil.o [1]
+UartUtil_PrintHex       0x00403fa5   0xc6  Code  Gb  UartUtil.o [1]
+UartUtil_Tx             0x00403f1f   0x26  Code  Gb  UartUtil.o [1]
+UartUtil_TxCallback     0x00403f1d    0x2  Code  Gb  UartUtil.o [1]
 UartWriteData           0x00003079         Code  Gb  rom-symbols-LLC.o [3]
-Uart_ModuleInit         0x00402133   0x9a  Code  Gb  Uart.o [1]
-Uart_Task               0x00402401   0x6e  Code  Gb  Uart.o [1]
-Uart_TaskInit           0x0040246f   0x12  Code  Gb  Uart.o [1]
+Uart_ModuleInit         0x004026ab   0x9a  Code  Gb  Uart.o [1]
+Uart_Task               0x00402979   0x6e  Code  Gb  Uart.o [1]
+Uart_TaskInit           0x004029e7   0x12  Code  Gb  Uart.o [1]
 UpdateBeaconTime        0x0000926d         Code  Gb  rom-symbols-MAC.o [4]
 WaitForIdle             0x0000e801         Code  Gb  rom-symbols-MAC.o [4]
 WaitInContinousMode     0x0000e909         Code  Gb  rom-symbols-MAC.o [4]
-ZTC_TaskEventMonitor    0x00404c61    0x2  Code  Gb  ZtcMain.o [1]
+ZTC_TaskEventMonitor    0x004054cd    0x2  Code  Gb  ZtcMain.o [1]
+__aeabi_d2uiz           0x00404f30         Code  Gb  DblToU32.o [6]
+__aeabi_dmul            0x004039ec         Code  Gb  DblMul.o [6]
+__aeabi_i2d             0x00404d28         Code  Gb  S32ToDbl.o [6]
 __aeabi_idiv            0x0000fae8         Code  Gb  rom-symbols-LLC.o [3]
 __aeabi_idiv0           0x00010b5c         Code  Gb  rom-symbols-LLC.o [3]
 __aeabi_idivmod         0x0000fae8         Code  Gb  rom-symbols-LLC.o [3]
+__aeabi_ui2d            0x0040547c         Code  Gb  U32ToDbl.o [6]
 __aeabi_uidiv           0x0000faf8         Code  Gb  rom-symbols-LLC.o [3]
 __aeabi_uidivmod        0x0000faf8         Code  Gb  rom-symbols-LLC.o [3]
 __aeabi_uread4          0x00010b0c         Code  Gb  rom-symbols-LLC.o [3]
 __aeabi_uwrite4         0x00010ae0         Code  Gb  rom-symbols-LLC.o [3]
-__iar_copy_init3        0x00404919   0x2e  Code  Gb  copy_init3.o [6]
-__iar_data_init3        0x004045b8   0x54  Code  Gb  data_init3.o [6]
-__iar_via_R0            0x00404c73         Code  Gb  MacInit.o [1]
-__iar_via_R1            0x00404c71         Code  Gb  Keyboard.o [1]
-__iar_via_R2            0x00404c69         Code  Wk  MlmeMain_patched.o [4]
-__iar_via_R3            0x00404c65         Code  Wk  MlmeMain_patched.o [4]
-__iar_via_R4            0x00404c77         Code  Gb  Uart.o [1]
-__iar_via_R5            0x00404c79         Code  Gb  Uart.o [1]
-__iar_via_R7            0x00404c75         Code  Gb  Timer.o [1]
-__iar_zero_init3        0x004049f1   0x28  Code  Gb  zero_init3.o [6]
+__iar_copy_init3        0x00405175   0x2e  Code  Gb  copy_init3.o [6]
+__iar_data_init3        0x00404dd4   0x54  Code  Gb  data_init3.o [6]
+__iar_i2d               0x00404d2c         Code  Gb  S32ToDbl.o [6]
+__iar_via_R0            0x004054df         Code  Gb  MacInit.o [1]
+__iar_via_R1            0x004054dd         Code  Gb  Keyboard.o [1]
+__iar_via_R2            0x004054d5         Code  Wk  MlmeMain_patched.o [4]
+__iar_via_R3            0x004054d1         Code  Wk  MlmeMain_patched.o [4]
+__iar_via_R4            0x004054e3         Code  Gb  Uart.o [1]
+__iar_via_R5            0x004054e5         Code  Gb  Uart.o [1]
+__iar_via_R7            0x004054e1         Code  Gb  Timer.o [1]
+__iar_zero_init3        0x0040524d   0x28  Code  Gb  zero_init3.o [6]
 __rom_data_init         0x000108d0         Code  Gb  rom-symbols-LLC.o [3]
 _start_vector_          0x00400000         Code  Gb  Init-IAR.o [1]
 aExtendedAddress        0x00400644         Data  Gb  rom-symbols-MAC.o [4]
@@ -1356,7 +1369,7 @@ aMinSetupTimeVeryCritical_s
                         0x00400676         Data  Gb  rom-symbols-MAC.o [4]
 aMinSetupTime_s         0x00400674         Data  Gb  rom-symbols-MAC.o [4]
 frmCtrlTable            0x004001e4         Data  Gb  rom-symbols-MAC.o [4]
-gAppTaskID_c            0x00405e78    0x1  Data  Gb  MApp_init.o [1]
+gAppTaskID_c            0x004066ee    0x1  Data  Gb  MApp_init.o [1]
 gAspGotMemIdleInd       0x00400595         Data  Gb  rom-symbols-MAC.o [4]
 gAspMinimumDozeTime     0x0040067c         Data  Gb  rom-symbols-MAC.o [4]
 gAutoPollAllowed        0x004004e4         Data  Gb  rom-symbols-MAC.o [4]
@@ -1368,7 +1381,7 @@ gGtsGuardedAction       0x00400519         Data  Gb  rom-symbols-MAC.o [4]
 gGtsInfoArray           0x0040020c         Data  Gb  rom-symbols-MAC.o [4]
 gGtsLen                 0x00400518         Data  Gb  rom-symbols-MAC.o [4]
 gHardwareParameters     0x00400800   0x88  Data  Gb  NV_Data.o [1]
-gIdleTaskID             0x00405e7b    0x1  Data  Gb  TS_kernel.o [1]
+gIdleTaskID             0x004066f4    0x1  Data  Gb  TS_kernel.o [1]
 gLCDNormalFont          0x00011028         Data  Gb  rom-symbols-LLC.o [3]
 gLCDNormalIndex         0x000113ac         Data  Gb  rom-symbols-LLC.o [3]
 gLCDVerdanaFont         0x00010b74         Data  Gb  rom-symbols-LLC.o [3]
@@ -1383,13 +1396,13 @@ gMacPibOffsetTable      0x0001168c         Data  Gb  rom-symbols-MAC.o [4]
 gMacPibSecurityOffsetTable
                         0x000116a4         Data  Gb  rom-symbols-MAC.o [4]
 gMacTaskIDROMCopy_c     0x0040071d         Data  Gb  rom-symbols-MAC.o [4]
-gMacTaskID_c            0x00405e79    0x1  Data  Gb  MacInit.o [1]
+gMacTaskID_c            0x004066ef    0x1  Data  Gb  MacInit.o [1]
 gMacTimerID             0x0040017d         Data  Gb  rom-symbols-MAC.o [4]
 gMacVendorPibOffsetTable
                         0x000116b8         Data  Gb  rom-symbols-MAC.o [4]
 gMacaInitRamSize        0x00400714         Data  Gb  rom-symbols-MAC.o [4]
 gMacaInitRomSize        0x00400716         Data  Gb  rom-symbols-MAC.o [4]
-gMacaInit_RAM_c         0x00404694   0x40  Data  Gb  PhySettingsRam.o [4]
+gMacaInit_RAM_c         0x00404eb0   0x40  Data  Gb  PhySettingsRam.o [4]
 gMacaInit_ROM_c         0x0001152c         Data  Gb  rom-symbols-MAC.o [4]
 gMemBeaconCntr          0x00400570         Data  Gb  rom-symbols-MAC.o [4]
 gMemCtrlSm              0x004001cc         Data  Gb  rom-symbols-MAC.o [4]
@@ -1412,35 +1425,35 @@ gMlmeScan_CurrentChannel
 gMlmeScan_FastEd        0x004005b0         Data  Gb  rom-symbols-MAC.o [4]
 gMlmeSm                 0x004001fc         Data  Gb  rom-symbols-MAC.o [4]
 gNumAclEntryDescriptors
-                        0x00405496    0x1  Data  Gb  GlobalVars.o [1]
+                        0x00405d02    0x1  Data  Gb  GlobalVars.o [1]
 gNumAclEntryDescriptorsROMCopy
                         0x0040071c         Data  Gb  rom-symbols-MAC.o [4]
 gNumTxNoAck             0x0040071f         Data  Gb  rom-symbols-MAC.o [4]
-gNvCountsBetweenSaves   0x00405494    0x2  Data  Lc  NV_Flash.o [1]
+gNvCountsBetweenSaves   0x00405d00    0x2  Data  Lc  NV_Flash.o [1]
 gPIBaclEntryDescriptorSet
-                        0x00405c50   0xa0  Data  Gb  GlobalVars.o [1]
+                        0x004064bc   0xa0  Data  Gb  GlobalVars.o [1]
 gPacLibUseSecurity      0x00400727         Data  Gb  rom-symbols-MAC.o [4]
 gPanIdConflict          0x0040017c         Data  Gb  rom-symbols-MAC.o [4]
 gRFSynVCO_Calibration   0x00400204         Data  Gb  rom-symbols-MAC.o [4]
 gRadioInitRamSize       0x00400710         Data  Gb  rom-symbols-MAC.o [4]
 gRadioInitRomSize       0x00400712         Data  Gb  rom-symbols-MAC.o [4]
-gRadioInit_RAM_c        0x00403c7c   0xe8  Data  Gb  PhySettingsRam.o [4]
+gRadioInit_RAM_c        0x00404524   0xe8  Data  Gb  PhySettingsRam.o [4]
 gRadioInit_ROM_Patched_c
-                        0x004038bc  0x150  Data  Gb  PhySettingsRam.o [4]
+                        0x00404070  0x150  Data  Gb  PhySettingsRam.o [4]
 gRxSecurityAclEntry     0x00400725         Data  Gb  rom-symbols-MAC.o [4]
 gRxSecurityFailure      0x00400726         Data  Gb  rom-symbols-MAC.o [4]
 gRxSecurityUse          0x00400724         Data  Gb  rom-symbols-MAC.o [4]
 gSeqGotDataIndication   0x004001a4         Data  Gb  rom-symbols-MAC.o [4]
-gSizeofMacaInit_RAM_c   0x00404c6e    0x2  Data  Gb  PhySettingsRam.o [4]
+gSizeofMacaInit_RAM_c   0x004054da    0x2  Data  Gb  PhySettingsRam.o [4]
 gSizeofMacaInit_ROM_c   0x00011786         Data  Gb  rom-symbols-MAC.o [4]
-gSizeofRadioInit_RAM_c  0x00404c6a    0x2  Data  Gb  PhySettingsRam.o [4]
+gSizeofRadioInit_RAM_c  0x004054d6    0x2  Data  Gb  PhySettingsRam.o [4]
 gSizeofRadioInit_ROM_Patched_c
-                        0x00404c6c    0x2  Data  Gb  PhySettingsRam.o [4]
-gState                  0x00405e76    0x1  Data  Gb  MApp.o [1]
-gUartTaskId             0x00405e80    0x1  Data  Gb  Uart.o [1]
+                        0x004054d8    0x2  Data  Gb  PhySettingsRam.o [4]
+gState                  0x004066ec    0x1  Data  Gb  MApp.o [1]
+gUartTaskId             0x004066f9    0x1  Data  Gb  Uart.o [1]
 gUpdateGtsData          0x00400723         Data  Gb  rom-symbols-MAC.o [4]
-gaNvAppDataSet          0x00404c40    0x8  Data  Gb  MApp.o [1]
-gaNvNwkDataSet          0x00404c50    0x8  Data  Gb  NV_Data.o [1]
+gaNvAppDataSet          0x004054ac    0x8  Data  Gb  MApp.o [1]
+gaNvNwkDataSet          0x004054bc    0x8  Data  Gb  NV_Data.o [1]
 gbTaskMode              0x0040071e         Data  Gb  rom-symbols-MAC.o [4]
 gmBackoffPeriod         0x0040020a         Data  Gb  rom-symbols-MAC.o [4]
 gpMemCurrMlmeMsg        0x004006e8         Data  Gb  rom-symbols-MAC.o [4]
@@ -1464,7 +1477,7 @@ gtsReallocateSlot       0x00001e15         Code  Gb  rom-symbols-MAC.o [4]
 gtsSendIndication       0x00001b71         Code  Gb  rom-symbols-MAC.o [4]
 hdrOffset               0x0001177c         Data  Gb  rom-symbols-MAC.o [4]
 mAckTrashBox            0x0040066c         Data  Gb  rom-symbols-MAC.o [4]
-mAddrMode               0x00405e70    0x1  Data  Lc  MApp.o [1]
+mAddrMode               0x004066e6    0x1  Data  Lc  MApp.o [1]
 mAspAutoDozeClkoEnable  0x00400593         Data  Gb  rom-symbols-MAC.o [4]
 mAspAutoDozeEnable      0x00400590         Data  Gb  rom-symbols-MAC.o [4]
 mAspAutoDozeInterval    0x004005a4         Data  Gb  rom-symbols-MAC.o [4]
@@ -1497,9 +1510,9 @@ mCM_TimeNeededInNextCAP
                         0x00400688         Data  Gb  rom-symbols-MAC.o [4]
 mCM_WaitTime            0x0040068c         Data  Gb  rom-symbols-MAC.o [4]
 mChannelMask            0x004005b1         Data  Gb  rom-symbols-MAC.o [4]
-mClkSourceKhz           0x00405490    0x4  Data  Lc  Timer.o [1]
+mClkSourceKhz           0x00405cfc    0x4  Data  Lc  Timer.o [1]
 mCmdFrameDescs          0x000115f4         Data  Gb  rom-symbols-MAC.o [4]
-mCoordInfo              0x00405dc8   0x18  Data  Lc  MApp.o [1]
+mCoordInfo              0x00406634   0x18  Data  Lc  MApp.o [1]
 mCurrentMask            0x004005b2         Data  Gb  rom-symbols-MAC.o [4]
 mDataReceived           0x004001a5         Data  Gb  rom-symbols-MAC.o [4]
 mEnableCriticalTiming   0x00400678         Data  Gb  rom-symbols-MAC.o [4]
@@ -1511,20 +1524,22 @@ mExceptionHandlerSupervisor
                         0x00400150         Data  Gb  rom-symbols-LLC.o [3]
 mExceptionHandlerUndefined
                         0x0040014c         Data  Gb  rom-symbols-LLC.o [3]
+mExtOutPol              0x004066f1    0x1  Data  Lc  PWR.o [1]
 mHandlerTable           0x00400120         Data  Gb  rom-symbols-LLC.o [3]
-mInitDenyVregCntlOvr    0x00405e89    0x1  Data  Gb  Init_Utils_patched.o [3]
-mKeyScanTimerID         0x00405498    0x1  Data  Gb  Keyboard.o [1]
-mKeyState               0x00405e67    0x1  Data  Lc  Keyboard.o [1]
-mKeysStillPressed       0x00405e6b    0x1  Data  Lc  Keyboard.o [1]
-mLEDTimerID             0x00405499    0x1  Data  Lc  Led.o [1]
+mInitDenyVregCntlOvr    0x00406702    0x1  Data  Gb  Init_Utils_patched.o [3]
+mKeyScanTimerID         0x00405d04    0x1  Data  Gb  Keyboard.o [1]
+mKeyState               0x004066dd    0x1  Data  Lc  Keyboard.o [1]
+mKeysStillPressed       0x004066e1    0x1  Data  Lc  Keyboard.o [1]
+mLEDTimerID             0x00405d05    0x1  Data  Lc  Led.o [1]
+mLPMFlag                0x004066f2    0x1  Data  Lc  PWR.o [1]
 mLastBeaconCnt          0x00400426         Data  Gb  rom-symbols-MAC.o [4]
-mLedFlashingLEDs        0x00405e6f    0x1  Data  Lc  Led.o [1]
-mLongCenterKeyCount     0x00405e6a    0x1  Data  Lc  Keyboard.o [1]
-mLongKeyCount           0x00405e69    0x1  Data  Lc  Keyboard.o [1]
+mLedFlashingLEDs        0x004066e5    0x1  Data  Lc  Led.o [1]
+mLongCenterKeyCount     0x004066e0    0x1  Data  Lc  Keyboard.o [1]
+mLongKeyCount           0x004066df    0x1  Data  Lc  Keyboard.o [1]
 mMacSeqStateMachine     0x00400198         Data  Gb  rom-symbols-MAC.o [4]
 mMaxDetectedEnergy      0x00400655         Data  Gb  rom-symbols-MAC.o [4]
-mMaxToCountDown_c       0x00405e64    0x2  Data  Lc  Timer.o [1]
-mMcpsNwkInputQueue      0x00405e3c    0x8  Data  Lc  MApp.o [1]
+mMaxToCountDown_c       0x004066da    0x2  Data  Lc  Timer.o [1]
+mMcpsNwkInputQueue      0x004066a8    0x8  Data  Lc  MApp.o [1]
 mMemAspInputQueue       0x00400598         Data  Gb  rom-symbols-MAC.o [4]
 mMemBeacon              0x004004a0         Data  Gb  rom-symbols-MAC.o [4]
 mMemData                0x004006e0         Data  Gb  rom-symbols-MAC.o [4]
@@ -1533,9 +1548,9 @@ mMemDataDefaultRxInterval_c
 mMemMlmeInputQueue      0x00400180         Data  Gb  rom-symbols-MAC.o [4]
 mMemMode                0x00400720         Data  Gb  rom-symbols-MAC.o [4]
 mMemSmCtrl              0x004001c4         Data  Gb  rom-symbols-MAC.o [4]
-mMlmeNwkInputQueue      0x00405e34    0x8  Data  Lc  MApp.o [1]
-mMsduHandle             0x00405e71    0x1  Data  Lc  MApp.o [1]
-mNvCriticalSectionFlag  0x00405e7a    0x1  Data  Lc  NV_Flash.o [1]
+mMlmeNwkInputQueue      0x004066a0    0x8  Data  Lc  MApp.o [1]
+mMsduHandle             0x004066e7    0x1  Data  Lc  MApp.o [1]
+mNvCriticalSectionFlag  0x004066f0    0x1  Data  Lc  NV_Flash.o [1]
 mNwkMcpsInputQueue      0x00400190         Data  Gb  rom-symbols-MAC.o [4]
 mNwkMlmeInputQueue      0x00400188         Data  Gb  rom-symbols-MAC.o [4]
 mPacManDirectPackets_C2D
@@ -1546,61 +1561,62 @@ mPacManGuardPacket      0x00400534         Data  Gb  rom-symbols-MAC.o [4]
 mPacManIndirectPackets  0x00400540         Data  Gb  rom-symbols-MAC.o [4]
 mPanIdBackup            0x004005ac         Data  Gb  rom-symbols-MAC.o [4]
 mPendingTxInfo          0x00400721         Data  Gb  rom-symbols-MAC.o [4]
-mPhyCurrentChannel      0x00405e88    0x1  Data  Gb  Phy_Patched.o [4]
+mPhyCurrentChannel      0x00406701    0x1  Data  Gb  Phy_Patched.o [4]
 mPhyTxRxState           0x004001a2         Data  Gb  rom-symbols-MAC.o [4]
 mPibAttributesRangeTable
                         0x000116c0         Data  Gb  rom-symbols-MAC.o [4]
-mPollInterval           0x00405e60    0x2  Data  Lc  MApp.o [1]
-mPollTimerState         0x00405497    0x1  Data  Lc  Keyboard.o [1]
+mPollInterval           0x004066d4    0x2  Data  Lc  MApp.o [1]
+mPollTimerState         0x00405d03    0x1  Data  Lc  Keyboard.o [1]
 mResultListSize         0x004005b6         Data  Gb  rom-symbols-MAC.o [4]
 mResultsForCurrentBlock
                         0x004005b7         Data  Gb  rom-symbols-MAC.o [4]
 mRxPollNoTxData         0x004001a6         Data  Gb  rom-symbols-MAC.o [4]
+mSavedMacaClk           0x004066c0    0x4  Data  Lc  PWR.o [1]
 mScanChannel            0x004005b4         Data  Gb  rom-symbols-MAC.o [4]
 mScanChannels           0x004005a8         Data  Gb  rom-symbols-MAC.o [4]
 mScanDuration           0x004005b3         Data  Gb  rom-symbols-MAC.o [4]
 mScanType               0x004005b5         Data  Gb  rom-symbols-MAC.o [4]
 mSci2TxBufRefLeadingIndex
-                        0x00405e84    0x1  Data  Lc  Uart.o [1]
+                        0x004066fd    0x1  Data  Lc  Uart.o [1]
 mSci2TxBufRefTrailingIndex
-                        0x00405e85    0x1  Data  Lc  Uart.o [1]
-mSwTaskID               0x00405e6c    0x1  Data  Lc  Keyboard.o [1]
-mSwitch_SCAN            0x00405e68    0x1  Data  Lc  Keyboard.o [1]
+                        0x004066fe    0x1  Data  Lc  Uart.o [1]
+mSwTaskID               0x004066e2    0x1  Data  Lc  Keyboard.o [1]
+mSwitch_SCAN            0x004066de    0x1  Data  Lc  Keyboard.o [1]
 mTempZbClock32          0x004005a0         Data  Gb  rom-symbols-MAC.o [4]
-mTicksFor4ms            0x00405e54    0x4  Data  Lc  Timer.o [1]
+mTicksFor4ms            0x004066c8    0x4  Data  Lc  Timer.o [1]
 mTimeUntilNextBeacon    0x004006f8         Data  Gb  rom-symbols-MAC.o [4]
-mTimerTaskID            0x00405e7e    0x1  Data  Lc  Timer.o [1]
-mTimer_c                0x0040549a    0x1  Data  Lc  MApp.o [1]
+mTimerTaskID            0x004066f7    0x1  Data  Lc  Timer.o [1]
+mTimer_c                0x00405d06    0x1  Data  Lc  MApp.o [1]
 mUartModule             0x0040033c         Data  Gb  rom-symbols-LLC.o [3]
-mWaitPollConfirm        0x00405e73    0x1  Data  Lc  MApp.o [1]
-maMacHeap               0x0040549c  0x460  Data  Gb  GlobalVars.o [1]
+mWaitPollConfirm        0x004066e9    0x1  Data  Lc  MApp.o [1]
+maMacHeap               0x00405d08  0x460  Data  Gb  GlobalVars.o [1]
 maMacHeapROMCopy        0x00400624         Data  Gb  rom-symbols-MAC.o [4]
-maMmPools               0x00405d60   0x24  Data  Gb  GlobalVars.o [1]
+maMmPools               0x004065cc   0x24  Data  Gb  GlobalVars.o [1]
 maMmPoolsROMCopy        0x0040062c         Data  Gb  rom-symbols-MAC.o [4]
-maMyAddress             0x00405e2c    0x8  Data  Lc  MApp.o [1]
-maNvDirtyFlags          0x00405e20    0xc  Data  Lc  NV_Flash.o [1]
+maMyAddress             0x00406698    0x8  Data  Lc  MApp.o [1]
+maNvDirtyFlags          0x0040668c    0xc  Data  Lc  NV_Flash.o [1]
 maNvRawSectorAddressTable
-                        0x00404c58    0x8  Data  Gb  NV_FlashHAL.o [1]
-maPwrTable_AimPaCtrl_c  0x00404a18   0x24  Data  Gb  ASPMain_patched.o [4]
+                        0x004054c4    0x8  Data  Gb  NV_FlashHAL.o [1]
+maPwrTable_AimPaCtrl_c  0x00405274   0x24  Data  Gb  ASPMain_patched.o [4]
 maPwrTable_AimPsmCtrl_c
-                        0x00404a3c   0x24  Data  Gb  ASPMain_patched.o [4]
-maPwrTable_AimSaiOvr_c  0x0040460c   0x48  Data  Gb  ASPMain_patched.o [4]
+                        0x00405298   0x24  Data  Gb  ASPMain_patched.o [4]
+maPwrTable_AimSaiOvr_c  0x00404e28   0x48  Data  Gb  ASPMain_patched.o [4]
 maRuleTable             0x000115dc         Data  Gb  rom-symbols-MAC.o [4]
-maSci2RxBuf             0x00405da8   0x20  Data  Lc  Uart.o [1]
-maSci2TxBufLenTable     0x00405e58    0x4  Data  Lc  Uart.o [1]
-maSci2TxBufRefTable     0x00405de0   0x18  Data  Lc  Uart.o [1]
+maSci2RxBuf             0x00406614   0x20  Data  Lc  Uart.o [1]
+maSci2TxBufLenTable     0x004066cc    0x4  Data  Lc  Uart.o [1]
+maSci2TxBufRefTable     0x0040664c   0x18  Data  Lc  Uart.o [1]
 maSci2TxCallbackLeadingIndex
-                        0x00405e86    0x1  Data  Lc  Uart.o [1]
-maSci2TxCallbackTable   0x00405df8   0x18  Data  Lc  Uart.o [1]
+                        0x004066ff    0x1  Data  Lc  Uart.o [1]
+maSci2TxCallbackTable   0x00406664   0x18  Data  Lc  Uart.o [1]
 maSci2TxCallbackTrailingIndex
-                        0x00405e87    0x1  Data  Lc  Uart.o [1]
-maTmrTimerStatusTable   0x00405d84   0x24  Data  Lc  Timer.o [1]
-maTmrTimerTable         0x004058fc  0x198  Data  Lc  Timer.o [1]
-maTsTaskIDsByPriority   0x00405e10   0x10  Data  Gb  TS_kernel.o [1]
-maTsTaskTable           0x00405cf0   0x70  Data  Gb  TS_kernel.o [1]
-mcPendingPackets        0x00405e72    0x1  Data  Lc  MApp.o [1]
+                        0x00406700    0x1  Data  Lc  Uart.o [1]
+maTmrTimerStatusTable   0x004065f0   0x24  Data  Lc  Timer.o [1]
+maTmrTimerTable         0x00406168  0x198  Data  Lc  Timer.o [1]
+maTsTaskIDsByPriority   0x0040667c   0x10  Data  Gb  TS_kernel.o [1]
+maTsTaskTable           0x0040655c   0x70  Data  Gb  TS_kernel.o [1]
+mcPendingPackets        0x004066e8    0x1  Data  Lc  MApp.o [1]
 memBeaconTimeInfo       0x00400554         Data  Gb  rom-symbols-MAC.o [4]
-mfLedInSerialMode       0x00405e6e    0x1  Data  Lc  Led.o [1]
+mfLedInSerialMode       0x004066e4    0x1  Data  Lc  Led.o [1]
 mpDescriptorsBlock      0x004005bc         Data  Gb  rom-symbols-MAC.o [4]
 mpMemOhPendingAspMsg    0x004006f0         Data  Gb  rom-symbols-MAC.o [4]
 mpMemOhPendingMlmeMsg   0x00400650         Data  Gb  rom-symbols-MAC.o [4]
@@ -1610,20 +1626,22 @@ mpMlmeIhPendingMemMsg   0x004004ec         Data  Gb  rom-symbols-MAC.o [4]
 mpMlmeIhPendingNwkMsg   0x004004e8         Data  Gb  rom-symbols-MAC.o [4]
 mpMlmeOhPendingMemMsg   0x00400660         Data  Gb  rom-symbols-MAC.o [4]
 mpMlmeOhPendingNwkMsg   0x0040065c         Data  Gb  rom-symbols-MAC.o [4]
-mpPacket                0x00405e48    0x4  Data  Lc  MApp.o [1]
+mpPacket                0x004066b4    0x4  Data  Lc  MApp.o [1]
 mpPendingSeqMemCompletion
                         0x004001a3         Data  Gb  rom-symbols-MAC.o [4]
 mpScanResults           0x004005b8         Data  Gb  rom-symbols-MAC.o [4]
 mpSeqRxData             0x004001ac         Data  Gb  rom-symbols-MAC.o [4]
-mpfKeyFunction          0x00405e44    0x4  Data  Lc  Keyboard.o [1]
-numberOfActiveTimers    0x00405e7c    0x1  Data  Lc  Timer.o [1]
+mpfKeyFunction          0x004066b0    0x4  Data  Lc  Keyboard.o [1]
+notCountedTmrTicksBeforeSleep
+                        0x004066d6    0x2  Data  Lc  PWR.o [1]
+numberOfActiveTimers    0x004066f5    0x1  Data  Lc  Timer.o [1]
 numberOfLowPowerActiveTimers
-                        0x00405e7d    0x1  Data  Lc  Timer.o [1]
+                        0x004066f6    0x1  Data  Lc  Timer.o [1]
 pCurrentSeqAction       0x004001a8         Data  Gb  rom-symbols-MAC.o [4]
 pGtsAnchor              0x004006f4         Data  Gb  rom-symbols-MAC.o [4]
-pLastPool               0x00405488    0x4  Data  Gb  GlobalVars.o [1]
+pLastPool               0x00405cf4    0x4  Data  Gb  GlobalVars.o [1]
 pLastPoolROMCopy        0x004006d8         Data  Gb  rom-symbols-MAC.o [4]
-pSecondLastPool         0x0040548c    0x4  Data  Gb  GlobalVars.o [1]
+pSecondLastPool         0x00405cf8    0x4  Data  Gb  GlobalVars.o [1]
 pSecondLastPoolROMCopy  0x004006dc         Data  Gb  rom-symbols-MAC.o [4]
 paHardwareParameters    0x004006a0         Data  Gb  rom-symbols-MAC.o [4]
 paMacaInitRam           0x00400698         Data  Gb  rom-symbols-MAC.o [4]
@@ -1647,36 +1665,36 @@ pfMM_AddMsgToTrackingArray
                         0x004006c0         Data  Gb  rom-symbols-MAC.o [4]
 pfMM_InitMsgTracking    0x004006bc         Data  Gb  rom-symbols-MAC.o [4]
 pfMM_UpdateMsgTracking  0x004006b8         Data  Gb  rom-symbols-MAC.o [4]
-pfSci2RxCallBack        0x00405e5c    0x4  Data  Lc  Uart.o [1]
+pfSci2RxCallBack        0x004066d0    0x4  Data  Lc  Uart.o [1]
 pfTMR_AllocateTimer     0x004006d0         Data  Gb  rom-symbols-MAC.o [4]
 pfTMR_IsTimerActive     0x004006cc         Data  Gb  rom-symbols-MAC.o [4]
 pfTMR_StartTimer        0x004006c8         Data  Gb  rom-symbols-MAC.o [4]
 pfTMR_StopTimer         0x004006d4         Data  Gb  rom-symbols-MAC.o [4]
 pfTS_SendEvent          0x004006c4         Data  Gb  rom-symbols-MAC.o [4]
 pfZTC_TaskEventMonitor  0x004006b4         Data  Gb  rom-symbols-MAC.o [4]
-poolInfo                0x0040547c    0xc  Data  Gb  GlobalVars.o [1]
+poolInfo                0x00405ce8    0xc  Data  Gb  GlobalVars.o [1]
 poolInfoROMCopy         0x00400628         Data  Gb  rom-symbols-MAC.o [4]
-previousTimeInTicks     0x00405e62    0x2  Data  Lc  Timer.o [1]
+previousTimeInTicks     0x004066d8    0x2  Data  Lc  Timer.o [1]
 remoteFrameDesc         0x00011734         Data  Gb  rom-symbols-MAC.o [4]
 remoteFrameDescOffsets  0x00011744         Data  Gb  rom-symbols-MAC.o [4]
 reset_vector            0x00000000         Code  Gb  rom-symbols-LLC.o [3]
-uart2_ungetByte         0x00405e82    0x1  Data  Lc  Uart.o [1]
-uart2_ungetFlag         0x00405e81    0x1  Data  Lc  Uart.o [1]
-val                     0x00405e74    0x1  Data  Gb  MApp.o [1]
-valc                    0x00405e75    0x1  Data  Gb  MApp.o [1]
+uart2_ungetByte         0x004066fb    0x1  Data  Lc  Uart.o [1]
+uart2_ungetFlag         0x004066fa    0x1  Data  Lc  Uart.o [1]
+val                     0x004066ea    0x1  Data  Gb  MApp.o [1]
+valc                    0x004066eb    0x1  Data  Gb  MApp.o [1]
 zeroArr                 0x004005e8         Data  Gb  rom-symbols-MAC.o [4]
 
 
-[1] = C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj
+[1] = C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj
 [2] = command line
 [3] = LLC_MC13224.a
 [4] = MACPHY_MC13224.a
 [5] = dl4t_tl_in.a
 [6] = rt4t_al.a
 
-  15 228 bytes of readonly  code memory
+  17 384 bytes of readonly  code memory
    2 300 bytes of readonly  data memory
-   4 590 bytes of readwrite data memory
+   4 603 bytes of readwrite data memory
 
 Errors: none
 Warnings: none

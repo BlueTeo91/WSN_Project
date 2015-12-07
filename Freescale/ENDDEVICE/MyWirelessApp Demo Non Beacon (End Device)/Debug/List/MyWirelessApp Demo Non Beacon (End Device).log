@@ -1,8 +1,8 @@
-Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\Delay.o.
+Loading object C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\Delay.o.
               definition:  DelayMs
               definition:  DelayUs
-Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\Display.o.
-Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\GlobalVars.o.
+Loading object C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\Display.o.
+Loading object C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\GlobalVars.o.
               reference :  FLib_MemSet
               reference :  MM_GetLinkRegister
               reference :  __aeabi_uread4
@@ -21,7 +21,7 @@ Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To us
               definition:  pLastPool
               definition:  pSecondLastPool
               definition:  poolInfo
-Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\Init-IAR.o.
+Loading object C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\Init-IAR.o.
               reference :  Main
               reference :  RP_Vector_Init
               reference :  __iar_data_init2
@@ -39,7 +39,7 @@ Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To us
               reference :  mExceptionHandlerUndefined
               reference :  mExceptionHandlerSupervisor
               definition:  _start_vector_
-Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\Keyboard.o.
+Loading object C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\Keyboard.o.
               reference :  KbCrmInit
               reference :  KbGpioInit
               reference :  KbReadCenterKey
@@ -57,7 +57,7 @@ Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To us
               definition:  __iar_via_R1
               definition:  mKeyScanTimerID
               definition:  __iar_cc..5IJ9YQ2R8CD
-Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\KeyboardHAL.o.
+Loading object C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\KeyboardHAL.o.
               reference :  CRM_RegisterISR
               reference :  CRM_WuCntl
               reference :  CrmKBDIsr
@@ -74,7 +74,7 @@ Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To us
               definition:  KbReadCenterKey
               definition:  KbReadPins
               definition:  __iar_cc..mLX0$hr5tD$
-Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\Led.o.
+Loading object C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\Led.o.
               reference :  Gpio_GetPinData
               reference :  Gpio_SetPinData
               reference :  Gpio_SetPinDir
@@ -100,7 +100,7 @@ Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To us
               definition:  LED_TurnOnLed
               definition:  Set_Pins
               definition:  __iar_cc..mLX0$hr5tD$
-Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\MApp.o.
+Loading object C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\MApp.o.
               reference :  FLib_MemCpy
               reference :  Gpio_SetPinData
               reference :  Init_MacExtendedAddress
@@ -139,10 +139,10 @@ Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To us
               definition:  gaNvAppDataSet
               definition:  val
               definition:  valc
-              definition:  __iar_cc..VDf_inSN1P9
-              definition:  __iar_cc..k1zQJScsXY_
-              definition:  __iar_cc..njTGJrDmDSC
-Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\MApp_init.o.
+              definition:  __iar_cc..LCZgkexQk_4
+              definition:  __iar_cc..8QCp9mk5IZ5
+              definition:  __iar_cc..l_HxWg$GgDA
+Loading object C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\MApp_init.o.
               reference :  AppTask
               reference :  Gpio_SetPinData
               reference :  Init_802_15_4
@@ -154,6 +154,9 @@ Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To us
               reference :  NWK_MLME_SapHandler
               reference :  NvIdle
               reference :  NvModuleInit
+              reference :  PWR_CheckIfDeviceCanGoToSleep
+              reference :  PWR_DisallowDeviceToSleep
+              reference :  PWR_EnterLowPower
               reference :  Platform_Init
               reference :  TMR_Init
               reference :  TS_CreateTask
@@ -171,10 +174,10 @@ Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To us
               definition:  Swap2Bytes
               definition:  gAppTaskID_c
               definition:  gPowerSaveMode
-              definition:  __iar_cc..njTGJrDmDSC
-              definition:  __iar_cc..qSSTUpuixOD
-              definition:  __iar_cc..k1zQJScsXY_
-Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\MacInit.o.
+              definition:  __iar_cc..l_HxWg$GgDA
+              definition:  __iar_cc..jzRmmEN_P0B
+              definition:  __iar_cc..8QCp9mk5IZ5
+Loading object C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\MacInit.o.
               reference :  Mlme_Main
               reference :  TS_CreateTask
               definition:  MacInit
@@ -183,12 +186,12 @@ Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To us
               definition:  TS_PlaceHolderTaskInit
               definition:  __iar_via_R0
               definition:  gMacTaskID_c
-Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\NV_Data.o.
+Loading object C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\NV_Data.o.
               reference :  gaNvAppDataSet
               definition:  NvDataSetTable
               definition:  gHardwareParameters
               definition:  gaNvNwkDataSet
-Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\NV_Flash.o.
+Loading object C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\NV_Flash.o.
               reference :  CRM_VRegCntl
               reference :  NvDataSetTable
               reference :  NvHalEraseSector
@@ -216,7 +219,7 @@ Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To us
               definition:  PowerDownNVM
               definition:  PowerUpNVM
               definition:  gNvMinimumTicksBetweenSaves
-Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\NV_FlashHAL.o.
+Loading object C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\NV_FlashHAL.o.
               reference :  NVM_BlankCheck
               reference :  NVM_Erase
               reference :  NVM_Read
@@ -230,7 +233,7 @@ Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To us
               definition:  NvHalWrite
               definition:  maNvRawSectorAddressTable
               definition:  __iar_cc..ah9wVPrdHl6
-Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\PWR.o.
+Loading object C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\PWR.o.
               reference :  Asp_GetMacStateReq
               reference :  CRM_GoToSleep
               reference :  CRM_Wait4Irq
@@ -266,7 +269,7 @@ Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To us
               definition:  PWR_SetDozeTimeSymbols
               definition:  PWR_SetExtOutPol
               definition:  PWR_SleepAllowed
-Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\PlatformInit.o.
+Loading object C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\PlatformInit.o.
               reference :  AppInterruptsInit
               reference :  Asp_SetPowerLevel
               reference :  Asp_TrimReq
@@ -278,7 +281,7 @@ Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To us
               definition:  Platform_Init
               definition:  StartNvmReg
               definition:  StopNvmReg
-Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\PlatformInterrupts.o.
+Loading object C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\PlatformInterrupts.o.
               reference :  CRM_Isr
               reference :  ITC_DisableInterrupt
               reference :  ITC_EnableInterrupt
@@ -300,7 +303,7 @@ Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To us
               definition:  IsMacaIntAsserted
               definition:  IsMacaIntEnabled
               definition:  __iar_cc..Fg_YOUie$aD
-Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\Sound.o.
+Loading object C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\Sound.o.
               reference :  Gpio_SetPinFunction
               reference :  I2c_Enable
               reference :  I2c_Init
@@ -319,7 +322,7 @@ Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To us
               definition:  mMsCounter
               definition:  __iar_cc..94zCt7ypEX6
               definition:  __iar_cc..mLX0$hr5tD$
-Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\TS_kernel.o.
+Loading object C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\TS_kernel.o.
               reference :  FLib_MemCpy
               reference :  FLib_MemInPlaceCpy
               reference :  FLib_MemSet
@@ -337,7 +340,7 @@ Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To us
               definition:  gIdleTaskID
               definition:  maTsTaskIDsByPriority
               definition:  maTsTaskTable
-Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\Timer.o.
+Loading object C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\Timer.o.
               reference :  IntDisableAll
               reference :  IntRestoreAll
               reference :  TS_CreateTask
@@ -371,7 +374,7 @@ Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To us
               definition:  TmrCompEvCallBack
               definition:  __iar_via_R7
               definition:  __iar_cc..94zCt7ypEX6
-Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\Uart.o.
+Loading object C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\Uart.o.
               reference :  ITC_EnableInterrupt
               reference :  ITC_SetPriority
               reference :  IntAssignHandler
@@ -424,9 +427,9 @@ Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To us
               definition:  __iar_via_R4
               definition:  __iar_via_R5
               definition:  gUartTaskId
-              definition:  __iar_cc..4OH89SUSSg$
-              definition:  __iar_cc..mFNJ5tcH7Y2
-Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\UartUtil.o.
+              definition:  __iar_cc..UKzKtZKQdU3
+              definition:  __iar_cc..NyH25bLVej3
+Loading object C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\UartUtil.o.
               reference :  Uart2_IsTxActive
               reference :  Uart2_Transmit
               reference :  UartOpenCloseTransceiver
@@ -435,10 +438,10 @@ Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To us
               definition:  UartUtil_PrintHex
               definition:  UartUtil_Tx
               definition:  UartUtil_TxCallback
-Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\ZtcClientCommunication.o.
-Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\ZtcCopyData.o.
-Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\ZtcIBManagement.o.
-Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\ZtcMain.o.
+Loading object C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\ZtcClientCommunication.o.
+Loading object C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\ZtcCopyData.o.
+Loading object C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\ZtcIBManagement.o.
+Loading object C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\ZtcMain.o.
               reference :  FLib_MemCpy
               reference :  gZtcPacketFromClient
               reference :  gZtcPacketToClient
@@ -456,10 +459,10 @@ Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To us
               definition:  ZtcPing
               definition:  Ztc_Task
               definition:  Ztc_TaskInit
-              definition:  __iar_cc..y4mAvTdskTC
-Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\ZtcMsgTypeInfo.o.
-Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\ZtcSAPHandlerInfo.o.
-Loading object C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\getSP.o.
+              definition:  __iar_cc..WIZz64mwxi8
+Loading object C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\ZtcMsgTypeInfo.o.
+Loading object C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\ZtcSAPHandlerInfo.o.
+Loading object C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\getSP.o.
               definition:  getSP
 Selecting member rom-symbols-MAC.o(MACPHY_MC13224.a) to define FLib_MemSet.
               definition:  mMaxDetectedEnergy
@@ -1504,19 +1507,19 @@ Selecting member ABImemset48.o(rt4t_al.a) to define __iar_Memset4_word (optional
               definition:  __iar_Memset4_word
               definition:  __iar_Memset8_word
 Resolving duplicate symbol definitions
-  Picking __iar_via_R1 [s19 C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\Keyboard.o]
-    Suppressing weak def __iar_via_R1 [s13 C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\TS_kernel.o]
-  Picking __iar_cc..mLX0$hr5tD$ [s31 C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\KeyboardHAL.o]
-    Suppressing weak def __iar_cc..mLX0$hr5tD$ [s98 C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\Led.o]
-    Suppressing weak def __iar_cc..mLX0$hr5tD$ [s42 C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\Sound.o]
-  Picking __iar_cc..k1zQJScsXY_ [s169 C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\MApp.o]
-    Suppressing weak def __iar_cc..k1zQJScsXY_ [s58 C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\MApp_init.o]
-  Picking __iar_cc..njTGJrDmDSC [s180 C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\MApp.o]
-    Suppressing weak def __iar_cc..njTGJrDmDSC [s53 C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\MApp_init.o]
-  Picking __iar_via_R0 [s12 C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\MacInit.o]
-    Suppressing weak def __iar_via_R0 [s25 C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\Uart.o]
-  Picking __iar_cc..94zCt7ypEX6 [s19 C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\Sound.o]
-    Suppressing weak def __iar_cc..94zCt7ypEX6 [s126 C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\Timer.o]
+  Picking __iar_via_R1 [s19 C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\Keyboard.o]
+    Suppressing weak def __iar_via_R1 [s13 C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\TS_kernel.o]
+  Picking __iar_cc..mLX0$hr5tD$ [s31 C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\KeyboardHAL.o]
+    Suppressing weak def __iar_cc..mLX0$hr5tD$ [s98 C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\Led.o]
+    Suppressing weak def __iar_cc..mLX0$hr5tD$ [s42 C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\Sound.o]
+  Picking __iar_cc..8QCp9mk5IZ5 [s169 C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\MApp.o]
+    Suppressing weak def __iar_cc..8QCp9mk5IZ5 [s58 C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\MApp_init.o]
+  Picking __iar_cc..l_HxWg$GgDA [s180 C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\MApp.o]
+    Suppressing weak def __iar_cc..l_HxWg$GgDA [s53 C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\MApp_init.o]
+  Picking __iar_via_R0 [s12 C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\MacInit.o]
+    Suppressing weak def __iar_via_R0 [s25 C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\Uart.o]
+  Picking __iar_cc..94zCt7ypEX6 [s19 C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\Sound.o]
+    Suppressing weak def __iar_cc..94zCt7ypEX6 [s126 C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Debug\Obj\Timer.o]
   --Suppressing leftovers:
 *** Marking from roots ***
 Marking symbol _start_vector_                     Glb  (59 Init-IAR.o) [program entry]
@@ -1891,35 +1894,37 @@ Marking from fragment #88 88 .text (7 Init-IAR.o)
   Marking symbol mExceptionHandlerPrefetchAbort Ext Glb  (55 Init-IAR.o)
   Marking symbol mExceptionHandlerDataAbort     Ext Glb  (56 Init-IAR.o)
 Marking from fragment #2044 523 .text (11 MApp_init.o)
-  Marking symbol InterruptInit                  Ext Glb  (73 MApp_init.o)
-  Marking symbol IntDisableAll                  Ext Glb  (72 MApp_init.o)
-  Marking symbol Platform_Init                  Ext Glb  (80 MApp_init.o)
+  Marking symbol InterruptInit                  Ext Glb  (74 MApp_init.o)
+  Marking symbol IntDisableAll                  Ext Glb  (73 MApp_init.o)
+  Marking symbol Platform_Init                  Ext Glb  (84 MApp_init.o)
     Marking fragment #2162 1010 .text (8 PlatformInit.o)
-  Marking symbol TS_Init                        Ext Glb  (83 MApp_init.o)
+  Marking symbol TS_Init                        Ext Glb  (87 MApp_init.o)
     Marking fragment #2229 1136 .text (11 TS_kernel.o)
-  Marking symbol TMR_Init                       Ext Glb  (81 MApp_init.o)
+  Marking symbol TMR_Init                       Ext Glb  (85 MApp_init.o)
     Marking fragment #2237 1203 .text (17 Timer.o)
-  Marking symbol NvModuleInit                   Ext Glb  (79 MApp_init.o)
+  Marking symbol NvModuleInit                   Ext Glb  (80 MApp_init.o)
     Marking fragment #2064 638 .text (12 NV_Flash.o)
-  Marking symbol Uart_ModuleInit                Ext Glb  (85 MApp_init.o)
+  Marking symbol Uart_ModuleInit                Ext Glb  (89 MApp_init.o)
     Marking fragment #2290 1391 .text (21 Uart.o)
-  Marking symbol MacInit                        Ext Glb  (75 MApp_init.o)
+  Marking symbol MacInit                        Ext Glb  (76 MApp_init.o)
     Marking fragment #2056 587 .text (10 MacInit.o)
-  Marking symbol Init_802_15_4                  Ext Glb  (71 MApp_init.o)
+  Marking symbol Init_802_15_4                  Ext Glb  (72 MApp_init.o)
     Marking fragment #2165 1010 .text (8 PlatformInit.o)
   Marking symbol ??DataTable3                            (8 MApp_init.o)
     Marking fragment #2049 523 .text (11 MApp_init.o)
-  Marking symbol TS_CreateTask                  Ext Glb  (82 MApp_init.o)
+  Marking symbol TS_CreateTask                  Ext Glb  (86 MApp_init.o)
     Marking fragment #2227 1136 .text (11 TS_kernel.o)
   Marking symbol ??DataTable3_1                          (9 MApp_init.o)
     Marking fragment #2050 523 .text (11 MApp_init.o)
-  Marking symbol MApp_init                      Ext Glb  (74 MApp_init.o)
+  Marking symbol MApp_init                      Ext Glb  (75 MApp_init.o)
     Marking fragment #1955 374 .text (60 MApp.o)
-  Marking symbol Gpio_SetPinData                Ext Glb  (70 MApp_init.o)
-  Marking symbol Gpio_SetPinData                Ext Glb  (70 MApp_init.o)
-  Marking symbol Gpio_SetPinData                Ext Glb  (70 MApp_init.o)
-  Marking symbol Gpio_SetPinData                Ext Glb  (70 MApp_init.o)
-  Marking symbol TS_Scheduler                   Ext Glb  (84 MApp_init.o)
+  Marking symbol PWR_DisallowDeviceToSleep      Ext Glb  (82 MApp_init.o)
+    Marking fragment #2115 871 .text (14 PWR.o)
+  Marking symbol Gpio_SetPinData                Ext Glb  (71 MApp_init.o)
+  Marking symbol Gpio_SetPinData                Ext Glb  (71 MApp_init.o)
+  Marking symbol Gpio_SetPinData                Ext Glb  (71 MApp_init.o)
+  Marking symbol Gpio_SetPinData                Ext Glb  (71 MApp_init.o)
+  Marking symbol TS_Scheduler                   Ext Glb  (88 MApp_init.o)
     Marking fragment #2232 1136 .text (11 TS_kernel.o)
 Marking from fragment #2232 1136 .text (11 TS_kernel.o)
   Marking symbol ??DataTable6_1                          (4 TS_kernel.o)
@@ -1945,6 +1950,17 @@ Marking from fragment #2234 1136 .text (11 TS_kernel.o)
   Marking symbol maTsTaskIDsByPriority              Glb  (99 TS_kernel.o)
     Marking fragment #1134 1134 .bss (9 TS_kernel.o)
 Marking from fragment #1134 1134 .bss (9 TS_kernel.o)
+Marking from fragment #2115 871 .text (14 PWR.o)
+  Marking symbol IntDisableAll                  Ext Glb  (217 PWR.o)
+  Marking symbol ??DataTable12_1                         (4 PWR.o)
+    Marking fragment #2128 871 .text (14 PWR.o)
+  Marking symbol ??DataTable12_1                         (4 PWR.o)
+    Marking fragment #2128 871 .text (14 PWR.o)
+  Marking symbol IntRestoreAll                  Ext Glb  (218 PWR.o)
+Marking from fragment #2128 871 .text (14 PWR.o)
+  Marking symbol mLPMFlag                                (69 PWR.o)
+    Marking fragment #867 867 .bss (10 PWR.o)
+Marking from fragment #867 867 .bss (10 PWR.o)
 Marking from fragment #1955 374 .text (60 MApp.o)
   Marking symbol ??DataTable0                            (91 MApp.o)
     Marking fragment #1956 374 .text (60 MApp.o)
@@ -2706,12 +2722,12 @@ Marking from fragment #2048 523 .text (11 MApp_init.o)
     Marking fragment #2053 523 .text (11 MApp_init.o)
   Marking symbol ??DataTable3_4                          (12 MApp_init.o)
     Marking fragment #2053 523 .text (11 MApp_init.o)
-  Marking symbol MacPhyInit_WriteExtAddress     Ext Glb  (76 MApp_init.o)
+  Marking symbol MacPhyInit_WriteExtAddress     Ext Glb  (77 MApp_init.o)
   Marking symbol ??DataTable3_4                          (12 MApp_init.o)
     Marking fragment #2053 523 .text (11 MApp_init.o)
-  Marking symbol MacPhyInit_WriteExtAddress     Ext Glb  (76 MApp_init.o)
+  Marking symbol MacPhyInit_WriteExtAddress     Ext Glb  (77 MApp_init.o)
 Marking from fragment #2053 523 .text (11 MApp_init.o)
-  Marking symbol gHardwareParameters            Ext Glb  (87 MApp_init.o)
+  Marking symbol gHardwareParameters            Ext Glb  (91 MApp_init.o)
     Marking fragment #619 619 nv_data_init_struct (8 NV_Data.o)
 Marking from fragment #619 619 nv_data_init_struct (8 NV_Data.o)
 Marking from fragment #2052 523 .text (11 MApp_init.o)
@@ -2734,7 +2750,7 @@ Marking from fragment #1956 374 .text (60 MApp.o)
   Marking symbol gState                             Glb  (415 MApp.o)
     Marking fragment #335 335 .bss (21 MApp.o)
 Marking from fragment #2050 523 .text (11 MApp_init.o)
-  Marking symbol gAppTaskID_c                       Glb  (95 MApp_init.o)
+  Marking symbol gAppTaskID_c                       Glb  (99 MApp_init.o)
     Marking fragment #520 520 .bss (8 MApp_init.o)
 Marking from fragment #2227 1136 .text (11 TS_kernel.o)
   Marking symbol ??DataTable6                            (3 TS_kernel.o)
@@ -2759,7 +2775,7 @@ Marking from fragment #2227 1136 .text (11 TS_kernel.o)
   Marking symbol ??DataTable6_1                          (4 TS_kernel.o)
     Marking fragment #2234 1136 .text (11 TS_kernel.o)
 Marking from fragment #2049 523 .text (11 MApp_init.o)
-  Marking symbol AppTask                        Ext Glb  (69 MApp_init.o)
+  Marking symbol AppTask                        Ext Glb  (70 MApp_init.o)
     Marking fragment #1967 374 .text (60 MApp.o)
 Marking from fragment #1967 374 .text (60 MApp.o)
   Marking symbol ??DataTable2                            (125 MApp.o)
@@ -4160,8 +4176,323 @@ Marking from fragment #2235 1136 .text (11 TS_kernel.o)
   Marking symbol IdleTask                       Ext Glb  (87 TS_kernel.o)
     Marking fragment #2047 523 .text (11 MApp_init.o)
 Marking from fragment #2047 523 .text (11 MApp_init.o)
-  Marking symbol NvIdle                         Ext Glb  (78 MApp_init.o)
+  Marking symbol NvIdle                         Ext Glb  (79 MApp_init.o)
     Marking fragment #2062 638 .text (12 NV_Flash.o)
+  Marking symbol PWR_CheckIfDeviceCanGoToSleep  Ext Glb  (81 MApp_init.o)
+    Marking fragment #2116 871 .text (14 PWR.o)
+  Marking symbol PWR_EnterLowPower              Ext Glb  (83 MApp_init.o)
+    Marking fragment #2145 871 .text (14 PWR.o)
+Marking from fragment #2145 871 .text (14 PWR.o)
+  Marking symbol TMR_AreAllTimersOff            Ext Glb  (219 PWR.o)
+    Marking fragment #2240 1203 .text (17 Timer.o)
+  Marking symbol TMR_NotCountedTicksBeforeSleep Ext Glb  (220 PWR.o)
+    Marking fragment #2263 1203 .text (17 Timer.o)
+  Marking symbol ??DataTable15_2                         (20 PWR.o)
+    Marking fragment #2148 871 .text (14 PWR.o)
+  Marking symbol IntDisableAll                  Ext Glb  (217 PWR.o)
+  Marking symbol TS_PendingEvents               Ext Glb  (222 PWR.o)
+    Marking fragment #2230 1136 .text (11 TS_kernel.o)
+  Marking symbol ??DataTable16                           (22 PWR.o)
+    Marking fragment #2152 871 .text (14 PWR.o)
+  Marking symbol TMR_AreAllTimersOff            Ext Glb  (219 PWR.o)
+    Marking fragment #2240 1203 .text (17 Timer.o)
+  Marking symbol PWR_CheckForAndEnterNewPowerState     Glb  (233 PWR.o)
+    Marking fragment #2131 871 .text (14 PWR.o)
+  Marking symbol IntRestoreAll                  Ext Glb  (218 PWR.o)
+  Marking symbol PWR_CheckForAndEnterNewPowerState     Glb  (233 PWR.o)
+    Marking fragment #2131 871 .text (14 PWR.o)
+  Marking symbol IntRestoreAll                  Ext Glb  (218 PWR.o)
+Marking from fragment #2131 871 .text (14 PWR.o)
+  Marking symbol PWR_AllOff                         Glb  (231 PWR.o)
+    Marking fragment #2121 871 .text (14 PWR.o)
+  Marking symbol PWRLib_Reset                       Glb  (229 PWR.o)
+    Marking fragment #2117 871 .text (14 PWR.o)
+  Marking symbol PWR_DeepSleepAllowed               Glb  (236 PWR.o)
+    Marking fragment #2123 871 .text (14 PWR.o)
+  Marking symbol PWR_HandleDeepSleep                Glb  (239 PWR.o)
+    Marking fragment #2125 871 .text (14 PWR.o)
+  Marking symbol PWR_SleepAllowed                   Glb  (246 PWR.o)
+    Marking fragment #2124 871 .text (14 PWR.o)
+  Marking symbol PWR_HandleSleep                    Glb  (240 PWR.o)
+    Marking fragment #2126 871 .text (14 PWR.o)
+  Marking symbol ??DataTable16_2                         (24 PWR.o)
+    Marking fragment #2154 871 .text (14 PWR.o)
+Marking from fragment #2154 871 .text (14 PWR.o)
+  Marking symbol PWRLib_MCU_WakeupReason            Glb  (228 PWR.o)
+    Marking fragment #869 869 .bss (12 PWR.o)
+Marking from fragment #869 869 .bss (12 PWR.o)
+Marking from fragment #2126 871 .text (14 PWR.o)
+  Marking symbol PWR_MCUWait                        Glb  (242 PWR.o)
+    Marking fragment #2118 871 .text (14 PWR.o)
+  Marking symbol ??DataTable16_2                         (24 PWR.o)
+    Marking fragment #2154 871 .text (14 PWR.o)
+  Marking symbol ??DataTable16_2                         (24 PWR.o)
+    Marking fragment #2154 871 .text (14 PWR.o)
+  Marking symbol ??DataTable16_2                         (24 PWR.o)
+    Marking fragment #2154 871 .text (14 PWR.o)
+  Marking symbol ??DataTable16_2                         (24 PWR.o)
+    Marking fragment #2154 871 .text (14 PWR.o)
+Marking from fragment #2118 871 .text (14 PWR.o)
+  Marking symbol CRM_Wait4Irq                   Ext Glb  (214 PWR.o)
+Marking from fragment #2124 871 .text (14 PWR.o)
+  Marking symbol ??DataTable16                           (22 PWR.o)
+    Marking fragment #2152 871 .text (14 PWR.o)
+  Marking symbol ??DataTable16                           (22 PWR.o)
+    Marking fragment #2152 871 .text (14 PWR.o)
+  Marking symbol Asp_GetMacStateReq             Ext Glb  (212 PWR.o)
+  Marking symbol Asp_GetMacStateReq             Ext Glb  (212 PWR.o)
+Marking from fragment #2125 871 .text (14 PWR.o)
+  Marking symbol ??DataTable14                           (10 PWR.o)
+    Marking fragment #2137 871 .text (14 PWR.o)
+  Marking symbol ??DataTable14                           (10 PWR.o)
+    Marking fragment #2137 871 .text (14 PWR.o)
+  Marking symbol ??DataTable16_1                         (23 PWR.o)
+    Marking fragment #2153 871 .text (14 PWR.o)
+  Marking symbol CRM_WuCntl                     Ext Glb  (215 PWR.o)
+  Marking symbol PWR_MCUSleep                       Glb  (241 PWR.o)
+    Marking fragment #2120 871 .text (14 PWR.o)
+  Marking symbol ??DataTable16_2                         (24 PWR.o)
+    Marking fragment #2154 871 .text (14 PWR.o)
+  Marking symbol ??DataTable16_2                         (24 PWR.o)
+    Marking fragment #2154 871 .text (14 PWR.o)
+  Marking symbol ??DataTable14_1                         (11 PWR.o)
+    Marking fragment #2138 871 .text (14 PWR.o)
+  Marking symbol ??DataTable14_1                         (11 PWR.o)
+    Marking fragment #2138 871 .text (14 PWR.o)
+  Marking symbol ??DataTable16_2                         (24 PWR.o)
+    Marking fragment #2154 871 .text (14 PWR.o)
+  Marking symbol ??DataTable16_2                         (24 PWR.o)
+    Marking fragment #2154 871 .text (14 PWR.o)
+  Marking symbol ??DataTable14_1                         (11 PWR.o)
+    Marking fragment #2138 871 .text (14 PWR.o)
+  Marking symbol ??DataTable16_2                         (24 PWR.o)
+    Marking fragment #2154 871 .text (14 PWR.o)
+  Marking symbol ??DataTable16_2                         (24 PWR.o)
+    Marking fragment #2154 871 .text (14 PWR.o)
+  Marking symbol ??DataTable16_2                         (24 PWR.o)
+    Marking fragment #2154 871 .text (14 PWR.o)
+  Marking symbol PWR_RunAgain                       Glb  (243 PWR.o)
+    Marking fragment #2122 871 .text (14 PWR.o)
+  Marking symbol ??DataTable16_2                         (24 PWR.o)
+    Marking fragment #2154 871 .text (14 PWR.o)
+  Marking symbol DeepSleepWakeupStackProc       Ext Glb  (216 PWR.o)
+    Marking fragment #2022 374 .text (60 MApp.o)
+  Marking symbol ??DataTable16_2                         (24 PWR.o)
+    Marking fragment #2154 871 .text (14 PWR.o)
+Marking from fragment #2022 374 .text (60 MApp.o)
+Marking from fragment #2122 871 .text (14 PWR.o)
+  Marking symbol ??DataTable14_1                         (11 PWR.o)
+    Marking fragment #2138 871 .text (14 PWR.o)
+  Marking symbol ??DataTable14_2                         (12 PWR.o)
+    Marking fragment #2139 871 .text (14 PWR.o)
+  Marking symbol ??DataTable14_3                         (13 PWR.o)
+    Marking fragment #2140 871 .text (14 PWR.o)
+  Marking symbol ??DataTable14_4                         (14 PWR.o)
+    Marking fragment #2141 871 .text (14 PWR.o)
+  Marking symbol ??DataTable14_5                         (15 PWR.o)
+    Marking fragment #2142 871 .text (14 PWR.o)
+  Marking symbol ??DataTable14_6                         (16 PWR.o)
+    Marking fragment #2143 871 .text (14 PWR.o)
+  Marking symbol PWR_MacaTimerUpdate                     (67 PWR.o)
+    Marking fragment #2151 871 .text (14 PWR.o)
+  Marking symbol ??DataTable14_1                         (11 PWR.o)
+    Marking fragment #2138 871 .text (14 PWR.o)
+  Marking symbol ??DataTable14_7                         (17 PWR.o)
+    Marking fragment #2144 871 .text (14 PWR.o)
+  Marking symbol ??DataTable14_1                         (11 PWR.o)
+    Marking fragment #2138 871 .text (14 PWR.o)
+  Marking symbol ??DataTable15                           (18 PWR.o)
+    Marking fragment #2146 871 .text (14 PWR.o)
+  Marking symbol ??DataTable15_1                         (19 PWR.o)
+    Marking fragment #2147 871 .text (14 PWR.o)
+  Marking symbol ??DataTable15_2                         (20 PWR.o)
+    Marking fragment #2148 871 .text (14 PWR.o)
+  Marking symbol TMR_SyncLpmTimers              Ext Glb  (221 PWR.o)
+    Marking fragment #2267 1203 .text (17 Timer.o)
+  Marking symbol ??DataTable14_1                         (11 PWR.o)
+    Marking fragment #2138 871 .text (14 PWR.o)
+  Marking symbol ??DataTable14_1                         (11 PWR.o)
+    Marking fragment #2138 871 .text (14 PWR.o)
+Marking from fragment #2267 1203 .text (17 Timer.o)
+  Marking symbol ??DataTable18_4                         (13 Timer.o)
+    Marking fragment #2281 1203 .text (17 Timer.o)
+  Marking symbol TMR_GetTimerType                        (75 Timer.o)
+    Marking fragment #2274 1203 .text (17 Timer.o)
+  Marking symbol TMR_GetTimerStatus                      (74 Timer.o)
+    Marking fragment #2272 1203 .text (17 Timer.o)
+  Marking symbol ??DataTable12                           (6 Timer.o)
+    Marking fragment #2268 1203 .text (17 Timer.o)
+  Marking symbol ??DataTable12                           (6 Timer.o)
+    Marking fragment #2268 1203 .text (17 Timer.o)
+  Marking symbol ??DataTable12                           (6 Timer.o)
+    Marking fragment #2268 1203 .text (17 Timer.o)
+  Marking symbol ??DataTable12                           (6 Timer.o)
+    Marking fragment #2268 1203 .text (17 Timer.o)
+  Marking symbol TmrSetMode                     Ext Glb  (278 Timer.o)
+  Marking symbol ??DataTable18_3                         (12 Timer.o)
+    Marking fragment #2280 1203 .text (17 Timer.o)
+  Marking symbol TmrReadValue                   Ext Glb  (274 Timer.o)
+  Marking symbol ??DataTable18_2                         (11 Timer.o)
+    Marking fragment #2279 1203 .text (17 Timer.o)
+  Marking symbol TS_SendEvent                   Ext Glb  (271 Timer.o)
+    Marking fragment #2231 1136 .text (11 TS_kernel.o)
+Marking from fragment #2280 1203 .text (17 Timer.o)
+  Marking symbol previousTimeInTicks                     (88 Timer.o)
+    Marking fragment #1194 1194 .bss (8 Timer.o)
+Marking from fragment #2281 1203 .text (17 Timer.o)
+  Marking symbol numberOfLowPowerActiveTimers            (87 Timer.o)
+    Marking fragment #1201 1201 .bss (15 Timer.o)
+Marking from fragment #2147 871 .text (14 PWR.o)
+Marking from fragment #2146 871 .text (14 PWR.o)
+Marking from fragment #2144 871 .text (14 PWR.o)
+Marking from fragment #2151 871 .text (14 PWR.o)
+  Marking symbol ??DataTable16_3                         (25 PWR.o)
+    Marking fragment #2155 871 .text (14 PWR.o)
+  Marking symbol ??DataTable16_4                         (26 PWR.o)
+    Marking fragment #2156 871 .text (14 PWR.o)
+  Marking symbol ??DataTable16_5                         (27 PWR.o)
+    Marking fragment #2157 871 .text (14 PWR.o)
+  Marking symbol ??DataTable16_6                         (28 PWR.o)
+    Marking fragment #2158 871 .text (14 PWR.o)
+  Marking symbol __aeabi_ui2d                   Ext Glb  (225 PWR.o)
+    Marking fragment #1840 1840 .text (6 U32ToDbl.o(rt4t_al.a))
+  Marking symbol ??DataTable16_7                         (29 PWR.o)
+    Marking fragment #2159 871 .text (14 PWR.o)
+  Marking symbol __aeabi_dmul                   Ext Glb  (224 PWR.o)
+    Marking fragment #1837 1837 .text (6 DblMul.o(rt4t_al.a))
+  Marking symbol __aeabi_d2uiz                  Ext Glb  (223 PWR.o)
+    Marking fragment #1834 1834 .text (6 DblToU32.o(rt4t_al.a))
+  Marking symbol ??DataTable16_8                         (30 PWR.o)
+    Marking fragment #2160 871 .text (14 PWR.o)
+  Marking symbol ??DataTable16_5                         (27 PWR.o)
+    Marking fragment #2157 871 .text (14 PWR.o)
+  Marking symbol ??DataTable16_6                         (28 PWR.o)
+    Marking fragment #2158 871 .text (14 PWR.o)
+  Marking symbol ??DataTable16_8                         (30 PWR.o)
+    Marking fragment #2160 871 .text (14 PWR.o)
+  Marking symbol ??DataTable16_3                         (25 PWR.o)
+    Marking fragment #2155 871 .text (14 PWR.o)
+  Marking symbol ??DataTable16_5                         (27 PWR.o)
+    Marking fragment #2157 871 .text (14 PWR.o)
+  Marking symbol ??DataTable16_6                         (28 PWR.o)
+    Marking fragment #2158 871 .text (14 PWR.o)
+  Marking symbol __aeabi_ui2d                   Ext Glb  (225 PWR.o)
+    Marking fragment #1840 1840 .text (6 U32ToDbl.o(rt4t_al.a))
+  Marking symbol ??DataTable16_9                         (31 PWR.o)
+    Marking fragment #2161 871 .text (14 PWR.o)
+  Marking symbol __aeabi_dmul                   Ext Glb  (224 PWR.o)
+    Marking fragment #1837 1837 .text (6 DblMul.o(rt4t_al.a))
+  Marking symbol __aeabi_d2uiz                  Ext Glb  (223 PWR.o)
+    Marking fragment #1834 1834 .text (6 DblToU32.o(rt4t_al.a))
+  Marking symbol ??DataTable16_8                         (30 PWR.o)
+    Marking fragment #2160 871 .text (14 PWR.o)
+Marking from fragment #2161 871 .text (14 PWR.o)
+Marking from fragment #2160 871 .text (14 PWR.o)
+Marking from fragment #1834 1834 .text (6 DblToU32.o(rt4t_al.a))
+Marking from fragment #1837 1837 .text (6 DblMul.o(rt4t_al.a))
+Marking from fragment #2159 871 .text (14 PWR.o)
+Marking from fragment #1840 1840 .text (6 U32ToDbl.o(rt4t_al.a))
+  Marking symbol __iar_i2d                      Ext Glb  (4 U32ToDbl.o)
+    Marking fragment #1843 1843 .text (6 S32ToDbl.o(rt4t_al.a))
+Marking from fragment #1843 1843 .text (6 S32ToDbl.o(rt4t_al.a))
+Marking from fragment #2158 871 .text (14 PWR.o)
+Marking from fragment #2157 871 .text (14 PWR.o)
+  Marking symbol mSavedMacaClk                           (70 PWR.o)
+    Marking fragment #868 868 .bss (11 PWR.o)
+Marking from fragment #868 868 .bss (11 PWR.o)
+Marking from fragment #2156 871 .text (14 PWR.o)
+Marking from fragment #2155 871 .text (14 PWR.o)
+Marking from fragment #2143 871 .text (14 PWR.o)
+Marking from fragment #2142 871 .text (14 PWR.o)
+Marking from fragment #2141 871 .text (14 PWR.o)
+Marking from fragment #2140 871 .text (14 PWR.o)
+Marking from fragment #2139 871 .text (14 PWR.o)
+  Marking symbol gHardwareParameters            Ext Glb  (226 PWR.o)
+    Marking fragment #619 619 nv_data_init_struct (8 NV_Data.o)
+Marking from fragment #2138 871 .text (14 PWR.o)
+Marking from fragment #2120 871 .text (14 PWR.o)
+  Marking symbol ??DataTable13_2                         (9 PWR.o)
+    Marking fragment #2134 871 .text (14 PWR.o)
+  Marking symbol ??DataTable14                           (10 PWR.o)
+    Marking fragment #2137 871 .text (14 PWR.o)
+  Marking symbol ??DataTable12                           (3 PWR.o)
+    Marking fragment #2127 871 .text (14 PWR.o)
+  Marking symbol ??DataTable14                           (10 PWR.o)
+    Marking fragment #2137 871 .text (14 PWR.o)
+  Marking symbol CRM_GoToSleep                  Ext Glb  (213 PWR.o)
+Marking from fragment #2127 871 .text (14 PWR.o)
+  Marking symbol mExtOutPol                              (68 PWR.o)
+    Marking fragment #866 866 .bss (9 PWR.o)
+Marking from fragment #866 866 .bss (9 PWR.o)
+Marking from fragment #2134 871 .text (14 PWR.o)
+  Marking symbol PWR_CallBeforeSleep                     (66 PWR.o)
+    Marking fragment #2119 871 .text (14 PWR.o)
+Marking from fragment #2119 871 .text (14 PWR.o)
+  Marking symbol ??DataTable12_3                         (6 PWR.o)
+    Marking fragment #2130 871 .text (14 PWR.o)
+  Marking symbol ??DataTable13_1                         (8 PWR.o)
+    Marking fragment #2133 871 .text (14 PWR.o)
+Marking from fragment #2133 871 .text (14 PWR.o)
+Marking from fragment #2130 871 .text (14 PWR.o)
+  Marking symbol mSavedMacaClk                           (70 PWR.o)
+    Marking fragment #868 868 .bss (11 PWR.o)
+Marking from fragment #2153 871 .text (14 PWR.o)
+Marking from fragment #2137 871 .text (14 PWR.o)
+Marking from fragment #2123 871 .text (14 PWR.o)
+  Marking symbol ??DataTable15_3                         (21 PWR.o)
+    Marking fragment #2149 871 .text (14 PWR.o)
+  Marking symbol Asp_GetMacStateReq             Ext Glb  (212 PWR.o)
+Marking from fragment #2149 871 .text (14 PWR.o)
+  Marking symbol PWRLib_StackPS                     Glb  (230 PWR.o)
+    Marking fragment #870 870 .bss (13 PWR.o)
+Marking from fragment #870 870 .bss (13 PWR.o)
+Marking from fragment #2117 871 .text (14 PWR.o)
+  Marking symbol ??DataTable12_2                         (5 PWR.o)
+    Marking fragment #2129 871 .text (14 PWR.o)
+  Marking symbol ??DataTable13                           (7 PWR.o)
+    Marking fragment #2132 871 .text (14 PWR.o)
+Marking from fragment #2132 871 .text (14 PWR.o)
+Marking from fragment #2129 871 .text (14 PWR.o)
+Marking from fragment #2121 871 .text (14 PWR.o)
+  Marking symbol ??DataTable14                           (10 PWR.o)
+    Marking fragment #2137 871 .text (14 PWR.o)
+  Marking symbol ??DataTable14                           (10 PWR.o)
+    Marking fragment #2137 871 .text (14 PWR.o)
+  Marking symbol ??DataTable14                           (10 PWR.o)
+    Marking fragment #2137 871 .text (14 PWR.o)
+  Marking symbol ??DataTable14                           (10 PWR.o)
+    Marking fragment #2137 871 .text (14 PWR.o)
+  Marking symbol ??DataTable14                           (10 PWR.o)
+    Marking fragment #2137 871 .text (14 PWR.o)
+  Marking symbol ??DataTable14                           (10 PWR.o)
+    Marking fragment #2137 871 .text (14 PWR.o)
+  Marking symbol PWR_MCUSleep                       Glb  (241 PWR.o)
+    Marking fragment #2120 871 .text (14 PWR.o)
+Marking from fragment #2152 871 .text (14 PWR.o)
+  Marking symbol PWRLib_StackPS                     Glb  (230 PWR.o)
+    Marking fragment #870 870 .bss (13 PWR.o)
+Marking from fragment #2230 1136 .text (11 TS_kernel.o)
+  Marking symbol ??DataTable6                            (3 TS_kernel.o)
+    Marking fragment #2233 1136 .text (11 TS_kernel.o)
+  Marking symbol ??DataTable6                            (3 TS_kernel.o)
+    Marking fragment #2233 1136 .text (11 TS_kernel.o)
+Marking from fragment #2148 871 .text (14 PWR.o)
+  Marking symbol notCountedTmrTicksBeforeSleep           (71 PWR.o)
+    Marking fragment #865 865 .bss (8 PWR.o)
+Marking from fragment #865 865 .bss (8 PWR.o)
+Marking from fragment #2263 1203 .text (17 Timer.o)
+  Marking symbol ??DataTable11                           (3 Timer.o)
+    Marking fragment #2264 1203 .text (17 Timer.o)
+  Marking symbol TmrReadValue                   Ext Glb  (274 Timer.o)
+  Marking symbol TmrSetMode                     Ext Glb  (278 Timer.o)
+  Marking symbol ??DataTable18_3                         (12 Timer.o)
+    Marking fragment #2280 1203 .text (17 Timer.o)
+Marking from fragment #2240 1203 .text (17 Timer.o)
+  Marking symbol ??DataTable8_7                          (24 Timer.o)
+    Marking fragment #2258 1203 .text (17 Timer.o)
+Marking from fragment #2116 871 .text (14 PWR.o)
+  Marking symbol ??DataTable12_1                         (4 PWR.o)
+    Marking fragment #2128 871 .text (14 PWR.o)
 Marking from fragment #2062 638 .text (12 NV_Flash.o)
   Marking symbol ??DataTable5                            (18 NV_Flash.o)
     Marking fragment #2066 638 .text (12 NV_Flash.o)
@@ -4798,35 +5129,37 @@ Marking from fragment #1788 1788 .text (6 MemScan_patched.o(MACPHY_MC13224.a)) i
   Marking symbol gMemScan_ScanDuration          Ext Glb  (12 MemScan_patched.o)
   Marking symbol mMaxDetectedEnergy             Ext Glb  (16 MemScan_patched.o)
 Marking from fragment #2044 523 .text (11 MApp_init.o) init:always
-  Marking symbol InterruptInit                  Ext Glb  (73 MApp_init.o)
-  Marking symbol IntDisableAll                  Ext Glb  (72 MApp_init.o)
-  Marking symbol Platform_Init                  Ext Glb  (80 MApp_init.o)
+  Marking symbol InterruptInit                  Ext Glb  (74 MApp_init.o)
+  Marking symbol IntDisableAll                  Ext Glb  (73 MApp_init.o)
+  Marking symbol Platform_Init                  Ext Glb  (84 MApp_init.o)
     Marking fragment #2162 1010 .text (8 PlatformInit.o) init:always
-  Marking symbol TS_Init                        Ext Glb  (83 MApp_init.o)
+  Marking symbol TS_Init                        Ext Glb  (87 MApp_init.o)
     Marking fragment #2229 1136 .text (11 TS_kernel.o) init:always
-  Marking symbol TMR_Init                       Ext Glb  (81 MApp_init.o)
+  Marking symbol TMR_Init                       Ext Glb  (85 MApp_init.o)
     Marking fragment #2237 1203 .text (17 Timer.o) init:always
-  Marking symbol NvModuleInit                   Ext Glb  (79 MApp_init.o)
+  Marking symbol NvModuleInit                   Ext Glb  (80 MApp_init.o)
     Marking fragment #2064 638 .text (12 NV_Flash.o) init:always
-  Marking symbol Uart_ModuleInit                Ext Glb  (85 MApp_init.o)
+  Marking symbol Uart_ModuleInit                Ext Glb  (89 MApp_init.o)
     Marking fragment #2290 1391 .text (21 Uart.o) init:always
-  Marking symbol MacInit                        Ext Glb  (75 MApp_init.o)
+  Marking symbol MacInit                        Ext Glb  (76 MApp_init.o)
     Marking fragment #2056 587 .text (10 MacInit.o) init:always
-  Marking symbol Init_802_15_4                  Ext Glb  (71 MApp_init.o)
+  Marking symbol Init_802_15_4                  Ext Glb  (72 MApp_init.o)
     Marking fragment #2165 1010 .text (8 PlatformInit.o) init:always
   Marking symbol ??DataTable3                            (8 MApp_init.o)
     Marking fragment #2049 523 .text (11 MApp_init.o) init:always
-  Marking symbol TS_CreateTask                  Ext Glb  (82 MApp_init.o)
+  Marking symbol TS_CreateTask                  Ext Glb  (86 MApp_init.o)
     Marking fragment #2227 1136 .text (11 TS_kernel.o) init:always
   Marking symbol ??DataTable3_1                          (9 MApp_init.o)
     Marking fragment #2050 523 .text (11 MApp_init.o) init:always
-  Marking symbol MApp_init                      Ext Glb  (74 MApp_init.o)
+  Marking symbol MApp_init                      Ext Glb  (75 MApp_init.o)
     Marking fragment #1955 374 .text (60 MApp.o) init:always
-  Marking symbol Gpio_SetPinData                Ext Glb  (70 MApp_init.o)
-  Marking symbol Gpio_SetPinData                Ext Glb  (70 MApp_init.o)
-  Marking symbol Gpio_SetPinData                Ext Glb  (70 MApp_init.o)
-  Marking symbol Gpio_SetPinData                Ext Glb  (70 MApp_init.o)
-  Marking symbol TS_Scheduler                   Ext Glb  (84 MApp_init.o)
+  Marking symbol PWR_DisallowDeviceToSleep      Ext Glb  (82 MApp_init.o)
+    Marking fragment #2115 871 .text (14 PWR.o) init:always
+  Marking symbol Gpio_SetPinData                Ext Glb  (71 MApp_init.o)
+  Marking symbol Gpio_SetPinData                Ext Glb  (71 MApp_init.o)
+  Marking symbol Gpio_SetPinData                Ext Glb  (71 MApp_init.o)
+  Marking symbol Gpio_SetPinData                Ext Glb  (71 MApp_init.o)
+  Marking symbol TS_Scheduler                   Ext Glb  (88 MApp_init.o)
     Marking fragment #2232 1136 .text (11 TS_kernel.o) init:always
 Marking from fragment #2232 1136 .text (11 TS_kernel.o) init:always
   Marking symbol ??DataTable6_1                          (4 TS_kernel.o)
@@ -4852,6 +5185,17 @@ Marking from fragment #2234 1136 .text (11 TS_kernel.o) init:always
   Marking symbol maTsTaskIDsByPriority              Glb  (99 TS_kernel.o)
     Marking fragment #1134 1134 .bss (9 TS_kernel.o) init:always
 Marking from fragment #1134 1134 .bss (9 TS_kernel.o) init:always
+Marking from fragment #2115 871 .text (14 PWR.o) init:always
+  Marking symbol IntDisableAll                  Ext Glb  (217 PWR.o)
+  Marking symbol ??DataTable12_1                         (4 PWR.o)
+    Marking fragment #2128 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable12_1                         (4 PWR.o)
+    Marking fragment #2128 871 .text (14 PWR.o) init:always
+  Marking symbol IntRestoreAll                  Ext Glb  (218 PWR.o)
+Marking from fragment #2128 871 .text (14 PWR.o) init:always
+  Marking symbol mLPMFlag                                (69 PWR.o)
+    Marking fragment #867 867 .bss (10 PWR.o) init:always
+Marking from fragment #867 867 .bss (10 PWR.o) init:always
 Marking from fragment #1955 374 .text (60 MApp.o) init:always
   Marking symbol ??DataTable0                            (91 MApp.o)
     Marking fragment #1956 374 .text (60 MApp.o) init:always
@@ -5613,12 +5957,12 @@ Marking from fragment #2048 523 .text (11 MApp_init.o) init:always
     Marking fragment #2053 523 .text (11 MApp_init.o) init:always
   Marking symbol ??DataTable3_4                          (12 MApp_init.o)
     Marking fragment #2053 523 .text (11 MApp_init.o) init:always
-  Marking symbol MacPhyInit_WriteExtAddress     Ext Glb  (76 MApp_init.o)
+  Marking symbol MacPhyInit_WriteExtAddress     Ext Glb  (77 MApp_init.o)
   Marking symbol ??DataTable3_4                          (12 MApp_init.o)
     Marking fragment #2053 523 .text (11 MApp_init.o) init:always
-  Marking symbol MacPhyInit_WriteExtAddress     Ext Glb  (76 MApp_init.o)
+  Marking symbol MacPhyInit_WriteExtAddress     Ext Glb  (77 MApp_init.o)
 Marking from fragment #2053 523 .text (11 MApp_init.o) init:always
-  Marking symbol gHardwareParameters            Ext Glb  (87 MApp_init.o)
+  Marking symbol gHardwareParameters            Ext Glb  (91 MApp_init.o)
     Marking fragment #619 619 nv_data_init_struct (8 NV_Data.o) init:always
 Marking from fragment #619 619 nv_data_init_struct (8 NV_Data.o) init:always
 Marking from fragment #2052 523 .text (11 MApp_init.o) init:always
@@ -5641,7 +5985,7 @@ Marking from fragment #1956 374 .text (60 MApp.o) init:always
   Marking symbol gState                             Glb  (415 MApp.o)
     Marking fragment #335 335 .bss (21 MApp.o) init:always
 Marking from fragment #2050 523 .text (11 MApp_init.o) init:always
-  Marking symbol gAppTaskID_c                       Glb  (95 MApp_init.o)
+  Marking symbol gAppTaskID_c                       Glb  (99 MApp_init.o)
     Marking fragment #520 520 .bss (8 MApp_init.o) init:always
 Marking from fragment #2227 1136 .text (11 TS_kernel.o) init:always
   Marking symbol ??DataTable6                            (3 TS_kernel.o)
@@ -5666,7 +6010,7 @@ Marking from fragment #2227 1136 .text (11 TS_kernel.o) init:always
   Marking symbol ??DataTable6_1                          (4 TS_kernel.o)
     Marking fragment #2234 1136 .text (11 TS_kernel.o) init:always
 Marking from fragment #2049 523 .text (11 MApp_init.o) init:always
-  Marking symbol AppTask                        Ext Glb  (69 MApp_init.o)
+  Marking symbol AppTask                        Ext Glb  (70 MApp_init.o)
     Marking fragment #1967 374 .text (60 MApp.o) init:always
 Marking from fragment #1967 374 .text (60 MApp.o) init:always
   Marking symbol ??DataTable2                            (125 MApp.o)
@@ -7067,8 +7411,323 @@ Marking from fragment #2235 1136 .text (11 TS_kernel.o) init:always
   Marking symbol IdleTask                       Ext Glb  (87 TS_kernel.o)
     Marking fragment #2047 523 .text (11 MApp_init.o) init:always
 Marking from fragment #2047 523 .text (11 MApp_init.o) init:always
-  Marking symbol NvIdle                         Ext Glb  (78 MApp_init.o)
+  Marking symbol NvIdle                         Ext Glb  (79 MApp_init.o)
     Marking fragment #2062 638 .text (12 NV_Flash.o) init:always
+  Marking symbol PWR_CheckIfDeviceCanGoToSleep  Ext Glb  (81 MApp_init.o)
+    Marking fragment #2116 871 .text (14 PWR.o) init:always
+  Marking symbol PWR_EnterLowPower              Ext Glb  (83 MApp_init.o)
+    Marking fragment #2145 871 .text (14 PWR.o) init:always
+Marking from fragment #2145 871 .text (14 PWR.o) init:always
+  Marking symbol TMR_AreAllTimersOff            Ext Glb  (219 PWR.o)
+    Marking fragment #2240 1203 .text (17 Timer.o) init:always
+  Marking symbol TMR_NotCountedTicksBeforeSleep Ext Glb  (220 PWR.o)
+    Marking fragment #2263 1203 .text (17 Timer.o) init:always
+  Marking symbol ??DataTable15_2                         (20 PWR.o)
+    Marking fragment #2148 871 .text (14 PWR.o) init:always
+  Marking symbol IntDisableAll                  Ext Glb  (217 PWR.o)
+  Marking symbol TS_PendingEvents               Ext Glb  (222 PWR.o)
+    Marking fragment #2230 1136 .text (11 TS_kernel.o) init:always
+  Marking symbol ??DataTable16                           (22 PWR.o)
+    Marking fragment #2152 871 .text (14 PWR.o) init:always
+  Marking symbol TMR_AreAllTimersOff            Ext Glb  (219 PWR.o)
+    Marking fragment #2240 1203 .text (17 Timer.o) init:always
+  Marking symbol PWR_CheckForAndEnterNewPowerState     Glb  (233 PWR.o)
+    Marking fragment #2131 871 .text (14 PWR.o) init:always
+  Marking symbol IntRestoreAll                  Ext Glb  (218 PWR.o)
+  Marking symbol PWR_CheckForAndEnterNewPowerState     Glb  (233 PWR.o)
+    Marking fragment #2131 871 .text (14 PWR.o) init:always
+  Marking symbol IntRestoreAll                  Ext Glb  (218 PWR.o)
+Marking from fragment #2131 871 .text (14 PWR.o) init:always
+  Marking symbol PWR_AllOff                         Glb  (231 PWR.o)
+    Marking fragment #2121 871 .text (14 PWR.o) init:always
+  Marking symbol PWRLib_Reset                       Glb  (229 PWR.o)
+    Marking fragment #2117 871 .text (14 PWR.o) init:always
+  Marking symbol PWR_DeepSleepAllowed               Glb  (236 PWR.o)
+    Marking fragment #2123 871 .text (14 PWR.o) init:always
+  Marking symbol PWR_HandleDeepSleep                Glb  (239 PWR.o)
+    Marking fragment #2125 871 .text (14 PWR.o) init:always
+  Marking symbol PWR_SleepAllowed                   Glb  (246 PWR.o)
+    Marking fragment #2124 871 .text (14 PWR.o) init:always
+  Marking symbol PWR_HandleSleep                    Glb  (240 PWR.o)
+    Marking fragment #2126 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable16_2                         (24 PWR.o)
+    Marking fragment #2154 871 .text (14 PWR.o) init:always
+Marking from fragment #2154 871 .text (14 PWR.o) init:always
+  Marking symbol PWRLib_MCU_WakeupReason            Glb  (228 PWR.o)
+    Marking fragment #869 869 .bss (12 PWR.o) init:always
+Marking from fragment #869 869 .bss (12 PWR.o) init:always
+Marking from fragment #2126 871 .text (14 PWR.o) init:always
+  Marking symbol PWR_MCUWait                        Glb  (242 PWR.o)
+    Marking fragment #2118 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable16_2                         (24 PWR.o)
+    Marking fragment #2154 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable16_2                         (24 PWR.o)
+    Marking fragment #2154 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable16_2                         (24 PWR.o)
+    Marking fragment #2154 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable16_2                         (24 PWR.o)
+    Marking fragment #2154 871 .text (14 PWR.o) init:always
+Marking from fragment #2118 871 .text (14 PWR.o) init:always
+  Marking symbol CRM_Wait4Irq                   Ext Glb  (214 PWR.o)
+Marking from fragment #2124 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable16                           (22 PWR.o)
+    Marking fragment #2152 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable16                           (22 PWR.o)
+    Marking fragment #2152 871 .text (14 PWR.o) init:always
+  Marking symbol Asp_GetMacStateReq             Ext Glb  (212 PWR.o)
+  Marking symbol Asp_GetMacStateReq             Ext Glb  (212 PWR.o)
+Marking from fragment #2125 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable14                           (10 PWR.o)
+    Marking fragment #2137 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable14                           (10 PWR.o)
+    Marking fragment #2137 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable16_1                         (23 PWR.o)
+    Marking fragment #2153 871 .text (14 PWR.o) init:always
+  Marking symbol CRM_WuCntl                     Ext Glb  (215 PWR.o)
+  Marking symbol PWR_MCUSleep                       Glb  (241 PWR.o)
+    Marking fragment #2120 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable16_2                         (24 PWR.o)
+    Marking fragment #2154 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable16_2                         (24 PWR.o)
+    Marking fragment #2154 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable14_1                         (11 PWR.o)
+    Marking fragment #2138 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable14_1                         (11 PWR.o)
+    Marking fragment #2138 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable16_2                         (24 PWR.o)
+    Marking fragment #2154 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable16_2                         (24 PWR.o)
+    Marking fragment #2154 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable14_1                         (11 PWR.o)
+    Marking fragment #2138 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable16_2                         (24 PWR.o)
+    Marking fragment #2154 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable16_2                         (24 PWR.o)
+    Marking fragment #2154 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable16_2                         (24 PWR.o)
+    Marking fragment #2154 871 .text (14 PWR.o) init:always
+  Marking symbol PWR_RunAgain                       Glb  (243 PWR.o)
+    Marking fragment #2122 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable16_2                         (24 PWR.o)
+    Marking fragment #2154 871 .text (14 PWR.o) init:always
+  Marking symbol DeepSleepWakeupStackProc       Ext Glb  (216 PWR.o)
+    Marking fragment #2022 374 .text (60 MApp.o) init:always
+  Marking symbol ??DataTable16_2                         (24 PWR.o)
+    Marking fragment #2154 871 .text (14 PWR.o) init:always
+Marking from fragment #2022 374 .text (60 MApp.o) init:always
+Marking from fragment #2122 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable14_1                         (11 PWR.o)
+    Marking fragment #2138 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable14_2                         (12 PWR.o)
+    Marking fragment #2139 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable14_3                         (13 PWR.o)
+    Marking fragment #2140 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable14_4                         (14 PWR.o)
+    Marking fragment #2141 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable14_5                         (15 PWR.o)
+    Marking fragment #2142 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable14_6                         (16 PWR.o)
+    Marking fragment #2143 871 .text (14 PWR.o) init:always
+  Marking symbol PWR_MacaTimerUpdate                     (67 PWR.o)
+    Marking fragment #2151 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable14_1                         (11 PWR.o)
+    Marking fragment #2138 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable14_7                         (17 PWR.o)
+    Marking fragment #2144 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable14_1                         (11 PWR.o)
+    Marking fragment #2138 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable15                           (18 PWR.o)
+    Marking fragment #2146 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable15_1                         (19 PWR.o)
+    Marking fragment #2147 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable15_2                         (20 PWR.o)
+    Marking fragment #2148 871 .text (14 PWR.o) init:always
+  Marking symbol TMR_SyncLpmTimers              Ext Glb  (221 PWR.o)
+    Marking fragment #2267 1203 .text (17 Timer.o) init:always
+  Marking symbol ??DataTable14_1                         (11 PWR.o)
+    Marking fragment #2138 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable14_1                         (11 PWR.o)
+    Marking fragment #2138 871 .text (14 PWR.o) init:always
+Marking from fragment #2267 1203 .text (17 Timer.o) init:always
+  Marking symbol ??DataTable18_4                         (13 Timer.o)
+    Marking fragment #2281 1203 .text (17 Timer.o) init:always
+  Marking symbol TMR_GetTimerType                        (75 Timer.o)
+    Marking fragment #2274 1203 .text (17 Timer.o) init:always
+  Marking symbol TMR_GetTimerStatus                      (74 Timer.o)
+    Marking fragment #2272 1203 .text (17 Timer.o) init:always
+  Marking symbol ??DataTable12                           (6 Timer.o)
+    Marking fragment #2268 1203 .text (17 Timer.o) init:always
+  Marking symbol ??DataTable12                           (6 Timer.o)
+    Marking fragment #2268 1203 .text (17 Timer.o) init:always
+  Marking symbol ??DataTable12                           (6 Timer.o)
+    Marking fragment #2268 1203 .text (17 Timer.o) init:always
+  Marking symbol ??DataTable12                           (6 Timer.o)
+    Marking fragment #2268 1203 .text (17 Timer.o) init:always
+  Marking symbol TmrSetMode                     Ext Glb  (278 Timer.o)
+  Marking symbol ??DataTable18_3                         (12 Timer.o)
+    Marking fragment #2280 1203 .text (17 Timer.o) init:always
+  Marking symbol TmrReadValue                   Ext Glb  (274 Timer.o)
+  Marking symbol ??DataTable18_2                         (11 Timer.o)
+    Marking fragment #2279 1203 .text (17 Timer.o) init:always
+  Marking symbol TS_SendEvent                   Ext Glb  (271 Timer.o)
+    Marking fragment #2231 1136 .text (11 TS_kernel.o) init:always
+Marking from fragment #2280 1203 .text (17 Timer.o) init:always
+  Marking symbol previousTimeInTicks                     (88 Timer.o)
+    Marking fragment #1194 1194 .bss (8 Timer.o) init:always
+Marking from fragment #2281 1203 .text (17 Timer.o) init:always
+  Marking symbol numberOfLowPowerActiveTimers            (87 Timer.o)
+    Marking fragment #1201 1201 .bss (15 Timer.o) init:always
+Marking from fragment #2147 871 .text (14 PWR.o) init:always
+Marking from fragment #2146 871 .text (14 PWR.o) init:always
+Marking from fragment #2144 871 .text (14 PWR.o) init:always
+Marking from fragment #2151 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable16_3                         (25 PWR.o)
+    Marking fragment #2155 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable16_4                         (26 PWR.o)
+    Marking fragment #2156 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable16_5                         (27 PWR.o)
+    Marking fragment #2157 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable16_6                         (28 PWR.o)
+    Marking fragment #2158 871 .text (14 PWR.o) init:always
+  Marking symbol __aeabi_ui2d                   Ext Glb  (225 PWR.o)
+    Marking fragment #1840 1840 .text (6 U32ToDbl.o(rt4t_al.a)) init:always
+  Marking symbol ??DataTable16_7                         (29 PWR.o)
+    Marking fragment #2159 871 .text (14 PWR.o) init:always
+  Marking symbol __aeabi_dmul                   Ext Glb  (224 PWR.o)
+    Marking fragment #1837 1837 .text (6 DblMul.o(rt4t_al.a)) init:always
+  Marking symbol __aeabi_d2uiz                  Ext Glb  (223 PWR.o)
+    Marking fragment #1834 1834 .text (6 DblToU32.o(rt4t_al.a)) init:always
+  Marking symbol ??DataTable16_8                         (30 PWR.o)
+    Marking fragment #2160 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable16_5                         (27 PWR.o)
+    Marking fragment #2157 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable16_6                         (28 PWR.o)
+    Marking fragment #2158 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable16_8                         (30 PWR.o)
+    Marking fragment #2160 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable16_3                         (25 PWR.o)
+    Marking fragment #2155 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable16_5                         (27 PWR.o)
+    Marking fragment #2157 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable16_6                         (28 PWR.o)
+    Marking fragment #2158 871 .text (14 PWR.o) init:always
+  Marking symbol __aeabi_ui2d                   Ext Glb  (225 PWR.o)
+    Marking fragment #1840 1840 .text (6 U32ToDbl.o(rt4t_al.a)) init:always
+  Marking symbol ??DataTable16_9                         (31 PWR.o)
+    Marking fragment #2161 871 .text (14 PWR.o) init:always
+  Marking symbol __aeabi_dmul                   Ext Glb  (224 PWR.o)
+    Marking fragment #1837 1837 .text (6 DblMul.o(rt4t_al.a)) init:always
+  Marking symbol __aeabi_d2uiz                  Ext Glb  (223 PWR.o)
+    Marking fragment #1834 1834 .text (6 DblToU32.o(rt4t_al.a)) init:always
+  Marking symbol ??DataTable16_8                         (30 PWR.o)
+    Marking fragment #2160 871 .text (14 PWR.o) init:always
+Marking from fragment #2161 871 .text (14 PWR.o) init:always
+Marking from fragment #2160 871 .text (14 PWR.o) init:always
+Marking from fragment #1834 1834 .text (6 DblToU32.o(rt4t_al.a)) init:always
+Marking from fragment #1837 1837 .text (6 DblMul.o(rt4t_al.a)) init:always
+Marking from fragment #2159 871 .text (14 PWR.o) init:always
+Marking from fragment #1840 1840 .text (6 U32ToDbl.o(rt4t_al.a)) init:always
+  Marking symbol __iar_i2d                      Ext Glb  (4 U32ToDbl.o)
+    Marking fragment #1843 1843 .text (6 S32ToDbl.o(rt4t_al.a)) init:always
+Marking from fragment #1843 1843 .text (6 S32ToDbl.o(rt4t_al.a)) init:always
+Marking from fragment #2158 871 .text (14 PWR.o) init:always
+Marking from fragment #2157 871 .text (14 PWR.o) init:always
+  Marking symbol mSavedMacaClk                           (70 PWR.o)
+    Marking fragment #868 868 .bss (11 PWR.o) init:always
+Marking from fragment #868 868 .bss (11 PWR.o) init:always
+Marking from fragment #2156 871 .text (14 PWR.o) init:always
+Marking from fragment #2155 871 .text (14 PWR.o) init:always
+Marking from fragment #2143 871 .text (14 PWR.o) init:always
+Marking from fragment #2142 871 .text (14 PWR.o) init:always
+Marking from fragment #2141 871 .text (14 PWR.o) init:always
+Marking from fragment #2140 871 .text (14 PWR.o) init:always
+Marking from fragment #2139 871 .text (14 PWR.o) init:always
+  Marking symbol gHardwareParameters            Ext Glb  (226 PWR.o)
+    Marking fragment #619 619 nv_data_init_struct (8 NV_Data.o) init:always
+Marking from fragment #2138 871 .text (14 PWR.o) init:always
+Marking from fragment #2120 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable13_2                         (9 PWR.o)
+    Marking fragment #2134 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable14                           (10 PWR.o)
+    Marking fragment #2137 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable12                           (3 PWR.o)
+    Marking fragment #2127 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable14                           (10 PWR.o)
+    Marking fragment #2137 871 .text (14 PWR.o) init:always
+  Marking symbol CRM_GoToSleep                  Ext Glb  (213 PWR.o)
+Marking from fragment #2127 871 .text (14 PWR.o) init:always
+  Marking symbol mExtOutPol                              (68 PWR.o)
+    Marking fragment #866 866 .bss (9 PWR.o) init:always
+Marking from fragment #866 866 .bss (9 PWR.o) init:always
+Marking from fragment #2134 871 .text (14 PWR.o) init:always
+  Marking symbol PWR_CallBeforeSleep                     (66 PWR.o)
+    Marking fragment #2119 871 .text (14 PWR.o) init:always
+Marking from fragment #2119 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable12_3                         (6 PWR.o)
+    Marking fragment #2130 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable13_1                         (8 PWR.o)
+    Marking fragment #2133 871 .text (14 PWR.o) init:always
+Marking from fragment #2133 871 .text (14 PWR.o) init:always
+Marking from fragment #2130 871 .text (14 PWR.o) init:always
+  Marking symbol mSavedMacaClk                           (70 PWR.o)
+    Marking fragment #868 868 .bss (11 PWR.o) init:always
+Marking from fragment #2153 871 .text (14 PWR.o) init:always
+Marking from fragment #2137 871 .text (14 PWR.o) init:always
+Marking from fragment #2123 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable15_3                         (21 PWR.o)
+    Marking fragment #2149 871 .text (14 PWR.o) init:always
+  Marking symbol Asp_GetMacStateReq             Ext Glb  (212 PWR.o)
+Marking from fragment #2149 871 .text (14 PWR.o) init:always
+  Marking symbol PWRLib_StackPS                     Glb  (230 PWR.o)
+    Marking fragment #870 870 .bss (13 PWR.o) init:always
+Marking from fragment #870 870 .bss (13 PWR.o) init:always
+Marking from fragment #2117 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable12_2                         (5 PWR.o)
+    Marking fragment #2129 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable13                           (7 PWR.o)
+    Marking fragment #2132 871 .text (14 PWR.o) init:always
+Marking from fragment #2132 871 .text (14 PWR.o) init:always
+Marking from fragment #2129 871 .text (14 PWR.o) init:always
+Marking from fragment #2121 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable14                           (10 PWR.o)
+    Marking fragment #2137 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable14                           (10 PWR.o)
+    Marking fragment #2137 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable14                           (10 PWR.o)
+    Marking fragment #2137 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable14                           (10 PWR.o)
+    Marking fragment #2137 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable14                           (10 PWR.o)
+    Marking fragment #2137 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable14                           (10 PWR.o)
+    Marking fragment #2137 871 .text (14 PWR.o) init:always
+  Marking symbol PWR_MCUSleep                       Glb  (241 PWR.o)
+    Marking fragment #2120 871 .text (14 PWR.o) init:always
+Marking from fragment #2152 871 .text (14 PWR.o) init:always
+  Marking symbol PWRLib_StackPS                     Glb  (230 PWR.o)
+    Marking fragment #870 870 .bss (13 PWR.o) init:always
+Marking from fragment #2230 1136 .text (11 TS_kernel.o) init:always
+  Marking symbol ??DataTable6                            (3 TS_kernel.o)
+    Marking fragment #2233 1136 .text (11 TS_kernel.o) init:always
+  Marking symbol ??DataTable6                            (3 TS_kernel.o)
+    Marking fragment #2233 1136 .text (11 TS_kernel.o) init:always
+Marking from fragment #2148 871 .text (14 PWR.o) init:always
+  Marking symbol notCountedTmrTicksBeforeSleep           (71 PWR.o)
+    Marking fragment #865 865 .bss (8 PWR.o) init:always
+Marking from fragment #865 865 .bss (8 PWR.o) init:always
+Marking from fragment #2263 1203 .text (17 Timer.o) init:always
+  Marking symbol ??DataTable11                           (3 Timer.o)
+    Marking fragment #2264 1203 .text (17 Timer.o) init:always
+  Marking symbol TmrReadValue                   Ext Glb  (274 Timer.o)
+  Marking symbol TmrSetMode                     Ext Glb  (278 Timer.o)
+  Marking symbol ??DataTable18_3                         (12 Timer.o)
+    Marking fragment #2280 1203 .text (17 Timer.o) init:always
+Marking from fragment #2240 1203 .text (17 Timer.o) init:always
+  Marking symbol ??DataTable8_7                          (24 Timer.o)
+    Marking fragment #2258 1203 .text (17 Timer.o) init:always
+Marking from fragment #2116 871 .text (14 PWR.o) init:always
+  Marking symbol ??DataTable12_1                         (4 PWR.o)
+    Marking fragment #2128 871 .text (14 PWR.o) init:always
 Marking from fragment #2062 638 .text (12 NV_Flash.o) init:always
   Marking symbol ??DataTable5                            (18 NV_Flash.o)
     Marking fragment #2066 638 .text (12 NV_Flash.o) init:always
@@ -7800,6 +8459,14 @@ References #2020 374 .text (60 MApp.o)
   Marking fragment #441 441 .debug_line (140 MApp.o)
 References #2020 374 .text (60 MApp.o)
   Marking fragment #442 442 .debug_info (141 MApp.o)
+References #2022 374 .text (60 MApp.o)
+  Marking fragment #443 443 .debug_frame (142 MApp.o)
+References #2022 374 .text (60 MApp.o)
+  Marking fragment #444 444 .iar.debug_line (144 MApp.o)
+References #2022 374 .text (60 MApp.o)
+  Marking fragment #445 445 .debug_line (145 MApp.o)
+References #2022 374 .text (60 MApp.o)
+  Marking fragment #446 446 .debug_info (146 MApp.o)
 References #2023 374 .text (60 MApp.o)
   Marking fragment #447 447 .debug_frame (147 MApp.o)
 References #2023 374 .text (60 MApp.o)
@@ -8070,6 +8737,138 @@ References #2112 818 .text (9 NV_FlashHAL.o)
   Marking fragment #842 842 .debug_line (39 NV_FlashHAL.o)
 References #2112 818 .text (9 NV_FlashHAL.o)
   Marking fragment #843 843 .debug_info (40 NV_FlashHAL.o)
+References #869 869 .bss (12 PWR.o)
+  Marking fragment #872 872 .debug_info (15 PWR.o)
+References #870 870 .bss (13 PWR.o)
+  Marking fragment #873 873 .debug_info (16 PWR.o)
+References #866 866 .bss (9 PWR.o)
+  Marking fragment #874 874 .debug_info (17 PWR.o)
+References #867 867 .bss (10 PWR.o)
+  Marking fragment #875 875 .debug_info (18 PWR.o)
+References #868 868 .bss (11 PWR.o)
+  Marking fragment #876 876 .debug_info (19 PWR.o)
+References #865 865 .bss (8 PWR.o)
+  Marking fragment #877 877 .debug_info (20 PWR.o)
+References #2115 871 .text (14 PWR.o)
+  Marking fragment #886 886 .debug_frame (31 PWR.o)
+References #2115 871 .text (14 PWR.o)
+  Marking fragment #887 887 .iar.debug_line (33 PWR.o)
+References #2115 871 .text (14 PWR.o)
+  Marking fragment #888 888 .debug_line (34 PWR.o)
+References #2115 871 .text (14 PWR.o)
+  Marking fragment #889 889 .debug_info (35 PWR.o)
+References #2116 871 .text (14 PWR.o)
+  Marking fragment #890 890 .debug_frame (36 PWR.o)
+References #2116 871 .text (14 PWR.o)
+  Marking fragment #891 891 .iar.debug_line (38 PWR.o)
+References #2116 871 .text (14 PWR.o)
+  Marking fragment #892 892 .debug_line (39 PWR.o)
+References #2116 871 .text (14 PWR.o)
+  Marking fragment #893 893 .debug_info (40 PWR.o)
+References #2117 871 .text (14 PWR.o)
+  Marking fragment #894 894 .debug_frame (41 PWR.o)
+References #2117 871 .text (14 PWR.o)
+  Marking fragment #895 895 .iar.debug_line (43 PWR.o)
+References #2117 871 .text (14 PWR.o)
+  Marking fragment #896 896 .debug_line (44 PWR.o)
+References #2117 871 .text (14 PWR.o)
+  Marking fragment #897 897 .debug_info (45 PWR.o)
+References #2118 871 .text (14 PWR.o)
+  Marking fragment #898 898 .debug_frame (46 PWR.o)
+References #2118 871 .text (14 PWR.o)
+  Marking fragment #899 899 .iar.debug_line (48 PWR.o)
+References #2118 871 .text (14 PWR.o)
+  Marking fragment #900 900 .debug_line (49 PWR.o)
+References #2118 871 .text (14 PWR.o)
+  Marking fragment #901 901 .debug_info (50 PWR.o)
+References #2119 871 .text (14 PWR.o)
+  Marking fragment #902 902 .debug_frame (51 PWR.o)
+References #2119 871 .text (14 PWR.o)
+  Marking fragment #903 903 .iar.debug_line (53 PWR.o)
+References #2119 871 .text (14 PWR.o)
+  Marking fragment #904 904 .debug_line (54 PWR.o)
+References #2119 871 .text (14 PWR.o)
+  Marking fragment #905 905 .debug_info (55 PWR.o)
+References #2120 871 .text (14 PWR.o)
+  Marking fragment #906 906 .debug_frame (56 PWR.o)
+References #2120 871 .text (14 PWR.o)
+  Marking fragment #907 907 .iar.debug_line (58 PWR.o)
+References #2120 871 .text (14 PWR.o)
+  Marking fragment #908 908 .debug_line (59 PWR.o)
+References #2120 871 .text (14 PWR.o)
+  Marking fragment #909 909 .debug_info (60 PWR.o)
+References #2121 871 .text (14 PWR.o)
+  Marking fragment #910 910 .debug_frame (61 PWR.o)
+References #2121 871 .text (14 PWR.o)
+  Marking fragment #911 911 .iar.debug_line (63 PWR.o)
+References #2121 871 .text (14 PWR.o)
+  Marking fragment #912 912 .debug_line (64 PWR.o)
+References #2121 871 .text (14 PWR.o)
+  Marking fragment #913 913 .debug_info (65 PWR.o)
+References #2122 871 .text (14 PWR.o)
+  Marking fragment #914 914 .debug_frame (66 PWR.o)
+References #2122 871 .text (14 PWR.o)
+  Marking fragment #915 915 .iar.debug_line (68 PWR.o)
+References #2122 871 .text (14 PWR.o)
+  Marking fragment #916 916 .debug_line (69 PWR.o)
+References #2122 871 .text (14 PWR.o)
+  Marking fragment #917 917 .debug_info (70 PWR.o)
+References #2123 871 .text (14 PWR.o)
+  Marking fragment #918 918 .debug_frame (71 PWR.o)
+References #2123 871 .text (14 PWR.o)
+  Marking fragment #919 919 .iar.debug_line (73 PWR.o)
+References #2123 871 .text (14 PWR.o)
+  Marking fragment #920 920 .debug_line (74 PWR.o)
+References #2123 871 .text (14 PWR.o)
+  Marking fragment #921 921 .debug_info (75 PWR.o)
+References #2124 871 .text (14 PWR.o)
+  Marking fragment #922 922 .debug_frame (76 PWR.o)
+References #2124 871 .text (14 PWR.o)
+  Marking fragment #923 923 .iar.debug_line (78 PWR.o)
+References #2124 871 .text (14 PWR.o)
+  Marking fragment #924 924 .debug_line (79 PWR.o)
+References #2124 871 .text (14 PWR.o)
+  Marking fragment #925 925 .debug_info (80 PWR.o)
+References #2125 871 .text (14 PWR.o)
+  Marking fragment #926 926 .debug_frame (81 PWR.o)
+References #2125 871 .text (14 PWR.o)
+  Marking fragment #927 927 .iar.debug_line (83 PWR.o)
+References #2125 871 .text (14 PWR.o)
+  Marking fragment #928 928 .debug_line (84 PWR.o)
+References #2125 871 .text (14 PWR.o)
+  Marking fragment #929 929 .debug_info (85 PWR.o)
+References #2126 871 .text (14 PWR.o)
+  Marking fragment #930 930 .debug_frame (86 PWR.o)
+References #2126 871 .text (14 PWR.o)
+  Marking fragment #931 931 .iar.debug_line (88 PWR.o)
+References #2126 871 .text (14 PWR.o)
+  Marking fragment #932 932 .debug_line (89 PWR.o)
+References #2126 871 .text (14 PWR.o)
+  Marking fragment #933 933 .debug_info (90 PWR.o)
+References #2131 871 .text (14 PWR.o)
+  Marking fragment #934 934 .debug_frame (91 PWR.o)
+References #2131 871 .text (14 PWR.o)
+  Marking fragment #935 935 .iar.debug_line (93 PWR.o)
+References #2131 871 .text (14 PWR.o)
+  Marking fragment #936 936 .debug_line (94 PWR.o)
+References #2131 871 .text (14 PWR.o)
+  Marking fragment #937 937 .debug_info (95 PWR.o)
+References #2145 871 .text (14 PWR.o)
+  Marking fragment #946 946 .debug_frame (106 PWR.o)
+References #2145 871 .text (14 PWR.o)
+  Marking fragment #947 947 .iar.debug_line (108 PWR.o)
+References #2145 871 .text (14 PWR.o)
+  Marking fragment #948 948 .debug_line (109 PWR.o)
+References #2145 871 .text (14 PWR.o)
+  Marking fragment #949 949 .debug_info (110 PWR.o)
+References #2151 871 .text (14 PWR.o)
+  Marking fragment #954 954 .debug_frame (116 PWR.o)
+References #2151 871 .text (14 PWR.o)
+  Marking fragment #955 955 .iar.debug_line (118 PWR.o)
+References #2151 871 .text (14 PWR.o)
+  Marking fragment #956 956 .debug_line (119 PWR.o)
+References #2151 871 .text (14 PWR.o)
+  Marking fragment #957 957 .debug_info (120 PWR.o)
 References #2162 1010 .text (8 PlatformInit.o)
   Marking fragment #1011 1011 .debug_frame (9 PlatformInit.o)
 References #2162 1010 .text (8 PlatformInit.o)
@@ -8156,6 +8955,14 @@ References #2229 1136 .text (11 TS_kernel.o)
   Marking fragment #1156 1156 .debug_line (35 TS_kernel.o)
 References #2229 1136 .text (11 TS_kernel.o)
   Marking fragment #1157 1157 .debug_info (36 TS_kernel.o)
+References #2230 1136 .text (11 TS_kernel.o)
+  Marking fragment #1158 1158 .debug_frame (37 TS_kernel.o)
+References #2230 1136 .text (11 TS_kernel.o)
+  Marking fragment #1159 1159 .iar.debug_line (39 TS_kernel.o)
+References #2230 1136 .text (11 TS_kernel.o)
+  Marking fragment #1160 1160 .debug_line (40 TS_kernel.o)
+References #2230 1136 .text (11 TS_kernel.o)
+  Marking fragment #1161 1161 .debug_info (41 TS_kernel.o)
 References #2231 1136 .text (11 TS_kernel.o)
   Marking fragment #1162 1162 .debug_frame (42 TS_kernel.o)
 References #2231 1136 .text (11 TS_kernel.o)
@@ -8206,6 +9013,14 @@ References #2239 1203 .text (17 Timer.o)
   Marking fragment #1226 1226 .debug_line (43 Timer.o)
 References #2239 1203 .text (17 Timer.o)
   Marking fragment #1227 1227 .debug_info (44 Timer.o)
+References #2240 1203 .text (17 Timer.o)
+  Marking fragment #1228 1228 .debug_frame (45 Timer.o)
+References #2240 1203 .text (17 Timer.o)
+  Marking fragment #1229 1229 .iar.debug_line (47 Timer.o)
+References #2240 1203 .text (17 Timer.o)
+  Marking fragment #1230 1230 .debug_line (48 Timer.o)
+References #2240 1203 .text (17 Timer.o)
+  Marking fragment #1231 1231 .debug_info (49 Timer.o)
 References #2242 1203 .text (17 Timer.o)
   Marking fragment #1236 1236 .debug_frame (55 Timer.o)
 References #2242 1203 .text (17 Timer.o)
@@ -8270,6 +9085,22 @@ References #2262 1203 .text (17 Timer.o)
   Marking fragment #1278 1278 .debug_line (108 Timer.o)
 References #2262 1203 .text (17 Timer.o)
   Marking fragment #1279 1279 .debug_info (109 Timer.o)
+References #2263 1203 .text (17 Timer.o)
+  Marking fragment #1280 1280 .debug_frame (110 Timer.o)
+References #2263 1203 .text (17 Timer.o)
+  Marking fragment #1281 1281 .iar.debug_line (112 Timer.o)
+References #2263 1203 .text (17 Timer.o)
+  Marking fragment #1282 1282 .debug_line (113 Timer.o)
+References #2263 1203 .text (17 Timer.o)
+  Marking fragment #1283 1283 .debug_info (114 Timer.o)
+References #2267 1203 .text (17 Timer.o)
+  Marking fragment #1284 1284 .debug_frame (115 Timer.o)
+References #2267 1203 .text (17 Timer.o)
+  Marking fragment #1285 1285 .iar.debug_line (117 Timer.o)
+References #2267 1203 .text (17 Timer.o)
+  Marking fragment #1286 1286 .debug_line (118 Timer.o)
+References #2267 1203 .text (17 Timer.o)
+  Marking fragment #1287 1287 .debug_info (119 Timer.o)
 References #2270 1203 .text (17 Timer.o)
   Marking fragment #1288 1288 .debug_frame (120 Timer.o)
 References #2270 1203 .text (17 Timer.o)
@@ -8958,7 +9789,7 @@ Marking from fragment #1377 1377 .debug_info (7 Uart.o)
     Marking fragment #1376 1376 .debug_line (6 Uart.o)
   Marking symbol .debug_macinfo190                       (140 Uart.o)
     Marking fragment #1534 1534 .debug_macinfo (190 Uart.o)
-  Marking symbol __iar_cc..4OH89SUSSg$              Glb  (298 Uart.o)
+  Marking symbol __iar_cc..UKzKtZKQdU3              Glb  (298 Uart.o)
     Marking fragment #1456 1456 .debug_info (97 Uart.o)
 Marking from fragment #1456 1456 .debug_info (97 Uart.o)
   Marking symbol .debug_abbrev191                        (137 Uart.o)
@@ -9136,7 +9967,7 @@ Marking from fragment #1461 1461 .debug_frame (103 Uart.o)
 Marking from fragment #1454 1454 .debug_info (95 Uart.o)
   Marking symbol .debug_abbrev191                        (137 Uart.o)
     Marking fragment #1535 1535 .debug_abbrev (191 Uart.o)
-  Marking symbol __iar_cc..4OH89SUSSg$              Glb  (298 Uart.o)
+  Marking symbol __iar_cc..UKzKtZKQdU3              Glb  (298 Uart.o)
     Marking fragment #1456 1456 .debug_info (97 Uart.o)
   Marking symbol .text_25                                (91 Uart.o)
   Marking symbol .text_25                                (91 Uart.o)
@@ -9266,7 +10097,7 @@ Marking from fragment #1434 1434 .debug_info (70 Uart.o)
     Marking fragment #1377 1377 .debug_info (7 Uart.o)
   Marking symbol .debug_info7                            (138 Uart.o)
     Marking fragment #1377 1377 .debug_info (7 Uart.o)
-  Marking symbol __iar_cc..mFNJ5tcH7Y2              Glb  (299 Uart.o)
+  Marking symbol __iar_cc..NyH25bLVej3              Glb  (299 Uart.o)
     Marking fragment #1515 1515 .debug_info (171 Uart.o)
   Marking symbol .text_20                                (81 Uart.o)
   Marking symbol .text_20                                (81 Uart.o)
@@ -9757,6 +10588,97 @@ Marking from fragment #1288 1288 .debug_frame (120 Timer.o)
   Marking symbol .debug_frame120                         (141 Timer.o)
     Marking fragment #1288 1288 .debug_frame (120 Timer.o)
   Marking symbol .text_45                                (140 Timer.o)
+Marking from fragment #1287 1287 .debug_info (119 Timer.o)
+  Marking symbol .debug_abbrev180                        (159 Timer.o)
+    Marking fragment #1341 1341 .debug_abbrev (180 Timer.o)
+  Marking symbol .debug_info7                            (160 Timer.o)
+    Marking fragment #1193 1193 .debug_info (7 Timer.o)
+  Marking symbol .debug_info7                            (160 Timer.o)
+    Marking fragment #1193 1193 .debug_info (7 Timer.o)
+  Marking symbol .text_42                                (136 Timer.o)
+  Marking symbol .text_42                                (136 Timer.o)
+  Marking symbol .debug_line118                          (241 Timer.o)
+    Marking fragment #1286 1286 .debug_line (118 Timer.o)
+  Marking symbol .iar.debug_line117                      (242 Timer.o)
+    Marking fragment #1285 1285 .iar.debug_line (117 Timer.o)
+  Marking symbol .debug_info7                            (160 Timer.o)
+    Marking fragment #1193 1193 .debug_info (7 Timer.o)
+  Marking symbol .debug_loc172                           (240 Timer.o)
+    Marking fragment #1333 1333 .debug_loc (172 Timer.o)
+  Marking symbol .text_42                                (136 Timer.o)
+  Marking symbol .text_42                                (136 Timer.o)
+  Marking symbol .debug_info7                            (160 Timer.o)
+    Marking fragment #1193 1193 .debug_info (7 Timer.o)
+  Marking symbol .debug_loc172                           (240 Timer.o)
+    Marking fragment #1333 1333 .debug_loc (172 Timer.o)
+  Marking symbol .debug_info7                            (160 Timer.o)
+    Marking fragment #1193 1193 .debug_info (7 Timer.o)
+  Marking symbol .debug_loc172                           (240 Timer.o)
+    Marking fragment #1333 1333 .debug_loc (172 Timer.o)
+  Marking symbol .debug_info7                            (160 Timer.o)
+    Marking fragment #1193 1193 .debug_info (7 Timer.o)
+  Marking symbol .debug_loc172                           (240 Timer.o)
+    Marking fragment #1333 1333 .debug_loc (172 Timer.o)
+  Marking symbol .text_42                                (136 Timer.o)
+  Marking symbol .text_42                                (136 Timer.o)
+  Marking symbol .text_42                                (136 Timer.o)
+  Marking symbol .text_42                                (136 Timer.o)
+Marking from fragment #1333 1333 .debug_loc (172 Timer.o)
+Marking from fragment #1286 1286 .debug_line (118 Timer.o)
+  Marking symbol .text_42                                (136 Timer.o)
+Marking from fragment #1285 1285 .iar.debug_line (117 Timer.o)
+  Marking symbol .text_42                                (136 Timer.o)
+  Marking symbol .debug_info119                          (243 Timer.o)
+    Marking fragment #1287 1287 .debug_info (119 Timer.o)
+  Marking symbol .debug_info146                          (263 Timer.o)
+    Marking fragment #1309 1309 .debug_info (146 Timer.o)
+  Marking symbol .debug_info136                          (255 Timer.o)
+    Marking fragment #1301 1301 .debug_info (136 Timer.o)
+  Marking symbol TmrSetMode                     Ext Glb  (278 Timer.o)
+  Marking symbol TmrReadValue                   Ext Glb  (274 Timer.o)
+  Marking symbol TS_SendEvent                   Ext Glb  (271 Timer.o)
+Marking from fragment #1284 1284 .debug_frame (115 Timer.o)
+  Marking symbol .debug_frame115                         (137 Timer.o)
+    Marking fragment #1284 1284 .debug_frame (115 Timer.o)
+  Marking symbol .text_42                                (136 Timer.o)
+Marking from fragment #1283 1283 .debug_info (114 Timer.o)
+  Marking symbol .debug_abbrev180                        (159 Timer.o)
+    Marking fragment #1341 1341 .debug_abbrev (180 Timer.o)
+  Marking symbol .debug_info7                            (160 Timer.o)
+    Marking fragment #1193 1193 .debug_info (7 Timer.o)
+  Marking symbol .debug_info7                            (160 Timer.o)
+    Marking fragment #1193 1193 .debug_info (7 Timer.o)
+  Marking symbol .text_38                                (133 Timer.o)
+  Marking symbol .text_38                                (133 Timer.o)
+  Marking symbol .debug_line113                          (237 Timer.o)
+    Marking fragment #1282 1282 .debug_line (113 Timer.o)
+  Marking symbol .iar.debug_line112                      (238 Timer.o)
+    Marking fragment #1281 1281 .iar.debug_line (112 Timer.o)
+  Marking symbol .debug_info7                            (160 Timer.o)
+    Marking fragment #1193 1193 .debug_info (7 Timer.o)
+  Marking symbol .debug_info7                            (160 Timer.o)
+    Marking fragment #1193 1193 .debug_info (7 Timer.o)
+  Marking symbol .debug_loc171                           (236 Timer.o)
+    Marking fragment #1332 1332 .debug_loc (171 Timer.o)
+  Marking symbol .text_38                                (133 Timer.o)
+  Marking symbol .text_38                                (133 Timer.o)
+  Marking symbol .debug_info7                            (160 Timer.o)
+    Marking fragment #1193 1193 .debug_info (7 Timer.o)
+  Marking symbol .debug_loc171                           (236 Timer.o)
+    Marking fragment #1332 1332 .debug_loc (171 Timer.o)
+Marking from fragment #1332 1332 .debug_loc (171 Timer.o)
+Marking from fragment #1282 1282 .debug_line (113 Timer.o)
+  Marking symbol .text_38                                (133 Timer.o)
+Marking from fragment #1281 1281 .iar.debug_line (112 Timer.o)
+  Marking symbol .text_38                                (133 Timer.o)
+  Marking symbol .debug_info114                          (239 Timer.o)
+    Marking fragment #1283 1283 .debug_info (114 Timer.o)
+  Marking symbol TmrReadValue                   Ext Glb  (274 Timer.o)
+  Marking symbol TmrSetMode                     Ext Glb  (278 Timer.o)
+Marking from fragment #1280 1280 .debug_frame (110 Timer.o)
+  Marking symbol .debug_frame110                         (134 Timer.o)
+    Marking fragment #1280 1280 .debug_frame (110 Timer.o)
+  Marking symbol .text_38                                (133 Timer.o)
 Marking from fragment #1279 1279 .debug_info (109 Timer.o)
   Marking symbol .debug_abbrev180                        (159 Timer.o)
     Marking fragment #1341 1341 .debug_abbrev (180 Timer.o)
@@ -10141,6 +11063,34 @@ Marking from fragment #1236 1236 .debug_frame (55 Timer.o)
   Marking symbol .debug_frame55                          (107 Timer.o)
     Marking fragment #1236 1236 .debug_frame (55 Timer.o)
   Marking symbol .text_17                                (106 Timer.o)
+Marking from fragment #1231 1231 .debug_info (49 Timer.o)
+  Marking symbol .debug_abbrev180                        (159 Timer.o)
+    Marking fragment #1341 1341 .debug_abbrev (180 Timer.o)
+  Marking symbol .text_15                                (102 Timer.o)
+  Marking symbol .text_15                                (102 Timer.o)
+  Marking symbol .debug_line48                           (185 Timer.o)
+    Marking fragment #1230 1230 .debug_line (48 Timer.o)
+  Marking symbol .iar.debug_line47                       (186 Timer.o)
+    Marking fragment #1229 1229 .iar.debug_line (47 Timer.o)
+  Marking symbol .debug_info7                            (160 Timer.o)
+    Marking fragment #1193 1193 .debug_info (7 Timer.o)
+  Marking symbol .debug_info7                            (160 Timer.o)
+    Marking fragment #1193 1193 .debug_info (7 Timer.o)
+  Marking symbol .debug_loc158                           (184 Timer.o)
+    Marking fragment #1319 1319 .debug_loc (158 Timer.o)
+  Marking symbol .text_15                                (102 Timer.o)
+  Marking symbol .text_15                                (102 Timer.o)
+Marking from fragment #1319 1319 .debug_loc (158 Timer.o)
+Marking from fragment #1230 1230 .debug_line (48 Timer.o)
+  Marking symbol .text_15                                (102 Timer.o)
+Marking from fragment #1229 1229 .iar.debug_line (47 Timer.o)
+  Marking symbol .text_15                                (102 Timer.o)
+  Marking symbol .debug_info49                           (187 Timer.o)
+    Marking fragment #1231 1231 .debug_info (49 Timer.o)
+Marking from fragment #1228 1228 .debug_frame (45 Timer.o)
+  Marking symbol .debug_frame45                          (103 Timer.o)
+    Marking fragment #1228 1228 .debug_frame (45 Timer.o)
+  Marking symbol .text_15                                (102 Timer.o)
 Marking from fragment #1227 1227 .debug_info (44 Timer.o)
   Marking symbol .debug_abbrev180                        (159 Timer.o)
     Marking fragment #1341 1341 .debug_abbrev (180 Timer.o)
@@ -10406,6 +11356,40 @@ Marking from fragment #1162 1162 .debug_frame (42 TS_kernel.o)
   Marking symbol .debug_frame42                          (42 TS_kernel.o)
     Marking fragment #1162 1162 .debug_frame (42 TS_kernel.o)
   Marking symbol .text_10                                (41 TS_kernel.o)
+Marking from fragment #1161 1161 .debug_info (41 TS_kernel.o)
+  Marking symbol .debug_abbrev63                         (49 TS_kernel.o)
+    Marking fragment #1180 1180 .debug_abbrev (63 TS_kernel.o)
+  Marking symbol .text_9                                 (39 TS_kernel.o)
+  Marking symbol .text_9                                 (39 TS_kernel.o)
+  Marking symbol .debug_line40                           (73 TS_kernel.o)
+    Marking fragment #1160 1160 .debug_line (40 TS_kernel.o)
+  Marking symbol .iar.debug_line39                       (74 TS_kernel.o)
+    Marking fragment #1159 1159 .iar.debug_line (39 TS_kernel.o)
+  Marking symbol .debug_info7                            (50 TS_kernel.o)
+    Marking fragment #1132 1132 .debug_info (7 TS_kernel.o)
+  Marking symbol .debug_info7                            (50 TS_kernel.o)
+    Marking fragment #1132 1132 .debug_info (7 TS_kernel.o)
+  Marking symbol .debug_loc59                            (72 TS_kernel.o)
+    Marking fragment #1176 1176 .debug_loc (59 TS_kernel.o)
+  Marking symbol .text_9                                 (39 TS_kernel.o)
+  Marking symbol .text_9                                 (39 TS_kernel.o)
+  Marking symbol .debug_info7                            (50 TS_kernel.o)
+    Marking fragment #1132 1132 .debug_info (7 TS_kernel.o)
+  Marking symbol .debug_loc59                            (72 TS_kernel.o)
+    Marking fragment #1176 1176 .debug_loc (59 TS_kernel.o)
+  Marking symbol .text_9                                 (39 TS_kernel.o)
+  Marking symbol .text_9                                 (39 TS_kernel.o)
+Marking from fragment #1176 1176 .debug_loc (59 TS_kernel.o)
+Marking from fragment #1160 1160 .debug_line (40 TS_kernel.o)
+  Marking symbol .text_9                                 (39 TS_kernel.o)
+Marking from fragment #1159 1159 .iar.debug_line (39 TS_kernel.o)
+  Marking symbol .text_9                                 (39 TS_kernel.o)
+  Marking symbol .debug_info41                           (75 TS_kernel.o)
+    Marking fragment #1161 1161 .debug_info (41 TS_kernel.o)
+Marking from fragment #1158 1158 .debug_frame (37 TS_kernel.o)
+  Marking symbol .debug_frame37                          (40 TS_kernel.o)
+    Marking fragment #1158 1158 .debug_frame (37 TS_kernel.o)
+  Marking symbol .text_9                                 (39 TS_kernel.o)
 Marking from fragment #1157 1157 .debug_info (36 TS_kernel.o)
   Marking symbol .debug_abbrev63                         (49 TS_kernel.o)
     Marking fragment #1180 1180 .debug_abbrev (63 TS_kernel.o)
@@ -10791,6 +11775,612 @@ Marking from fragment #1011 1011 .debug_frame (9 PlatformInit.o)
   Marking symbol .debug_frame9                           (33 PlatformInit.o)
     Marking fragment #1011 1011 .debug_frame (9 PlatformInit.o)
   Marking symbol .text8                                  (32 PlatformInit.o)
+Marking from fragment #957 957 .debug_info (120 PWR.o)
+  Marking symbol .debug_abbrev143                        (122 PWR.o)
+    Marking fragment #980 980 .debug_abbrev (143 PWR.o)
+  Marking symbol .text_46                                (119 PWR.o)
+  Marking symbol .text_46                                (119 PWR.o)
+  Marking symbol .debug_line119                          (209 PWR.o)
+    Marking fragment #956 956 .debug_line (119 PWR.o)
+  Marking symbol .iar.debug_line118                      (210 PWR.o)
+    Marking fragment #955 955 .iar.debug_line (118 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .debug_loc141                           (208 PWR.o)
+    Marking fragment #978 978 .debug_loc (141 PWR.o)
+  Marking symbol .text_46                                (119 PWR.o)
+  Marking symbol .text_46                                (119 PWR.o)
+  Marking symbol .text_46                                (119 PWR.o)
+  Marking symbol .text_46                                (119 PWR.o)
+  Marking symbol .text_46                                (119 PWR.o)
+  Marking symbol .text_46                                (119 PWR.o)
+Marking from fragment #978 978 .debug_loc (141 PWR.o)
+Marking from fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .debug_abbrev143                        (122 PWR.o)
+    Marking fragment #980 980 .debug_abbrev (143 PWR.o)
+  Marking symbol .debug_line6                            (124 PWR.o)
+    Marking fragment #863 863 .debug_line (6 PWR.o)
+  Marking symbol .debug_macinfo142                       (125 PWR.o)
+    Marking fragment #979 979 .debug_macinfo (142 PWR.o)
+Marking from fragment #979 979 .debug_macinfo (142 PWR.o)
+Marking from fragment #863 863 .debug_line (6 PWR.o)
+Marking from fragment #980 980 .debug_abbrev (143 PWR.o)
+Marking from fragment #956 956 .debug_line (119 PWR.o)
+  Marking symbol .text_46                                (119 PWR.o)
+Marking from fragment #955 955 .iar.debug_line (118 PWR.o)
+  Marking symbol .text_46                                (119 PWR.o)
+  Marking symbol .debug_info120                          (211 PWR.o)
+    Marking fragment #957 957 .debug_info (120 PWR.o)
+Marking from fragment #954 954 .debug_frame (116 PWR.o)
+  Marking symbol .debug_frame116                         (120 PWR.o)
+    Marking fragment #954 954 .debug_frame (116 PWR.o)
+  Marking symbol .text_46                                (119 PWR.o)
+Marking from fragment #949 949 .debug_info (110 PWR.o)
+  Marking symbol .debug_abbrev143                        (122 PWR.o)
+    Marking fragment #980 980 .debug_abbrev (143 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .text_40                                (112 PWR.o)
+  Marking symbol .text_40                                (112 PWR.o)
+  Marking symbol .debug_line109                          (201 PWR.o)
+    Marking fragment #948 948 .debug_line (109 PWR.o)
+  Marking symbol .iar.debug_line108                      (202 PWR.o)
+    Marking fragment #947 947 .iar.debug_line (108 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .debug_loc139                           (200 PWR.o)
+    Marking fragment #976 976 .debug_loc (139 PWR.o)
+  Marking symbol .text_40                                (112 PWR.o)
+  Marking symbol .text_40                                (112 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .debug_loc139                           (200 PWR.o)
+    Marking fragment #976 976 .debug_loc (139 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .debug_loc139                           (200 PWR.o)
+    Marking fragment #976 976 .debug_loc (139 PWR.o)
+  Marking symbol .text_40                                (112 PWR.o)
+  Marking symbol .text_40                                (112 PWR.o)
+Marking from fragment #976 976 .debug_loc (139 PWR.o)
+Marking from fragment #948 948 .debug_line (109 PWR.o)
+  Marking symbol .text_40                                (112 PWR.o)
+Marking from fragment #947 947 .iar.debug_line (108 PWR.o)
+  Marking symbol .text_40                                (112 PWR.o)
+  Marking symbol .debug_info110                          (203 PWR.o)
+    Marking fragment #949 949 .debug_info (110 PWR.o)
+  Marking symbol TMR_AreAllTimersOff            Ext Glb  (219 PWR.o)
+  Marking symbol TMR_NotCountedTicksBeforeSleep Ext Glb  (220 PWR.o)
+  Marking symbol IntDisableAll                  Ext Glb  (217 PWR.o)
+  Marking symbol TS_PendingEvents               Ext Glb  (222 PWR.o)
+  Marking symbol .debug_info95                           (191 PWR.o)
+    Marking fragment #937 937 .debug_info (95 PWR.o)
+  Marking symbol IntRestoreAll                  Ext Glb  (218 PWR.o)
+Marking from fragment #946 946 .debug_frame (106 PWR.o)
+  Marking symbol .debug_frame106                         (113 PWR.o)
+    Marking fragment #946 946 .debug_frame (106 PWR.o)
+  Marking symbol .text_40                                (112 PWR.o)
+Marking from fragment #937 937 .debug_info (95 PWR.o)
+  Marking symbol .debug_abbrev143                        (122 PWR.o)
+    Marking fragment #980 980 .debug_abbrev (143 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .text_26                                (102 PWR.o)
+  Marking symbol .text_26                                (102 PWR.o)
+  Marking symbol .debug_line94                           (189 PWR.o)
+    Marking fragment #936 936 .debug_line (94 PWR.o)
+  Marking symbol .iar.debug_line93                       (190 PWR.o)
+    Marking fragment #935 935 .iar.debug_line (93 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .debug_loc136                           (188 PWR.o)
+    Marking fragment #973 973 .debug_loc (136 PWR.o)
+  Marking symbol .text_26                                (102 PWR.o)
+  Marking symbol .text_26                                (102 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .debug_loc136                           (188 PWR.o)
+    Marking fragment #973 973 .debug_loc (136 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .debug_loc136                           (188 PWR.o)
+    Marking fragment #973 973 .debug_loc (136 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .debug_loc136                           (188 PWR.o)
+    Marking fragment #973 973 .debug_loc (136 PWR.o)
+  Marking symbol .text_26                                (102 PWR.o)
+  Marking symbol .text_26                                (102 PWR.o)
+Marking from fragment #973 973 .debug_loc (136 PWR.o)
+Marking from fragment #936 936 .debug_line (94 PWR.o)
+  Marking symbol .text_26                                (102 PWR.o)
+Marking from fragment #935 935 .iar.debug_line (93 PWR.o)
+  Marking symbol .text_26                                (102 PWR.o)
+  Marking symbol .debug_info95                           (191 PWR.o)
+    Marking fragment #937 937 .debug_info (95 PWR.o)
+  Marking symbol .debug_info65                           (167 PWR.o)
+    Marking fragment #913 913 .debug_info (65 PWR.o)
+  Marking symbol .debug_info45                           (151 PWR.o)
+    Marking fragment #897 897 .debug_info (45 PWR.o)
+  Marking symbol .debug_info75                           (175 PWR.o)
+    Marking fragment #921 921 .debug_info (75 PWR.o)
+  Marking symbol .debug_info85                           (183 PWR.o)
+    Marking fragment #929 929 .debug_info (85 PWR.o)
+  Marking symbol .debug_info80                           (179 PWR.o)
+    Marking fragment #925 925 .debug_info (80 PWR.o)
+  Marking symbol .debug_info90                           (187 PWR.o)
+    Marking fragment #933 933 .debug_info (90 PWR.o)
+Marking from fragment #934 934 .debug_frame (91 PWR.o)
+  Marking symbol .debug_frame91                          (103 PWR.o)
+    Marking fragment #934 934 .debug_frame (91 PWR.o)
+  Marking symbol .text_26                                (102 PWR.o)
+Marking from fragment #933 933 .debug_info (90 PWR.o)
+  Marking symbol .debug_abbrev143                        (122 PWR.o)
+    Marking fragment #980 980 .debug_abbrev (143 PWR.o)
+  Marking symbol .text_21                                (99 PWR.o)
+  Marking symbol .text_21                                (99 PWR.o)
+  Marking symbol .debug_line89                           (185 PWR.o)
+    Marking fragment #932 932 .debug_line (89 PWR.o)
+  Marking symbol .iar.debug_line88                       (186 PWR.o)
+    Marking fragment #931 931 .iar.debug_line (88 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .debug_loc135                           (184 PWR.o)
+    Marking fragment #972 972 .debug_loc (135 PWR.o)
+  Marking symbol .text_21                                (99 PWR.o)
+  Marking symbol .text_21                                (99 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .debug_loc135                           (184 PWR.o)
+    Marking fragment #972 972 .debug_loc (135 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .debug_loc135                           (184 PWR.o)
+    Marking fragment #972 972 .debug_loc (135 PWR.o)
+Marking from fragment #972 972 .debug_loc (135 PWR.o)
+Marking from fragment #932 932 .debug_line (89 PWR.o)
+  Marking symbol .text_21                                (99 PWR.o)
+Marking from fragment #931 931 .iar.debug_line (88 PWR.o)
+  Marking symbol .text_21                                (99 PWR.o)
+  Marking symbol .debug_info90                           (187 PWR.o)
+    Marking fragment #933 933 .debug_info (90 PWR.o)
+  Marking symbol .debug_info50                           (155 PWR.o)
+    Marking fragment #901 901 .debug_info (50 PWR.o)
+Marking from fragment #930 930 .debug_frame (86 PWR.o)
+  Marking symbol .debug_frame86                          (100 PWR.o)
+    Marking fragment #930 930 .debug_frame (86 PWR.o)
+  Marking symbol .text_21                                (99 PWR.o)
+Marking from fragment #929 929 .debug_info (85 PWR.o)
+  Marking symbol .debug_abbrev143                        (122 PWR.o)
+    Marking fragment #980 980 .debug_abbrev (143 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .text_20                                (97 PWR.o)
+  Marking symbol .text_20                                (97 PWR.o)
+  Marking symbol .debug_line84                           (181 PWR.o)
+    Marking fragment #928 928 .debug_line (84 PWR.o)
+  Marking symbol .iar.debug_line83                       (182 PWR.o)
+    Marking fragment #927 927 .iar.debug_line (83 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .debug_loc134                           (180 PWR.o)
+    Marking fragment #971 971 .debug_loc (134 PWR.o)
+  Marking symbol .text_20                                (97 PWR.o)
+  Marking symbol .text_20                                (97 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .debug_loc134                           (180 PWR.o)
+    Marking fragment #971 971 .debug_loc (134 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .debug_loc134                           (180 PWR.o)
+    Marking fragment #971 971 .debug_loc (134 PWR.o)
+  Marking symbol .text_20                                (97 PWR.o)
+  Marking symbol .text_20                                (97 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .debug_loc134                           (180 PWR.o)
+    Marking fragment #971 971 .debug_loc (134 PWR.o)
+  Marking symbol .text_20                                (97 PWR.o)
+  Marking symbol .text_20                                (97 PWR.o)
+Marking from fragment #971 971 .debug_loc (134 PWR.o)
+Marking from fragment #928 928 .debug_line (84 PWR.o)
+  Marking symbol .text_20                                (97 PWR.o)
+Marking from fragment #927 927 .iar.debug_line (83 PWR.o)
+  Marking symbol .text_20                                (97 PWR.o)
+  Marking symbol .debug_info85                           (183 PWR.o)
+    Marking fragment #929 929 .debug_info (85 PWR.o)
+  Marking symbol CRM_WuCntl                     Ext Glb  (215 PWR.o)
+  Marking symbol .debug_info60                           (163 PWR.o)
+    Marking fragment #909 909 .debug_info (60 PWR.o)
+  Marking symbol .debug_info70                           (171 PWR.o)
+    Marking fragment #917 917 .debug_info (70 PWR.o)
+  Marking symbol DeepSleepWakeupStackProc       Ext Glb  (216 PWR.o)
+Marking from fragment #926 926 .debug_frame (81 PWR.o)
+  Marking symbol .debug_frame81                          (98 PWR.o)
+    Marking fragment #926 926 .debug_frame (81 PWR.o)
+  Marking symbol .text_20                                (97 PWR.o)
+Marking from fragment #925 925 .debug_info (80 PWR.o)
+  Marking symbol .debug_abbrev143                        (122 PWR.o)
+    Marking fragment #980 980 .debug_abbrev (143 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .text_19                                (95 PWR.o)
+  Marking symbol .text_19                                (95 PWR.o)
+  Marking symbol .debug_line79                           (177 PWR.o)
+    Marking fragment #924 924 .debug_line (79 PWR.o)
+  Marking symbol .iar.debug_line78                       (178 PWR.o)
+    Marking fragment #923 923 .iar.debug_line (78 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .debug_loc133                           (176 PWR.o)
+    Marking fragment #970 970 .debug_loc (133 PWR.o)
+  Marking symbol .text_19                                (95 PWR.o)
+  Marking symbol .text_19                                (95 PWR.o)
+  Marking symbol .text_19                                (95 PWR.o)
+  Marking symbol .text_19                                (95 PWR.o)
+Marking from fragment #970 970 .debug_loc (133 PWR.o)
+Marking from fragment #924 924 .debug_line (79 PWR.o)
+  Marking symbol .text_19                                (95 PWR.o)
+Marking from fragment #923 923 .iar.debug_line (78 PWR.o)
+  Marking symbol .text_19                                (95 PWR.o)
+  Marking symbol .debug_info80                           (179 PWR.o)
+    Marking fragment #925 925 .debug_info (80 PWR.o)
+  Marking symbol Asp_GetMacStateReq             Ext Glb  (212 PWR.o)
+Marking from fragment #922 922 .debug_frame (76 PWR.o)
+  Marking symbol .debug_frame76                          (96 PWR.o)
+    Marking fragment #922 922 .debug_frame (76 PWR.o)
+  Marking symbol .text_19                                (95 PWR.o)
+Marking from fragment #921 921 .debug_info (75 PWR.o)
+  Marking symbol .debug_abbrev143                        (122 PWR.o)
+    Marking fragment #980 980 .debug_abbrev (143 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .text_18                                (93 PWR.o)
+  Marking symbol .text_18                                (93 PWR.o)
+  Marking symbol .debug_line74                           (173 PWR.o)
+    Marking fragment #920 920 .debug_line (74 PWR.o)
+  Marking symbol .iar.debug_line73                       (174 PWR.o)
+    Marking fragment #919 919 .iar.debug_line (73 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .debug_loc132                           (172 PWR.o)
+    Marking fragment #969 969 .debug_loc (132 PWR.o)
+  Marking symbol .text_18                                (93 PWR.o)
+  Marking symbol .text_18                                (93 PWR.o)
+  Marking symbol .text_18                                (93 PWR.o)
+  Marking symbol .text_18                                (93 PWR.o)
+Marking from fragment #969 969 .debug_loc (132 PWR.o)
+Marking from fragment #920 920 .debug_line (74 PWR.o)
+  Marking symbol .text_18                                (93 PWR.o)
+Marking from fragment #919 919 .iar.debug_line (73 PWR.o)
+  Marking symbol .text_18                                (93 PWR.o)
+  Marking symbol .debug_info75                           (175 PWR.o)
+    Marking fragment #921 921 .debug_info (75 PWR.o)
+  Marking symbol Asp_GetMacStateReq             Ext Glb  (212 PWR.o)
+Marking from fragment #918 918 .debug_frame (71 PWR.o)
+  Marking symbol .debug_frame71                          (94 PWR.o)
+    Marking fragment #918 918 .debug_frame (71 PWR.o)
+  Marking symbol .text_18                                (93 PWR.o)
+Marking from fragment #917 917 .debug_info (70 PWR.o)
+  Marking symbol .debug_abbrev143                        (122 PWR.o)
+    Marking fragment #980 980 .debug_abbrev (143 PWR.o)
+  Marking symbol .text_17                                (91 PWR.o)
+  Marking symbol .text_17                                (91 PWR.o)
+  Marking symbol .debug_line69                           (169 PWR.o)
+    Marking fragment #916 916 .debug_line (69 PWR.o)
+  Marking symbol .iar.debug_line68                       (170 PWR.o)
+    Marking fragment #915 915 .iar.debug_line (68 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .debug_loc131                           (168 PWR.o)
+    Marking fragment #968 968 .debug_loc (131 PWR.o)
+  Marking symbol .text_17                                (91 PWR.o)
+  Marking symbol .text_17                                (91 PWR.o)
+  Marking symbol .text_17                                (91 PWR.o)
+  Marking symbol .text_17                                (91 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .debug_loc131                           (168 PWR.o)
+    Marking fragment #968 968 .debug_loc (131 PWR.o)
+Marking from fragment #968 968 .debug_loc (131 PWR.o)
+Marking from fragment #916 916 .debug_line (69 PWR.o)
+  Marking symbol .text_17                                (91 PWR.o)
+Marking from fragment #915 915 .iar.debug_line (68 PWR.o)
+  Marking symbol .text_17                                (91 PWR.o)
+  Marking symbol .debug_info70                           (171 PWR.o)
+    Marking fragment #917 917 .debug_info (70 PWR.o)
+  Marking symbol .debug_info120                          (211 PWR.o)
+    Marking fragment #957 957 .debug_info (120 PWR.o)
+  Marking symbol TMR_SyncLpmTimers              Ext Glb  (221 PWR.o)
+Marking from fragment #914 914 .debug_frame (66 PWR.o)
+  Marking symbol .debug_frame66                          (92 PWR.o)
+    Marking fragment #914 914 .debug_frame (66 PWR.o)
+  Marking symbol .text_17                                (91 PWR.o)
+Marking from fragment #913 913 .debug_info (65 PWR.o)
+  Marking symbol .debug_abbrev143                        (122 PWR.o)
+    Marking fragment #980 980 .debug_abbrev (143 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .text_16                                (89 PWR.o)
+  Marking symbol .text_16                                (89 PWR.o)
+  Marking symbol .debug_line64                           (165 PWR.o)
+    Marking fragment #912 912 .debug_line (64 PWR.o)
+  Marking symbol .iar.debug_line63                       (166 PWR.o)
+    Marking fragment #911 911 .iar.debug_line (63 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .debug_loc130                           (164 PWR.o)
+    Marking fragment #967 967 .debug_loc (130 PWR.o)
+  Marking symbol .text_16                                (89 PWR.o)
+  Marking symbol .text_16                                (89 PWR.o)
+Marking from fragment #967 967 .debug_loc (130 PWR.o)
+Marking from fragment #912 912 .debug_line (64 PWR.o)
+  Marking symbol .text_16                                (89 PWR.o)
+Marking from fragment #911 911 .iar.debug_line (63 PWR.o)
+  Marking symbol .text_16                                (89 PWR.o)
+  Marking symbol .debug_info65                           (167 PWR.o)
+    Marking fragment #913 913 .debug_info (65 PWR.o)
+  Marking symbol .debug_info60                           (163 PWR.o)
+    Marking fragment #909 909 .debug_info (60 PWR.o)
+Marking from fragment #910 910 .debug_frame (61 PWR.o)
+  Marking symbol .debug_frame61                          (90 PWR.o)
+    Marking fragment #910 910 .debug_frame (61 PWR.o)
+  Marking symbol .text_16                                (89 PWR.o)
+Marking from fragment #909 909 .debug_info (60 PWR.o)
+  Marking symbol .debug_abbrev143                        (122 PWR.o)
+    Marking fragment #980 980 .debug_abbrev (143 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .text_15                                (87 PWR.o)
+  Marking symbol .text_15                                (87 PWR.o)
+  Marking symbol .debug_line59                           (161 PWR.o)
+    Marking fragment #908 908 .debug_line (59 PWR.o)
+  Marking symbol .iar.debug_line58                       (162 PWR.o)
+    Marking fragment #907 907 .iar.debug_line (58 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .debug_loc129                           (160 PWR.o)
+    Marking fragment #966 966 .debug_loc (129 PWR.o)
+  Marking symbol .text_15                                (87 PWR.o)
+  Marking symbol .text_15                                (87 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .debug_loc129                           (160 PWR.o)
+    Marking fragment #966 966 .debug_loc (129 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .debug_loc129                           (160 PWR.o)
+    Marking fragment #966 966 .debug_loc (129 PWR.o)
+Marking from fragment #966 966 .debug_loc (129 PWR.o)
+Marking from fragment #908 908 .debug_line (59 PWR.o)
+  Marking symbol .text_15                                (87 PWR.o)
+Marking from fragment #907 907 .iar.debug_line (58 PWR.o)
+  Marking symbol .text_15                                (87 PWR.o)
+  Marking symbol .debug_info60                           (163 PWR.o)
+    Marking fragment #909 909 .debug_info (60 PWR.o)
+  Marking symbol CRM_GoToSleep                  Ext Glb  (213 PWR.o)
+Marking from fragment #906 906 .debug_frame (56 PWR.o)
+  Marking symbol .debug_frame56                          (88 PWR.o)
+    Marking fragment #906 906 .debug_frame (56 PWR.o)
+  Marking symbol .text_15                                (87 PWR.o)
+Marking from fragment #905 905 .debug_info (55 PWR.o)
+  Marking symbol .debug_abbrev143                        (122 PWR.o)
+    Marking fragment #980 980 .debug_abbrev (143 PWR.o)
+  Marking symbol .text_14                                (85 PWR.o)
+  Marking symbol .text_14                                (85 PWR.o)
+  Marking symbol .debug_line54                           (157 PWR.o)
+    Marking fragment #904 904 .debug_line (54 PWR.o)
+  Marking symbol .iar.debug_line53                       (158 PWR.o)
+    Marking fragment #903 903 .iar.debug_line (53 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .debug_loc128                           (156 PWR.o)
+    Marking fragment #965 965 .debug_loc (128 PWR.o)
+  Marking symbol .text_14                                (85 PWR.o)
+  Marking symbol .text_14                                (85 PWR.o)
+Marking from fragment #965 965 .debug_loc (128 PWR.o)
+Marking from fragment #904 904 .debug_line (54 PWR.o)
+  Marking symbol .text_14                                (85 PWR.o)
+Marking from fragment #903 903 .iar.debug_line (53 PWR.o)
+  Marking symbol .text_14                                (85 PWR.o)
+  Marking symbol .debug_info55                           (159 PWR.o)
+    Marking fragment #905 905 .debug_info (55 PWR.o)
+Marking from fragment #902 902 .debug_frame (51 PWR.o)
+  Marking symbol .debug_frame51                          (86 PWR.o)
+    Marking fragment #902 902 .debug_frame (51 PWR.o)
+  Marking symbol .text_14                                (85 PWR.o)
+Marking from fragment #901 901 .debug_info (50 PWR.o)
+  Marking symbol .debug_abbrev143                        (122 PWR.o)
+    Marking fragment #980 980 .debug_abbrev (143 PWR.o)
+  Marking symbol .text_13                                (83 PWR.o)
+  Marking symbol .text_13                                (83 PWR.o)
+  Marking symbol .debug_line49                           (153 PWR.o)
+    Marking fragment #900 900 .debug_line (49 PWR.o)
+  Marking symbol .iar.debug_line48                       (154 PWR.o)
+    Marking fragment #899 899 .iar.debug_line (48 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .debug_loc127                           (152 PWR.o)
+    Marking fragment #964 964 .debug_loc (127 PWR.o)
+  Marking symbol .text_13                                (83 PWR.o)
+  Marking symbol .text_13                                (83 PWR.o)
+Marking from fragment #964 964 .debug_loc (127 PWR.o)
+Marking from fragment #900 900 .debug_line (49 PWR.o)
+  Marking symbol .text_13                                (83 PWR.o)
+Marking from fragment #899 899 .iar.debug_line (48 PWR.o)
+  Marking symbol .text_13                                (83 PWR.o)
+  Marking symbol .debug_info50                           (155 PWR.o)
+    Marking fragment #901 901 .debug_info (50 PWR.o)
+  Marking symbol CRM_Wait4Irq                   Ext Glb  (214 PWR.o)
+Marking from fragment #898 898 .debug_frame (46 PWR.o)
+  Marking symbol .debug_frame46                          (84 PWR.o)
+    Marking fragment #898 898 .debug_frame (46 PWR.o)
+  Marking symbol .text_13                                (83 PWR.o)
+Marking from fragment #897 897 .debug_info (45 PWR.o)
+  Marking symbol .debug_abbrev143                        (122 PWR.o)
+    Marking fragment #980 980 .debug_abbrev (143 PWR.o)
+  Marking symbol .text_12                                (81 PWR.o)
+  Marking symbol .text_12                                (81 PWR.o)
+  Marking symbol .debug_line44                           (149 PWR.o)
+    Marking fragment #896 896 .debug_line (44 PWR.o)
+  Marking symbol .iar.debug_line43                       (150 PWR.o)
+    Marking fragment #895 895 .iar.debug_line (43 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .debug_loc126                           (148 PWR.o)
+    Marking fragment #963 963 .debug_loc (126 PWR.o)
+  Marking symbol .text_12                                (81 PWR.o)
+  Marking symbol .text_12                                (81 PWR.o)
+Marking from fragment #963 963 .debug_loc (126 PWR.o)
+Marking from fragment #896 896 .debug_line (44 PWR.o)
+  Marking symbol .text_12                                (81 PWR.o)
+Marking from fragment #895 895 .iar.debug_line (43 PWR.o)
+  Marking symbol .text_12                                (81 PWR.o)
+  Marking symbol .debug_info45                           (151 PWR.o)
+    Marking fragment #897 897 .debug_info (45 PWR.o)
+Marking from fragment #894 894 .debug_frame (41 PWR.o)
+  Marking symbol .debug_frame41                          (82 PWR.o)
+    Marking fragment #894 894 .debug_frame (41 PWR.o)
+  Marking symbol .text_12                                (81 PWR.o)
+Marking from fragment #893 893 .debug_info (40 PWR.o)
+  Marking symbol .debug_abbrev143                        (122 PWR.o)
+    Marking fragment #980 980 .debug_abbrev (143 PWR.o)
+  Marking symbol .text_11                                (79 PWR.o)
+  Marking symbol .text_11                                (79 PWR.o)
+  Marking symbol .debug_line39                           (145 PWR.o)
+    Marking fragment #892 892 .debug_line (39 PWR.o)
+  Marking symbol .iar.debug_line38                       (146 PWR.o)
+    Marking fragment #891 891 .iar.debug_line (38 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .debug_loc125                           (144 PWR.o)
+    Marking fragment #962 962 .debug_loc (125 PWR.o)
+  Marking symbol .text_11                                (79 PWR.o)
+  Marking symbol .text_11                                (79 PWR.o)
+Marking from fragment #962 962 .debug_loc (125 PWR.o)
+Marking from fragment #892 892 .debug_line (39 PWR.o)
+  Marking symbol .text_11                                (79 PWR.o)
+Marking from fragment #891 891 .iar.debug_line (38 PWR.o)
+  Marking symbol .text_11                                (79 PWR.o)
+  Marking symbol .debug_info40                           (147 PWR.o)
+    Marking fragment #893 893 .debug_info (40 PWR.o)
+Marking from fragment #890 890 .debug_frame (36 PWR.o)
+  Marking symbol .debug_frame36                          (80 PWR.o)
+    Marking fragment #890 890 .debug_frame (36 PWR.o)
+  Marking symbol .text_11                                (79 PWR.o)
+Marking from fragment #889 889 .debug_info (35 PWR.o)
+  Marking symbol .debug_abbrev143                        (122 PWR.o)
+    Marking fragment #980 980 .debug_abbrev (143 PWR.o)
+  Marking symbol .text_10                                (77 PWR.o)
+  Marking symbol .text_10                                (77 PWR.o)
+  Marking symbol .debug_line34                           (141 PWR.o)
+    Marking fragment #888 888 .debug_line (34 PWR.o)
+  Marking symbol .iar.debug_line33                       (142 PWR.o)
+    Marking fragment #887 887 .iar.debug_line (33 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol .debug_loc124                           (140 PWR.o)
+    Marking fragment #961 961 .debug_loc (124 PWR.o)
+  Marking symbol .text_10                                (77 PWR.o)
+  Marking symbol .text_10                                (77 PWR.o)
+Marking from fragment #961 961 .debug_loc (124 PWR.o)
+Marking from fragment #888 888 .debug_line (34 PWR.o)
+  Marking symbol .text_10                                (77 PWR.o)
+Marking from fragment #887 887 .iar.debug_line (33 PWR.o)
+  Marking symbol .text_10                                (77 PWR.o)
+  Marking symbol .debug_info35                           (143 PWR.o)
+    Marking fragment #889 889 .debug_info (35 PWR.o)
+  Marking symbol IntDisableAll                  Ext Glb  (217 PWR.o)
+  Marking symbol IntRestoreAll                  Ext Glb  (218 PWR.o)
+Marking from fragment #886 886 .debug_frame (31 PWR.o)
+  Marking symbol .debug_frame31                          (78 PWR.o)
+    Marking fragment #886 886 .debug_frame (31 PWR.o)
+  Marking symbol .text_10                                (77 PWR.o)
+Marking from fragment #877 877 .debug_info (20 PWR.o)
+  Marking symbol .debug_abbrev143                        (122 PWR.o)
+    Marking fragment #980 980 .debug_abbrev (143 PWR.o)
+  Marking symbol .debug_line6                            (124 PWR.o)
+    Marking fragment #863 863 .debug_line (6 PWR.o)
+  Marking symbol .debug_macinfo142                       (125 PWR.o)
+    Marking fragment #979 979 .debug_macinfo (142 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol notCountedTmrTicksBeforeSleep           (71 PWR.o)
+Marking from fragment #876 876 .debug_info (19 PWR.o)
+  Marking symbol .debug_abbrev143                        (122 PWR.o)
+    Marking fragment #980 980 .debug_abbrev (143 PWR.o)
+  Marking symbol .debug_line6                            (124 PWR.o)
+    Marking fragment #863 863 .debug_line (6 PWR.o)
+  Marking symbol .debug_macinfo142                       (125 PWR.o)
+    Marking fragment #979 979 .debug_macinfo (142 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol mSavedMacaClk                           (70 PWR.o)
+Marking from fragment #875 875 .debug_info (18 PWR.o)
+  Marking symbol .debug_abbrev143                        (122 PWR.o)
+    Marking fragment #980 980 .debug_abbrev (143 PWR.o)
+  Marking symbol .debug_line6                            (124 PWR.o)
+    Marking fragment #863 863 .debug_line (6 PWR.o)
+  Marking symbol .debug_macinfo142                       (125 PWR.o)
+    Marking fragment #979 979 .debug_macinfo (142 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol mLPMFlag                                (69 PWR.o)
+Marking from fragment #874 874 .debug_info (17 PWR.o)
+  Marking symbol .debug_abbrev143                        (122 PWR.o)
+    Marking fragment #980 980 .debug_abbrev (143 PWR.o)
+  Marking symbol .debug_line6                            (124 PWR.o)
+    Marking fragment #863 863 .debug_line (6 PWR.o)
+  Marking symbol .debug_macinfo142                       (125 PWR.o)
+    Marking fragment #979 979 .debug_macinfo (142 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol mExtOutPol                              (68 PWR.o)
+Marking from fragment #873 873 .debug_info (16 PWR.o)
+  Marking symbol .debug_abbrev143                        (122 PWR.o)
+    Marking fragment #980 980 .debug_abbrev (143 PWR.o)
+  Marking symbol .debug_line6                            (124 PWR.o)
+    Marking fragment #863 863 .debug_line (6 PWR.o)
+  Marking symbol .debug_macinfo142                       (125 PWR.o)
+    Marking fragment #979 979 .debug_macinfo (142 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol PWRLib_StackPS                     Glb  (230 PWR.o)
+Marking from fragment #872 872 .debug_info (15 PWR.o)
+  Marking symbol .debug_abbrev143                        (122 PWR.o)
+    Marking fragment #980 980 .debug_abbrev (143 PWR.o)
+  Marking symbol .debug_line6                            (124 PWR.o)
+    Marking fragment #863 863 .debug_line (6 PWR.o)
+  Marking symbol .debug_macinfo142                       (125 PWR.o)
+    Marking fragment #979 979 .debug_macinfo (142 PWR.o)
+  Marking symbol .debug_info7                            (123 PWR.o)
+    Marking fragment #864 864 .debug_info (7 PWR.o)
+  Marking symbol PWRLib_MCU_WakeupReason            Glb  (228 PWR.o)
 Marking from fragment #843 843 .debug_info (40 NV_FlashHAL.o)
   Marking symbol .debug_abbrev51                         (25 NV_FlashHAL.o)
     Marking fragment #854 854 .debug_abbrev (51 NV_FlashHAL.o)
@@ -12137,96 +13727,98 @@ Marking from fragment #590 590 .debug_info (13 MacInit.o)
     Marking fragment #584 584 .debug_info (7 MacInit.o)
   Marking symbol MacTaskTable                       Glb  (43 MacInit.o)
 Marking from fragment #547 547 .debug_info (40 MApp_init.o)
-  Marking symbol .debug_abbrev66                         (34 MApp_init.o)
+  Marking symbol .debug_abbrev66                         (35 MApp_init.o)
     Marking fragment #571 571 .debug_abbrev (66 MApp_init.o)
-  Marking symbol .text_10                                (25 MApp_init.o)
-  Marking symbol .text_10                                (25 MApp_init.o)
-  Marking symbol .debug_line39                           (58 MApp_init.o)
+  Marking symbol .text_10                                (26 MApp_init.o)
+  Marking symbol .text_10                                (26 MApp_init.o)
+  Marking symbol .debug_line39                           (59 MApp_init.o)
     Marking fragment #546 546 .debug_line (39 MApp_init.o)
-  Marking symbol .iar.debug_line38                       (59 MApp_init.o)
+  Marking symbol .iar.debug_line38                       (60 MApp_init.o)
     Marking fragment #545 545 .iar.debug_line (38 MApp_init.o)
-  Marking symbol .debug_info7                            (35 MApp_init.o)
+  Marking symbol .debug_info7                            (36 MApp_init.o)
     Marking fragment #519 519 .debug_info (7 MApp_init.o)
-  Marking symbol .debug_loc62                            (57 MApp_init.o)
+  Marking symbol .debug_loc62                            (58 MApp_init.o)
     Marking fragment #567 567 .debug_loc (62 MApp_init.o)
-  Marking symbol .text_10                                (25 MApp_init.o)
-  Marking symbol .text_10                                (25 MApp_init.o)
-  Marking symbol .debug_info7                            (35 MApp_init.o)
+  Marking symbol .text_10                                (26 MApp_init.o)
+  Marking symbol .text_10                                (26 MApp_init.o)
+  Marking symbol .debug_info7                            (36 MApp_init.o)
     Marking fragment #519 519 .debug_info (7 MApp_init.o)
-  Marking symbol .debug_loc62                            (57 MApp_init.o)
+  Marking symbol .debug_loc62                            (58 MApp_init.o)
     Marking fragment #567 567 .debug_loc (62 MApp_init.o)
 Marking from fragment #567 567 .debug_loc (62 MApp_init.o)
 Marking from fragment #519 519 .debug_info (7 MApp_init.o)
-  Marking symbol .debug_abbrev66                         (34 MApp_init.o)
+  Marking symbol .debug_abbrev66                         (35 MApp_init.o)
     Marking fragment #571 571 .debug_abbrev (66 MApp_init.o)
-  Marking symbol .debug_line6                            (36 MApp_init.o)
+  Marking symbol .debug_line6                            (37 MApp_init.o)
     Marking fragment #518 518 .debug_line (6 MApp_init.o)
-  Marking symbol .debug_macinfo65                        (37 MApp_init.o)
+  Marking symbol .debug_macinfo65                        (38 MApp_init.o)
     Marking fragment #570 570 .debug_macinfo (65 MApp_init.o)
 Marking from fragment #570 570 .debug_macinfo (65 MApp_init.o)
 Marking from fragment #518 518 .debug_line (6 MApp_init.o)
 Marking from fragment #571 571 .debug_abbrev (66 MApp_init.o)
 Marking from fragment #546 546 .debug_line (39 MApp_init.o)
-  Marking symbol .text_10                                (25 MApp_init.o)
+  Marking symbol .text_10                                (26 MApp_init.o)
 Marking from fragment #545 545 .iar.debug_line (38 MApp_init.o)
-  Marking symbol .text_10                                (25 MApp_init.o)
-  Marking symbol .debug_info40                           (60 MApp_init.o)
+  Marking symbol .text_10                                (26 MApp_init.o)
+  Marking symbol .debug_info40                           (61 MApp_init.o)
     Marking fragment #547 547 .debug_info (40 MApp_init.o)
-  Marking symbol MacPhyInit_WriteExtAddress     Ext Glb  (76 MApp_init.o)
+  Marking symbol MacPhyInit_WriteExtAddress     Ext Glb  (77 MApp_init.o)
 Marking from fragment #544 544 .debug_frame (36 MApp_init.o)
-  Marking symbol .debug_frame36                          (26 MApp_init.o)
+  Marking symbol .debug_frame36                          (27 MApp_init.o)
     Marking fragment #544 544 .debug_frame (36 MApp_init.o)
-  Marking symbol .text_10                                (25 MApp_init.o)
+  Marking symbol .text_10                                (26 MApp_init.o)
 Marking from fragment #543 543 .debug_info (35 MApp_init.o)
-  Marking symbol .debug_abbrev66                         (34 MApp_init.o)
+  Marking symbol .debug_abbrev66                         (35 MApp_init.o)
     Marking fragment #571 571 .debug_abbrev (66 MApp_init.o)
-  Marking symbol .text_9                                 (23 MApp_init.o)
-  Marking symbol .text_9                                 (23 MApp_init.o)
-  Marking symbol .debug_line34                           (54 MApp_init.o)
+  Marking symbol .text_9                                 (24 MApp_init.o)
+  Marking symbol .text_9                                 (24 MApp_init.o)
+  Marking symbol .debug_line34                           (55 MApp_init.o)
     Marking fragment #542 542 .debug_line (34 MApp_init.o)
-  Marking symbol .iar.debug_line33                       (55 MApp_init.o)
+  Marking symbol .iar.debug_line33                       (56 MApp_init.o)
     Marking fragment #541 541 .iar.debug_line (33 MApp_init.o)
-  Marking symbol .debug_info7                            (35 MApp_init.o)
+  Marking symbol .debug_info7                            (36 MApp_init.o)
     Marking fragment #519 519 .debug_info (7 MApp_init.o)
-  Marking symbol .debug_loc61                            (53 MApp_init.o)
+  Marking symbol .debug_loc61                            (54 MApp_init.o)
     Marking fragment #566 566 .debug_loc (61 MApp_init.o)
-  Marking symbol .text_9                                 (23 MApp_init.o)
-  Marking symbol .text_9                                 (23 MApp_init.o)
-  Marking symbol .debug_info7                            (35 MApp_init.o)
+  Marking symbol .text_9                                 (24 MApp_init.o)
+  Marking symbol .text_9                                 (24 MApp_init.o)
+  Marking symbol .debug_info7                            (36 MApp_init.o)
     Marking fragment #519 519 .debug_info (7 MApp_init.o)
-  Marking symbol .debug_loc61                            (53 MApp_init.o)
+  Marking symbol .debug_loc61                            (54 MApp_init.o)
     Marking fragment #566 566 .debug_loc (61 MApp_init.o)
 Marking from fragment #566 566 .debug_loc (61 MApp_init.o)
 Marking from fragment #542 542 .debug_line (34 MApp_init.o)
-  Marking symbol .text_9                                 (23 MApp_init.o)
+  Marking symbol .text_9                                 (24 MApp_init.o)
 Marking from fragment #541 541 .iar.debug_line (33 MApp_init.o)
-  Marking symbol .text_9                                 (23 MApp_init.o)
-  Marking symbol .debug_info35                           (56 MApp_init.o)
+  Marking symbol .text_9                                 (24 MApp_init.o)
+  Marking symbol .debug_info35                           (57 MApp_init.o)
     Marking fragment #543 543 .debug_info (35 MApp_init.o)
-  Marking symbol NvIdle                         Ext Glb  (78 MApp_init.o)
+  Marking symbol NvIdle                         Ext Glb  (79 MApp_init.o)
+  Marking symbol PWR_CheckIfDeviceCanGoToSleep  Ext Glb  (81 MApp_init.o)
+  Marking symbol PWR_EnterLowPower              Ext Glb  (83 MApp_init.o)
 Marking from fragment #540 540 .debug_frame (31 MApp_init.o)
-  Marking symbol .debug_frame31                          (24 MApp_init.o)
+  Marking symbol .debug_frame31                          (25 MApp_init.o)
     Marking fragment #540 540 .debug_frame (31 MApp_init.o)
-  Marking symbol .text_9                                 (23 MApp_init.o)
+  Marking symbol .text_9                                 (24 MApp_init.o)
 Marking from fragment #531 531 .debug_info (20 MApp_init.o)
-  Marking symbol .debug_abbrev66                         (34 MApp_init.o)
+  Marking symbol .debug_abbrev66                         (35 MApp_init.o)
     Marking fragment #571 571 .debug_abbrev (66 MApp_init.o)
-  Marking symbol .debug_info7                            (35 MApp_init.o)
+  Marking symbol .debug_info7                            (36 MApp_init.o)
     Marking fragment #519 519 .debug_info (7 MApp_init.o)
-  Marking symbol __iar_cc..njTGJrDmDSC          Ext Glb  (97 MApp_init.o)
+  Marking symbol __iar_cc..l_HxWg$GgDA          Ext Glb  (101 MApp_init.o)
     Marking fragment #477 477 .debug_info (180 MApp.o)
-  Marking symbol .text11                                 (16 MApp_init.o)
-  Marking symbol .text11                                 (16 MApp_init.o)
-  Marking symbol .debug_line19                           (42 MApp_init.o)
+  Marking symbol .text11                                 (17 MApp_init.o)
+  Marking symbol .text11                                 (17 MApp_init.o)
+  Marking symbol .debug_line19                           (43 MApp_init.o)
     Marking fragment #530 530 .debug_line (19 MApp_init.o)
-  Marking symbol .iar.debug_line18                       (43 MApp_init.o)
+  Marking symbol .iar.debug_line18                       (44 MApp_init.o)
     Marking fragment #529 529 .iar.debug_line (18 MApp_init.o)
-  Marking symbol .debug_info7                            (35 MApp_init.o)
+  Marking symbol .debug_info7                            (36 MApp_init.o)
     Marking fragment #519 519 .debug_info (7 MApp_init.o)
-  Marking symbol .debug_loc54                            (41 MApp_init.o)
+  Marking symbol .debug_loc54                            (42 MApp_init.o)
     Marking fragment #559 559 .debug_loc (54 MApp_init.o)
-  Marking symbol .text11                                 (16 MApp_init.o)
-  Marking symbol .text11                                 (16 MApp_init.o)
+  Marking symbol .text11                                 (17 MApp_init.o)
+  Marking symbol .text11                                 (17 MApp_init.o)
 Marking from fragment #559 559 .debug_loc (54 MApp_init.o)
 Marking from fragment #477 477 .debug_info (180 MApp.o)
   Marking symbol .debug_abbrev187                        (294 MApp.o)
@@ -12239,38 +13831,39 @@ Marking from fragment #483 483 .debug_macinfo (186 MApp.o)
 Marking from fragment #320 320 .debug_line (6 MApp.o)
 Marking from fragment #484 484 .debug_abbrev (187 MApp.o)
 Marking from fragment #530 530 .debug_line (19 MApp_init.o)
-  Marking symbol .text11                                 (16 MApp_init.o)
+  Marking symbol .text11                                 (17 MApp_init.o)
 Marking from fragment #529 529 .iar.debug_line (18 MApp_init.o)
-  Marking symbol .text11                                 (16 MApp_init.o)
-  Marking symbol .debug_info20                           (44 MApp_init.o)
+  Marking symbol .text11                                 (17 MApp_init.o)
+  Marking symbol .debug_info20                           (45 MApp_init.o)
     Marking fragment #531 531 .debug_info (20 MApp_init.o)
-  Marking symbol InterruptInit                  Ext Glb  (73 MApp_init.o)
-  Marking symbol IntDisableAll                  Ext Glb  (72 MApp_init.o)
-  Marking symbol Platform_Init                  Ext Glb  (80 MApp_init.o)
-  Marking symbol TS_Init                        Ext Glb  (83 MApp_init.o)
-  Marking symbol TMR_Init                       Ext Glb  (81 MApp_init.o)
-  Marking symbol NvModuleInit                   Ext Glb  (79 MApp_init.o)
-  Marking symbol Uart_ModuleInit                Ext Glb  (85 MApp_init.o)
-  Marking symbol MacInit                        Ext Glb  (75 MApp_init.o)
-  Marking symbol Init_802_15_4                  Ext Glb  (71 MApp_init.o)
-  Marking symbol TS_CreateTask                  Ext Glb  (82 MApp_init.o)
-  Marking symbol MApp_init                      Ext Glb  (74 MApp_init.o)
-  Marking symbol Gpio_SetPinData                Ext Glb  (70 MApp_init.o)
-  Marking symbol TS_Scheduler                   Ext Glb  (84 MApp_init.o)
+  Marking symbol InterruptInit                  Ext Glb  (74 MApp_init.o)
+  Marking symbol IntDisableAll                  Ext Glb  (73 MApp_init.o)
+  Marking symbol Platform_Init                  Ext Glb  (84 MApp_init.o)
+  Marking symbol TS_Init                        Ext Glb  (87 MApp_init.o)
+  Marking symbol TMR_Init                       Ext Glb  (85 MApp_init.o)
+  Marking symbol NvModuleInit                   Ext Glb  (80 MApp_init.o)
+  Marking symbol Uart_ModuleInit                Ext Glb  (89 MApp_init.o)
+  Marking symbol MacInit                        Ext Glb  (76 MApp_init.o)
+  Marking symbol Init_802_15_4                  Ext Glb  (72 MApp_init.o)
+  Marking symbol TS_CreateTask                  Ext Glb  (86 MApp_init.o)
+  Marking symbol MApp_init                      Ext Glb  (75 MApp_init.o)
+  Marking symbol PWR_DisallowDeviceToSleep      Ext Glb  (82 MApp_init.o)
+  Marking symbol Gpio_SetPinData                Ext Glb  (71 MApp_init.o)
+  Marking symbol TS_Scheduler                   Ext Glb  (88 MApp_init.o)
 Marking from fragment #528 528 .debug_frame (16 MApp_init.o)
-  Marking symbol .debug_frame16                          (17 MApp_init.o)
+  Marking symbol .debug_frame16                          (18 MApp_init.o)
     Marking fragment #528 528 .debug_frame (16 MApp_init.o)
-  Marking symbol .text11                                 (16 MApp_init.o)
+  Marking symbol .text11                                 (17 MApp_init.o)
 Marking from fragment #525 525 .debug_info (13 MApp_init.o)
-  Marking symbol .debug_abbrev66                         (34 MApp_init.o)
+  Marking symbol .debug_abbrev66                         (35 MApp_init.o)
     Marking fragment #571 571 .debug_abbrev (66 MApp_init.o)
-  Marking symbol .debug_line6                            (36 MApp_init.o)
+  Marking symbol .debug_line6                            (37 MApp_init.o)
     Marking fragment #518 518 .debug_line (6 MApp_init.o)
-  Marking symbol .debug_macinfo65                        (37 MApp_init.o)
+  Marking symbol .debug_macinfo65                        (38 MApp_init.o)
     Marking fragment #570 570 .debug_macinfo (65 MApp_init.o)
-  Marking symbol .debug_info7                            (35 MApp_init.o)
+  Marking symbol .debug_info7                            (36 MApp_init.o)
     Marking fragment #519 519 .debug_info (7 MApp_init.o)
-  Marking symbol gAppTaskID_c                       Glb  (95 MApp_init.o)
+  Marking symbol gAppTaskID_c                       Glb  (99 MApp_init.o)
 Marking from fragment #458 458 .debug_info (161 MApp.o)
   Marking symbol .debug_abbrev187                        (294 MApp.o)
     Marking fragment #484 484 .debug_abbrev (187 MApp.o)
@@ -12379,12 +13972,38 @@ Marking from fragment #447 447 .debug_frame (147 MApp.o)
   Marking symbol .debug_frame147                         (285 MApp.o)
     Marking fragment #447 447 .debug_frame (147 MApp.o)
   Marking symbol .text_123                               (284 MApp.o)
+Marking from fragment #446 446 .debug_info (146 MApp.o)
+  Marking symbol .debug_abbrev187                        (294 MApp.o)
+    Marking fragment #484 484 .debug_abbrev (187 MApp.o)
+  Marking symbol .text_122                               (281 MApp.o)
+  Marking symbol .text_122                               (281 MApp.o)
+  Marking symbol .debug_line145                          (366 MApp.o)
+    Marking fragment #445 445 .debug_line (145 MApp.o)
+  Marking symbol .iar.debug_line144                      (367 MApp.o)
+    Marking fragment #444 444 .iar.debug_line (144 MApp.o)
+  Marking symbol .debug_info7                            (295 MApp.o)
+    Marking fragment #321 321 .debug_info (7 MApp.o)
+  Marking symbol .debug_loc182                           (365 MApp.o)
+    Marking fragment #479 479 .debug_loc (182 MApp.o)
+  Marking symbol .text_122                               (281 MApp.o)
+  Marking symbol .text_122                               (281 MApp.o)
+Marking from fragment #479 479 .debug_loc (182 MApp.o)
+Marking from fragment #445 445 .debug_line (145 MApp.o)
+  Marking symbol .text_122                               (281 MApp.o)
+Marking from fragment #444 444 .iar.debug_line (144 MApp.o)
+  Marking symbol .text_122                               (281 MApp.o)
+  Marking symbol .debug_info146                          (368 MApp.o)
+    Marking fragment #446 446 .debug_info (146 MApp.o)
+Marking from fragment #443 443 .debug_frame (142 MApp.o)
+  Marking symbol .debug_frame142                         (282 MApp.o)
+    Marking fragment #443 443 .debug_frame (142 MApp.o)
+  Marking symbol .text_122                               (281 MApp.o)
 Marking from fragment #442 442 .debug_info (141 MApp.o)
   Marking symbol .debug_abbrev187                        (294 MApp.o)
     Marking fragment #484 484 .debug_abbrev (187 MApp.o)
   Marking symbol .debug_info7                            (295 MApp.o)
     Marking fragment #321 321 .debug_info (7 MApp.o)
-  Marking symbol __iar_cc..njTGJrDmDSC              Glb  (421 MApp.o)
+  Marking symbol __iar_cc..l_HxWg$GgDA              Glb  (421 MApp.o)
     Marking fragment #477 477 .debug_info (180 MApp.o)
   Marking symbol .debug_info7                            (295 MApp.o)
     Marking fragment #321 321 .debug_info (7 MApp.o)
@@ -12423,7 +14042,7 @@ Marking from fragment #439 439 .debug_frame (137 MApp.o)
 Marking from fragment #438 438 .debug_info (136 MApp.o)
   Marking symbol .debug_abbrev187                        (294 MApp.o)
     Marking fragment #484 484 .debug_abbrev (187 MApp.o)
-  Marking symbol __iar_cc..k1zQJScsXY_              Glb  (420 MApp.o)
+  Marking symbol __iar_cc..8QCp9mk5IZ5              Glb  (420 MApp.o)
     Marking fragment #466 466 .debug_info (169 MApp.o)
   Marking symbol .text_118                               (273 MApp.o)
   Marking symbol .text_118                               (273 MApp.o)
@@ -12664,7 +14283,7 @@ Marking from fragment #414 414 .debug_info (106 MApp.o)
     Marking fragment #484 484 .debug_abbrev (187 MApp.o)
   Marking symbol .debug_info7                            (295 MApp.o)
     Marking fragment #321 321 .debug_info (7 MApp.o)
-  Marking symbol __iar_cc..VDf_inSN1P9              Glb  (419 MApp.o)
+  Marking symbol __iar_cc..LCZgkexQk_4              Glb  (419 MApp.o)
     Marking fragment #462 462 .debug_info (165 MApp.o)
   Marking symbol .debug_info7                            (295 MApp.o)
     Marking fragment #321 321 .debug_info (7 MApp.o)
@@ -12795,9 +14414,9 @@ Marking from fragment #407 407 .debug_frame (97 MApp.o)
 Marking from fragment #406 406 .debug_info (96 MApp.o)
   Marking symbol .debug_abbrev187                        (294 MApp.o)
     Marking fragment #484 484 .debug_abbrev (187 MApp.o)
-  Marking symbol __iar_cc..VDf_inSN1P9              Glb  (419 MApp.o)
+  Marking symbol __iar_cc..LCZgkexQk_4              Glb  (419 MApp.o)
     Marking fragment #462 462 .debug_info (165 MApp.o)
-  Marking symbol __iar_cc..k1zQJScsXY_              Glb  (420 MApp.o)
+  Marking symbol __iar_cc..8QCp9mk5IZ5              Glb  (420 MApp.o)
     Marking fragment #466 466 .debug_info (169 MApp.o)
   Marking symbol .debug_info7                            (295 MApp.o)
     Marking fragment #321 321 .debug_info (7 MApp.o)
@@ -12884,7 +14503,7 @@ Marking from fragment #398 398 .debug_info (86 MApp.o)
     Marking fragment #484 484 .debug_abbrev (187 MApp.o)
   Marking symbol .debug_info7                            (295 MApp.o)
     Marking fragment #321 321 .debug_info (7 MApp.o)
-  Marking symbol __iar_cc..VDf_inSN1P9              Glb  (419 MApp.o)
+  Marking symbol __iar_cc..LCZgkexQk_4              Glb  (419 MApp.o)
     Marking fragment #462 462 .debug_info (165 MApp.o)
   Marking symbol .debug_info7                            (295 MApp.o)
     Marking fragment #321 321 .debug_info (7 MApp.o)
@@ -14210,12 +15829,13 @@ Selecting packing algorithm for 'auto' batches
 
 Veneer stats:
 
-  206 definitions
-  496 references
-      484 R_ARM_THM_CALL
+  232 definitions
+  543 references
+      530 R_ARM_THM_CALL
         3 R_ARM_CALL
-        9 R_ARM_JUMP24
-   10 veneers               152 bytes
-        2 ARM v4 veneer          24 bytes
-        8 Thumb v4 veneer       128 bytes
-   55 redirected references
+       10 R_ARM_JUMP24
+   13 veneers                       164 bytes
+        2 ARM v4 veneer                  24 bytes
+        8 Thumb v4 veneer               128 bytes
+        3 Thumb fall through veneer      12 bytes
+   66 redirected references

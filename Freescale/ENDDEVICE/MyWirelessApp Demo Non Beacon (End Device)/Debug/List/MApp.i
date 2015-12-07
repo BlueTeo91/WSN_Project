@@ -92,6 +92,14 @@ void Init_MacExtendedAddress(void) ;
 
 
 
+
+ 
+ 
+
+
+
+
+
  
 
  
@@ -1622,6 +1630,9 @@ enum {
   gAspPowerLevel_3dBm,       
   gAspPowerLevel_4d5dBm      
 };
+
+
+ 
 
 
  
@@ -3830,7 +3841,7 @@ extern unsigned int IntDisableAll(void);
  
 
  
-  
+
 
 
 
@@ -5482,6 +5493,7 @@ typedef enum {StackPS_Running=122, StackPS_Sleep, StackPS_DeepSleep}      PWRLib
 
 
 
+
 typedef  union {
   uint8_t AllBits;
   struct {
@@ -5547,6 +5559,7 @@ extern void PWRLib_Reset(void);
 
 
   
+
 void PWR_AllowDeviceToSleep(void);
 
 
@@ -5602,6 +5615,7 @@ bool_t PWR_CheckIfDeviceCanGoToSleep( void );
 
 
  
+
 PWRLib_WakeupReason_t PWR_EnterLowPower(void);
  
 
@@ -5614,6 +5628,7 @@ PWRLib_WakeupReason_t PWR_EnterLowPower(void);
 
 
  
+
 void PWR_CheckForAndEnterNewPowerState_Init(void);
 
 

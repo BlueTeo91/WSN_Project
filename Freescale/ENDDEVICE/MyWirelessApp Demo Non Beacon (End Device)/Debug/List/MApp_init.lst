@@ -1,126 +1,93 @@
 ###############################################################################
 #                                                                             #
-#                                                       22/Nov/2015  11:37:57 #
+#                                                       08/Dec/2015  00:24:15 #
 # IAR ANSI C/C++ Compiler V5.50.7.22081/W32 EVALUATION for ARM                #
 # Copyright (C) 1999-2010 IAR Systems AB.                                     #
 #                                                                             #
 #    Cpu mode     =  thumb                                                    #
 #    Endian       =  little                                                   #
-#    Source file  =  C:\Documents and Settings\Administrator\Desktop\WSN      #
-#                    Project\To use\TRUE MyWirelessApp Demo Non Beacon (End   #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#    Source file  =  C:\Documents and Settings\Administrator\Desktop\WSN_Proj #
+#                    ect\ENDDEV\MyWirelessApp Demo Non Beacon (End            #
 #                    Device)\Application\Init\MApp_init.c                     #
-#    Command line =  "C:\Documents and Settings\Administrator\Desktop\WSN     #
-#                    Project\To use\TRUE MyWirelessApp Demo Non Beacon (End   #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#    Command line =  "C:\Documents and Settings\Administrator\Desktop\WSN_Pro #
+#                    ject\ENDDEV\MyWirelessApp Demo Non Beacon (End           #
 #                    Device)\Application\Init\MApp_init.c" -D                 #
 #                    gMacStandAlone_d=1 -D gSAPMessagesEnableLlc_d=0 -D       #
 #                    gZtcIncluded_d=0 -D gTargetMC1322xSRB=1 --preprocess     #
-#                    "C:\Documents and Settings\Administrator\Desktop\WSN     #
-#                    Project\To use\TRUE MyWirelessApp Demo Non Beacon (End   #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    "C:\Documents and Settings\Administrator\Desktop\WSN_Pro #
+#                    ject\ENDDEV\MyWirelessApp Demo Non Beacon (End           #
 #                    Device)\Debug\List\" -lC "C:\Documents and               #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
-#                    Device)\Debug\List\" -lB "C:\Documents and               #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWire #
+#                    lessApp Demo Non Beacon (End Device)\Debug\List\" -lB    #
+#                    "C:\Documents and Settings\Administrator\Desktop\WSN_Pro #
+#                    ject\ENDDEV\MyWirelessApp Demo Non Beacon (End           #
 #                    Device)\Debug\List\" --diag_suppress                     #
 #                    Pe014,Pe001,Pe991,Pa039,Pe520 -o "C:\Documents and       #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
-#                    Device)\Debug\Obj\" --no_cse --no_unroll --no_inline     #
-#                    --no_code_motion --no_tbaa --no_clustering               #
-#                    --no_scheduling --debug --endian=little                  #
-#                    --cpu=ARM7TDMI-S --fpu=None --dlib_config "C:\Program    #
-#                    Files\IAR Systems\Embedded Workbench 5.4                 #
-#                    Evaluation\arm\INC\DLib_Config_Normal.h" -I              #
-#                    "C:\Documents and Settings\Administrator\Desktop\WSN     #
-#                    Project\To use\TRUE MyWirelessApp Demo Non Beacon (End   #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWire #
+#                    lessApp Demo Non Beacon (End Device)\Debug\Obj\"         #
+#                    --no_cse --no_unroll --no_inline --no_code_motion        #
+#                    --no_tbaa --no_clustering --no_scheduling --debug        #
+#                    --endian=little --cpu=ARM7TDMI-S --fpu=None              #
+#                    --dlib_config "C:\Program Files\IAR Systems\Embedded     #
+#                    Workbench 5.4 Evaluation\arm\INC\DLib_Config_Normal.h"   #
+#                    -I "C:\Documents and Settings\Administrator\Desktop\WSN_ #
+#                    Project\ENDDEV\MyWirelessApp Demo Non Beacon (End        #
 #                    Device)\MacPhy\Interface\" -I "C:\Documents and          #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
-#                    Device)\Application\Init\" -I "C:\Documents and          #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWire #
+#                    lessApp Demo Non Beacon (End Device)\Application\Init\"  #
+#                    -I "C:\Documents and Settings\Administrator\Desktop\WSN_ #
+#                    Project\ENDDEV\MyWirelessApp Demo Non Beacon (End        #
 #                    Device)\Application\Interface\" -I "C:\Documents and     #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWire #
+#                    lessApp Demo Non Beacon (End                             #
 #                    Device)\Application\Configure\" -I "C:\Documents and     #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWire #
+#                    lessApp Demo Non Beacon (End                             #
 #                    Device)\Application\UartUtil\" -I "C:\Documents and      #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWire #
+#                    lessApp Demo Non Beacon (End                             #
 #                    Device)\Application\Source\" -I "C:\Documents and        #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
-#                    Device)\SSM\TS\Interface\" -I "C:\Documents and          #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWire #
+#                    lessApp Demo Non Beacon (End Device)\SSM\TS\Interface\"  #
+#                    -I "C:\Documents and Settings\Administrator\Desktop\WSN_ #
+#                    Project\ENDDEV\MyWirelessApp Demo Non Beacon (End        #
 #                    Device)\SSM\TS\Source\" -I "C:\Documents and             #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWire #
+#                    lessApp Demo Non Beacon (End                             #
 #                    Device)\SSM\ZTC\Interface\" -I "C:\Documents and         #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
-#                    Device)\SSM\ZTC\Source\" -I "C:\Documents and            #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWire #
+#                    lessApp Demo Non Beacon (End Device)\SSM\ZTC\Source\"    #
+#                    -I "C:\Documents and Settings\Administrator\Desktop\WSN_ #
+#                    Project\ENDDEV\MyWirelessApp Demo Non Beacon (End        #
 #                    Device)\PLM\Interface\" -I "C:\Documents and             #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
-#                    Device)\PLM\LibInterface\" -I "C:\Documents and          #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWire #
+#                    lessApp Demo Non Beacon (End Device)\PLM\LibInterface\"  #
+#                    -I "C:\Documents and Settings\Administrator\Desktop\WSN_ #
+#                    Project\ENDDEV\MyWirelessApp Demo Non Beacon (End        #
 #                    Device)\PLM\Source\Display\" -I "C:\Documents and        #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWire #
+#                    lessApp Demo Non Beacon (End                             #
 #                    Device)\PLM\Source\Keyboard\" -I "C:\Documents and       #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
-#                    Device)\PLM\Source\NVM\" -I "C:\Documents and            #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWire #
+#                    lessApp Demo Non Beacon (End Device)\PLM\Source\NVM\"    #
+#                    -I "C:\Documents and Settings\Administrator\Desktop\WSN_ #
+#                    Project\ENDDEV\MyWirelessApp Demo Non Beacon (End        #
 #                    Device)\PLM\Source\TMR\" -I "C:\Documents and            #
-#                    Settings\Administrator\Desktop\WSN Project\To use\TRUE   #
-#                    MyWirelessApp Demo Non Beacon (End                       #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
-#                    Device)\PLM\Source\UART\" -I "C:\Program Files\IAR       #
-#                    Systems\Embedded Workbench 5.4 Evaluation\arm\INC\"      #
-#                    --interwork --cpu_mode thumb -On                         #
-#    List file    =  C:\Documents and Settings\Administrator\Desktop\WSN      #
-#                    Project\To use\TRUE MyWirelessApp Demo Non Beacon (End   #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWire #
+#                    lessApp Demo Non Beacon (End Device)\PLM\Source\UART\"   #
+#                    -I "C:\Program Files\IAR Systems\Embedded Workbench 5.4  #
+#                    Evaluation\arm\INC\" --interwork --cpu_mode thumb -On    #
+#    List file    =  C:\Documents and Settings\Administrator\Desktop\WSN_Proj #
+#                    ect\ENDDEV\MyWirelessApp Demo Non Beacon (End            #
 #                    Device)\Debug\List\MApp_init.lst                         #
-#    Object file  =  C:\Documents and Settings\Administrator\Desktop\WSN      #
-#                    Project\To use\TRUE MyWirelessApp Demo Non Beacon (End   #
-#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#    Object file  =  C:\Documents and Settings\Administrator\Desktop\WSN_Proj #
+#                    ect\ENDDEV\MyWirelessApp Demo Non Beacon (End            #
 #                    Device)\Debug\Obj\MApp_init.o                            #
 #                                                                             #
 #                                                                             #
 ###############################################################################
 
-C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Application\Init\MApp_init.c
+C:\Documents and Settings\Administrator\Desktop\WSN_Project\ENDDEV\MyWirelessApp Demo Non Beacon (End Device)\Application\Init\MApp_init.c
       1          /*****************************************************************************
       2          * Applications' initialization module
       3          *
@@ -253,33 +220,34 @@ C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirele
      98            #if (gLpmIncluded_d == 1)
      99              /*do not allow the device to enter sleep mode*/
     100              PWR_DisallowDeviceToSleep();
+   \   00000038   ........           BL       PWR_DisallowDeviceToSleep
     101            #endif /* gLpmIncluded_d == 1 */
     102           
     103            /*All LED's are switched OFF*/
     104            Led1Off();
-   \   00000038   0021               MOVS     R1,#+0
-   \   0000003A   1720               MOVS     R0,#+23
-   \   0000003C   ........           BL       Gpio_SetPinData
+   \   0000003C   0021               MOVS     R1,#+0
+   \   0000003E   1720               MOVS     R0,#+23
+   \   00000040   ........           BL       Gpio_SetPinData
     105            Led2Off();
-   \   00000040   0021               MOVS     R1,#+0
-   \   00000042   1820               MOVS     R0,#+24
-   \   00000044   ........           BL       Gpio_SetPinData
+   \   00000044   0021               MOVS     R1,#+0
+   \   00000046   1820               MOVS     R0,#+24
+   \   00000048   ........           BL       Gpio_SetPinData
     106            Led3Off();
-   \   00000048   0021               MOVS     R1,#+0
-   \   0000004A   1920               MOVS     R0,#+25
-   \   0000004C   ........           BL       Gpio_SetPinData
+   \   0000004C   0021               MOVS     R1,#+0
+   \   0000004E   1920               MOVS     R0,#+25
+   \   00000050   ........           BL       Gpio_SetPinData
     107            Led4Off();
-   \   00000050   0021               MOVS     R1,#+0
-   \   00000052   2C20               MOVS     R0,#+44
-   \   00000054   ........           BL       Gpio_SetPinData
+   \   00000054   0021               MOVS     R1,#+0
+   \   00000056   2C20               MOVS     R0,#+44
+   \   00000058   ........           BL       Gpio_SetPinData
     108            
     109            /* Start the task scheduler. Does not return. */
     110            TS_Scheduler(); 
-   \   00000058   ........           BL       TS_Scheduler
+   \   0000005C   ........           BL       TS_Scheduler
     111           
     112          }
-   \   0000005C   09BC               POP      {R0,R3}
-   \   0000005E   1847               BX       R3               ;; return
+   \   00000060   09BC               POP      {R0,R3}
+   \   00000062   1847               BX       R3               ;; return
     113          #if gNvStorageIncluded_d
     114          
 
@@ -434,14 +402,19 @@ C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirele
     182            #if (gLpmIncluded_d == 1)
     183            /*Low power management*/
     184              if(PWR_CheckIfDeviceCanGoToSleep())
+   \   00000008   ........           BL       PWR_CheckIfDeviceCanGoToSleep
+   \   0000000C   0028               CMP      R0,#+0
+   \   0000000E   01D0               BEQ      ??IdleTask_0
     185                {
     186                PWR_EnterLowPower();
+   \   00000010   ........           BL       PWR_EnterLowPower
     187                }
     188            #endif /*gLpmIncluded_d*/ 
     189          }
-   \   00000008   10BC               POP      {R4}
-   \   0000000A   08BC               POP      {R3}
-   \   0000000C   1847               BX       R3               ;; return
+   \                     ??IdleTask_0:
+   \   00000014   10BC               POP      {R4}
+   \   00000016   08BC               POP      {R3}
+   \   00000018   1847               BX       R3               ;; return
     190          
     191          
     192          /*****************************************************************************
@@ -632,10 +605,10 @@ C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirele
      gAppTaskID_c                                      1
      gPowerSaveMode                                    1
      receiverOn                                        1
-     Main                                             96
+     Main                                            100
      BUtl_SetReceiverOff                              94
      BUtl_SetReceiverOn                               52
-     IdleTask                                         14
+     IdleTask                                         26
      Init_MacExtendedAddress                         100
      BeeAppAssert                                     18
      Swap2Bytes                                       24
@@ -649,9 +622,9 @@ C:\Documents and Settings\Administrator\Desktop\WSN Project\To use\TRUE MyWirele
  
    3 bytes in section .bss
    8 bytes in section .rodata
- 418 bytes in section .text
+ 434 bytes in section .text
  
- 418 bytes of CODE  memory
+ 434 bytes of CODE  memory
    8 bytes of CONST memory
    3 bytes of DATA  memory
 

@@ -57,6 +57,10 @@
 //   6: CPU Sleep: Doze, Wake-up on Wakeup Timer
 //   7: CPU Sleep: Doze, Wake-up on either KBI(gKeyBoardSupported_d) or Wakeup Timer
 //   8: CPU Sleep: Doze, Wake-up on either KBI(gKeyBoardSupported_d) or Wakeup Timer with runtime configurable wake-up timeout
+/* 
+  WSNProject: valore di cPWR_DeepSleepMode = 7 ok per brevi sleep times
+  corrisponde al Mode4 [FSPRM_CODE.pdf - p.42]
+*/
 #define cPWR_DeepSleepMode                      7
 
 // Maximum number of configurable deep sleep modes
@@ -67,6 +71,7 @@
 // The way that Sleep mode are handled. Following possibilities exist:
 //   0: No Sleep done, but PTC application can set modes
 //   1: Doze mode on RADIO with clock enabled and WAIT on MCU
+/* WSNProject: valore di cPWR_SleepMode ok a 1 perchè permette lo sleep mode */ 
 #define cPWR_SleepMode                          1
 
 // Maximum number of configurable deep sleep modes
@@ -84,7 +89,14 @@
 //                                                             |   6.36 HOURS @ 24 MHz |
 //                                                             |   5.87 HOURS @ 26 MHz |
 //   
-#define cPWR_SleepTimeoutMs                     10000
+
+
+/* WSNProject ************************************************************************************
+   dovrebbe essere il valore del timer, quello indicato in FSPRM p.42 come cPWR_RTITickTime.
+*/
+#define cPWR_SleepTimeoutMs                                 500//WSNProject: default value: 10000
+/*************************************************************************************************/
+
 
 //-----------------------------------------------------------------------------
 //   Milliseconds to WakeUp timer ticks.

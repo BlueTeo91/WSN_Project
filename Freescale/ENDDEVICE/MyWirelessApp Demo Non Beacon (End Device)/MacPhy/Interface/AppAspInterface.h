@@ -74,6 +74,9 @@ enum {
 #define gAspPowerLevel_4d5dBm_c  (uint8_t)gAspPowerLevel_4d5dBm
 
 /* Legacy default 0dBm value */
+/* WSNProject il valore di riferimento per la potenza di Tx è 0dBm
+  (lasciato invariato)
+*/
 #define gAspPowerLevel_0dBm_c    gAspPowerLevel_m1dBm_c
 
   // Valid values for aspSetNotifyReq_t->notifications.

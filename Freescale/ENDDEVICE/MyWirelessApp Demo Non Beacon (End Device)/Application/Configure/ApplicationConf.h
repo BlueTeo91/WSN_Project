@@ -28,7 +28,15 @@
 
 /* Defines whether or not the LPM module is included in the application */
 #ifndef gLpmIncluded_d
-#define gLpmIncluded_d FALSE
+/******************************************************************************
+  WSNProject: Set gLpmIncluded_d to FALSE in 802.15.4 MAC Codebase to disable 
+  low power mode. 
+  All the low-power code will be compiled out if gLpmIncluded_d is FALSE. 
+  Low power can be disabled at run-time using PWR_DisallowDeviceToSleep() 
+  from the application, however this will not save code space.
+*/
+#define gLpmIncluded_d TRUE //WSNProject: default value: FALSE
+/*****************************************************************************/
 #endif
 
 /*****************************************************************************

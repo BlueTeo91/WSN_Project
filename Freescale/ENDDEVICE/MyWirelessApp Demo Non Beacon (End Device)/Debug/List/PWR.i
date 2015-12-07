@@ -141,6 +141,16 @@ void BeeAppAssert(assertCode_t code);
 
 
 
+ 
+
+
+
+
+
+
+
+
+  
 
 
 
@@ -160,6 +170,8 @@ void BeeAppAssert(assertCode_t code);
 
 
 
+ 
+ 
 
 
 
@@ -281,6 +293,7 @@ typedef enum {StackPS_Running=122, StackPS_Sleep, StackPS_DeepSleep}      PWRLib
 
 
 
+
 typedef  union {
   uint8_t AllBits;
   struct {
@@ -346,6 +359,7 @@ extern void PWRLib_Reset(void);
 
 
   
+
 void PWR_AllowDeviceToSleep(void);
 
 
@@ -401,6 +415,7 @@ bool_t PWR_CheckIfDeviceCanGoToSleep( void );
 
 
  
+
 PWRLib_WakeupReason_t PWR_EnterLowPower(void);
  
 
@@ -413,6 +428,7 @@ PWRLib_WakeupReason_t PWR_EnterLowPower(void);
 
 
  
+
 void PWR_CheckForAndEnterNewPowerState_Init(void);
 
 
@@ -3235,6 +3251,9 @@ enum {
 
  
 
+
+ 
+
   
 enum {
   gAspNotifyNone_c,         
@@ -4360,7 +4379,7 @@ PWRLib_WakeupReason_t  PWR_HandleDeepSleep( zbClock24_t  DozeDuration) {
          wuCtrl.wuSource = gTimerWu_c;
          wuCtrl. ctrl . timer . timerWuEn = 1;
          wuCtrl. ctrl . timer . timerWuIntEn = 0;
-         wuCtrl. ctrl . timer . timeOut = ( (7 < 5) ? ( ((((crmSysCntlReg_t*)&((CrmRegs_t *)0x80003000)->SysCntl)->bit . xtal32Exists == 1) && (((crmXtal32CntlReg_t*)&((CrmRegs_t *)0x80003000)->Xtal32Cntl)->bit . xtal32En == 1)) ? (uint32_t)((10000) * 32) : (uint32_t)((10000) * 2) ) : (uint32_t)(( (uint64_t)(10000) * 24000) / 128) );
+         wuCtrl. ctrl . timer . timeOut = ( (7 < 5) ? ( ((((crmSysCntlReg_t*)&((CrmRegs_t *)0x80003000)->SysCntl)->bit . xtal32Exists == 1) && (((crmXtal32CntlReg_t*)&((CrmRegs_t *)0x80003000)->Xtal32Cntl)->bit . xtal32En == 1)) ? (uint32_t)((500) * 32) : (uint32_t)((500) * 2) ) : (uint32_t)(( (uint64_t)(500) * 24000) / 128) );
          CRM_WuCntl(&wuCtrl);
         } 
         
