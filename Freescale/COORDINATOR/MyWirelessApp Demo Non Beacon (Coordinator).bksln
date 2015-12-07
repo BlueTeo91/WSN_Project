@@ -1,0 +1,1157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sln:solution displayName="MyWirelessApp Demo Non Beacon (Coordinator)" codebaseVersion="V01.00" xmlns:temp="http://freescale.com/ns/beekit/componentTemplate" xmlns:sln="http://freescale.com/ns/beekit/solution" xmlns="http://freescale.com/ns/beekit/solution" xmlns:mac="http://freescale.com/ns/beekit/mac" xmlns:MacApps="http://freescale.com/ns/beekit/MacApps" xmlns:MyWirelessApp="http://freescale.com/ns/beekit/MyWirelessApp" xmlns:MyWirelessAppEx06a="http://freescale.com/ns/beekit/MyWirelessAppEx06a" xmlns:ssm="http://freescale.com/ns/beekit/ssm" xmlns:plm="http://freescale.com/ns/beekit/plm">
+  <sln:description></sln:description>
+  <sln:projects>
+    <sln:project wizard="BeeKitARM7MACWizardV07" displayName="MyWirelessApp Demo Non Beacon (Coordinator)">
+      <sln:description>Template application</sln:description>
+      <sln:components>
+        <mac:component displayName="MacStandalone" version="V01.00" maxUsage="1" xmlns:temp="http://freescale.com/ns/beekit/componentTemplate" xmlns:mac="http://freescale.com/ns/beekit/mac" xmlns:plm="http://freescale.com/ns/beekit/plm" xmlns="http://freescale.com/ns/beekit/mac">
+          <temp:description>
+            <p>
+  		The 802.15.4 MAC/PHY component is an implementation of the IEEE 802.15.4 physical layer (PHY) and medium access control (MAC) sublayer used for low data rate wireless connectivity with fixed, portable, and moving devices with no battery or very limited battery consumption requirements typically operating in the personal operating space (POS).
+  	</p>
+            <p>
+  			The MAC/PHY component is provided as a library.
+  	</p>
+          </temp:description>
+          <mac:properties>
+            <mac:Version displayName="IEEE 802.15.4 Standard Version">
+              <temp:description>Select MAC IEEE 802.15.4 Standard Version<br />
+      Select beween MAC 2003 and MAC 2006 IEEE 802.15.4 Standard versions.
+	  Note: changing this property after the first solution export requires a re-import into CodeWarrior of the xml project file.
+	</temp:description>
+              <mac:value>MAC-2003</mac:value>
+            </mac:Version>
+          </mac:properties>
+          <temp:files>
+            <temp:file version="1.0" source=".\Generic\Interface\AppAspInterface.h" destination=".\MacPhy\Interface\AppAspInterface.h" />
+            <temp:file version="1.0" source=".\Generic\Interface\AppMacInterrupt.h" destination=".\MacPhy\Interface\AppMacInterrupt.h" />
+            <temp:file version="1.0" source=".\Generic\Interface\FunctionalityDefines.h" destination=".\MacPhy\Interface\FunctionalityDefines.h" />
+            <temp:file version="1.0" source=".\Generic\Interface\FunctionLib.h" destination=".\MacPhy\Interface\FunctionLib.h" />
+            <temp:file version="1.0" source=".\Generic\Interface\MacPhy.h" destination=".\MacPhy\Interface\MacPhy.h" />
+            <temp:file version="1.0" source=".\Generic\Interface\MacPhyFLib.h" destination=".\MacPhy\Interface\MacPhyFLib.h" />
+            <temp:file version="1.0" source=".\Generic\Interface\MacPhyGlobalHdr.h" destination=".\MacPhy\Interface\MacPhyGlobalHdr.h" />
+            <temp:file version="1.0" source=".\Generic\Interface\MacPhyInit.h" destination=".\MacPhy\Interface\MacPhyInit.h" />
+            <temp:file version="1.0" source=".\Generic\Interface\MsgSystem.h" destination=".\MacPhy\Interface\MsgSystem.h" />
+            <temp:file version="1.0" source=".\Generic\Interface\MsgSystemDbg.h" destination=".\MacPhy\Interface\MsgSystemDbg.h" />
+            <temp:file version="1.0" source=".\Generic\Interface\NwkMacInterface.h" destination=".\MacPhy\Interface\NwkMacInterface.h" />
+            <temp:file version="1.0" source=".\Generic\Interface\PhyMacMsg.h" destination=".\MacPhy\Interface\PhyMacMsg.h" />
+            <temp:file version="1.0" source=".\Generic\Interface\PublicConst.h" destination=".\MacPhy\Interface\PublicConst.h" />
+            <temp:file version="1.0" source=".\Generic\Interface\SecurityLib.h" destination=".\MacPhy\Interface\SecurityLib.h" />
+            <temp:file version="1.0" source=".\Generic\Interface\Telec.h" destination=".\MacPhy\Interface\Telec.h" />
+            <temp:file version="1.0" source=".\ARM7\Libs\MACPHY_MC13224.a" destination=".\MacPhy\Libs\MACPHY_MC13224.a" includeCondition="((//mac:Version/mac:value = 'MAC-2003') and (//plm:McuVersion/plm:value = 'MC13224'))" />
+            <temp:file version="1.0" source=".\ARM7\Libs\MACPHY_MC13226.a" destination=".\MacPhy\Libs\MACPHY_MC13226.a" includeCondition="((//mac:Version/mac:value = 'MAC-2003') and (//plm:McuVersion/plm:value = 'MC13226'))" />
+            <temp:file version="1.0" source=".\ARM7\Libs\MACPHY_MAC2006_MC13224.a" destination=".\MacPhy\Libs\MACPHY_MAC2006_MC13224.a" includeCondition="((//mac:Version/mac:value = 'MAC-2006') and (//plm:McuVersion/plm:value = 'MC13224'))" />
+            <temp:file version="1.0" source=".\ARM7\Libs\MACPHY_MAC2006_MC13226.a" destination=".\MacPhy\Libs\MACPHY_MAC2006_MC13226.a" includeCondition="((//mac:Version/mac:value = 'MAC-2006') and (//plm:McuVersion/plm:value = 'MC13226'))" />
+          </temp:files>
+          <temp:components>
+            <MacApps:component displayName="MacApps" version="V01.00" maxUsage="1" xmlns:temp="http://freescale.com/ns/beekit/componentTemplate" xmlns:MacApps="http://freescale.com/ns/beekit/MacApps" xmlns="http://freescale.com/ns/beekit/MacApps" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://freescale.com/ns/beekit/MacApps Component.xsd">
+              <temp:description>The MacApps are integrated into the CodeBase as templates. This deliverable is source code, and can be used as example code. 
+  With its help, the user can easily create applications on top of the MAC layer. It is important to know that the MacApps source code is 
+  as hardware (and MCU) independent as possible. This makes it possible to make new hardware targets and even change Platform (MCU) with 
+  a minimal effort. </temp:description>
+              <temp:files>
+                <temp:file version="1.0" source=".\Generic\Init\MApp_init.c" destination=".\Application\Init\MApp_init.c" />
+                <temp:file version="1.0" source=".\Generic\Init\MApp_init.h" destination=".\Application\Init\MApp_init.h" />
+                <temp:file version="1.0" source=".\Generic\Init\MacInit.c" destination=".\Application\Init\MacInit.c" />
+                <temp:file version="1.0" source=".\Generic\Init\MacInit.h" destination=".\Application\Init\MacInit.h" />
+                <temp:file version="1.0" source=".\Generic\Interface\802_15_4.h" destination=".\Application\Interface\802_15_4.h" />
+                <temp:file version="1.0" source=".\Generic\Interface\BeeCommon.h" destination=".\Application\Interface\BeeCommon.h" />
+                <temp:file version="1.0" source=".\Generic\Interface\Mac_Globals.h" destination=".\Application\Interface\Mac_Globals.h" />
+                <temp:file version="1.0" source=".\Generic\Interface\MacTaskTbl.h" destination=".\Application\Interface\MacTaskTbl.h" />
+                <temp:file version="1.0" source=".\Generic\Configure\GlobalVars.c" destination=".\Application\Configure\GlobalVars.c" />
+                <temp:file version="1.0" source=".\Generic\Configure\ApplicationConf.h" destination=".\Application\Configure\ApplicationConf.h">
+                  <temp:description />
+                  <MacApps:properties>
+                    <MacApps:Channel displayName="Channel" editor="ChannelEditor">
+                      <temp:description>
+            Default value of the channel(s) in which the device is willing to operate.
+            This is used when starting up the network.<br />
+            The value is a bit mask, each bit representing a channel. For the 2.4 GHz band
+            only channels 11 to 26 are allowed. In order to select multiple channels, the bitwise OR  operation is performed on the selected channels values.<br /> 
+            Based on the selection criteria one of the channels will be chosen and the device will run only on this
+            one channel.<br /><table border="1" width="17%"><tr><td width="61" bgcolor="#C0C0C0"><font size="1">Channel</font></td><td bgcolor="#C0C0C0"><font size="1">Value</font></td></tr><tr><td width="61"><font size="1">11</font></td><td><font size="1">0x00000800</font></td></tr><tr><td width="61"><font size="1">12</font></td><td><font size="1">0x00001000</font></td></tr><tr><td width="61"><font size="1">13</font></td><td><font size="1">0x00002000</font></td></tr><tr><td width="61"><font size="1">14</font></td><td><font size="1">0x00004000</font></td></tr><tr><td width="61"><font size="1">15</font></td><td><font size="1">0x00008000</font></td></tr><tr><td width="61"><font size="1">16</font></td><td><font size="1">0x00010000</font></td></tr><tr><td width="61"><font size="1">17</font></td><td><font size="1">0x00020000</font></td></tr><tr><td width="61"><font size="1">18</font></td><td><font size="1">0x00040000</font></td></tr><tr><td width="61"><font size="1">19</font></td><td><font size="1">0x00080000</font></td></tr><tr><td width="61"><font size="1">20</font></td><td><font size="1">0x00100000</font></td></tr><tr><td width="61"><font size="1">21</font></td><td><font size="1">0x00200000</font></td></tr><tr><td width="61"><font size="1">22</font></td><td><font size="1">0x00400000</font></td></tr><tr><td width="61"><font size="1">23</font></td><td><font size="1">0x00800000</font></td></tr><tr><td width="61"><font size="1">24</font></td><td><font size="1">0x01000000</font></td></tr><tr><td width="61"><font size="1">25</font></td><td><font size="1">0x02000000</font></td></tr><tr><td width="61"><font size="1">26</font></td><td><font size="1">0x04000000</font></td></tr></table></temp:description>
+                      <temp:regExLib name="define" param1="mDefaultValueOfChannel_c" />
+                      <temp:format base="hex" />
+                      <MacApps:value>134215680</MacApps:value>
+                    </MacApps:Channel>
+                    <MacApps:ExtendedAddress displayName="Extended address" editor="BigEndianHexEditorConfigurable">
+                      <temp:description>
+            The extended address to be assigned to the device. Each device must have a unique address.<br />
+            
+            This property must be entered in Little Endian byte order.
+
+            <br />For example, if the Address found on the boards is shown as eg. MAC: 0x 00 50 C2 37 B0 04 05 A9 then the Extended address property must be entered as: 0xA9,0x05,0x04,0xB0,0x37,0xC2,0x50,0x00. 
+          </temp:description>
+                      <temp:regExLib name="define" param1="mDefaultValueOfExtendedAddress_c" />
+                      <MacApps:value>0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF</MacApps:value>
+                    </MacApps:ExtendedAddress>
+                    <MacApps:LPMIncluded displayName="Low power mode enabled">
+                      <temp:description>
+            This property defines whether or not the LPM (Low Power Module) will be included in the application.
+          </temp:description>
+                      <temp:regExLib name="define" param1="gLpmIncluded_d" />
+                      <MacApps:value>false</MacApps:value>
+                    </MacApps:LPMIncluded>
+                  </MacApps:properties>
+                </temp:file>
+                <temp:file version="1.0" source=".\Generic\Source\UartUtil\UartUtil.c" destination=".\Application\UartUtil\UartUtil.c" />
+                <temp:file version="1.0" source=".\Generic\Source\UartUtil\UartUtil.h" destination=".\Application\UartUtil\UartUtil.h" />
+                <temp:file version="1.0" source=".\Generic\Configure\getSP.s" destination=".\Application\Configure\getSP.s" />
+                <temp:file version="1.0" source=".\Generic\Configure\AppToMacPhyConfig.h" destination=".\Application\Configure\AppToMacPhyConfig.h" />
+                <temp:file version="1.0" source=".\Generic\Configure\AppToPlatformConfig.h" destination=".\Application\Configure\AppToPlatformConfig.h" />
+              </temp:files>
+              <temp:components>
+                <MyWirelessApp:component displayName="MyWirelessApp" version="V01.00" maxUsage="1" xmlns:temp="http://freescale.com/ns/beekit/componentTemplate" xmlns:MyWirelessApp="http://freescale.com/ns/beekit/MyWirelessApp" xmlns="http://freescale.com/ns/beekit/MyWirelessApp" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://freescale.com/ns/beekit/MyWirelessApp Component.xsd">
+                  <temp:description>    
+     
+    The demo applications are presented below:<br /><blockquote>
+    	MyWirelessAppDemoFramework             - Initialization and main loop.<br /> 
+    	MyWirelessAppDemoNonBeaconCoordinator  - Coordinator sends indirect data to device.<br />
+    	MyWirelessAppDemoNonBeaconEndDevice    - Device polls for data from the coordinator.<br /></blockquote><p>
+    	MyWirelessAppDemoFramework application is the first in a series of demo applications. The purpose of the series is to demonstrate how the features of the 802.15.4 stack can be used to create a simple point to point network. We will end up with two applications: 
+    	<blockquote>
+    	1) A device which is able to discover a PAN coordinator, associate to it, and transmit/receive data.<br /> 
+    	2) A coordinator which is able to start a network (PAN), accept associations from devices, and transmit/receive data. <br /></blockquote></p><p>
+    Throughout this series of applications the included UART module is used for printing out status messages to the RS232 console. The serial port on your PC must be configured to 8 data bits, 1 stop bit and no parity. The Baud Rate is user selectable. <br /></p></temp:description>
+                  <temp:components>
+                    <MyWirelessAppEx06a:component displayName="MyWirelessAppDemoNonBeaconCoordinator" version="V01.00" maxUsage="1" xmlns:temp="http://freescale.com/ns/beekit/componentTemplate" xmlns:MyWirelessAppEx06a="http://freescale.com/ns/beekit/MyWirelessAppEx06a" xmlns="http://freescale.com/ns/beekit/MyWirelessAppEx06a" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://freescale.com/ns/beekit/MyWirelessAppEx06a Component.xsd">
+                      <temp:description>    
+     
+    The demo applications are presented below:<br /><blockquote>
+    	MyWirelessAppDemoFramework             - Initialization and main loop.<br /> 
+    	MyWirelessAppDemoNonBeaconCoordinator  - Coordinator sends indirect data to device. == This Application ==<br />
+    	MyWirelessAppDemoNonBeaconEndDevice    - Device polls for data from the coordinator.<br /></blockquote><p>
+    	This example will demonstrate indirect data transfer from the coordinator to the  device. Data sent to the device is not transmitted immediately but put into  a queue in the MAC. 
+       Here it resides until the device sends a poll request. The poll request is initiated by the network or application layer on the device.
+       To test the data transfer from the coordinator to the device, both should be connected to a PC with a RS232 terminal. 
+       When sending an ASCII file (send as text) from the terminal of the coordinator, the file will be  printed to the terminal connected to the device. 
+       It resembles a bidirectional  wireless RS232 cable replacement (though, without error checking and flow control in this simple example).
+
+    </p><p>
+    Throughout this series of applications the included UART module is used for printing out status messages to the RS232 console. The serial port on your PC must be configured to 8 data bits, 1 stop bit and no parity. The Baud Rate is user selectable.
+    </p></temp:description>
+                      <temp:files>
+                        <temp:file version="1.0" source=".\Source\MApp.c" destination=".\Application\Source\MApp.c" />
+                        <temp:file version="1.0" source=".\Source\MApp.h" destination=".\Application\Source\MApp.h">
+                          <temp:description />
+                          <MyWirelessAppEx06a:properties>
+                            <MyWirelessAppEx06a:mDefaultValueOfShortAddress_c displayName="Short address" editor="BeeKitNativeBigEndianHexEditorV02">
+                              <temp:description>
+            This property specifies the default value for the short address of the coordinator. It can be set to any value in the range 0x0000 - 0xFFFD.<br />
+            Note: A value of 0xFFFE can not be used because it is sent to a device that has associated but has not been allocated an address.<br />
+            Note: A value of 0xFFFF can not be used because it indicates that the node short address is not initialized.
+          </temp:description>
+                              <temp:regExLib name="define" param1="mDefaultValueOfShortAddress_c" />
+                              <temp:format base="hex" />
+                              <MyWirelessAppEx06a:value>51966</MyWirelessAppEx06a:value>
+                            </MyWirelessAppEx06a:mDefaultValueOfShortAddress_c>
+                            <MyWirelessAppEx06a:mDefaultValueOfPanId_c displayName="PAN ID" editor="BeeKitNativeBigEndianHexEditorV02">
+                              <temp:description>
+            This property specifies the default value for the PAN ID of the coordinator. It can be set to any value in the range of 0x0000 - 0xFFFE.<br />
+            Note: A value of 0xFFFF can not be used because it indicates that a device is not associated.
+          </temp:description>
+                              <temp:regExLib name="define" param1="mDefaultValueOfPanId_c" />
+                              <temp:format base="hex" />
+                              <MyWirelessAppEx06a:value>48879</MyWirelessAppEx06a:value>
+                            </MyWirelessAppEx06a:mDefaultValueOfPanId_c>
+                            <MyWirelessAppEx06a:MaxPackets displayName="Maximum number of pending data packets">
+                              <temp:description>
+            This property specifies the default number of data packets that can remain in the indirect queue of the coordinator. This can be adjusted based on application needs. It can be any value in the range of 1 to 4. 
+          </temp:description>
+                              <temp:regExLib name="define" param1="mDefaultValueOfMaxPendingDataPackets_c" />
+                              <MyWirelessAppEx06a:value>2</MyWirelessAppEx06a:value>
+                            </MyWirelessAppEx06a:MaxPackets>
+                          </MyWirelessAppEx06a:properties>
+                        </temp:file>
+                      </temp:files>
+                      <temp:components />
+                    </MyWirelessAppEx06a:component>
+                  </temp:components>
+                </MyWirelessApp:component>
+              </temp:components>
+            </MacApps:component>
+          </temp:components>
+        </mac:component>
+        <ssm:component displayName="Software Support Modules" version="V01.00" maxUsage="1" xmlns:temp="http://freescale.com/ns/beekit/componentTemplate" xmlns:ssm="http://freescale.com/ns/beekit/ssm" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:sln="http://freescale.com/ns/beekit/solution" xmlns="http://freescale.com/ns/beekit/ssm">
+          <temp:description>The Software Support Module (SSM) is a collection of hardware independent modules that are not specifically releated to any standard or specification (like IEEE 802.15.4 MAC/PHY or ZigBee). The SSM includes such modules as the Task Scheduler (TS) and the ZTC (ZigBee Test Client) protocol implementation.</temp:description>
+          <ssm:properties>
+            <ssm:ZTCenabled displayName="ZTC: ZTC enabled">
+              <temp:description>
+        Disable or enable ZTC support<br /><br />
+        ZTC allows external tools, such as the Test Tool, to monitor messages (requests and responses) passing through the SAP Handlers between stack layers, and to inject messages for testing.<br />
+        ZTC also provide an interface for sending and receiving mesages in the application.<br /><br />
+        Note: It is not recommended to enable this module, unless you are a ZigBee expert and understand the 802.15.4 and ZigBee specification in detail.<br />
+        Behavior can be:<br />
+        1. It can change timing and throughput of the stack.<br />
+        2. packets can be missed and the stack configured to malfunction.<br /><br />
+        Note: Changing this property requires re-import of the project xml file.
+      </temp:description>
+              <ssm:value>false</ssm:value>
+            </ssm:ZTCenabled>
+          </ssm:properties>
+          <temp:files>
+            <temp:file version="1.0" source=".\Generic\TS\Interface\TS_Interface.h" destination=".\SSM\TS\Interface\TS_Interface.h">
+              <temp:description />
+              <ssm:properties>
+                <ssm:TsMaxTasks displayName="TS: Number of tasks">
+                  <temp:description>
+            Maximum number of tasks in the task table. minimum 14 is need for a ZigBee solution.
+          </temp:description>
+                  <temp:regExLib name="define" param1="gTsMaxTasks_c" />
+                  <ssm:value>14</ssm:value>
+                </ssm:TsMaxTasks>
+              </ssm:properties>
+            </temp:file>
+            <temp:file version="1.0" source=".\Generic\TS\Source\TS_kernel.h" destination=".\SSM\TS\Source\TS_kernel.h" />
+            <temp:file version="1.0" source=".\Generic\TS\Source\TS_kernel.c" destination=".\SSM\TS\Source\TS_kernel.c" />
+            <temp:file version="1.0" source=".\Generic\ZTC\Interface\AspZtc.h" destination=".\SSM\ZTC\Interface\aspZtc.h" />
+            <temp:file version="1.0" source=".\Generic\ZTC\Interface\LlcZtc.h" destination=".\SSM\ZTC\Interface\LlcZtc.h" />
+            <temp:file version="1.0" source=".\Generic\ZTC\Interface\ZTCInterface.h" destination=".\SSM\ZTC\Interface\ZTCInterface.h">
+              <temp:description />
+              <ssm:properties>
+                <ssm:ZtcMacGetSetPIBCapability displayName="ZTC: MAC Get/Set PIB Capability">
+                  <temp:description>
+          Enable MAC Get/Set PIB capability through ZTC.
+		  <br />
+          Note: Turning this on is only useful if gSAPMessagesEnableMlme_d is also on.
+        </temp:description>
+                  <temp:regExLib name="define" param1="gZtcMacGetSetPIBCapability_d" />
+                  <ssm:value>true</ssm:value>
+                </ssm:ZtcMacGetSetPIBCapability>
+                <ssm:SAPMessagesEnableMcps displayName="ZTC: MCPS SAP Capability">
+                  <temp:description>
+          Enable MCPS SAP capability through ZTC.
+        </temp:description>
+                  <temp:regExLib name="define" param1="gSAPMessagesEnableMcps_d" />
+                  <ssm:value>true</ssm:value>
+                </ssm:SAPMessagesEnableMcps>
+                <ssm:SAPMessagesEnableMlme displayName="ZTC: MLME SAP Capability">
+                  <temp:description>
+          Enable MLME SAP capability through ZTC.
+        </temp:description>
+                  <temp:regExLib name="define" param1="gSAPMessagesEnableMlme_d" />
+                  <ssm:value>true</ssm:value>
+                </ssm:SAPMessagesEnableMlme>
+                <ssm:SAPMessagesEnableAsp displayName="ZTC: ASP SAP Capability">
+                  <temp:description>
+          Enable ASP (Application Support in the MAC) SAP capability through ZTC.
+        </temp:description>
+                  <temp:regExLib name="define" param1="gSAPMessagesEnableAsp_d" />
+                  <ssm:value>false</ssm:value>
+                </ssm:SAPMessagesEnableAsp>
+                <ssm:ZtcErrorReporting displayName="ZTC: Error Reporting Capability">
+                  <temp:description>
+          Enable Error reporting in ZTC.
+        </temp:description>
+                  <temp:regExLib name="define" param1="gZtcErrorReporting_d" />
+                  <ssm:value>false</ssm:value>
+                </ssm:ZtcErrorReporting>
+              </ssm:properties>
+            </temp:file>
+            <temp:file version="1.0" source=".\Generic\ZTC\Source\ZtcClientCommunication.c" destination=".\SSM\ZTC\Source\ZtcClientCommunication.c" />
+            <temp:file version="1.0" source=".\Generic\ZTC\Source\ZtcClientCommunication.h" destination=".\SSM\ZTC\Source\ZtcClientCommunication.h" />
+            <temp:file version="1.0" source=".\Generic\ZTC\Source\ZtcCopyData.c" destination=".\SSM\ZTC\Source\ZtcCopyData.c" />
+            <temp:file version="1.0" source=".\Generic\ZTC\Source\ZtcCopyData.h" destination=".\SSM\ZTC\Source\ZtcCopyData.h" />
+            <temp:file version="1.0" source=".\Generic\ZTC\Source\ZtcCopyDataTbl.h" destination=".\SSM\ZTC\Source\ZtcCopyDataTbl.h" />
+            <temp:file version="1.0" source=".\Generic\ZTC\Source\ZtcIBManagement.c" destination=".\SSM\ZTC\Source\ZtcIBManagement.c" />
+            <temp:file version="1.0" source=".\Generic\ZTC\Source\ZtcIBManagement.h" destination=".\SSM\ZTC\Source\ZtcIBManagement.h" />
+            <temp:file version="1.0" source=".\Generic\ZTC\Source\ZtcMacPIB.h" destination=".\SSM\ZTC\Source\ZtcMacPIB.h" />
+            <temp:file version="1.0" source=".\Generic\ZTC\Source\ZtcMain.c" destination=".\SSM\ZTC\Source\ZtcMain.c" />
+            <temp:file version="1.0" source=".\Generic\ZTC\Source\ZtcMsgTypeInfo.c" destination=".\SSM\ZTC\Source\ZtcMsgTypeInfo.c" />
+            <temp:file version="1.0" source=".\Generic\ZTC\Source\ZtcMsgTypeInfo.h" destination=".\SSM\ZTC\Source\ZtcMsgTypeInfo.h" />
+            <temp:file version="1.0" source=".\Generic\ZTC\Source\ZtcMsgTypeInfoTbl.h" destination=".\SSM\ZTC\Source\ZtcMsgTypeInfoTbl.h" />
+            <temp:file version="1.0" source=".\Generic\ZTC\Source\ZtcPrivate.h" destination=".\SSM\ZTC\Source\ZtcPrivate.h" />
+            <temp:file version="1.0" source=".\Generic\ZTC\Source\ZtcSAPHandlerInfo.c" destination=".\SSM\ZTC\Source\ZtcSAPHandlerInfo.c" />
+            <temp:file version="1.0" source=".\Generic\ZTC\Source\ZtcSAPHandlerInfo.h" destination=".\SSM\ZTC\Source\ZtcSAPHandlerInfo.h" />
+            <temp:file version="1.0" source=".\Generic\ZTC\Source\ZtcSAPHandlerInfoTbl.h" destination=".\SSM\ZTC\Source\ZtcSAPHandlerInfoTbl.h" />
+          </temp:files>
+          <temp:components />
+        </ssm:component>
+        <plm:component displayName="Platform" version="V01.00" maxUsage="1" xmlns:temp="http://freescale.com/ns/beekit/componentTemplate" xmlns:plm="http://freescale.com/ns/beekit/plm" xmlns="http://freescale.com/ns/beekit/plm" xmlns:mac="http://freescale.com/ns/beekit/mac" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://freescale.com/ns/beekit/plm Component.xsd">
+          <temp:description>The BeeKit software packet is intended to work on current and future hardware and MCU platforms. This is made possible by isolating application software, SMAC, MAC and BeeStack as much as possible from the hardware. This is accomplished by calling hardware dependant functions in the Platform software (PLM) in contrast to using macros and defines all around in the code.</temp:description>
+          <plm:properties>
+            <plm:Target displayName="Target hardware">
+              <temp:description>Select ARM7 target hardware<br />
+		Note: changing this property after the first solution export requires a re-import into IAR Embedded Workbench of the project file.
+      </temp:description>
+              <plm:value>MC1322x Network Node</plm:value>
+            </plm:Target>
+            <plm:McuVersion displayName="MCU Version">
+              <temp:description>Select MC1322x MCU Version<br />
+        The MC13224 MCU is the first version of the MC1322x SiP which contains only portions of the 802.15.4 MAC code in the MCU ROM.
+        The MC13226 MCU released in 2010 also contains BeeStack code in the MCU ROM which allows for larger applications to be loaded into the MCU flash memory.
+		Note: changing this property after the first solution export requires a re-import into IAR Embedded Workbench of the project file.
+      </temp:description>
+              <plm:value>MC13224</plm:value>
+            </plm:McuVersion>
+          </plm:properties>
+          <temp:files>
+            <temp:file version="1.0" source=".\Generic\Interface\Debug.h" destination=".\PLM\Interface\Debug.h" />
+            <temp:file version="1.0" source=".\Generic\Interface\Delay.h" destination=".\PLM\Interface\Delay.h" />
+            <temp:file version="1.0" source=".\Generic\Interface\Display.h" destination=".\PLM\Interface\Display.h">
+              <temp:description />
+              <plm:properties>
+                <plm:gLCDSupported_d displayName="Display module enabled">
+                  <temp:description>
+				This parameter enables or disables the complete display module. If set to True, the display module is enabled and if set to False
+				the complete module is disabled. Currently this property will only have effect on MC1322x Network Node target
+          </temp:description>
+                  <temp:regExLib name="define" param1="gLCDSupported_d" />
+                  <plm:value>true</plm:value>
+                </plm:gLCDSupported_d>
+              </plm:properties>
+            </temp:file>
+            <temp:file version="1.0" source=".\Generic\Interface\EmbeddedTypes.h" destination=".\PLM\Interface\EmbeddedTypes.h" />
+            <temp:file version="1.0" source=".\Generic\Interface\Keyboard.h" destination=".\PLM\Interface\Keyboard.h">
+              <temp:description />
+              <plm:properties>
+                <plm:gKeyBoardSupported_d displayName="Switches enabled">
+                  <temp:description>
+            This parameter enables or disables the switches in the Keyboard module. If set to True, the Keyboard module is enabled.
+            If both switches and joystick properties are set to False the complete Keyboard module is disabled and the remaining parameters for this module will have no effect.
+          </temp:description>
+                  <temp:regExLib name="define" param1="gKeyBoardSupported_d" />
+                  <plm:value>true</plm:value>
+                </plm:gKeyBoardSupported_d>
+                <plm:gJoystickSupported_d displayName="Joystick enabled">
+                  <temp:description>
+            This parameter enables or disables the joystick in the Keyboard module. If set to True, the Keyboard module is enabled.
+            If both switches and joystick properties are set to False the complete Keyboard module is disabled and the remaining parameters for this module will have no effect.
+          </temp:description>
+                  <temp:regExLib name="define" param1="gJoystickSupported_d" />
+                  <plm:value>true</plm:value>
+                </plm:gJoystickSupported_d>
+                <plm:mKeySCAN_c displayName="Key scan interval">
+                  <temp:description>
+            A short key will be returned if a key is held down for this number of milliseconds. The default value of this property is 50 milliseconds.<br />
+            Make sure this constant is long enough for debounce time.
+          </temp:description>
+                  <temp:regExLib name="define" param1="gKeyScanInterval_c" />
+                  <plm:value>50</plm:value>
+                </plm:mKeySCAN_c>
+                <plm:mLongKeySCAN_c displayName="Long key press duration">
+                  <temp:description>
+            A long key will be returned if the key is held down for at least (Long key press duration)*(Key Scan Interval)miliseconds.
+            The default value of this property is 20.<br />
+            Default period for a long key is: 20*50 = 1000 milliseconds or 1 second.
+          </temp:description>
+                  <temp:regExLib name="define" param1="gLongKeyIterations_c" />
+                  <plm:value>20</plm:value>
+                </plm:mLongKeySCAN_c>
+              </plm:properties>
+            </temp:file>
+            <temp:file version="1.0" source=".\Generic\Interface\Led.h" destination=".\PLM\Interface\Led.h">
+              <temp:description />
+              <plm:properties>
+                <plm:gLEDSupported_d displayName="LED module enabled">
+                  <temp:description>
+            This parameter enables or disables the complete LED module. If set to True, the LED module is enabled and if set to False
+            the module is disabled. If set to False the remaining parameters for this module will have no effect.
+          </temp:description>
+                  <temp:regExLib name="define" param1="gLEDSupported_d" />
+                  <plm:value>true</plm:value>
+                </plm:gLEDSupported_d>
+                <plm:LEDBlip displayName="LED blip enabled">
+                  <temp:description>
+            This parameter enables or disables the LED blip (short blink) in the LED module.
+            Note: Setting this parameter to True will increase code size.
+          </temp:description>
+                  <temp:regExLib name="define" param1="gLEDBlipEnabled_d" />
+                  <plm:value>false</plm:value>
+                </plm:LEDBlip>
+                <plm:mLEDInterval_c displayName="Flash interval">
+                  <temp:description>
+            Interval time for toggling the LED which is used for flashing. The flashing duty cycle is 50%. The unit is milliseconds and the allowed range is 0-262140 ms.
+          </temp:description>
+                  <temp:regExLib name="define" param1="mLEDInterval_c" />
+                  <plm:value>100</plm:value>
+                </plm:mLEDInterval_c>
+              </plm:properties>
+            </temp:file>
+            <temp:file version="1.0" source=".\Generic\Interface\Led_MC1322x.h" destination=".\PLM\Interface\Led_MC1322x.h">
+              <temp:description />
+              <plm:properties>
+                <plm:LED1_PIN_TARGET displayName="LED 1 GPIO pin" editor="BeeKitARM7PlatformEditorV05">
+                  <temp:description>
+			Set a specific GPIO pin for LED 1 of a custom MC1322x board. <br />To change the setting launch the User Defined Target Editor by pressing the [...] button on the right side of the property.<br /><br /><b>This setting will have effect only for a User Defined Target.</b></temp:description>
+                  <temp:regExLib name="define" param1="LED1_PIN_TARGET" />
+                  <temp:readonly value="true" />
+                  <plm:value>gGpioPin23_c</plm:value>
+                </plm:LED1_PIN_TARGET>
+                <plm:LED2_PIN_TARGET displayName="LED 2 GPIO pin" editor="BeeKitARM7PlatformEditorV05">
+                  <temp:description>
+			Set a specific GPIO pin for LED 2 of a custom MC1322x board. <br />To change the setting launch the User Defined Target Editor by pressing the [...] button on the right side of the property.<br /><br /><b>This setting will have effect only for a User Defined Target.</b></temp:description>
+                  <temp:regExLib name="define" param1="LED2_PIN_TARGET" />
+                  <temp:readonly value="true" />
+                  <plm:value>gGpioPin24_c</plm:value>
+                </plm:LED2_PIN_TARGET>
+                <plm:LED3_PIN_TARGET displayName="LED 3 GPIO pin" editor="BeeKitARM7PlatformEditorV05">
+                  <temp:description>
+			Set a specific GPIO pin for LED 3 of a custom MC1322x board. <br />To change the setting launch the User Defined Target Editor by pressing the [...] button on the right side of the property.<br /><br /><b>This setting will have effect only for a User Defined Target.</b></temp:description>
+                  <temp:regExLib name="define" param1="LED3_PIN_TARGET" />
+                  <temp:readonly value="true" />
+                  <plm:value>gGpioPin25_c</plm:value>
+                </plm:LED3_PIN_TARGET>
+                <plm:LED4_PIN_TARGET displayName="LED 4 GPIO pin" editor="BeeKitARM7PlatformEditorV05">
+                  <temp:description>
+			Set a specific GPIO pin for LED 4 of a custom MC1322x board. <br />To change the setting launch the User Defined Target Editor by pressing the [...] button on the right side of the property.<br /><br /><b>This setting will have effect only for a User Defined Target.</b></temp:description>
+                  <temp:regExLib name="define" param1="LED4_PIN_TARGET" />
+                  <temp:readonly value="true" />
+                  <plm:value>gGpioPin44_c</plm:value>
+                </plm:LED4_PIN_TARGET>
+                <plm:LED_SET displayName="LED SET GPIO pin state" editor="BeeKitARM7PlatformEditorV05">
+                  <temp:description>
+			Set a specific pin state (Low or High) for the LED SET function for a custom MC1322x board. <br />To change the setting launch the User Defined Target Editor by pressing the [...] button on the right side of the property.<br /><br /><b>This setting will have effect only for a User Defined Target.</b></temp:description>
+                  <temp:regExLib name="define" param1="LED_SET" />
+                  <temp:readonly value="true" />
+                  <plm:value>gGpioPinStateHigh_c</plm:value>
+                </plm:LED_SET>
+                <plm:LED_RESET displayName="LED RESET GPIO pin state" editor="BeeKitARM7PlatformEditorV05">
+                  <temp:description>
+			Set a specific pin state (Low or High) for the LED RESET function for a custom MC1322x board. <br />To change the setting launch the User Defined Target Editor by pressing the [...] button on the right side of the property.<br /><br /><b>This setting will have effect only for a User Defined Target.</b></temp:description>
+                  <temp:regExLib name="define" param1="LED_RESET" />
+                  <temp:readonly value="true" />
+                  <plm:value>gGpioPinStateLow_c</plm:value>
+                </plm:LED_RESET>
+              </plm:properties>
+              <temp:actions>
+                <temp:insertTransformationOutput stylesheet="./UserDefLeds.xslt">
+                  <temp:regExLib name="beginEndSection" param1="Define LED pin mapping" />
+                </temp:insertTransformationOutput>
+              </temp:actions>
+            </temp:file>
+            <temp:file version="1.0" source=".\Generic\Interface\Keyboard_MC1322x.h" destination=".\PLM\Interface\Keyboard_MC1322x.h">
+              <temp:description />
+              <plm:properties>
+                <plm:gKbGpioPinSwitch1_c displayName="Switch 1 GPIO pin" editor="BeeKitARM7PlatformEditorV05">
+                  <temp:description>
+			Set a specific GPIO pin for Switch/Key 1 of a custom MC1322x board. <br />To change the setting launch the User Defined Target Editor by pressing the [...] button on the right side of the property.<br />Please note that MC1322x has 8 KBI keyboard pads which are always active, even during low-power modes. These are available for GPIO pins 22..29. GPIO pins 26..29 generate keyboard interrupts when set in Functional Mode 1.  When they are being used as keyboard interrups, the pads are controlled by the CRM module instead of the GPIO. The Freescale keyboard driver uses the interrupt-based approach.<br /><br /><b>This setting will have effect only for a User Defined Target.</b></temp:description>
+                  <temp:regExLib name="define" param1="gKbGpioPinSwitch1_c" />
+                  <temp:readonly value="true" />
+                  <plm:value>gGpioPin26_c</plm:value>
+                </plm:gKbGpioPinSwitch1_c>
+                <plm:gKbGpioPinSwitch2_c displayName="Switch 2 GPIO pin" editor="BeeKitARM7PlatformEditorV05">
+                  <temp:description>
+			Set a specific GPIO pin for Switch/Key 2 of a custom MC1322x board. <br />To change the setting launch the User Defined Target Editor by pressing the [...] button on the right side of the property.<br />Please note that MC1322x has 8 KBI keyboard pads which are always active, even during low-power modes. These are available for GPIO pins 22..29. GPIO pins 26..29 generate keyboard interrupts when set in Functional Mode 1.  When they are being used as keyboard interrups, the pads are controlled by the CRM module instead of the GPIO. The Freescale keyboard driver uses the interrupt-based approach.<br /><br /><b>This setting will have effect only for a User Defined Target.</b></temp:description>
+                  <temp:regExLib name="define" param1="gKbGpioPinSwitch2_c" />
+                  <temp:readonly value="true" />
+                  <plm:value>gGpioPin27_c</plm:value>
+                </plm:gKbGpioPinSwitch2_c>
+                <plm:gKbGpioPinSwitch3_c displayName="Switch 3 GPIO pin" editor="BeeKitARM7PlatformEditorV05">
+                  <temp:description>
+			Set a specific GPIO pin for Switch/Key 3 of a custom MC1322x board. <br />To change the setting launch the User Defined Target Editor by pressing the [...] button on the right side of the property.<br />Please note that MC1322x has 8 KBI keyboard pads which are always active, even during low-power modes. These are available for GPIO pins 22..29. GPIO pins 26..29 generate keyboard interrupts when set in Functional Mode 1.  When they are being used as keyboard interrups, the pads are controlled by the CRM module instead of the GPIO. The Freescale keyboard driver uses the interrupt-based approach.<br /><br /><b>This setting will have effect only for a User Defined Target.</b></temp:description>
+                  <temp:regExLib name="define" param1="gKbGpioPinSwitch3_c" />
+                  <temp:readonly value="true" />
+                  <plm:value>gGpioPin28_c</plm:value>
+                </plm:gKbGpioPinSwitch3_c>
+                <plm:gKbGpioPinSwitch4_c displayName="Switch 4 GPIO pin" editor="BeeKitARM7PlatformEditorV05">
+                  <temp:description>
+			Set a specific GPIO pin for Switch/Key 4 of a custom MC1322x board. <br />To change the setting launch the User Defined Target Editor by pressing the [...] button on the right side of the property.<br />Please note that MC1322x has 8 KBI keyboard pads which are always active, even during low-power modes. These are available for GPIO pins 22..29. GPIO pins 26..29 generate keyboard interrupts when set in Functional Mode 1.  When they are being used as keyboard interrups, the pads are controlled by the CRM module instead of the GPIO. The Freescale keyboard driver uses the interrupt-based approach.<br /><br /><b>This setting will have effect only for a User Defined Target.</b></temp:description>
+                  <temp:regExLib name="define" param1="gKbGpioPinSwitch4_c" />
+                  <temp:readonly value="true" />
+                  <plm:value>gGpioPin29_c</plm:value>
+                </plm:gKbGpioPinSwitch4_c>
+                <plm:gCenterKey_c displayName="Joystick center key GPIO pin" editor="BeeKitARM7PlatformEditorV05">
+                  <temp:description>
+   			Set a specific GPIO pin for a key equivalent to "Joystick Center Key" of a custom MC1322x board. <br />To change the setting launch the User Defined Target Editor by pressing the [...] button on the right side of the property.<br />Please note that MC1322x has 8 KBI keyboard pads which are always active, even during low-power modes. These are available for GPIO pins 22..29. GPIO pins 26..29 generate keyboard interrupts when set in Functional Mode 1.  When they are being used as keyboard interrups, the pads are controlled by the CRM module instead of the GPIO. The Freescale keyboard driver uses the interrupt-based approach.<br /><br /><b>This setting will have effect only for a User Defined Target.</b></temp:description>
+                  <temp:regExLib name="define" param1="gCenterKey_c" />
+                  <temp:readonly value="true" />
+                  <plm:value>gGpioPin22_c</plm:value>
+                </plm:gCenterKey_c>
+              </plm:properties>
+              <temp:actions>
+                <temp:insertTransformationOutput stylesheet="./UserDefKeyboard.xslt">
+                  <temp:regExLib name="beginEndSection" param1="Define Key pin mapping" />
+                </temp:insertTransformationOutput>
+              </temp:actions>
+            </temp:file>
+            <temp:file version="1.0" source=".\Generic\Interface\PortConfig.h" destination=".\PLM\Interface\PortConfig.h">
+              <temp:description />
+              <plm:properties>
+                <plm:gDirLoValue_c displayName="GPIO Direction Register Low" editor="BeeKitARM7PlatformEditorV05">
+                  <temp:description>
+			These bits control the directions of the pins when in GPIO Mode only. In Peripheral Mode, these bits have
+no effect on the output enables or pullup enables (for GPIOs which have no Peripheral mode, the bits
+always take effect).
+<br />
+The value is a bit mask. Each bit sets a GPIO pin from pin GPIO_31 to GPIO_00.
+<br /><br />
+Bit Value 0 (default) - the pin is an input, and pullups are dependent on the value of the GPIO_PAD_PU_EN registers.
+Default for all but GPIOs 22-25 (KBI0-KBI3)
+<br />
+Bit Value 1 - the pin is an output; pullups are disabled.
+<br /><br /><b>This setting will have effect only for a User Defined Target.</b></temp:description>
+                  <temp:regExLib name="define" param1="gDirLoValue_c" />
+                  <temp:readonly value="true" />
+                  <plm:value>0x03C00000</plm:value>
+                </plm:gDirLoValue_c>
+                <plm:gDirHiValue_c displayName="GPIO Direction Register High" editor="BeeKitARM7PlatformEditorV05">
+                  <temp:description>
+			These bits control the directions of the pins when in GPIO Mode only. In Peripheral Mode, these bits have
+no effect on the output enables or pullup enables (for GPIOs which have no Peripheral mode, the bits
+always take effect).
+<br />
+The value is a bit mask. Each bit sets a GPIO pin from pin GPIO_63 to GPIO_32.
+<br /><br />
+Bit Value 0 (default) - the pin is an input, and pullups are dependent on the value of the GPIO_PAD_PU_EN registers.
+<br />
+Bit Value 1 - the pin is an output; pullups are disabled.
+<br /><br /><b>This setting will have effect only for a User Defined Target.</b></temp:description>
+                  <temp:regExLib name="define" param1="gDirHiValue_c" />
+                  <temp:readonly value="true" />
+                  <plm:value>0x00000000</plm:value>
+                </plm:gDirHiValue_c>
+                <plm:gDataLoValue_c displayName="GPIO Data Register Low" editor="BeeKitARM7PlatformEditorV05">
+                  <temp:description>
+			These bits contain the output data for the GPIOs when in GPIO Mode.
+<br />
+The value is a bit mask. Each bit sets a GPIO pin from pin GPIO_31 to GPIO_00.
+<br /><br />
+Bit Value 0 (default) - the pin is an input, and pullups are dependent on the value of the GPIO_PAD_PU_EN registers.
+Default for all but GPIOs 22-25 (KBI0-KBI3)
+<br />
+Bit Value 1 - the pin is an output; pullups are disabled.
+<br /><br /><b>This setting will have effect only for a User Defined Target.</b></temp:description>
+                  <temp:regExLib name="define" param1="gDataLoValue_c" />
+                  <temp:readonly value="true" />
+                  <plm:value>0x03C00000</plm:value>
+                </plm:gDataLoValue_c>
+                <plm:gDataHiValue_c displayName="GPIO Data Register High" editor="BeeKitARM7PlatformEditorV05">
+                  <temp:description>
+			These bits contain the output data for the GPIOs when in GPIO Mode.
+<br />
+The value is a bit mask. Each bit sets a GPIO pin from pin GPIO_63 to GPIO_32.
+<br /><br />
+Bit Value 0 (default) - the pin is an input, and pullups are dependent on the value of the GPIO_PAD_PU_EN registers.
+<br />
+Bit Value 1 - the pin is an output; pullups are disabled.
+<br /><br /><b>This setting will have effect only for a User Defined Target.</b></temp:description>
+                  <temp:regExLib name="define" param1="gDataHiValue_c" />
+                  <temp:readonly value="true" />
+                  <plm:value>0x00000000</plm:value>
+                </plm:gDataHiValue_c>
+                <plm:gPuEnLoValue_c displayName="GPIO Pullup Enable Register Low" editor="BeeKitARM7PlatformEditorV05">
+                  <temp:description>
+			These bits control whether pullups/pulldowns are enabled for inputs in the various functional modes.
+Pullups/pulldowns are automatically disabled for outputs in these modes.
+<br />
+The value is a bit mask. Each bit sets a GPIO pin from pin GPIO_31 to GPIO_00.
+<br /><br />
+Bit Value 0 - Pullups/pulldowns disabled for inputs.
+Bit Value 1 (default) - Pullups/pulldowns enabled for inputs.
+<br /><br /><b>This setting will have effect only for a User Defined Target.</b></temp:description>
+                  <temp:regExLib name="define" param1="gPuEnLoValue_c" />
+                  <temp:readonly value="true" />
+                  <plm:value>0xFFFFFFFF</plm:value>
+                </plm:gPuEnLoValue_c>
+                <plm:gPuEnHiValue_c displayName="GPIO Pullup Enable Register High" editor="BeeKitARM7PlatformEditorV05">
+                  <temp:description>
+			These bits control whether pullups/pulldowns are enabled for inputs in the various functional modes.
+Pullups/pulldowns are automatically disabled for outputs in these modes.
+<br />
+The value is a bit mask. Each bit sets a GPIO pin from pin GPIO_63 to GPIO_32.
+<br /><br />
+Bit Value 0 - Pullups/pulldowns disabled for inputs.
+Bit Value 1 (default) - Pullups/pulldowns enabled for inputs.
+<br /><br /><b>This setting will have effect only for a User Defined Target.</b></temp:description>
+                  <temp:regExLib name="define" param1="gPuEnHiValue_c" />
+                  <temp:readonly value="true" />
+                  <plm:value>0xFFFFFFFF</plm:value>
+                </plm:gPuEnHiValue_c>
+                <plm:gFuncSel0Value_c displayName="GPIO Functional Mode Select Register 0" editor="BeeKitARM7PlatformEditorV05">
+                  <temp:description>
+			These bits are used to configure the functional mode of the GPIO pins.
+<br />
+The value is a bit mask. Each 2 bits set a GPIO pin from pin GPIO_15 to GPIO_00.
+<br /><br />
+Value 0 (00b) - Functional Mode 0.<br />
+Value 1 (01b) - Alternate Mode 1 (Func 1).<br />
+Value 2 (10b) - Alternate Mode 2 (Func 2).<br />
+Value 3 (11b) - Alternate Mode 3 (Func 3).<br /><br /><br /><b>This setting will have effect only for a User Defined Target.</b></temp:description>
+                  <temp:regExLib name="define" param1="gFuncSel0Value_c" />
+                  <temp:readonly value="true" />
+                  <plm:value>0x00000000</plm:value>
+                </plm:gFuncSel0Value_c>
+                <plm:gFuncSel1Value_c displayName="GPIO Functional Mode Select Register 1" editor="BeeKitARM7PlatformEditorV05">
+                  <temp:description>
+			These bits are used to configure the functional mode of the GPIO pins.
+<br />
+The value is a bit mask. Each 2 bits set a GPIO pin from pin GPIO_31 to GPIO_16.
+<br /><br />
+Value 0 (00b) - Functional Mode 0.<br />
+Value 1 (01b) - Alternate Mode 1 (Func 1).<br />
+Value 2 (10b) - Alternate Mode 2 (Func 2).<br />
+Value 3 (11b) - Alternate Mode 3 (Func 3).<br /><br /><br /><b>This setting will have effect only for a User Defined Target.</b></temp:description>
+                  <temp:regExLib name="define" param1="gFuncSel1Value_c" />
+                  <temp:readonly value="true" />
+                  <plm:value>0x00000000</plm:value>
+                </plm:gFuncSel1Value_c>
+                <plm:gFuncSel2Value_c displayName="GPIO Functional Mode Select Register 2" editor="BeeKitARM7PlatformEditorV05">
+                  <temp:description>
+			These bits are used to configure the functional mode of the GPIO pins.
+<br />
+The value is a bit mask. Each 2 bits set a GPIO pin from pin GPIO_47 to GPIO_32.
+<br /><br />
+Value 0 (00b) - Functional Mode 0.<br />
+Value 1 (01b) - Alternate Mode 1 (Func 1).<br />
+Value 2 (10b) - Alternate Mode 2 (Func 2).<br />
+Value 3 (11b) - Alternate Mode 3 (Func 3).<br /><br /><br /><b>This setting will have effect only for a User Defined Target.</b></temp:description>
+                  <temp:regExLib name="define" param1="gFuncSel2Value_c" />
+                  <temp:readonly value="true" />
+                  <plm:value>0x00000000</plm:value>
+                </plm:gFuncSel2Value_c>
+                <plm:gFuncSel3Value_c displayName="GPIO Functional Mode Select Register 3" editor="BeeKitARM7PlatformEditorV05">
+                  <temp:description>
+			These bits are used to configure the functional mode of the GPIO pins.
+<br />
+The value is a bit mask. Each 2 bits set a GPIO pin from pin GPIO_63 to GPIO_48.
+<br /><br />
+Value 0 (00b) - Functional Mode 0.<br />
+Value 1 (01b) - Alternate Mode 1 (Func 1).<br />
+Value 2 (10b) - Alternate Mode 2 (Func 2).<br />
+Value 3 (11b) - Alternate Mode 3 (Func 3).<br /><br /><br /><b>This setting will have effect only for a User Defined Target.</b></temp:description>
+                  <temp:regExLib name="define" param1="gFuncSel3Value_c" />
+                  <temp:readonly value="true" />
+                  <plm:value>0x00000000</plm:value>
+                </plm:gFuncSel3Value_c>
+                <plm:gInputDataSelLoValue_c displayName="GPIO Read Control Register Low" editor="BeeKitARM7PlatformEditorV05">
+                  <temp:description>
+			These bits control whether Data is read directly from the PAD via the GPIO, or from the GPIO Data
+Register via the IPBUS.
+<br /><br />
+The value is a bit mask. Each bit sets a GPIO pin from pin GPIO_31 to GPIO_00.
+<br />
+Bit Value 0 (default) - data is read from the PADs.
+<br />
+Bit Value 1 - data is read from the GPIO Data Register (GPIO_DATA).
+<br /><br /><b>This setting will have effect only for a User Defined Target.</b>	
+.
+          </temp:description>
+                  <temp:regExLib name="define" param1="gInputDataSelLoValue_c" />
+                  <temp:readonly value="true" />
+                  <plm:value>0x00000000</plm:value>
+                </plm:gInputDataSelLoValue_c>
+                <plm:gInputDataSelHiValue_c displayName="GPIO Read Control Register High" editor="BeeKitARM7PlatformEditorV05">
+                  <temp:description>
+			These bits control whether Data is read directly from the PAD via the GPIO, or from the GPIO Data
+Register via the IPBUS.
+<br /><br />
+The value is a bit mask. Each bit sets a GPIO pin from pin GPIO_63 to GPIO_32.
+<br />
+Bit Value 0 (default) - data is read from the PADs.
+<br />
+Bit Value 1 - data is read from the GPIO Data Register (GPIO_DATA).
+<br /><br /><b>This setting will have effect only for a User Defined Target.</b></temp:description>
+                  <temp:regExLib name="define" param1="gInputDataSelHiValue_c" />
+                  <temp:readonly value="true" />
+                  <plm:value>0x00000000</plm:value>
+                </plm:gInputDataSelHiValue_c>
+                <plm:gPuSelLoValue_c displayName="GPIO Pad Pullup Select Low" editor="BeeKitARM7PlatformEditorV05">
+                  <temp:description>
+			These bits control the selection of pullup for output pads. The corresponding GPIO_PAD_PU_EN bit must be
+asserted to activate either weak pull device.
+<br /><br />
+The value is a bit mask. Each bit sets a GPIO pin from pin GPIO_31 to GPIO_00.
+<br />
+Bit Value 0 - weak pulldown (default for all except GPIOs 12-13 (I2C), 63 (EVTI_B), 46 (TMS), 47 (TCK) and 48 (TDI))
+<br />
+Bit Value 1 - weak pullup (default for GPIOs 12-13 (I2C), 63 (EVTI_B), 46 (TMS), 47 (TCK) and 48(TDI))
+<br /><br /><b>This setting will have effect only for a User Defined Target.</b></temp:description>
+                  <temp:regExLib name="define" param1="gPuSelLoValue_c" />
+                  <temp:readonly value="true" />
+                  <plm:value>0x00003000</plm:value>
+                </plm:gPuSelLoValue_c>
+                <plm:gPuSelHiValue_c displayName="GPIO Pad Pullup Select High" editor="BeeKitARM7PlatformEditorV05">
+                  <temp:description>
+			These bits control the selection of pullup for output pads. The corresponding GPIO_PAD_PU_EN bit must be
+asserted to activate either weak pull device.
+<br /><br />
+The value is a bit mask. Each bit sets a GPIO pin from pin GPIO_63 to GPIO_32.
+<br />
+Bit Value 0 - weak pulldown (default for all except GPIOs 12-13 (I2C), 63 (EVTI_B), 46 (TMS), 47 (TCK) and 48 (TDI))
+<br />
+Bit Value 1 - weak pullup (default for GPIOs 12-13 (I2C), 63 (EVTI_B), 46 (TMS), 47 (TCK) and 48(TDI))
+<br /><br /><b>This setting will have effect only for a User Defined Target.</b></temp:description>
+                  <temp:regExLib name="define" param1="gPuSelHiValue_c" />
+                  <temp:readonly value="true" />
+                  <plm:value>0x8001C000</plm:value>
+                </plm:gPuSelHiValue_c>
+                <plm:gHystEnLoValue_c displayName="GPIO Pad Hysteresis Enable Register Low" editor="BeeKitARM7PlatformEditorV05">
+                  <temp:description>
+			These bits enable hysteresis on the pads.
+<br /><br />
+The value is a bit mask. Each bit sets a GPIO pin from pin GPIO_31 to GPIO_00.	
+<br />
+Bit Value 0 (default) - hysteresis disabled
+<br />
+Bit Value 1 - hysteresis enabled
+<br /><br /><b>This setting will have effect only for a User Defined Target.</b></temp:description>
+                  <temp:regExLib name="define" param1="gHystEnLoValue_c" />
+                  <temp:readonly value="true" />
+                  <plm:value>0x00000000</plm:value>
+                </plm:gHystEnLoValue_c>
+                <plm:gHystEnHiValue_c displayName="GPIO Pad Hysteresis Enable Register High" editor="BeeKitARM7PlatformEditorV05">
+                  <temp:description>
+			These bits enable hysteresis on the pads.
+<br /><br />
+The value is a bit mask. Each bit sets a GPIO pin from pin GPIO_63 to GPIO_32.
+<br />
+Bit Value 0 (default) - hysteresis disabled
+<br />
+Bit Value 1 - hysteresis enabled
+<br /><br /><b>This setting will have effect only for a User Defined Target.</b></temp:description>
+                  <temp:regExLib name="define" param1="gHystEnHiValue_c" />
+                  <temp:readonly value="true" />
+                  <plm:value>0x00000000</plm:value>
+                </plm:gHystEnHiValue_c>
+                <plm:gPuKeepLoValue_c displayName="GPIO Pad Pullup Keeper Register Low" editor="BeeKitARM7PlatformEditorV05">
+                  <temp:description>
+			These bits enable pad keepers on the pads.
+<br /><br />
+The value is a bit mask. Each bit sets a GPIO pin from pin GPIO_31 to GPIO_00.			
+<br />
+Bit Value 0 (default) - pad keeper disabled. Default for all but GPIOs 30-36, 38-39.
+<br />
+Bit Value 1 - pad keeper enabled.
+<br />
+When the combined analog/digital GPIOS (GPIOs 30-41) are configured as inputs (e.g., GPIO inputs), the corresponding GPIO_PAD_KEEP IP register
+bits must be 1.	
+<br /><br /><b>This setting will have effect only for a User Defined Target.</b></temp:description>
+                  <temp:regExLib name="define" param1="gPuKeepLoValue_c" />
+                  <temp:readonly value="true" />
+                  <plm:value>0xC0000000</plm:value>
+                </plm:gPuKeepLoValue_c>
+                <plm:gPuKeepHiValue_c displayName="GPIO Pad Pullup Keeper Register High" editor="BeeKitARM7PlatformEditorV05">
+                  <temp:description>
+			These bits enable pad keepers on the pads.
+<br /><br />
+The value is a bit mask. Each bit sets a GPIO pin from pin GPIO_63 to GPIO_32.	
+<br />
+Bit Value 0 (default) - pad keeper disabled. Default for all but GPIOs 30-36, 38-39.
+<br />
+Bit Value 1 - pad keeper enabled.
+<br />
+When the combined analog/digital GPIOS (GPIOs 30-41) are configured as inputs (e.g., GPIO inputs), the corresponding GPIO_PAD_KEEP IP register
+bits must be 1.	
+<br /><br /><b>This setting will have effect only for a User Defined Target.</b></temp:description>
+                  <temp:regExLib name="define" param1="gPuKeepHiValue_c" />
+                  <temp:readonly value="true" />
+                  <plm:value>0x000000DF</plm:value>
+                </plm:gPuKeepHiValue_c>
+              </plm:properties>
+              <temp:actions>
+                <temp:insertTransformationOutput stylesheet="./UserDefPortConfig.xslt">
+                  <temp:regExLib name="beginEndSection" param1="GPIO Register Values" />
+                </temp:insertTransformationOutput>
+              </temp:actions>
+            </temp:file>
+            <temp:file version="1.0" source=".\Generic\Interface\MacPhyPlatformLib.h" destination=".\PLM\Interface\MacPhyPlatformLib.h" />
+            <temp:file version="1.0" source=".\Generic\Interface\NVM_Interface.h" destination=".\PLM\Interface\NVM_Interface.h">
+              <temp:description />
+              <plm:properties>
+                <plm:gNvStorageIncluded_d displayName="NVM storage enabled">
+                  <temp:description>
+            This parameter enables or disables the complete NVM module. If set to True, the NVM module is enabled and if set to False
+            the module is disabled.
+          </temp:description>
+                  <temp:regExLib name="define" param1="gNvStorageIncluded_d" />
+                  <plm:value>true</plm:value>
+                </plm:gNvStorageIncluded_d>
+              </plm:properties>
+            </temp:file>
+            <temp:file version="1.0" source=".\Generic\Interface\NV_Data.h" destination=".\PLM\Interface\NV_Data.h">
+              <temp:description />
+              <plm:properties>
+                <plm:gXtalCtuneValUserDefined_c displayName="Crystal trim coarse tune value" editor="BeeKitARM7PlatformEditorV05">
+                  <temp:description>
+			The property sets the user defined target crystal trim coarse tune value. Valid values are between [0..31].<br /><br /><b>This setting will have effect only for a User Defined Target.</b></temp:description>
+                  <temp:regExLib name="define" param1="gXtalCtuneValUserDefined_c" />
+                  <temp:format base="hex" />
+                  <plm:value>24</plm:value>
+                </plm:gXtalCtuneValUserDefined_c>
+                <plm:gXtalFtuneValUserDefined_c displayName="Crystal trim fine tune value" editor="BeeKitARM7PlatformEditorV05">
+                  <temp:description>
+			The property sets the user defined target crystal trim fine tune value. Valid values are between [0..31].<br /><br /><b>This setting will have effect only for a User Defined Target.</b></temp:description>
+                  <temp:regExLib name="define" param1="gXtalFTuneValUserDefined_c" />
+                  <temp:format base="hex" />
+                  <plm:value>15</plm:value>
+                </plm:gXtalFtuneValUserDefined_c>
+                <plm:gCcaThreshold_c displayName="CCA threshold value" editor="BeeKitARM7PlatformEditorV05">
+                  <temp:description>
+            Sets the value for the Clear Channel Assessement Threshold.
+          </temp:description>
+                  <temp:regExLib name="define" param1="gCcaThreshold_c" />
+                  <temp:format base="hex" />
+                  <plm:value>57</plm:value>
+                </plm:gCcaThreshold_c>
+                <plm:gPowerLevelLock_c displayName="Power Level lock for external PA usage" editor="BeeKitARM7PlatformEditorV05">
+                  <temp:description>
+			Enables or disables the output power lock in the -6 to -4dBm range for channels 11-25. <br />To change the setting launch the User Defined Target Editor by pressing the [...] button on the right side of the property.<br /><br /><b>This setting will have effect only for a User Defined Target.</b></temp:description>
+                  <temp:regExLib name="define" param1="gPowerLevelLock_c" />
+                  <temp:readonly value="true" />
+                  <plm:value>False</plm:value>
+                </plm:gPowerLevelLock_c>
+                <plm:gEnableComplementaryPAOutput_c displayName="Enable complementary PA output" editor="BeeKitARM7PlatformEditorV05">
+                  <temp:description />
+                  <temp:regExLib name="define" param1="gEnableComplementaryPAOutput_c" />
+                  <temp:readonly value="true" />
+                  <plm:value>False</plm:value>
+                </plm:gEnableComplementaryPAOutput_c>
+                <plm:gDualPortRFOperation_c displayName="Enable Hardware RF Control Signals" editor="BeeKitARM7PlatformEditorV05">
+                  <temp:description>
+			Enables or disables dual port RF operation. <br />To change the setting launch the User Defined Target Editor by pressing the [...] button on the right side of the property.<br /><br /><b>This setting will have effect only for a User Defined Target.</b></temp:description>
+                  <temp:regExLib name="define" param1="gDualPortRFOperation_c" />
+                  <temp:readonly value="true" />
+                  <plm:value>False</plm:value>
+                </plm:gDualPortRFOperation_c>
+                <plm:gDefaultPowerLevel_c displayName="Default power level">
+                  <temp:description>
+			Posible values for the Default Power Level are:
+<br />
+gAspPowerLevel_m30dBm_c  = -30 dBm <br />
+gAspPowerLevel_m28dBm_c  = -28 dBm <br />
+gAspPowerLevel_m27dBm_c  = -27 dBm <br />
+gAspPowerLevel_m26dBm_c  = -26 dBm <br />
+gAspPowerLevel_m24dBm_c  = -24 dBm <br />
+gAspPowerLevel_m21dBm_c  = -21 dBm <br />
+gAspPowerLevel_m19dBm_c  = -19 dBm <br />
+gAspPowerLevel_m17dBm_c  = -17 dBm <br />
+gAspPowerLevel_m16dBm_c  = -16 dBm <br />
+gAspPowerLevel_m15dBm_c  = -15 dBm <br />
+gAspPowerLevel_m11dBm_c  = -11 dBm <br />
+gAspPowerLevel_m10dBm_c  = -10 dBm <br />
+gAspPowerLevel_m4d5dBm_c = -4.5 dBm <br />
+gAspPowerLevel_m3dBm_c   = -3 dBm <br />
+gAspPowerLevel_m1d5dBm_c = -1.5 dBm <br />
+gAspPowerLevel_m1dBm_c   = -1 dBm <br />
+gAspPowerLevel_1d7dBm_c  = 1.7 dBm <br />
+gAspPowerLevel_3dBm_c    = 3 dBm <br /><br /></temp:description>
+                  <temp:regExLib name="define" param1="gDefaultPowerLevel_c" />
+                  <plm:value>gAspPowerLevel_m1dBm_c</plm:value>
+                </plm:gDefaultPowerLevel_c>
+              </plm:properties>
+              <temp:actions>
+                <temp:insertTransformationOutput stylesheet="./UserDefNvData.xslt">
+                  <temp:regExLib name="beginEndSection" param1="Dual RF Settings" />
+                </temp:insertTransformationOutput>
+              </temp:actions>
+            </temp:file>
+            <temp:file version="1.0" source=".\Generic\Interface\PlatformInit.h" destination=".\PLM\Interface\PlatformInit.h" />
+            <temp:file version="1.0" source=".\Generic\Interface\PlatformInterrupts.h" destination=".\PLM\Interface\PlatformInterrupts.h" />
+            <temp:file version="1.0" source=".\Generic\Interface\PlatformToMacPhyConfig.h" destination=".\PLM\Interface\PlatformToMacPhyConfig.h" />
+            <temp:file version="1.0" source=".\Generic\Interface\PowerManager.h" destination=".\PLM\Interface\PowerManager.h" />
+            <temp:file version="1.0" source=".\Generic\Interface\PWR_Configuration.h" destination=".\PLM\Interface\PWR_Configuration.h">
+              <temp:description />
+              <plm:properties>
+                <plm:cPWR_UsePowerDownMode displayName="Power down mode enabled">
+                  <temp:description>
+            This property is used to enable/disable all of the code in the PWR/PWRLib files. The following options exist:<br /><br />
+            0: Do not use PowerDown. Will cut variables and code out. Useful for debugging and test purposes<br />
+            1: Use PowerDown functions (Normal)
+        </temp:description>
+                  <temp:regExLib name="define" param1="cPWR_UsePowerDownMode" />
+                  <plm:value>1</plm:value>
+                </plm:cPWR_UsePowerDownMode>
+                <plm:cPWR_MCURetentionMode displayName="MCU retention mode enabled">
+                  <temp:description>
+            This property is used to configure the MCU retention mode used during sleep. The following possibilities exist:<br /><br />
+            0: No MCU retention<br />
+            1: MCU retention is On during sleep
+        </temp:description>
+                  <temp:regExLib name="define" param1="cPWR_MCURetentionMode" />
+                  <plm:value>1</plm:value>
+                </plm:cPWR_MCURetentionMode>
+                <plm:cPWR_MCUPadRetentionMode displayName="MCU pad retention mode enabled">
+                  <temp:description>
+            This property is used to configure the MCU Pad retention mode used during sleep (if MCU retention configured). The following possibilities exist:<br /><br />
+            0: No Pad retention<br />
+            1: MCU Pad retention if MCU retention was configured also
+        </temp:description>
+                  <temp:regExLib name="define" param1="cPWR_MCUPadRetentionMode" />
+                  <plm:value>1</plm:value>
+                </plm:cPWR_MCUPadRetentionMode>
+                <plm:cPWR_ExtOutPol displayName="External Wakeup Output Polarity">
+                  <temp:description>
+            This property is a 4 bit bitmap used to set the output state of the 4 external drivers (i.e. KBI[3:0] ) for use during sleep. 
+			The valid range for this property is [0b0000...0b1111].
+          </temp:description>
+                  <temp:regExLib name="define" param1="cPWR_ExtOutPol" />
+                  <plm:value>0</plm:value>
+                </plm:cPWR_ExtOutPol>
+                <plm:cPWR_RAMRetentionMode displayName="RAM retention mode enabled">
+                  <temp:description>
+            This property is used to configure the RAM retention mode used during sleep. Following possibilities exist:<br /><br />
+              gRamRet8k_c:         First 8k of RAM retained during sleep  <br />
+              gRamRet32k_c:        First 32k of RAM retained during sleep <br />
+              gRamRet64k_c:        First 64k of RAM retained during sleep <br />
+              gRamRet96k_c:        First 96k (All) of RAM retained during sleep
+          </temp:description>
+                  <temp:regExLib name="define" param1="cPWR_RAMRetentionMode" />
+                  <plm:value>gRamRet96k_c</plm:value>
+                </plm:cPWR_RAMRetentionMode>
+                <plm:cPWR_DeepSleepMode displayName="Deep sleep wakeup">
+                  <temp:description>
+            The way that DeepSleep wake-up is handled. Following possibilities exist:<br /><br />
+            0: No DeepSleep done, but PTC application can set modes<br />
+            1: CPU Sleep: Hibernate, Wake-up on KBI<br />
+            2: CPU Sleep: Hibernate, Wake-up on Wakeup Timer<br />
+            3: CPU Sleep: Hibernate, Wake-up on either KBI or Wakeup Timer<br />
+            4: CPU Sleep: Hibernate, Wake-up on Reset<br />
+            5: CPU Sleep: Doze, Wake-up on KBI<br />
+            6: CPU Sleep: Doze, Wake-up on Wakeup Timer<br />
+            7: CPU Sleep: Doze, Wake-up on either KBI or Wakeup Timer					
+          </temp:description>
+                  <temp:regExLib name="define" param1="cPWR_DeepSleepMode" />
+                  <plm:value>7</plm:value>
+                </plm:cPWR_DeepSleepMode>
+                <plm:cPWR_SleepMode displayName="Deep sleep handling">
+                  <temp:description>
+            The way that Sleep mode is handled. Following possibilities exist:<br /><br />
+            0: No Sleep done, but application can set modes<br />
+            1: Doze mode on radio with clock enabled and WAIT on MCU
+          </temp:description>
+                  <temp:regExLib name="define" param1="cPWR_SleepMode" />
+                  <plm:value>1</plm:value>
+                </plm:cPWR_SleepMode>
+                <plm:cPWR_SleepTimeoutMs displayName="Sleep timeout">
+                  <temp:description>
+            This property sets the sleep timeout (in milliseconds). The maximum sleep time depends on the Low Power mode used.<br /></temp:description>
+                  <temp:regExLib name="define" param1="cPWR_SleepTimeoutMs" />
+                  <plm:value>10000</plm:value>
+                </plm:cPWR_SleepTimeoutMs>
+                <plm:cPWR_CallWakeupStackProcAfterDeepSleep displayName="Enabling of external call at wake-up">
+                  <temp:description>
+            Enabling of external call to a procedure each time that DeepSleep is exited.<br /><br />
+            0: Don't call any functions after DeepSleep (MAC)<br />
+            1: Call a function after DeepSleep (Stack)
+          </temp:description>
+                  <temp:regExLib name="define" param1="cPWR_CallWakeupStackProcAfterDeepSleep" />
+                  <plm:value>1</plm:value>
+                </plm:cPWR_CallWakeupStackProcAfterDeepSleep>
+              </plm:properties>
+            </temp:file>
+            <temp:file version="1.0" source=".\Generic\Interface\PWR_Interface.h" destination=".\PLM\Interface\PWR_Interface.h" />
+            <temp:file version="1.0" source=".\Generic\Interface\Sound.h" destination=".\PLM\Interface\Sound.h">
+              <temp:description />
+              <plm:properties>
+                <plm:Buzzer displayName="Buzzer module enabled">
+                  <temp:description>
+               This parameter enables or disables buzzer support.<br />
+               Note: this property will only have effect on MC1322x Network Node, MC1322x Sensor Node targets.
+          </temp:description>
+                  <temp:regExLib name="define" param1="gBuzzerSupported_d" />
+                  <plm:value>false</plm:value>
+                </plm:Buzzer>
+              </plm:properties>
+            </temp:file>
+            <temp:file version="1.0" source=".\Generic\Interface\TMR_Interface.h" destination=".\PLM\Interface\TMR_Interface.h">
+              <temp:description />
+              <plm:properties>
+                <plm:TmrApplicationTimers displayName="Number of available timers for the application">
+                  <temp:description>
+            The number of timers required for the application. This includes timers for the LED, KBD and UART platform modules. So if the
+            application needs three timers, set this constant to 6 (if all the three modules mentioned are included).
+          </temp:description>
+                  <temp:regExLib name="define" param1="gTmrApplicationTimers_c" />
+                  <plm:value>4</plm:value>
+                </plm:TmrApplicationTimers>
+              </plm:properties>
+            </temp:file>
+            <temp:file version="1.0" source=".\Generic\Interface\LlcTest_Interface.h" destination=".\PLM\Interface\LlcTest_Interface.h" />
+            <temp:file version="1.0" source=".\Generic\Interface\UART_Interface.h" destination=".\PLM\Interface\UART_Interface.h">
+              <temp:description />
+              <plm:properties>
+                <plm:Uart1_Enabled displayName="Enable UART1">
+                  <temp:description>
+            Enables UART1 functionality if set to True. Set to False if no UART1 functionality is wanted.<br /><br />
+            For MC1322x Sensor Node target the following applies:<br />
+            UART1 = UART on USB Connector (only choice).<br /><br />
+            For MC1322x Network Node target the following applies:<br />
+            UART1 = UART on USB Connector (only choice).<br />
+            For MC1322x USB Dongle/Zniffer target the following applies:<br />
+            UART1 = UART on USB Connector (only choice).<br />
+            For MC1322x Low Power Node target the following applies:<br />
+            UART1 = UART on USB Connector (only choice).<br /></temp:description>
+                  <temp:regExLib name="define" param1="gUart1_Enabled_d" />
+                  <plm:value>true</plm:value>
+                </plm:Uart1_Enabled>
+                <plm:Uart2_Enabled displayName="Enable UART2">
+                  <temp:description>
+            Enables UART2 functionality if set to True. Set to False if no UART2 functionality is wanted.<br /><br />
+            For MC1322x Sensor Node target the following applies:<br />
+            UART1 = UART on USB Connector (only choice).<br /><br />
+            For MC1322x Network Node target the following applies:<br />
+            UART1 = UART on USB Connector (only choice).<br />            
+            For MC1322x USB Dongle/Zniffer target the following applies:<br />
+            UART1 = UART on USB Connector (only choice).<br />
+            For MC1322x Low Power Node target the following applies:<br />
+            UART1 = UART on USB Connector (only choice).<br /></temp:description>
+                  <temp:regExLib name="define" param1="gUart2_Enabled_d" />
+                  <plm:value>false</plm:value>
+                </plm:Uart2_Enabled>
+                <plm:gUart1_EnableHalfFlowControl_d displayName="UART1 half hardware flow control enabled">
+                  <temp:description>
+            Set to True to use half hardware flow control on UART1.<br />If this setting is
+            set to True, hardware flow control is disabled on the node side of the UART
+            but needs to be enabled on the device with which the node is communicating.<br />
+            Setting this option to True is recommended when connecting the node to a PC using a USB connection.
+          </temp:description>
+                  <temp:regExLib name="define" param1="gUart1_EnableHalfFlowControl_d" />
+                  <plm:value>false</plm:value>
+                </plm:gUart1_EnableHalfFlowControl_d>
+                <plm:gUart2_EnableHalfFlowControl_d displayName="UART2 half hardware flow control enabled">
+                  <temp:description>
+            Set to True to use half hardware flow control on UART2.<br />If this setting is
+            set to True, hardware flow control is disabled on the node side of the UART
+            but needs to be enabled on the device with which the node is communicating.<br />
+            Setting this option to True is recommended when connecting the node to a PC using a USB connection.
+          </temp:description>
+                  <temp:regExLib name="define" param1="gUart2_EnableHalfFlowControl_d" />
+                  <plm:value>false</plm:value>
+                </plm:gUart2_EnableHalfFlowControl_d>
+                <plm:gUART1_UseHWFlowControl_d displayName="UART1 hardware flow control enabled">
+                  <temp:description>
+           Set to True to use full hardware flow control on UART1. <br />If this setting is
+           set to True, full hardware flow control is enabled on the node and also needs to be 
+           enabled on the device with which the node is communicating via UART1.
+        </temp:description>
+                  <temp:regExLib name="define" param1="gUart1_EnableHWFlowControl_d" />
+                  <plm:value>false</plm:value>
+                </plm:gUART1_UseHWFlowControl_d>
+                <plm:gUART2_UseHWFlowControl_d displayName="UART2 hardware flow control enabled">
+                  <temp:description>
+            Set to True to use full hardware flow control on UART2. <br />If this setting is
+            set to True, hardware flow control is enabled on the node and also needs to be
+            enabled on the device with which the node is communicating via UART2.
+          </temp:description>
+                  <temp:regExLib name="define" param1="gUart2_EnableHWFlowControl_d" />
+                  <plm:value>false</plm:value>
+                </plm:gUART2_UseHWFlowControl_d>
+                <plm:gDefaultUartUtilBaudRate_c displayName="UART Baud Rate">
+                  <temp:description>
+            This property defines the Baud Rate used for sending and receiving data over UART.<br /></temp:description>
+                  <temp:regExLib name="define" param1="gUartDefaultBaud_c" />
+                  <plm:value>Baudrate_19200</plm:value>
+                </plm:gDefaultUartUtilBaudRate_c>
+                <plm:Uart_TransmitBuffers displayName="Uart Transmit Buffers">
+                  <temp:description>
+            The number of entries in the transmit-buffers-in-waiting list.
+          </temp:description>
+                  <temp:regExLib name="define" param1="gUart_TransmitBuffers_c" />
+                  <plm:value>3</plm:value>
+                </plm:Uart_TransmitBuffers>
+                <plm:Uart_ReceiveBufferSize displayName="Uart Receive Buffer Size">
+                  <temp:description>
+            Size of the driver's Rx circular buffer. These buffers are used to
+            hold received bytes until the application can retrieve them via the
+            UartX_GetBytesFromRxBuffer() functions, and are not otherwise accessable
+            from outside the driver. The size does not need to be a power of two.
+          </temp:description>
+                  <temp:regExLib name="define" param1="gUart_ReceiveBufferSize_c" />
+                  <plm:value>32</plm:value>
+                </plm:Uart_ReceiveBufferSize>
+                <plm:Uart_RxFlowControlSkew displayName="Uart Rx FlowControl Skew">
+                  <temp:description>
+            If flow control is used, there is a delay before telling the far side
+            to stop and the far side actually stopping. When there are SKEW bytes
+            remaining in the driver's Rx buffer, tell the far side to stop 
+            transmitting. 
+          </temp:description>
+                  <temp:regExLib name="define" param1="gUart_RxFlowControlSkew_d" />
+                  <plm:value>8</plm:value>
+                </plm:Uart_RxFlowControlSkew>
+                <plm:Uart_RxFlowControlResume displayName="Uart Rx Flow Control Resume">
+                  <temp:description>
+            Number of bytes left in the Rx buffer when hardware flow control is deasserted.
+          </temp:description>
+                  <temp:regExLib name="define" param1="gUart_RxFlowControlResume_d" />
+                  <plm:value>8</plm:value>
+                </plm:Uart_RxFlowControlResume>
+              </plm:properties>
+            </temp:file>
+            <temp:file version="1.0" source=".\ARM7\Interface\ADC_Interface.h" destination=".\PLM\LibInterface\ADC_Interface.h" />
+            <temp:file version="1.0" source=".\ARM7\Interface\ASM_Interface.h" destination=".\PLM\LibInterface\ASM_Interface.h" />
+            <temp:file version="1.0" source=".\ARM7\Interface\CRM.h" destination=".\PLM\LibInterface\CRM.h" />
+            <temp:file version="1.0" source=".\ARM7\Interface\CRM_Regs.h" destination=".\PLM\LibInterface\CRM_Regs.h" />
+            <temp:file version="1.0" source=".\ARM7\Interface\GPIO_Interface.h" destination=".\PLM\LibInterface\GPIO_Interface.h" />
+            <temp:file version="1.0" source=".\ARM7\Interface\I2C_Interface.h" destination=".\PLM\LibInterface\I2C_Interface.h" />
+            <temp:file version="1.0" source=".\ARM7\Interface\Init_Interface.h" destination=".\PLM\LibInterface\Init_Interface.h" />
+            <temp:file version="1.0" source=".\ARM7\Interface\Interrupt.h" destination=".\PLM\LibInterface\Interrupt.h" />
+            <temp:file version="1.0" source=".\ARM7\Interface\ITC_Interface.h" destination=".\PLM\LibInterface\ITC_Interface.h" />
+            <temp:file version="1.0" source=".\ARM7\Interface\NVM.h" destination=".\PLM\LibInterface\NVM.h" />
+            <temp:file version="1.0" source=".\ARM7\Interface\Platform.h" destination=".\PLM\LibInterface\Platform.h" />
+            <temp:file version="1.0" source=".\ARM7\Interface\ROM_Utils.h" destination=".\PLM\LibInterface\ROM_Utils.h" />
+            <temp:file version="1.0" source=".\ARM7\Interface\SPI_Interface.h" destination=".\PLM\LibInterface\SPI_Interface.h" />
+            <temp:file version="1.0" source=".\ARM7\Interface\Ssi_Interface.h" destination=".\PLM\LibInterface\Ssi_Interface.h" />
+            <temp:file version="1.0" source=".\ARM7\Interface\Ssi_Regs.h" destination=".\PLM\LibInterface\Ssi_Regs.h" />
+            <temp:file version="1.0" source=".\ARM7\Interface\Timer.h" destination=".\PLM\LibInterface\Timer.h" />
+            <temp:file version="1.0" source=".\ARM7\Interface\UartLowLevel.h" destination=".\PLM\LibInterface\UartLowLevel.h" />
+            <temp:file version="1.0" source=".\ARM7\Lib\LLC_ROM\LLC_MC13224.a" destination=".\PLM\Lib\LLC_ROM\LLC_MC13224.a" includeCondition="((//mac:Version/mac:value = 'MAC-2003') and (//plm:McuVersion/plm:value = 'MC13224'))" />
+            <temp:file version="1.0" source=".\ARM7\Lib\LLC_ROM\LLC_MC13226.a" destination=".\PLM\Lib\LLC_ROM\LLC_MC13226.a" includeCondition="((//mac:Version/mac:value = 'MAC-2003') and (//plm:McuVersion/plm:value = 'MC13226'))" />
+            <temp:file version="1.0" source=".\ARM7\Lib\LLC_RAM\LLC_MC13224.a" destination=".\PLM\Lib\LLC_RAM\LLC_MC13224.a" includeCondition="((//mac:Version/mac:value = 'MAC-2006') and (//plm:McuVersion/plm:value = 'MC13224'))" />
+            <temp:file version="1.0" source=".\ARM7\Lib\LLC_RAM\LLC_MC13226.a" destination=".\PLM\Lib\LLC_RAM\LLC_MC13226.a" includeCondition="((//mac:Version/mac:value = 'MAC-2006') and (//plm:McuVersion/plm:value = 'MC13226'))" />
+            <temp:file version="1.0" source=".\ARM7\Source\Common\Sys\Init-IAR.S" destination=".\PLM\Source\Common\Sys\Init-IAR.S" />
+            <temp:file version="1.0" source=".\ARM7\Source\Common\Sys\NV_Data.c" destination=".\PLM\Source\Common\Sys\NV_Data.c">
+              <plm:properties>
+                <plm:CustomClockSettings displayName="Custom crystal frequency settings" editor="BeeKitARM7PlatformEditorV05">
+                  <temp:description>Sets a custom frequency for the crystal/oscillator driving the MC1322x chip. <br />To change the setting, launch the User Defined Target Editor by pressing the [...] button on the right side of the property.<br />BeeKit will automatically adjust the platform parameters that depend on the frequency value based on the configured setting.<br />The default setting for crystal frequency is 24MHz which is also the value used by Freescale development boards.<br /><br /><b>This setting will have effect only for a User Defined Target.</b></temp:description>
+                  <plm:value>
+                    <crystalFrequency>24000000</crystalFrequency>
+                    <gDigitalClock_PN_c>24</gDigitalClock_PN_c>
+                    <gDigitalClock_RN_c>21</gDigitalClock_RN_c>
+                    <gMACA_Clock_DIV_c>95</gMACA_Clock_DIV_c>
+                    <gDigitalClock_RAFC_c>0</gDigitalClock_RAFC_c>
+                    <gSystemClock24MHz_c>TRUE</gSystemClock24MHz_c>
+                    <gaRFSynVCODivI_c>0x2f,0x2f,0x2f,0x2f,0x2f,0x2f,0x2f,0x2f,0x2f,0x30,0x30,0x30,0x30,0x30,0x30,0x30</gaRFSynVCODivI_c>
+                    <gaRFSynVCODivF_c>0x00355555,0x006aaaaa,0x00a00000,0x00d55555,0x010aaaaa,0x01400000,0x01755555,0x01aaaaaa,0x01e00000,0x00155555,0x004aaaaa,0x00800000,0x00b55555,0x00eaaaaa,0x01200000,0x01555555</gaRFSynVCODivF_c>
+                  </plm:value>
+                </plm:CustomClockSettings>
+              </plm:properties>
+              <temp:actions>
+                <temp:insertTransformationOutput stylesheet="./CustomClockFreq.xslt">
+                  <temp:regExLib name="beginEndSection" param1="Custom Clock Frequency Settings" />
+                </temp:insertTransformationOutput>
+              </temp:actions>
+            </temp:file>
+            <temp:file version="1.0" source=".\ARM7\Source\Common\Sys\PlatformInit.c" destination=".\PLM\Source\Common\Sys\PlatformInit.c" />
+            <temp:file version="1.0" source=".\ARM7\Source\Common\Sys\PlatformInterrupts.c" destination=".\PLM\Source\Common\Sys\PlatformInterrupts.c" />
+            <temp:file version="1.0" source=".\ARM7\Source\Common\Utils\Delay.c" destination=".\PLM\Source\Common\Utils\Delay.c" />
+            <temp:file version="1.0" source=".\ARM7\Source\Display\Display.c" destination=".\PLM\Source\Display\Display.c" />
+            <temp:file version="1.0" source=".\ARM7\Source\Display\LCD_Font.h" destination=".\PLM\Source\Display\LCD_Font.h" />
+            <temp:file version="1.0" source=".\ARM7\Source\Display\LCD_Font.c" destination=".\PLM\Source\Display\LCD_Font.c" includeCondition="(//plm:McuVersion/plm:value = 'MC13226')" />
+            <temp:file version="1.0" source=".\ARM7\Source\Keyboard\Keyboard.c" destination=".\PLM\Source\Keyboard\Keyboard.c" />
+            <temp:file version="1.0" source=".\ARM7\Source\Keyboard\KeyboardHAL.c" destination=".\PLM\Source\Keyboard\KeyboardHAL.c" />
+            <temp:file version="1.0" source=".\ARM7\Source\Keyboard\KeyboardHAL.h" destination=".\PLM\Source\Keyboard\KeyboardHAL.h" />
+            <temp:file version="1.0" source=".\ARM7\Source\Led\Led.c" destination=".\PLM\Source\Led\Led.c" />
+            <temp:file version="1.0" source=".\ARM7\Source\LPM\PWR.c" destination=".\PLM\Source\LPM\PWR.c" />
+            <temp:file version="1.0" source=".\ARM7\Source\NVM\NV_Flash.c" destination=".\PLM\Source\NVM\NV_Flash.c" />
+            <temp:file version="1.0" source=".\ARM7\Source\NVM\NV_Flash.h" destination=".\PLM\Source\NVM\NV_Flash.h" />
+            <temp:file version="1.0" source=".\ARM7\Source\NVM\NV_FlashHAL.c" destination=".\PLM\Source\NVM\NV_FlashHAL.c" />
+            <temp:file version="1.0" source=".\ARM7\Source\NVM\NV_FlashHAL.h" destination=".\PLM\Source\NVM\NV_FlashHAL.h" />
+            <temp:file version="1.0" source=".\ARM7\Source\TMR\Timer.c" destination=".\PLM\Source\TMR\Timer.c" />
+            <temp:file version="1.0" source=".\ARM7\Source\TMR\TMR.h" destination=".\PLM\Source\TMR\TMR.h" />
+            <temp:file version="1.0" source=".\ARM7\Source\UART\Uart.c" destination=".\PLM\Source\UART\Uart.c" />
+            <temp:file version="1.0" source=".\ARM7\Source\UART\Uart.h" destination=".\PLM\Source\UART\Uart.h" />
+            <temp:file version="1.0" source=".\ARM7\Source\Sound\Sound.c" destination=".\PLM\Source\Sound\Sound.c" />
+            <temp:file version="1.0" source=".\ARM7\Icf\MC13224\MC1322x-RAM-ROM.icf" destination=".\PLM\Icf\MC13224\MC1322x-RAM-ROM.icf" includeCondition="((false) and (//plm:McuVersion/plm:value = 'MC13224'))" />
+            <temp:file version="1.0" source=".\ARM7\Icf\MC13226\MC1322x-RAM-ROM.icf" destination=".\PLM\Icf\MC13226\MC1322x-RAM-ROM.icf" includeCondition="((false) and (//plm:McuVersion/plm:value = 'MC13226'))" />
+            <temp:file version="1.0" source=".\ARM7\Icf\MC1322x.ddf" destination=".\PLM\Icf\MC1322x.ddf" includeCondition="(false)" />
+            <temp:file version="1.0" source=".\ARM7\FlashLoader\FlashMC1322x.out" destination=".\PLM\FlashLoader\FlashMC1322x.out" includeCondition="(false)" />
+            <temp:file version="1.0" source=".\ARM7\FlashLoader\FlashMC1322x.mac" destination=".\PLM\FlashLoader\FlashMC1322x.mac" includeCondition="(false)" />
+            <temp:file version="1.0" source=".\IAR.ewd" destination=".\%project%.ewd" includeInProject="false" />
+            <temp:file version="1.0" source=".\IAR.board" destination=".\IAR.board" includeInProject="false" />
+            <temp:file version="1.0" source=".\IAR.eww" destination="..\%solution%.eww" includeInProject="false">
+              <temp:actions>
+                <temp:insertTransformationOutput stylesheet="./ProjectName.xslt">
+                  <temp:regExLib name="xmlWorkspaceSection" param1="workspace" />
+                </temp:insertTransformationOutput>
+              </temp:actions>
+            </temp:file>
+          </temp:files>
+          <temp:components />
+        </plm:component>
+      </sln:components>
+    </sln:project>
+  </sln:projects>
+</sln:solution>

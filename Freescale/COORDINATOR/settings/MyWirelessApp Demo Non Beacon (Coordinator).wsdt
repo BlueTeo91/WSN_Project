@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>MyWirelessApp Demo Non Beacon (Coordinator)/Debug</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>306</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1215</ColumnWidth1><ColumnWidth2>324</ColumnWidth2><ColumnWidth3>81</ColumnWidth3></Build>
+    <TerminalIO/><Debug-Log><ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1621</ColumnWidth1></Debug-Log><Find-in-Files><ColumnWidth0>580</ColumnWidth0><ColumnWidth1>82</ColumnWidth1><ColumnWidth2>994</ColumnWidth2></Find-in-Files></Static>
+    <Windows>
+      
+      
+    <Wnd0>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-28613-24498</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>MyWirelessApp Demo Non Beacon (Coordinator)</ExpandedNode><ExpandedNode>MyWirelessApp Demo Non Beacon (Coordinator)/Application</ExpandedNode><ExpandedNode>MyWirelessApp Demo Non Beacon (Coordinator)/MacPhy</ExpandedNode><ExpandedNode>MyWirelessApp Demo Non Beacon (Coordinator)/MacPhy/Interface</ExpandedNode><ExpandedNode>MyWirelessApp Demo Non Beacon (Coordinator)/PLM</ExpandedNode><ExpandedNode>MyWirelessApp Demo Non Beacon (Coordinator)/PLM/Source</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd0><Wnd1>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-16819-24514</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+        <Tab><Identity>TabID-6116-10778</Identity><TabName>Debug Log</TabName><Factory>Debug-Log</Factory><Session/></Tab><Tab><Identity>TabID-10654-11307</Identity><TabName>Find in Files</TabName><Factory>Find-in-Files</Factory><Session/></Tab></Tabs>
+        
+      <SelectedTab>2</SelectedTab></Wnd1></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\MyWirelessApp Demo Non Beacon (Coordinator)\Application\Source\MApp.c</Filename><XPos>0</XPos><YPos>370</YPos><SelStart>14852</SelStart><SelEnd>14852</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\MyWirelessApp Demo Non Beacon (Coordinator)\Application\Source\MApp.h</Filename><XPos>0</XPos><YPos>30</YPos><SelStart>1108</SelStart><SelEnd>1108</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\MyWirelessApp Demo Non Beacon (Coordinator)\Application\Configure\ApplicationConf.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>484</SelStart><SelEnd>484</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\MyWirelessApp Demo Non Beacon (Coordinator)\PLM\Source\Common\Sys\PlatformInit.c</Filename><XPos>0</XPos><YPos>64</YPos><SelStart>2263</SelStart><SelEnd>2263</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\MyWirelessApp Demo Non Beacon (Coordinator)\PLM\LibInterface\CRM.h</Filename><XPos>0</XPos><YPos>107</YPos><SelStart>6139</SelStart><SelEnd>6139</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\MyWirelessApp Demo Non Beacon (Coordinator)\Application\Configure\AppToPlatformConfig.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>1249</SelStart><SelEnd>1249</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\MyWirelessApp Demo Non Beacon (Coordinator)\PLM\Interface\PlatformInit.h</Filename><XPos>0</XPos><YPos>45</YPos><SelStart>1730</SelStart><SelEnd>1730</SelEnd></Tab><ActiveTab>6</ActiveTab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-00a0a6e0><key>iaridepm.enu1</key></Toolbar-00a0a6e0></Sizes></Row0></Top><Left><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>528</Bottom><Right>397</Right><x>-2</x><y>-2</y><xscreen>330</xscreen><yscreen>288</yscreen><sizeHorzCX>241581</sizeHorzCX><sizeHorzCY>416185</sizeHorzCY><sizeVertCX>292094</sizeVertCX><sizeVertCY>765896</sizeVertCY></Rect></Wnd0></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>120</Bottom><Right>1368</Right><x>-2</x><y>-2</y><xscreen>1370</xscreen><yscreen>122</yscreen><sizeHorzCX>1002928</sizeHorzCX><sizeHorzCY>176301</sizeHorzCY><sizeVertCX>241581</sizeVertCX><sizeVertCY>416185</sizeVertCY></Rect></Wnd1></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+
