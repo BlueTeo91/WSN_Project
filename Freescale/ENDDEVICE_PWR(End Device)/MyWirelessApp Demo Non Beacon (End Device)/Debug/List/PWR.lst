@@ -1,0 +1,1762 @@
+###############################################################################
+#                                                                             #
+#                                                       08/Dec/2015  21:20:00 #
+# IAR ANSI C/C++ Compiler V5.50.7.22081/W32 EVALUATION for ARM                #
+# Copyright (C) 1999-2010 IAR Systems AB.                                     #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  C:\Documents and Settings\Administrator\Desktop\Copy of  #
+#                    MyWirelessApp Demo Non Beacon (End                       #
+#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Device)\PLM\Source\LPM\PWR.c                             #
+#    Command line =  "C:\Documents and Settings\Administrator\Desktop\Copy    #
+#                    of MyWirelessApp Demo Non Beacon (End                    #
+#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Device)\PLM\Source\LPM\PWR.c" -D gMacStandAlone_d=1 -D   #
+#                    gSAPMessagesEnableLlc_d=0 -D gZtcIncluded_d=0 -D         #
+#                    gTargetMC1322xSRB=1 --preprocess "C:\Documents and       #
+#                    Settings\Administrator\Desktop\Copy of MyWirelessApp     #
+#                    Demo Non Beacon (End Device)\MyWirelessApp Demo Non      #
+#                    Beacon (End Device)\Debug\List\" -lC "C:\Documents and   #
+#                    Settings\Administrator\Desktop\Copy of MyWirelessApp     #
+#                    Demo Non Beacon (End Device)\MyWirelessApp Demo Non      #
+#                    Beacon (End Device)\Debug\List\" -lB "C:\Documents and   #
+#                    Settings\Administrator\Desktop\Copy of MyWirelessApp     #
+#                    Demo Non Beacon (End Device)\MyWirelessApp Demo Non      #
+#                    Beacon (End Device)\Debug\List\" --diag_suppress         #
+#                    Pe014,Pe001,Pe991,Pa039,Pe520 -o "C:\Documents and       #
+#                    Settings\Administrator\Desktop\Copy of MyWirelessApp     #
+#                    Demo Non Beacon (End Device)\MyWirelessApp Demo Non      #
+#                    Beacon (End Device)\Debug\Obj\" --no_cse --no_unroll     #
+#                    --no_inline --no_code_motion --no_tbaa --no_clustering   #
+#                    --no_scheduling --debug --endian=little                  #
+#                    --cpu=ARM7TDMI-S --fpu=None --dlib_config "C:\Program    #
+#                    Files\IAR Systems\Embedded Workbench 5.4                 #
+#                    Evaluation\arm\INC\DLib_Config_Normal.h" -I              #
+#                    "C:\Documents and Settings\Administrator\Desktop\Copy    #
+#                    of MyWirelessApp Demo Non Beacon (End                    #
+#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Device)\MacPhy\Interface\" -I "C:\Documents and          #
+#                    Settings\Administrator\Desktop\Copy of MyWirelessApp     #
+#                    Demo Non Beacon (End Device)\MyWirelessApp Demo Non      #
+#                    Beacon (End Device)\Application\Init\" -I "C:\Documents  #
+#                    and Settings\Administrator\Desktop\Copy of               #
+#                    MyWirelessApp Demo Non Beacon (End                       #
+#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Device)\Application\Interface\" -I "C:\Documents and     #
+#                    Settings\Administrator\Desktop\Copy of MyWirelessApp     #
+#                    Demo Non Beacon (End Device)\MyWirelessApp Demo Non      #
+#                    Beacon (End Device)\Application\Configure\" -I           #
+#                    "C:\Documents and Settings\Administrator\Desktop\Copy    #
+#                    of MyWirelessApp Demo Non Beacon (End                    #
+#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Device)\Application\UartUtil\" -I "C:\Documents and      #
+#                    Settings\Administrator\Desktop\Copy of MyWirelessApp     #
+#                    Demo Non Beacon (End Device)\MyWirelessApp Demo Non      #
+#                    Beacon (End Device)\Application\Source\" -I              #
+#                    "C:\Documents and Settings\Administrator\Desktop\Copy    #
+#                    of MyWirelessApp Demo Non Beacon (End                    #
+#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Device)\SSM\TS\Interface\" -I "C:\Documents and          #
+#                    Settings\Administrator\Desktop\Copy of MyWirelessApp     #
+#                    Demo Non Beacon (End Device)\MyWirelessApp Demo Non      #
+#                    Beacon (End Device)\SSM\TS\Source\" -I "C:\Documents     #
+#                    and Settings\Administrator\Desktop\Copy of               #
+#                    MyWirelessApp Demo Non Beacon (End                       #
+#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Device)\SSM\ZTC\Interface\" -I "C:\Documents and         #
+#                    Settings\Administrator\Desktop\Copy of MyWirelessApp     #
+#                    Demo Non Beacon (End Device)\MyWirelessApp Demo Non      #
+#                    Beacon (End Device)\SSM\ZTC\Source\" -I "C:\Documents    #
+#                    and Settings\Administrator\Desktop\Copy of               #
+#                    MyWirelessApp Demo Non Beacon (End                       #
+#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Device)\PLM\Interface\" -I "C:\Documents and             #
+#                    Settings\Administrator\Desktop\Copy of MyWirelessApp     #
+#                    Demo Non Beacon (End Device)\MyWirelessApp Demo Non      #
+#                    Beacon (End Device)\PLM\LibInterface\" -I "C:\Documents  #
+#                    and Settings\Administrator\Desktop\Copy of               #
+#                    MyWirelessApp Demo Non Beacon (End                       #
+#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Device)\PLM\Source\Display\" -I "C:\Documents and        #
+#                    Settings\Administrator\Desktop\Copy of MyWirelessApp     #
+#                    Demo Non Beacon (End Device)\MyWirelessApp Demo Non      #
+#                    Beacon (End Device)\PLM\Source\Keyboard\" -I             #
+#                    "C:\Documents and Settings\Administrator\Desktop\Copy    #
+#                    of MyWirelessApp Demo Non Beacon (End                    #
+#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Device)\PLM\Source\NVM\" -I "C:\Documents and            #
+#                    Settings\Administrator\Desktop\Copy of MyWirelessApp     #
+#                    Demo Non Beacon (End Device)\MyWirelessApp Demo Non      #
+#                    Beacon (End Device)\PLM\Source\TMR\" -I "C:\Documents    #
+#                    and Settings\Administrator\Desktop\Copy of               #
+#                    MyWirelessApp Demo Non Beacon (End                       #
+#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Device)\PLM\Source\UART\" -I "C:\Program Files\IAR       #
+#                    Systems\Embedded Workbench 5.4 Evaluation\arm\INC\"      #
+#                    --interwork --cpu_mode thumb -On                         #
+#    List file    =  C:\Documents and Settings\Administrator\Desktop\Copy of  #
+#                    MyWirelessApp Demo Non Beacon (End                       #
+#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Device)\Debug\List\PWR.lst                               #
+#    Object file  =  C:\Documents and Settings\Administrator\Desktop\Copy of  #
+#                    MyWirelessApp Demo Non Beacon (End                       #
+#                    Device)\MyWirelessApp Demo Non Beacon (End               #
+#                    Device)\Debug\Obj\PWR.o                                  #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+C:\Documents and Settings\Administrator\Desktop\Copy of MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\PLM\Source\LPM\PWR.c
+      1          /************************************************************************************
+      2          * Function to handle the different power down states.
+      3          *
+      4          *
+      5          * (c) Copyright 2008, Freescale, Inc. All rights reserved.
+      6          *
+      7          *
+      8          * No part of this document must be reproduced in any form - including copied,
+      9          * transcribed, printed or by any electronic means - without specific written
+     10          * permission from Freescale Semiconductor.
+     11          *
+     12          ************************************************************************************/
+     13          
+     14          
+     15          /************************************************************************************
+     16          *************************************************************************************
+     17          * Includes
+     18          *************************************************************************************
+     19          ************************************************************************************/
+     20          #include "EmbeddedTypes.h"
+     21          #include "PWR_Configuration.h"   
+     22          #include "PWR_Interface.h"
+     23          #include "Crm.h"
+     24          #include "Keyboard.h"
+     25          #include "KeyboardHAL.h"
+     26          #include "Interrupt.h"
+     27          #include "AppAspInterface.h"
+     28          #include "AppToPlatformConfig.h"
+     29          #include "TMR_Interface.h"
+     30          #include "NV_Data.h"
+     31          /******************************************************************************
+     32          *******************************************************************************
+     33          * Private macros
+     34          *******************************************************************************
+     35          ******************************************************************************/                                              
+     36          
+     37          #define PWR_MCUDoze()      PWR_MCUSleep(gDoze_c)
+     38          
+     39          #define PWR_MCUHibernate() PWR_MCUSleep(gHibernate_c)
+     40          
+     41          #define mPWR_MacaClk                       (*((volatile uint32_t *)(0x80004048)))
+     42          #define mMACA_TIMER_UPDATE_FACTOR_HIB_2K   125
+     43          #define mMACA_TIMER_UPDATE_FACTOR_HIB_32K  (125.0/16.0)
+     44          #define mMACA_TIMER_UPDATE_FACTOR_DOZE     ((250000.0*128.0)/SYSTEM_CLOCK)
+     45          
+     46          /******************************************************************************
+     47          *******************************************************************************
+     48          * Private prototypes
+     49          *******************************************************************************
+     50          ******************************************************************************/
+     51          #if (cPWR_UsePowerDownMode)
+     52          #if (cPWR_UpdateMACAClockAtWakeUp)
+     53          static void PWR_MacaTimerUpdate(void);
+     54          #endif /* cPWR_UpdateMACAClockAtWakeUp */
+     55          #endif /* cPWR_UsePowerDownMode */
+     56          /******************************************************************************
+     57          *******************************************************************************
+     58          * Private type definitions
+     59          *******************************************************************************
+     60          ******************************************************************************/
+     61          
+     62          /******************************************************************************
+     63          *******************************************************************************
+     64          * Private memory declarations
+     65          *******************************************************************************
+     66          ******************************************************************************/
+     67          #if (gTMR_EnableLowPowerTimers_d) 
+     68          #if cPWR_UsePowerDownMode
+
+   \                                 In section .bss, align 2
+     69           static uint16_t notCountedTmrTicksBeforeSleep;
+   \                     notCountedTmrTicksBeforeSleep:
+   \   00000000                      DS8 2
+     70          #endif //cPWR_UsePowerDownMode
+     71          #endif
+     72          
+     73          #if cPWR_UsePowerDownMode
+
+   \                                 In section .bss, align 1
+     74          static uint8_t mExtOutPol = cPWR_ExtOutPol;
+   \                     mExtOutPol:
+   \   00000000                      DS8 1
+     75          #endif //cPWR_UsePowerDownMode
+     76          /******************************************************************************
+     77          *******************************************************************************
+     78          * Public memory declarations
+     79          *******************************************************************************
+     80          ******************************************************************************/
+
+   \                                 In section .bss, align 1
+     81          static uint8_t mLPMFlag = gAllowDeviceToSleep_c;
+   \                     mLPMFlag:
+   \   00000000                      DS8 1
+     82          /* but recommended to be regarded as private */
+     83          
+     84          #if (cPWR_UpdateMACAClockAtWakeUp)
+     85          #if cPWR_UsePowerDownMode
+
+   \                                 In section .bss, align 4
+     86          static   uint32_t mSavedMacaClk;
+   \                     mSavedMacaClk:
+   \   00000000                      DS8 4
+     87          #endif //cPWR_UsePowerDownMode
+     88          #endif /* cPWR_UpdateMACAClockAtWakeUp */
+     89          
+
+   \                                 In section .bss, align 4
+     90          volatile PWRLib_WakeupReason_t     PWRLib_MCU_WakeupReason;
+   \                     PWRLib_MCU_WakeupReason:
+   \   00000000                      DS8 4
+     91          
+     92          #if (cPWR_UseMCUStatus)
+     93            PWRLib_MCUStatus_t               PWRLib_MCUStatus;
+     94          #endif  // #if (cPWR_UseMCUStatus)
+     95           
+     96          #if (cPWR_UseRADIOStatus)
+     97              PWRLib_RADIOStatus_t           PWRLib_RADIOStatus;
+     98          #endif  /* #if (cPWR_UseRADIOStatus) */ 
+     99          /*--- Zigbee STACK status ---*/ 
+
+   \                                 In section .bss, align 1
+    100          PWRLib_StackPS_t                   PWRLib_StackPS;
+   \                     PWRLib_StackPS:
+   \   00000000                      DS8 1
+    101          
+    102          
+    103          /* Sleep timeout in MAC symbols to be used in DeepSleepMode 8 */
+    104          #if ((cPWR_UsePowerDownMode) && (cPWR_DeepSleepMode == 8))
+    105           static uint32_t mPWR_SleepTimeoutSym = cPWR_Ms2MACSymbols(cPWR_SleepTimeoutMs);
+    106          #endif   
+    107           
+    108          
+    109          /************************************************************************************
+    110          * Set the output state of the 4 external drivers (i.e. KBI[3:0] ) for use during sleep.
+    111          *
+    112          * Interface assumptions:
+    113          *   None
+    114          *   
+    115          * Return value:
+    116          *   None
+    117          * 
+    118          ************************************************************************************/
+    119          #if cPWR_UsePowerDownMode
+
+   \                                 In section .text, align 2, keep-with-next
+    120          void PWR_SetExtOutPol(uint8_t val)
+    121          {
+    122            mExtOutPol = val;
+   \                     PWR_SetExtOutPol:
+   \   00000000   ....               LDR      R1,??DataTable12
+   \   00000002   0870               STRB     R0,[R1, #+0]
+    123          }
+   \   00000004   7047               BX       LR               ;; return
+    124          #endif //cPWR_UsePowerDownMode
+    125          
+    126          /************************************************************************************
+    127          * Set the NVM write operation semaphore.
+    128          *
+    129          * This function will set the NVM write operation semaphore so that the idle task wont
+    130          * do a NVM write operation unless this is released by calling 
+    131          * NVM_ClearCriticalNVMSection.
+    132          *
+    133          * Interface assumptions:
+    134          *   None
+    135          *   
+    136          * Return value:
+    137          *   None
+    138          * 
+    139          ************************************************************************************/
+    140          
+
+   \                                 In section .text, align 2, keep-with-next
+    141          void PWR_AllowDeviceToSleep(void)
+    142          {
+   \                     PWR_AllowDeviceToSleep:
+   \   00000000   10B5               PUSH     {R4,LR}
+    143            unsigned int saveInt;
+    144            saveInt = IntDisableAll();
+   \   00000002   ........           BL       IntDisableAll
+   \   00000006   0400               MOVS     R4,R0
+    145            
+    146            if( mLPMFlag != 0 )
+   \   00000008   ....               LDR      R0,??DataTable12_1
+   \   0000000A   0078               LDRB     R0,[R0, #+0]
+   \   0000000C   0028               CMP      R0,#+0
+   \   0000000E   04D0               BEQ      ??PWR_AllowDeviceToSleep_0
+    147            {
+    148              mLPMFlag--;
+   \   00000010   ....               LDR      R0,??DataTable12_1
+   \   00000012   0078               LDRB     R0,[R0, #+0]
+   \   00000014   401E               SUBS     R0,R0,#+1
+   \   00000016   ....               LDR      R1,??DataTable12_1
+   \   00000018   0870               STRB     R0,[R1, #+0]
+    149            }
+    150            IntRestoreAll(saveInt);
+   \                     ??PWR_AllowDeviceToSleep_0:
+   \   0000001A   2000               MOVS     R0,R4
+   \   0000001C   ........           BL       IntRestoreAll
+    151          }
+   \   00000020   10BC               POP      {R4}
+   \   00000022   08BC               POP      {R3}
+   \   00000024   1847               BX       R3               ;; return
+    152          
+    153          /************************************************************************************
+    154          * Release the NVM write operation semaphore.
+    155          *
+    156          * This function will release the NVM write operation semaphore so that the idle task 
+    157          * can do a NVM write operation.
+    158          *  
+    159          * Interface assumptions:
+    160          *   None
+    161          *   
+    162          * Return value:
+    163          *   None
+    164          *
+    165          ************************************************************************************/
+    166           
+
+   \                                 In section .text, align 2, keep-with-next
+    167          void PWR_DisallowDeviceToSleep(void)
+    168          {
+   \                     PWR_DisallowDeviceToSleep:
+   \   00000000   80B5               PUSH     {R7,LR}
+    169            IntDisableAll();
+   \   00000002   ........           BL       IntDisableAll
+    170            mLPMFlag++;
+   \   00000006   ....               LDR      R0,??DataTable12_1
+   \   00000008   0078               LDRB     R0,[R0, #+0]
+   \   0000000A   401C               ADDS     R0,R0,#+1
+   \   0000000C   ....               LDR      R1,??DataTable12_1
+   \   0000000E   0870               STRB     R0,[R1, #+0]
+    171            IntEnableAll();
+   \   00000010   0020               MOVS     R0,#+0
+   \   00000012   ........           BL       IntRestoreAll
+    172          }
+   \   00000016   09BC               POP      {R0,R3}
+   \   00000018   1847               BX       R3               ;; return
+    173          
+    174          /***********************************************************************************
+    175          * This function is used to  Check  the Permission flag to go to 
+    176          * low power mode
+    177          *
+    178          * Interface assumptions:
+    179          * None
+    180          * 
+    181          * The routine limitations.
+    182          * None
+    183          *
+    184          * Return value:
+    185          *   TRUE  : If the device is allowed to go to the LPM else FALSE
+    186          *
+    187          * Effects on global data.
+    188          * None
+    189          *
+    190          * Source of algorithm used.
+    191          * None
+    192          *
+    193          *****************************************************************************/ 
+
+   \                                 In section .text, align 2, keep-with-next
+    194          bool_t PWR_CheckIfDeviceCanGoToSleep( void ) 
+    195          {
+   \                     PWR_CheckIfDeviceCanGoToSleep:
+   \   00000000   00B5               PUSH     {LR}
+    196            return (bool_t)(mLPMFlag == 0); 
+   \   00000002   ....               LDR      R0,??DataTable12_1
+   \   00000004   0078               LDRB     R0,[R0, #+0]
+   \   00000006   0028               CMP      R0,#+0
+   \   00000008   01D1               BNE      ??PWR_CheckIfDeviceCanGoToSleep_0
+   \   0000000A   0120               MOVS     R0,#+1
+   \   0000000C   00E0               B        ??PWR_CheckIfDeviceCanGoToSleep_1
+   \                     ??PWR_CheckIfDeviceCanGoToSleep_0:
+   \   0000000E   0020               MOVS     R0,#+0
+   \                     ??PWR_CheckIfDeviceCanGoToSleep_1:
+   \   00000010   0006               LSLS     R0,R0,#+24       ;; ZeroExtS R0,R0,#+24,#+24
+   \   00000012   000E               LSRS     R0,R0,#+24
+   \   00000014   08BC               POP      {R3}
+   \   00000016   1847               BX       R3               ;; return
+    197          }
+    198          
+    199          /*****************************************************************************/
+    200          /* Please see in PWR_Interface.h for description                             */
+
+   \                                 In section .text, align 2, keep-with-next
+    201          void PWRLib_Reset(void)
+    202          {
+    203           CRM_SoftReset();
+   \                     PWRLib_Reset:
+   \   00000000   ....               LDR      R0,??DataTable12_2  ;; 0x80003050
+   \   00000002   ....               LDR      R1,??DataTable13  ;; 0x87651234
+   \   00000004   0160               STR      R1,[R0, #+0]
+    204          }
+   \   00000006   7047               BX       LR               ;; return
+    205          /*****************************************************************************/
+    206          
+    207          /*****************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    208          void PWR_MCUWait(void) {
+   \                     PWR_MCUWait:
+   \   00000000   80B5               PUSH     {R7,LR}
+    209          #if (cPWR_UsePowerDownMode)
+    210            mMCU_SetStatus( MCU_Wait);
+    211            mRADIO_SetStatus(RADIO_Idle);
+    212            CRM_Wait4Irq();
+   \   00000002   ........           BL       CRM_Wait4Irq
+    213          #endif  /* #if (cPWR_UsePowerDownMode) */
+    214          }  /* PWR_MCUWait(void) =================================================== */
+   \   00000006   09BC               POP      {R0,R3}
+   \   00000008   1847               BX       R3               ;; return
+    215          
+    216          /*****************************************************************************/
+    217          #if (cPWR_UsePowerDownMode)
+
+   \                                 In section .text, align 2, keep-with-next
+    218          static void PWR_CallBeforeSleep(void) 
+    219          {
+    220          #if (cPWR_UpdateMACAClockAtWakeUp)
+    221            mSavedMacaClk = mPWR_MacaClk;
+   \                     PWR_CallBeforeSleep:
+   \   00000000   ....               LDR      R0,??DataTable12_3
+   \   00000002   ....               LDR      R1,??DataTable13_1  ;; 0x80004048
+   \   00000004   0968               LDR      R1,[R1, #+0]
+   \   00000006   0160               STR      R1,[R0, #+0]
+    222          #endif /* cPWR_UpdateMACAClockAtWakeUp */  
+    223          }  /* PWR_CallBeforeSleep(void) =================================================== */
+   \   00000008   7047               BX       LR               ;; return
+    224          #endif  /* #if (cPWR_UsePowerDownMode) */
+    225          
+    226          /*****************************************************************************/
+    227          /* Please see in PWR_Interface.h for description                             */
+
+   \                                 In section .text, align 2, keep-with-next
+    228          void PWR_MCUSleep(crmSleep_t crmSleep) {
+   \                     PWR_MCUSleep:
+   \   00000000   1CB5               PUSH     {R2-R4,LR}
+   \   00000002   0400               MOVS     R4,R0
+    229          #if (cPWR_UsePowerDownMode)
+    230           crmSleepCtrl_t  crmSleepCtrl;
+    231           
+    232           crmSleepCtrl.sleepType = crmSleep;
+   \   00000004   6846               MOV      R0,SP
+   \   00000006   0078               LDRB     R0,[R0, #+0]
+   \   00000008   FE21               MOVS     R1,#+254
+   \   0000000A   0140               ANDS     R1,R1,R0
+   \   0000000C   2000               MOVS     R0,R4
+   \   0000000E   C007               LSLS     R0,R0,#+31       ;; ZeroExtS R0,R0,#+31,#+31
+   \   00000010   C00F               LSRS     R0,R0,#+31
+   \   00000012   0843               ORRS     R0,R0,R1
+   \   00000014   6946               MOV      R1,SP
+   \   00000016   0870               STRB     R0,[R1, #+0]
+    233           crmSleepCtrl.ramRet = cPWR_RAMRetentionMode;
+   \   00000018   6846               MOV      R0,SP
+   \   0000001A   0078               LDRB     R0,[R0, #+0]
+   \   0000001C   0621               MOVS     R1,#+6
+   \   0000001E   0143               ORRS     R1,R1,R0
+   \   00000020   6846               MOV      R0,SP
+   \   00000022   0170               STRB     R1,[R0, #+0]
+    234           crmSleepCtrl.mcuRet = cPWR_MCURetentionMode;
+   \   00000024   6846               MOV      R0,SP
+   \   00000026   0078               LDRB     R0,[R0, #+0]
+   \   00000028   0821               MOVS     R1,#+8
+   \   0000002A   0143               ORRS     R1,R1,R0
+   \   0000002C   6846               MOV      R0,SP
+   \   0000002E   0170               STRB     R1,[R0, #+0]
+    235           crmSleepCtrl.digPadRet = cPWR_MCUPadRetentionMode;
+   \   00000030   6846               MOV      R0,SP
+   \   00000032   0078               LDRB     R0,[R0, #+0]
+   \   00000034   1021               MOVS     R1,#+16
+   \   00000036   0143               ORRS     R1,R1,R0
+   \   00000038   6846               MOV      R0,SP
+   \   0000003A   0170               STRB     R1,[R0, #+0]
+    236           crmSleepCtrl.pfToDoBeforeSleep = PWR_CallBeforeSleep;
+   \   0000003C   ....               LDR      R0,??DataTable13_2
+   \   0000003E   0190               STR      R0,[SP, #+4]
+    237           
+    238           CRM_WU_CNTL.extOutPol = mExtOutPol;
+   \   00000040   ....               LDR      R0,??DataTable14  ;; 0x80003004
+   \   00000042   0068               LDR      R0,[R0, #+0]
+   \   00000044   0001               LSLS     R0,R0,#+4        ;; ZeroExtS R0,R0,#+4,#+4
+   \   00000046   0009               LSRS     R0,R0,#+4
+   \   00000048   ....               LDR      R1,??DataTable12
+   \   0000004A   0978               LDRB     R1,[R1, #+0]
+   \   0000004C   0907               LSLS     R1,R1,#+28
+   \   0000004E   0143               ORRS     R1,R1,R0
+   \   00000050   ....               LDR      R0,??DataTable14  ;; 0x80003004
+   \   00000052   0160               STR      R1,[R0, #+0]
+    239           
+    240           if(crmSleep == gDoze_c)
+    241           {
+    242            mMCU_SetStatus(MCU_Doze);
+    243           }
+    244           
+    245           if(crmSleep == gHibernate_c)
+    246           {
+    247            mMCU_SetStatus(MCU_Hibernate);
+    248           }
+    249           mRADIO_SetStatus(RADIO_Off);
+    250           CRM_GoToSleep(&crmSleepCtrl);
+   \   00000054   6846               MOV      R0,SP
+   \   00000056   ........           BL       CRM_GoToSleep
+    251          #endif  /* #if (cPWR_UsePowerDownMode) */
+    252          }  /* PWR_MCUSleep(void) =================================================== */
+   \   0000005A   13BC               POP      {R0,R1,R4}
+   \   0000005C   08BC               POP      {R3}
+   \   0000005E   1847               BX       R3               ;; return
+    253          
+    254          /*****************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    255          void PWR_AllOff(void)
+    256          {
+   \                     PWR_AllOff:
+   \   00000000   80B5               PUSH     {R7,LR}
+    257            #if (cPWR_UsePowerDownMode)
+    258             /* Disable the wake-up sources in crm */
+    259             CRM_WU_CNTL.extWuEn = 0;
+   \   00000002   ....               LDR      R0,??DataTable14  ;; 0x80003004
+   \   00000004   0068               LDR      R0,[R0, #+0]
+   \   00000006   F021               MOVS     R1,#+240
+   \   00000008   8843               BICS     R0,R0,R1
+   \   0000000A   ....               LDR      R1,??DataTable14  ;; 0x80003004
+   \   0000000C   0860               STR      R0,[R1, #+0]
+    260             CRM_WU_CNTL.timerWuEn = 0;
+   \   0000000E   ....               LDR      R0,??DataTable14  ;; 0x80003004
+   \   00000010   0068               LDR      R0,[R0, #+0]
+   \   00000012   0121               MOVS     R1,#+1
+   \   00000014   8843               BICS     R0,R0,R1
+   \   00000016   ....               LDR      R1,??DataTable14  ;; 0x80003004
+   \   00000018   0860               STR      R0,[R1, #+0]
+    261             CRM_WU_CNTL.rtcWuEn = 0;
+   \   0000001A   ....               LDR      R0,??DataTable14  ;; 0x80003004
+   \   0000001C   0068               LDR      R0,[R0, #+0]
+   \   0000001E   0221               MOVS     R1,#+2
+   \   00000020   8843               BICS     R0,R0,R1
+   \   00000022   ....               LDR      R1,??DataTable14  ;; 0x80003004
+   \   00000024   0860               STR      R0,[R1, #+0]
+    262             /* Enter Hibernate with no wake-up sources. wake-up on Reset only */
+    263             PWR_MCUHibernate();
+   \   00000026   0020               MOVS     R0,#+0
+   \   00000028   ........           BL       PWR_MCUSleep
+    264            #endif
+    265          }  /* PWR_AllOff(void) =================================================== */
+   \   0000002C   09BC               POP      {R0,R3}
+   \   0000002E   1847               BX       R3               ;; return
+    266          
+    267          
+    268          /*****************************************************************************/
+    269          /* Please see in PWR_Interface.h for description                             */
+
+   \                                 In section .text, align 2, keep-with-next
+    270          void PWR_RunAgain(void) {
+   \                     PWR_RunAgain:
+   \   00000000   80B5               PUSH     {R7,LR}
+    271            #if (cPWR_UsePowerDownMode)
+    272          
+    273             while(CRM_STATUS.sleepSync == 0);
+   \                     ??PWR_RunAgain_0:
+   \   00000002   ....               LDR      R0,??DataTable14_1  ;; 0x80003018
+   \   00000004   0068               LDR      R0,[R0, #+0]
+   \   00000006   C007               LSLS     R0,R0,#+31
+   \   00000008   FBD5               BPL      ??PWR_RunAgain_0
+    274             
+    275             if(FALSE == gHardwareParameters.gSystemClock24MHz_c)
+   \   0000000A   ....               LDR      R0,??DataTable14_2
+   \   0000000C   2330               ADDS     R0,R0,#+35
+   \   0000000E   0078               LDRB     R0,[R0, #+0]
+   \   00000010   0028               CMP      R0,#+0
+   \   00000012   05D1               BNE      ??PWR_RunAgain_1
+    276             {
+    277              (*((volatile uint32_t *)(0x80003048))) = 0x00000F78;
+   \   00000014   ....               LDR      R0,??DataTable14_3  ;; 0x80003048
+   \   00000016   ....               LDR      R1,??DataTable14_4  ;; 0xf78
+   \   00000018   0160               STR      R1,[R0, #+0]
+    278              (*((volatile uint32_t *)(0x80009000))) = 0xC0050300;
+   \   0000001A   ....               LDR      R0,??DataTable14_5  ;; 0x80009000
+   \   0000001C   ....               LDR      R1,??DataTable14_6  ;; 0xc0050300
+   \   0000001E   0160               STR      R1,[R0, #+0]
+    279             }
+    280          #if (cPWR_UpdateMACAClockAtWakeUp)
+    281             PWR_MacaTimerUpdate();
+   \                     ??PWR_RunAgain_1:
+   \   00000020   ........           BL       PWR_MacaTimerUpdate
+    282          #endif
+    283             CRM_REGS_P->Status = 1;
+   \   00000024   ....               LDR      R0,??DataTable14_1  ;; 0x80003018
+   \   00000026   0121               MOVS     R1,#+1
+   \   00000028   0160               STR      R1,[R0, #+0]
+    284          
+    285              #if (gTMR_EnableLowPowerTimers_d) 
+    286              {
+    287                     volatile uint32_t crmSleepTime = CRM_REGS_P->WuCount;
+   \   0000002A   ....               LDR      R0,??DataTable14_7  ;; 0x80003020
+   \   0000002C   0068               LDR      R0,[R0, #+0]
+   \   0000002E   0090               STR      R0,[SP, #+0]
+    288                     
+    289                     crmSleepTime = cPWR_WuTmrTicks2TmrTicks(crmSleepTime);
+   \   00000030   ....               LDR      R0,??DataTable14_1  ;; 0x80003018
+   \   00000032   0068               LDR      R0,[R0, #+0]
+   \   00000034   0100               MOVS     R1,R0
+   \   00000036   8907               LSLS     R1,R1,#+30       ;; ZeroExtS R1,R1,#+30,#+31
+   \   00000038   C90F               LSRS     R1,R1,#+31
+   \   0000003A   0029               CMP      R1,#+0
+   \   0000003C   14D0               BEQ      ??PWR_RunAgain_2
+   \   0000003E   ....               LDR      R0,??DataTable15  ;; 0x80003000
+   \   00000040   0068               LDR      R0,[R0, #+0]
+   \   00000042   0100               MOVS     R1,R0
+   \   00000044   8906               LSLS     R1,R1,#+26       ;; ZeroExtS R1,R1,#+26,#+31
+   \   00000046   C90F               LSRS     R1,R1,#+31
+   \   00000048   0029               CMP      R1,#+0
+   \   0000004A   08D0               BEQ      ??PWR_RunAgain_3
+   \   0000004C   ....               LDR      R0,??DataTable15_1  ;; 0x80003044
+   \   0000004E   0068               LDR      R0,[R0, #+0]
+   \   00000050   C007               LSLS     R0,R0,#+31
+   \   00000052   04D5               BPL      ??PWR_RunAgain_3
+   \   00000054   0098               LDR      R0,[SP, #+0]
+   \   00000056   0521               MOVS     R1,#+5
+   \   00000058   4843               MULS     R0,R1,R0
+   \   0000005A   0090               STR      R0,[SP, #+0]
+   \   0000005C   06E0               B        ??PWR_RunAgain_4
+   \                     ??PWR_RunAgain_3:
+   \   0000005E   0098               LDR      R0,[SP, #+0]
+   \   00000060   5D21               MOVS     R1,#+93
+   \   00000062   4843               MULS     R0,R1,R0
+   \   00000064   0090               STR      R0,[SP, #+0]
+   \   00000066   01E0               B        ??PWR_RunAgain_4
+   \                     ??PWR_RunAgain_2:
+   \   00000068   0098               LDR      R0,[SP, #+0]
+   \   0000006A   0090               STR      R0,[SP, #+0]
+    290                     
+    291                     crmSleepTime += notCountedTmrTicksBeforeSleep;
+   \                     ??PWR_RunAgain_4:
+   \   0000006C   0098               LDR      R0,[SP, #+0]
+   \   0000006E   ....               LDR      R1,??DataTable15_2
+   \   00000070   0988               LDRH     R1,[R1, #+0]
+   \   00000072   4018               ADDS     R0,R0,R1
+   \   00000074   0090               STR      R0,[SP, #+0]
+    292                     /* Sync. the low power timers */
+    293                     TMR_SyncLpmTimers(crmSleepTime);
+   \   00000076   0098               LDR      R0,[SP, #+0]
+   \   00000078   ........           BL       TMR_SyncLpmTimers
+    294               }  
+    295              #endif /* #if (gTMR_EnableLowPowerTimers_d)  */
+    296          
+    297            CRM_REGS_P->Status = (CRM_REGS_P->Status & (~0xF0)); /* Clear interrupt sources except from KBI */
+   \   0000007C   ....               LDR      R0,??DataTable14_1  ;; 0x80003018
+   \   0000007E   0068               LDR      R0,[R0, #+0]
+   \   00000080   F021               MOVS     R1,#+240
+   \   00000082   8843               BICS     R0,R0,R1
+   \   00000084   ....               LDR      R1,??DataTable14_1  ;; 0x80003018
+   \   00000086   0860               STR      R0,[R1, #+0]
+    298          
+    299            mMCU_SetStatus(MCU_Running);
+    300            mRADIO_SetStatus(RADIO_Idle);
+    301            #endif  /* #if (cPWR_UsePowerDownMode) */
+    302          }  /* PWR_RunAgain(void) ======================================================*/
+   \   00000088   09BC               POP      {R0,R3}
+   \   0000008A   1847               BX       R3               ;; return
+    303          
+    304          
+    305          /*****************************************************************************/
+    306          /* Please see in PWR_Interface.h for description                             */
+
+   \                                 In section .text, align 2, keep-with-next
+    307          bool_t PWR_DeepSleepAllowed(void) {
+   \                     PWR_DeepSleepAllowed:
+   \   00000000   80B5               PUSH     {R7,LR}
+    308            #if ( cPWR_UsePowerDownMode)
+    309              #if ( cPWR_DeepSleepMode < cPWR_DeepSleepModeMax)                               /* Normal running mode*/
+    310                if (PWRLib_GetCurrentZigbeeStackPowerState == StackPS_DeepSleep) {
+   \   00000002   ....               LDR      R0,??DataTable15_3
+   \   00000004   0078               LDRB     R0,[R0, #+0]
+   \   00000006   7C28               CMP      R0,#+124
+   \   00000008   07D1               BNE      ??PWR_DeepSleepAllowed_0
+    311                    if ( Asp_GetMacStateReq() == gAspMacStateIdle_c) {
+   \   0000000A   ........           BL       Asp_GetMacStateReq
+   \   0000000E   0028               CMP      R0,#+0
+   \   00000010   01D1               BNE      ??PWR_DeepSleepAllowed_1
+    312                      return TRUE;
+   \   00000012   0120               MOVS     R0,#+1
+   \   00000014   02E0               B        ??PWR_DeepSleepAllowed_2
+    313                    } else {
+    314                      return FALSE;
+   \                     ??PWR_DeepSleepAllowed_1:
+   \   00000016   0020               MOVS     R0,#+0
+   \   00000018   00E0               B        ??PWR_DeepSleepAllowed_2
+    315                    }
+    316                } else {
+    317                  return FALSE;
+   \                     ??PWR_DeepSleepAllowed_0:
+   \   0000001A   0020               MOVS     R0,#+0
+   \                     ??PWR_DeepSleepAllowed_2:
+   \   0000001C   0ABC               POP      {R1,R3}
+   \   0000001E   1847               BX       R3               ;; return
+    318                }
+    319              #else                                                /* Debug mode */
+    320                #error "*** ERROR: cPWR_DeepSleepMode has an unsupported value"
+    321              #endif
+    322            #else                                                      /* Debug mode */
+    323              return TRUE;
+    324            #endif  /* #if (cPWR_UsePowerDownMode)*/
+    325          }  /* PWR_DeepSleepAllowed ==================================================*/
+    326          
+    327          
+    328          /*****************************************************************************/
+    329          /* Please see in PWR_Interface.h for description                             */
+
+   \                                 In section .text, align 2, keep-with-next
+    330          bool_t  PWR_SleepAllowed(void) {  
+   \                     PWR_SleepAllowed:
+   \   00000000   80B5               PUSH     {R7,LR}
+    331            #if (cPWR_UsePowerDownMode)
+    332              #if (cPWR_SleepMode < cPWR_SleepModeMax)                               /* Normal running mode*/
+    333                if (( PWRLib_GetCurrentZigbeeStackPowerState == StackPS_Sleep) ||  \
+    334                    ( PWRLib_GetCurrentZigbeeStackPowerState == StackPS_DeepSleep)) {
+   \   00000002   ....               LDR      R0,??DataTable16
+   \   00000004   0078               LDRB     R0,[R0, #+0]
+   \   00000006   7B28               CMP      R0,#+123
+   \   00000008   03D0               BEQ      ??PWR_SleepAllowed_0
+   \   0000000A   ....               LDR      R0,??DataTable16
+   \   0000000C   0078               LDRB     R0,[R0, #+0]
+   \   0000000E   7C28               CMP      R0,#+124
+   \   00000010   0BD1               BNE      ??PWR_SleepAllowed_1
+    335                    if (( Asp_GetMacStateReq()==gAspMacStateNotEmpty_c) || \
+    336                        ( Asp_GetMacStateReq()==gAspMacStateIdle_c)) {
+   \                     ??PWR_SleepAllowed_0:
+   \   00000012   ........           BL       Asp_GetMacStateReq
+   \   00000016   0228               CMP      R0,#+2
+   \   00000018   03D0               BEQ      ??PWR_SleepAllowed_2
+   \   0000001A   ........           BL       Asp_GetMacStateReq
+   \   0000001E   0028               CMP      R0,#+0
+   \   00000020   01D1               BNE      ??PWR_SleepAllowed_3
+    337                      return TRUE;
+   \                     ??PWR_SleepAllowed_2:
+   \   00000022   0120               MOVS     R0,#+1
+   \   00000024   02E0               B        ??PWR_SleepAllowed_4
+    338                    } else {
+    339                      return FALSE;
+   \                     ??PWR_SleepAllowed_3:
+   \   00000026   0020               MOVS     R0,#+0
+   \   00000028   00E0               B        ??PWR_SleepAllowed_4
+    340                    }
+    341                } else {
+    342                  return FALSE;
+   \                     ??PWR_SleepAllowed_1:
+   \   0000002A   0020               MOVS     R0,#+0
+   \                     ??PWR_SleepAllowed_4:
+   \   0000002C   0ABC               POP      {R1,R3}
+   \   0000002E   1847               BX       R3               ;; return
+    343                }
+    344              #else                                                      /* Debug mode */
+    345                #error "*** ERROR: cPWR_SleepMode has an unsupported value"
+    346              #endif
+    347            #else                                                      /* Debug mode */
+    348              return TRUE;
+    349            #endif  /* #if (cPWR_UsePowerDownMode) else */
+    350          }  /* PWR_SleepAllowed ======================================================*/
+    351          
+    352          
+    353          /*****************************************************************************/
+    354          /* Please see in PWR_Interface.h for description                             */
+
+   \                                 In section .text, align 2, keep-with-next
+    355          PWRLib_WakeupReason_t  PWR_HandleDeepSleep( zbClock24_t  DozeDuration) {
+   \                     PWR_HandleDeepSleep:
+   \   00000000   1FB5               PUSH     {R0-R4,LR}
+   \   00000002   0400               MOVS     R4,R0
+    356            PWRLib_WakeupReason_t  Res;
+    357            Res.AllBits = 0;
+   \   00000004   6846               MOV      R0,SP
+   \   00000006   0021               MOVS     R1,#+0
+   \   00000008   0170               STRB     R1,[R0, #+0]
+    358            
+    359            /* To avoid warnings */
+    360            (void)DozeDuration;
+    361            
+    362            #if (cPWR_UsePowerDownMode)
+    363            
+    364          		  /*---------------------------------------------------------------------------*/
+    365              #if (cPWR_DeepSleepMode==0)
+    366                Res.AllBits = PWRLib_MCU_WakeupReason.AllBits;
+    367                /* No code */
+    368          
+    369              /*---------------------------------------------------------------------------*/
+    370              #elif ((cPWR_DeepSleepMode == 1)  || (cPWR_DeepSleepMode == 5))
+    371                #if (gKeyBoardSupported_d == TRUE)        
+    372                   /* Disable the other wake-up sources */
+    373                   CRM_WU_CNTL.timerWuEn = 0;
+    374                   CRM_WU_CNTL.rtcWuEn = 0;
+    375                   
+    376                   #if(cPWR_DeepSleepMode == 1)
+    377                    PWR_MCUHibernate();
+    378                    PWRLib_MCU_WakeupReason.Bits.FromHibernate = TRUE;
+    379                   #else
+    380                    PWR_MCUDoze();
+    381                    PWRLib_MCU_WakeupReason.Bits.FromDoze = TRUE;
+    382                   #endif
+    383                    
+    384                   if(CRM_STATUS.extWuEvt)
+    385                   {
+    386                    PWRLib_MCU_WakeupReason.Bits.FromKBI = TRUE;
+    387                   } 
+    388                   
+    389                   Res.AllBits = PWRLib_MCU_WakeupReason.AllBits;         
+    390                   
+    391                   PWR_RunAgain();         
+    392                   
+    393                #else 
+    394                  #error "*** ERROR: gKeyBoardSupported_d has to be set to 1"
+    395                #endif
+    396              /*---------------------------------------------------------------------------*/
+    397              #elif ((cPWR_DeepSleepMode == 2) || (cPWR_DeepSleepMode == 6))
+    398                 #if (gKeyBoardSupported_d == TRUE)
+    399                    /* Disable the Keyboard wake-up in crm */
+    400                    CRM_WU_CNTL.extWuEn = 0;
+    401                 #endif     
+    402                 
+    403                 /* Disable the other wake-up sources */
+    404                 CRM_WU_CNTL.rtcWuEn = 0;   
+    405                 
+    406                 /* setup the Wake-up Timer */
+    407                 { 
+    408                  crmWuCtrl_t    wuCtrl;
+    409                  wuCtrl.wuSource = gTimerWu_c;
+    410                  wuCtrl.TIMER_WU_EN  = 1;
+    411                  wuCtrl.TIMER_WU_INT_EN = 0;
+    412                  wuCtrl.TIMER_WU_TIMEOUT = cPWR_SleepTimeout;
+    413                  CRM_WuCntl(&wuCtrl);
+    414                 } 
+    415                 
+    416                 #if(cPWR_DeepSleepMode == 2)
+    417                  PWR_MCUHibernate();
+    418                  PWRLib_MCU_WakeupReason.Bits.FromHibernate = TRUE;
+    419                 #else
+    420                  PWR_MCUDoze();
+    421                  PWRLib_MCU_WakeupReason.Bits.FromDoze = TRUE;
+    422                 #endif       
+    423                 
+    424                 if( (CRM_STATUS.extWuEvt == 0) && (CRM_STATUS.rtcWuEvt == 0))
+    425                 {
+    426                   PWRLib_MCU_WakeupReason.Bits.FromTimer = TRUE;
+    427                 }
+    428                    
+    429                 #if (gKeyBoardSupported_d == TRUE)   
+    430                    /* restore the Keyboard configuration */
+    431                    CRM_WU_CNTL.extWuEn = gKbiWuEN_c;
+    432                 #endif                    
+    433          
+    434                 Res.AllBits = PWRLib_MCU_WakeupReason.AllBits;
+    435          
+    436                 PWR_RunAgain();
+    437                 if(PWRLib_MCU_WakeupReason.Bits.FromTimer == TRUE)
+    438                 {  
+    439                  cPWR_DeepSleepWakeupStackProc;          /* User function called only on timeout */
+    440                 } 
+    441          
+    442              /*---------------------------------------------------------------------------*/
+    443              #elif ((cPWR_DeepSleepMode==3) || (cPWR_DeepSleepMode==7))
+    444                 #if (gKeyBoardSupported_d == TRUE)                 
+    445                  /* Disable the other wake-up sources */
+    446                  CRM_WU_CNTL.rtcWuEn = 0;   
+   \   0000000A   ....               LDR      R0,??DataTable14  ;; 0x80003004
+   \   0000000C   0068               LDR      R0,[R0, #+0]
+   \   0000000E   0221               MOVS     R1,#+2
+   \   00000010   8843               BICS     R0,R0,R1
+   \   00000012   ....               LDR      R1,??DataTable14  ;; 0x80003004
+   \   00000014   0860               STR      R0,[R1, #+0]
+    447                  
+    448                  /* setup the Wake-up Timer */
+    449                  { 
+    450                   crmWuCtrl_t    wuCtrl;
+    451                   wuCtrl.wuSource = gTimerWu_c;
+   \   00000016   6846               MOV      R0,SP
+   \   00000018   0121               MOVS     R1,#+1
+   \   0000001A   0171               STRB     R1,[R0, #+4]
+    452                   wuCtrl.TIMER_WU_EN = 1;
+   \   0000001C   0298               LDR      R0,[SP, #+8]
+   \   0000001E   0121               MOVS     R1,#+1
+   \   00000020   0143               ORRS     R1,R1,R0
+   \   00000022   0291               STR      R1,[SP, #+8]
+    453                   wuCtrl.TIMER_WU_INT_EN = 0;
+   \   00000024   0298               LDR      R0,[SP, #+8]
+   \   00000026   0221               MOVS     R1,#+2
+   \   00000028   8843               BICS     R0,R0,R1
+   \   0000002A   0290               STR      R0,[SP, #+8]
+    454                   wuCtrl.TIMER_WU_TIMEOUT = cPWR_SleepTimeout;
+   \   0000002C   ....               LDR      R0,??DataTable16_1  ;; 0x1c9c38
+   \   0000002E   0390               STR      R0,[SP, #+12]
+    455                   CRM_WuCntl(&wuCtrl);
+   \   00000030   01A8               ADD      R0,SP,#+4
+   \   00000032   ........           BL       CRM_WuCntl
+    456                  } 
+    457                  
+    458                  #if (cPWR_DeepSleepMode==3)
+    459                    PWR_MCUHibernate();
+    460                    PWRLib_MCU_WakeupReason.Bits.FromHibernate = TRUE;
+    461                  #else
+    462                    PWR_MCUDoze();
+   \   00000036   0120               MOVS     R0,#+1
+   \   00000038   ........           BL       PWR_MCUSleep
+    463                    PWRLib_MCU_WakeupReason.Bits.FromDoze = TRUE;
+   \   0000003C   ....               LDR      R0,??DataTable16_2
+   \   0000003E   0068               LDR      R0,[R0, #+0]
+   \   00000040   0221               MOVS     R1,#+2
+   \   00000042   0143               ORRS     R1,R1,R0
+   \   00000044   ....               LDR      R0,??DataTable16_2
+   \   00000046   0160               STR      R1,[R0, #+0]
+    464                  #endif          
+    465                    
+    466                  if( (CRM_STATUS.extWuEvt == 0) && (CRM_STATUS.rtcWuEvt == 0))
+   \   00000048   ....               LDR      R0,??DataTable14_1  ;; 0x80003018
+   \   0000004A   0068               LDR      R0,[R0, #+0]
+   \   0000004C   0009               LSRS     R0,R0,#+4
+   \   0000004E   0007               LSLS     R0,R0,#+28
+   \   00000050   0AD1               BNE      ??PWR_HandleDeepSleep_0
+   \   00000052   ....               LDR      R0,??DataTable14_1  ;; 0x80003018
+   \   00000054   0068               LDR      R0,[R0, #+0]
+   \   00000056   0007               LSLS     R0,R0,#+28
+   \   00000058   06D4               BMI      ??PWR_HandleDeepSleep_0
+    467                  {
+    468                   PWRLib_MCU_WakeupReason.Bits.FromTimer = TRUE;
+   \   0000005A   ....               LDR      R0,??DataTable16_2
+   \   0000005C   0068               LDR      R0,[R0, #+0]
+   \   0000005E   2021               MOVS     R1,#+32
+   \   00000060   0143               ORRS     R1,R1,R0
+   \   00000062   ....               LDR      R0,??DataTable16_2
+   \   00000064   0160               STR      R1,[R0, #+0]
+   \   00000066   0EE0               B        ??PWR_HandleDeepSleep_1
+    469                  }
+    470                  else
+    471                  {
+    472                   if(CRM_STATUS.extWuEvt)
+   \                     ??PWR_HandleDeepSleep_0:
+   \   00000068   ....               LDR      R0,??DataTable14_1  ;; 0x80003018
+   \   0000006A   0068               LDR      R0,[R0, #+0]
+   \   0000006C   0009               LSRS     R0,R0,#+4
+   \   0000006E   0007               LSLS     R0,R0,#+28       ;; ZeroExtS R0,R0,#+28,#+28
+   \   00000070   000F               LSRS     R0,R0,#+28
+   \   00000072   0006               LSLS     R0,R0,#+24       ;; ZeroExtS R0,R0,#+24,#+24
+   \   00000074   000E               LSRS     R0,R0,#+24
+   \   00000076   0028               CMP      R0,#+0
+   \   00000078   05D0               BEQ      ??PWR_HandleDeepSleep_1
+    473                   {
+    474                    PWRLib_MCU_WakeupReason.Bits.FromKBI = TRUE;
+   \   0000007A   ....               LDR      R0,??DataTable16_2
+   \   0000007C   0068               LDR      R0,[R0, #+0]
+   \   0000007E   1021               MOVS     R1,#+16
+   \   00000080   0143               ORRS     R1,R1,R0
+   \   00000082   ....               LDR      R0,??DataTable16_2
+   \   00000084   0160               STR      R1,[R0, #+0]
+    475                   }
+    476                  }
+    477          
+    478                  Res.AllBits = PWRLib_MCU_WakeupReason.AllBits;
+   \                     ??PWR_HandleDeepSleep_1:
+   \   00000086   6846               MOV      R0,SP
+   \   00000088   ....               LDR      R1,??DataTable16_2
+   \   0000008A   0978               LDRB     R1,[R1, #+0]
+   \   0000008C   0170               STRB     R1,[R0, #+0]
+    479          
+    480                  PWR_RunAgain();
+   \   0000008E   ........           BL       PWR_RunAgain
+    481                  if(PWRLib_MCU_WakeupReason.Bits.FromTimer == TRUE)
+   \   00000092   ....               LDR      R0,??DataTable16_2
+   \   00000094   0068               LDR      R0,[R0, #+0]
+   \   00000096   0100               MOVS     R1,R0
+   \   00000098   8906               LSLS     R1,R1,#+26       ;; ZeroExtS R1,R1,#+26,#+31
+   \   0000009A   C90F               LSRS     R1,R1,#+31
+   \   0000009C   0029               CMP      R1,#+0
+   \   0000009E   01D0               BEQ      ??PWR_HandleDeepSleep_2
+    482                  {  
+    483                   cPWR_DeepSleepWakeupStackProc;          /* User function called only on timeout */
+   \   000000A0   ........           BL       DeepSleepWakeupStackProc
+    484                  } 
+    485                 #else 
+    486                  #error "*** ERROR: gKeyBoardSupported_d has to be set to 1"
+    487                 #endif
+    488                  
+    489             /*---------------------------------------------------------------------------*/
+    490             #elif (cPWR_DeepSleepMode==8)
+    491               #if (gKeyBoardSupported_d == TRUE)                 
+    492                  /* Disable the other wake-up sources */
+    493                  CRM_WU_CNTL.rtcWuEn = 0;   
+    494                  
+    495                  /* setup the Wake-up Timer */
+    496                  { 
+    497                   crmWuCtrl_t    wuCtrl;
+    498                   wuCtrl.wuSource = gTimerWu_c;
+    499                   wuCtrl.TIMER_WU_EN = 1;
+    500                   wuCtrl.TIMER_WU_INT_EN = 0;
+    501                   wuCtrl.TIMER_WU_TIMEOUT = cPWR_MACSymbols2WakeUpTimerTicks(mPWR_SleepTimeoutSym);
+    502                   CRM_WuCntl(&wuCtrl);
+    503                  } 
+    504                  
+    505                  PWR_MCUDoze();
+    506                  PWRLib_MCU_WakeupReason.Bits.FromDoze = TRUE;
+    507                  
+    508                  if( (CRM_STATUS.extWuEvt == 0) && (CRM_STATUS.rtcWuEvt == 0))
+    509                  {
+    510                   PWRLib_MCU_WakeupReason.Bits.FromTimer = TRUE;
+    511                  }
+    512                  else
+    513                  {
+    514                   if(CRM_STATUS.extWuEvt)
+    515                   {
+    516                    PWRLib_MCU_WakeupReason.Bits.FromKBI = TRUE;
+    517                   }
+    518                  }
+    519          
+    520                  Res.AllBits = PWRLib_MCU_WakeupReason.AllBits;
+    521          
+    522                  PWR_RunAgain();
+    523                  if(PWRLib_MCU_WakeupReason.Bits.FromTimer == TRUE)
+    524                  {  
+    525                   cPWR_DeepSleepWakeupStackProc;          /* User function called only on timeout */
+    526                  } 
+    527                 #else 
+    528                  #error "*** ERROR: gKeyBoardSupported_d has to be set to 1"
+    529                 #endif
+    530             //---------------------------------------------------------------------------
+    531             #elif (cPWR_DeepSleepMode==4)       
+    532                  PWR_AllOff();
+    533          
+    534              //---------------------------------------------------------------------------    
+    535              #else
+    536                #error "*** ERROR: Not a valid cPWR_DeepSleepMode chosen"
+    537              #endif
+    538                  
+    539              PWRLib_MCU_WakeupReason.AllBits = 0;
+   \                     ??PWR_HandleDeepSleep_2:
+   \   000000A4   ....               LDR      R0,??DataTable16_2
+   \   000000A6   0021               MOVS     R1,#+0
+   \   000000A8   0170               STRB     R1,[R0, #+0]
+    540              return Res;
+   \   000000AA   0098               LDR      R0,[SP, #+0]
+   \   000000AC   04B0               ADD      SP,SP,#+16
+   \   000000AE   10BC               POP      {R4}
+   \   000000B0   08BC               POP      {R3}
+   \   000000B2   1847               BX       R3               ;; return
+    541              
+    542            #else  /* #if (cPWR_UsePowerDownMode) else */
+    543              PWRLib_MCU_WakeupReason.AllBits = 0;
+    544              return Res;          /*(PWRLib_WakeupReason_t) DozeDuration;*/
+    545            #endif  /* #if (cPWR_UsePowerDownMode) end*/
+    546          }  /* PWR_HandleDeepSleep =====================================================*/
+    547          
+    548          
+    549          /*****************************************************************************/
+    550          /* Please see in PWR_Interface.h for description                             */
+
+   \                                 In section .text, align 2, keep-with-next
+    551          PWRLib_WakeupReason_t  PWR_HandleSleep( zbClock24_t DozeDuration) {
+   \                     PWR_HandleSleep:
+   \   00000000   10B5               PUSH     {R4,LR}
+   \   00000002   82B0               SUB      SP,SP,#+8
+   \   00000004   0400               MOVS     R4,R0
+    552            PWRLib_WakeupReason_t   Res;
+    553          
+    554            Res.AllBits = 0;
+   \   00000006   6846               MOV      R0,SP
+   \   00000008   0021               MOVS     R1,#+0
+   \   0000000A   0170               STRB     R1,[R0, #+0]
+    555            #if (cPWR_UsePowerDownMode)
+    556              /*---------------------------------------------------------------------------*/
+    557              #if (cPWR_SleepMode==0)
+    558                Res.AllBits = PWRLib_MCU_WakeupReason.AllBits;
+    559                PWRLib_MCU_WakeupReason.AllBits = 0;
+    560          
+    561              /*---------------------------------------------------------------------------*/
+    562              #elif (cPWR_SleepMode==1)
+    563                  PWR_MCUWait();
+   \   0000000C   ........           BL       PWR_MCUWait
+    564                  PWRLib_MCU_WakeupReason.Bits.FromWait = TRUE;
+   \   00000010   ....               LDR      R0,??DataTable16_2
+   \   00000012   0068               LDR      R0,[R0, #+0]
+   \   00000014   0421               MOVS     R1,#+4
+   \   00000016   0143               ORRS     R1,R1,R0
+   \   00000018   ....               LDR      R0,??DataTable16_2
+   \   0000001A   0160               STR      R1,[R0, #+0]
+    565                  
+    566                  Res.AllBits = PWRLib_MCU_WakeupReason.AllBits;
+   \   0000001C   6846               MOV      R0,SP
+   \   0000001E   ....               LDR      R1,??DataTable16_2
+   \   00000020   0978               LDRB     R1,[R1, #+0]
+   \   00000022   0170               STRB     R1,[R0, #+0]
+    567              /*---------------------------------------------------------------------------*/
+    568              #else
+    569                #error "*** ERROR: Not a valid cPWR_SleepMode chosen"
+    570              #endif
+    571                  
+    572              PWRLib_MCU_WakeupReason.AllBits = 0;
+   \   00000024   ....               LDR      R0,??DataTable16_2
+   \   00000026   0021               MOVS     R1,#+0
+   \   00000028   0170               STRB     R1,[R0, #+0]
+    573              return Res; 
+   \   0000002A   0098               LDR      R0,[SP, #+0]
+   \   0000002C   16BC               POP      {R1,R2,R4}
+   \   0000002E   08BC               POP      {R3}
+   \   00000030   1847               BX       R3               ;; return
+    574              
+    575            #else  /* #if (cPWR_UsePowerDownMode) else */
+    576              return Res;
+    577            #endif  /* #if (cPWR_UsePowerDownMode) end */
+    578          }  /* PWR_HandleSleep =========================================================*/
+    579          
+    580          
+    581          /************************************************************************************
+    582          *************************************************************************************
+    583          * Very Public functions, recommended for general use
+    584          *************************************************************************************
+    585          ************************************************************************************/
+    586          
+    587          /*****************************************************************************/
+    588          /* Please see in PWR_Interface.h for description                             */
+
+   \                                 In section .text, align 2, keep-with-next
+    589          PWRLib_WakeupReason_t PWR_CheckForAndEnterNewPowerState(PWR_CheckForAndEnterNewPowerState_t NewPowerState, zbClock24_t DozeDuration) {
+   \                     PWR_CheckForAndEnterNewPowerState:
+   \   00000000   38B5               PUSH     {R3-R5,LR}
+   \   00000002   0500               MOVS     R5,R0
+   \   00000004   0C00               MOVS     R4,R1
+    590            PWRLib_WakeupReason_t    ReturnValue;
+    591            ReturnValue.AllBits = 0;
+   \   00000006   6846               MOV      R0,SP
+   \   00000008   0021               MOVS     R1,#+0
+   \   0000000A   0170               STRB     R1,[R0, #+0]
+    592          
+    593            #if (cPWR_UsePowerDownMode)
+    594          
+    595              if ( NewPowerState == PWR_Run) {
+   \   0000000C   2D06               LSLS     R5,R5,#+24       ;; ZeroExtS R5,R5,#+24,#+24
+   \   0000000E   2D0E               LSRS     R5,R5,#+24
+   \   00000010   4D2D               CMP      R5,#+77
+   \   00000012   26D0               BEQ      ??PWR_CheckForAndEnterNewPowerState_0
+    596                /* ReturnValue = 0; */
+    597              }
+    598              else if ( NewPowerState == PWR_OFF) {      
+   \   00000014   2D06               LSLS     R5,R5,#+24       ;; ZeroExtS R5,R5,#+24,#+24
+   \   00000016   2D0E               LSRS     R5,R5,#+24
+   \   00000018   512D               CMP      R5,#+81
+   \   0000001A   02D1               BNE      ??PWR_CheckForAndEnterNewPowerState_1
+    599                while (1) 
+    600                {
+    601                  PWR_AllOff();
+   \                     ??PWR_CheckForAndEnterNewPowerState_2:
+   \   0000001C   ........           BL       PWR_AllOff
+   \   00000020   FCE7               B        ??PWR_CheckForAndEnterNewPowerState_2
+    602                }    /* Never returns */
+    603              }
+    604              else if ( NewPowerState == PWR_Reset) {
+   \                     ??PWR_CheckForAndEnterNewPowerState_1:
+   \   00000022   2D06               LSLS     R5,R5,#+24       ;; ZeroExtS R5,R5,#+24,#+24
+   \   00000024   2D0E               LSRS     R5,R5,#+24
+   \   00000026   502D               CMP      R5,#+80
+   \   00000028   02D1               BNE      ??PWR_CheckForAndEnterNewPowerState_3
+    605                PWRLib_Reset();                      /* Never returns	 */
+   \   0000002A   ........           BL       PWRLib_Reset
+   \   0000002E   18E0               B        ??PWR_CheckForAndEnterNewPowerState_0
+    606              }
+    607               
+    608              else if (( NewPowerState == PWR_DeepSleep) && PWR_DeepSleepAllowed()) {
+   \                     ??PWR_CheckForAndEnterNewPowerState_3:
+   \   00000030   2D06               LSLS     R5,R5,#+24       ;; ZeroExtS R5,R5,#+24,#+24
+   \   00000032   2D0E               LSRS     R5,R5,#+24
+   \   00000034   4F2D               CMP      R5,#+79
+   \   00000036   08D1               BNE      ??PWR_CheckForAndEnterNewPowerState_4
+   \   00000038   ........           BL       PWR_DeepSleepAllowed
+   \   0000003C   0028               CMP      R0,#+0
+   \   0000003E   04D0               BEQ      ??PWR_CheckForAndEnterNewPowerState_4
+    609                ReturnValue = PWR_HandleDeepSleep( DozeDuration);
+   \   00000040   2000               MOVS     R0,R4
+   \   00000042   ........           BL       PWR_HandleDeepSleep
+   \   00000046   0090               STR      R0,[SP, #+0]
+   \   00000048   0BE0               B        ??PWR_CheckForAndEnterNewPowerState_0
+    610              } 
+    611              else if (( NewPowerState == PWR_Sleep) && PWR_SleepAllowed()) {
+   \                     ??PWR_CheckForAndEnterNewPowerState_4:
+   \   0000004A   2D06               LSLS     R5,R5,#+24       ;; ZeroExtS R5,R5,#+24,#+24
+   \   0000004C   2D0E               LSRS     R5,R5,#+24
+   \   0000004E   4E2D               CMP      R5,#+78
+   \   00000050   07D1               BNE      ??PWR_CheckForAndEnterNewPowerState_0
+   \   00000052   ........           BL       PWR_SleepAllowed
+   \   00000056   0028               CMP      R0,#+0
+   \   00000058   03D0               BEQ      ??PWR_CheckForAndEnterNewPowerState_0
+    612                ReturnValue = PWR_HandleSleep( DozeDuration);
+   \   0000005A   2000               MOVS     R0,R4
+   \   0000005C   ........           BL       PWR_HandleSleep
+   \   00000060   0090               STR      R0,[SP, #+0]
+    613              }
+    614              else {
+    615                /* ReturnValue = FALSE; */
+    616              }
+    617          
+    618              PWRLib_MCU_WakeupReason.AllBits = 0;                     /* Clear wakeup reason */
+   \                     ??PWR_CheckForAndEnterNewPowerState_0:
+   \   00000062   ....               LDR      R0,??DataTable16_2
+   \   00000064   0021               MOVS     R1,#+0
+   \   00000066   0170               STRB     R1,[R0, #+0]
+    619            #else
+    620              ReturnValue.AllBits = 0xff | (NewPowerState > 0) | (DozeDuration > 0); 
+    621                                        /* To remove warning for variabels in functioncall */
+    622            #endif  /* #if (cPWR_UsePowerDownMode) */
+    623          
+    624            return ReturnValue;
+   \   00000068   0098               LDR      R0,[SP, #+0]
+   \   0000006A   32BC               POP      {R1,R4,R5}
+   \   0000006C   08BC               POP      {R3}
+   \   0000006E   1847               BX       R3               ;; return
+    625          }   /* PWR_CheckForAndEnterNewPowerState ============================================*/
+    626          
+    627          /*****************************************************************************/
+    628          /* Please see in PWR_Interface.h for description                             */
+
+   \                                 In section .text, align 2, keep-with-next
+    629          PWRLib_LVD_VoltageLevel_t   PWRLib_LVD_ReportLevel(void) {
+    630           
+    631            /* TO DO: add code for sampling battery */
+    632            /* the function should return one of the following power levels: 
+    633            PWR_NODEPOWER_LEVEL_100 
+    634            PWR_NODEPOWER_LEVEL_66
+    635            PWR_NODEPOWER_LEVEL_50
+    636            PWR_NODEPOWER_LEVEL_33
+    637            PWR_NODEPOWER_LEVEL_CRITICAL
+    638            */
+    639          
+    640            return PWR_NODEPOWER_LEVEL_100;
+   \                     PWRLib_LVD_ReportLevel:
+   \   00000000   0C20               MOVS     R0,#+12
+   \   00000002   7047               BX       LR               ;; return
+    641          }  /* PWRLib_LVD_ReportLevel ================================================*/
+    642          
+    643          /*****************************************************************************/
+    644          /* Please see in PWR_Interface.h for description                             */
+
+   \                                 In section .text, align 2, keep-with-next
+    645          void PWR_CheckForAndEnterNewPowerState_Init(void) {
+   \                     PWR_CheckForAndEnterNewPowerState_Init:
+   \   00000000   00B5               PUSH     {LR}
+    646          #if (cPWR_UsePowerDownMode)
+    647           mMCU_SetStatus( MCU_Running);
+    648           mRADIO_SetStatus(RADIO_Idle);
+    649           PWRLib_SetCurrentZigbeeStackPowerState( StackPS_DeepSleep);
+   \   00000002   ....               LDR      R0,??DataTable15_3
+   \   00000004   7C21               MOVS     R1,#+124
+   \   00000006   0170               STRB     R1,[R0, #+0]
+    650           
+    651           PWRLib_MCU_WakeupReason.AllBits = 0;
+   \   00000008   ....               LDR      R0,??DataTable16_2
+   \   0000000A   0021               MOVS     R1,#+0
+   \   0000000C   0170               STRB     R1,[R0, #+0]
+    652           if(CRM_STATUS.hibWuEvt == 1)
+   \   0000000E   ....               LDR      R0,??DataTable14_1  ;; 0x80003018
+   \   00000010   0068               LDR      R0,[R0, #+0]
+   \   00000012   0100               MOVS     R1,R0
+   \   00000014   8907               LSLS     R1,R1,#+30       ;; ZeroExtS R1,R1,#+30,#+31
+   \   00000016   C90F               LSRS     R1,R1,#+31
+   \   00000018   0029               CMP      R1,#+0
+   \   0000001A   06D0               BEQ      ??PWR_CheckForAndEnterNewPowerState_Init_0
+    653           {
+    654            PWRLib_MCU_WakeupReason.Bits.FromHibernate = TRUE;  
+   \   0000001C   ....               LDR      R0,??DataTable16_2
+   \   0000001E   0068               LDR      R0,[R0, #+0]
+   \   00000020   0121               MOVS     R1,#+1
+   \   00000022   0143               ORRS     R1,R1,R0
+   \   00000024   ....               LDR      R0,??DataTable16_2
+   \   00000026   0160               STR      R1,[R0, #+0]
+   \   00000028   13E0               B        ??PWR_CheckForAndEnterNewPowerState_Init_1
+    655           }
+    656           else
+    657           {
+    658            if(CRM_STATUS.dozeWuEvt == 1)
+   \                     ??PWR_CheckForAndEnterNewPowerState_Init_0:
+   \   0000002A   ....               LDR      R0,??DataTable14_1  ;; 0x80003018
+   \   0000002C   0068               LDR      R0,[R0, #+0]
+   \   0000002E   0100               MOVS     R1,R0
+   \   00000030   4907               LSLS     R1,R1,#+29       ;; ZeroExtS R1,R1,#+29,#+31
+   \   00000032   C90F               LSRS     R1,R1,#+31
+   \   00000034   0029               CMP      R1,#+0
+   \   00000036   06D0               BEQ      ??PWR_CheckForAndEnterNewPowerState_Init_2
+    659            {
+    660             PWRLib_MCU_WakeupReason.Bits.FromDoze = TRUE;  
+   \   00000038   ....               LDR      R0,??DataTable16_2
+   \   0000003A   0068               LDR      R0,[R0, #+0]
+   \   0000003C   0221               MOVS     R1,#+2
+   \   0000003E   0143               ORRS     R1,R1,R0
+   \   00000040   ....               LDR      R0,??DataTable16_2
+   \   00000042   0160               STR      R1,[R0, #+0]
+   \   00000044   05E0               B        ??PWR_CheckForAndEnterNewPowerState_Init_1
+    661            }
+    662            else
+    663            {
+    664             PWRLib_MCU_WakeupReason.Bits.FromReset = TRUE;  
+   \                     ??PWR_CheckForAndEnterNewPowerState_Init_2:
+   \   00000046   ....               LDR      R0,??DataTable16_2
+   \   00000048   0068               LDR      R0,[R0, #+0]
+   \   0000004A   0821               MOVS     R1,#+8
+   \   0000004C   0143               ORRS     R1,R1,R0
+   \   0000004E   ....               LDR      R0,??DataTable16_2
+   \   00000050   0160               STR      R1,[R0, #+0]
+    665            }
+    666           }
+    667          #endif  /* #if (cPWR_UsePowerDownMode) */
+    668          }   /* PWR_CheckForAndEnterNewPowerState_Init ==================================*/
+   \                     ??PWR_CheckForAndEnterNewPowerState_Init_1:
+   \   00000052   08BC               POP      {R3}
+   \   00000054   1847               BX       R3               ;; return
+    669          
+    670          
+    671          /********************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    672          PWRLib_WakeupReason_t PWR_EnterLowPower(void)
+    673          {
+   \                     PWR_EnterLowPower:
+   \   00000000   10B5               PUSH     {R4,LR}
+   \   00000002   82B0               SUB      SP,SP,#+8
+    674            PWRLib_WakeupReason_t ReturnValue;  
+    675            bool_t interruptsEnabled = FALSE;
+   \   00000004   0020               MOVS     R0,#+0
+   \   00000006   0400               MOVS     R4,R0
+    676          
+    677            ReturnValue.AllBits = 0;
+   \   00000008   6846               MOV      R0,SP
+   \   0000000A   0021               MOVS     R1,#+0
+   \   0000000C   0170               STRB     R1,[R0, #+0]
+    678            
+    679          #if (cPWR_UsePowerDownMode)  
+    680           /* if Low Power Capability is enabled*/
+    681           #if (gTMR_EnableLowPowerTimers_d)  
+    682             if (TMR_AreAllTimersOff())  /*No timer running*/
+   \   0000000E   ........           BL       TMR_AreAllTimersOff
+   \   00000012   0028               CMP      R0,#+0
+   \   00000014   03D0               BEQ      ??PWR_EnterLowPower_0
+    683             {
+    684              /* if more low power timers are running, stop the hardware timer
+    685               * and save the spend time in millisecond that wasn't counted.
+    686               */
+    687              notCountedTmrTicksBeforeSleep = TMR_NotCountedTicksBeforeSleep();
+   \   00000016   ........           BL       TMR_NotCountedTicksBeforeSleep
+   \   0000001A   ....               LDR      R1,??DataTable15_2
+   \   0000001C   0880               STRH     R0,[R1, #+0]
+    688            }
+    689           #endif /* #if (gTMR_EnableLowPowerTimers_d)  */
+    690            
+    691           /* Low Voltage check ... not currently supported */
+    692            
+    693            IntDisableAll();
+   \                     ??PWR_EnterLowPower_0:
+   \   0000001E   ........           BL       IntDisableAll
+    694            if (TS_PendingEvents() == FALSE)
+   \   00000022   ........           BL       TS_PendingEvents
+   \   00000026   0028               CMP      R0,#+0
+   \   00000028   16D1               BNE      ??PWR_EnterLowPower_1
+    695            {		 
+    696              PWRLib_SetCurrentZigbeeStackPowerState(StackPS_DeepSleep);
+   \   0000002A   ....               LDR      R0,??DataTable16
+   \   0000002C   7C21               MOVS     R1,#+124
+   \   0000002E   0170               STRB     R1,[R0, #+0]
+    697              if (TMR_AreAllTimersOff())  /*No timer running*/
+   \   00000030   ........           BL       TMR_AreAllTimersOff
+   \   00000034   0028               CMP      R0,#+0
+   \   00000036   05D0               BEQ      ??PWR_EnterLowPower_2
+    698              {			
+    699                ReturnValue = PWR_CheckForAndEnterNewPowerState ( PWR_DeepSleep, 0);
+   \   00000038   0021               MOVS     R1,#+0
+   \   0000003A   4F20               MOVS     R0,#+79
+   \   0000003C   ........           BL       PWR_CheckForAndEnterNewPowerState
+   \   00000040   0090               STR      R0,[SP, #+0]
+   \   00000042   09E0               B        ??PWR_EnterLowPower_1
+    700              }else /*timers are running*/
+    701              { 	 
+    702               interruptsEnabled = TRUE;
+   \                     ??PWR_EnterLowPower_2:
+   \   00000044   0120               MOVS     R0,#+1
+   \   00000046   0400               MOVS     R4,R0
+    703               // Enable the interrupts before entering the Sleep mode. The wake-up from WAIT is possible only if the interrupts are globaly enabled
+    704               IntEnableAll();
+   \   00000048   0020               MOVS     R0,#+0
+   \   0000004A   ........           BL       IntRestoreAll
+    705               ReturnValue = PWR_CheckForAndEnterNewPowerState ( PWR_Sleep, 0);
+   \   0000004E   0021               MOVS     R1,#+0
+   \   00000050   4E20               MOVS     R0,#+78
+   \   00000052   ........           BL       PWR_CheckForAndEnterNewPowerState
+   \   00000056   0090               STR      R0,[SP, #+0]
+    706              }
+    707            } /* enable irq's if there is pending evens */
+    708            if(interruptsEnabled == FALSE)
+   \                     ??PWR_EnterLowPower_1:
+   \   00000058   2406               LSLS     R4,R4,#+24       ;; ZeroExtS R4,R4,#+24,#+24
+   \   0000005A   240E               LSRS     R4,R4,#+24
+   \   0000005C   002C               CMP      R4,#+0
+   \   0000005E   02D1               BNE      ??PWR_EnterLowPower_3
+    709            {
+    710             IntEnableAll();  
+   \   00000060   0020               MOVS     R0,#+0
+   \   00000062   ........           BL       IntRestoreAll
+    711            } 
+    712          #endif  
+    713            
+    714            return ReturnValue;
+   \                     ??PWR_EnterLowPower_3:
+   \   00000066   0098               LDR      R0,[SP, #+0]
+   \   00000068   16BC               POP      {R1,R2,R4}
+   \   0000006A   08BC               POP      {R3}
+   \   0000006C   1847               BX       R3               ;; return
+    715          }
+    716          
+    717          /* Please see in PWR_Interface.h for description                                          */
+
+   \                                 In section .text, align 2, keep-with-next
+    718          void PWR_SetDozeTimeSymbols(uint32_t dozeTimeSym)
+    719          {
+    720          #if ((cPWR_UsePowerDownMode) && (cPWR_DeepSleepMode == 8))
+    721            if(dozeTimeSym)
+    722            {
+    723             mPWR_SleepTimeoutSym = dozeTimeSym;
+    724            } 
+    725          #else
+    726           (void)dozeTimeSym;
+    727          #endif 
+    728          }
+   \                     PWR_SetDozeTimeSymbols:
+   \   00000000   7047               BX       LR               ;; return
+    729          
+    730          /******************************************************************************
+    731          *******************************************************************************
+    732          * Private functions
+    733          *******************************************************************************
+    734          ******************************************************************************/
+    735          #if (cPWR_UsePowerDownMode) 
+    736          #if (cPWR_UpdateMACAClockAtWakeUp)
+
+   \                                 In section .text, align 2, keep-with-next
+    737          static void PWR_MacaTimerUpdate(void)
+    738          {
+   \                     PWR_MacaTimerUpdate:
+   \   00000000   10B5               PUSH     {R4,LR}
+    739          
+    740           if(CRM_STATUS.hibWuEvt)
+   \   00000002   ....               LDR      R0,??DataTable16_3  ;; 0x80003018
+   \   00000004   0068               LDR      R0,[R0, #+0]
+   \   00000006   0100               MOVS     R1,R0
+   \   00000008   8907               LSLS     R1,R1,#+30       ;; ZeroExtS R1,R1,#+30,#+31
+   \   0000000A   C90F               LSRS     R1,R1,#+31
+   \   0000000C   0906               LSLS     R1,R1,#+24       ;; ZeroExtS R1,R1,#+24,#+24
+   \   0000000E   090E               LSRS     R1,R1,#+24
+   \   00000010   0029               CMP      R1,#+0
+   \   00000012   22D0               BEQ      ??PWR_MacaTimerUpdate_0
+    741           {
+    742             if(CRM_SYS_CNTL.xtal32Exists)
+   \   00000014   ....               LDR      R0,??DataTable16_4  ;; 0x80003000
+   \   00000016   0068               LDR      R0,[R0, #+0]
+   \   00000018   0100               MOVS     R1,R0
+   \   0000001A   8906               LSLS     R1,R1,#+26       ;; ZeroExtS R1,R1,#+26,#+31
+   \   0000001C   C90F               LSRS     R1,R1,#+31
+   \   0000001E   0906               LSLS     R1,R1,#+24       ;; ZeroExtS R1,R1,#+24,#+24
+   \   00000020   090E               LSRS     R1,R1,#+24
+   \   00000022   0029               CMP      R1,#+0
+   \   00000024   0FD0               BEQ      ??PWR_MacaTimerUpdate_1
+    743             {
+    744              mPWR_MacaClk = mSavedMacaClk + (uint32_t)(CRM_REGS_P->WuCount * mMACA_TIMER_UPDATE_FACTOR_HIB_32K);
+   \   00000026   ....               LDR      R0,??DataTable16_5
+   \   00000028   0468               LDR      R4,[R0, #+0]
+   \   0000002A   ....               LDR      R0,??DataTable16_6  ;; 0x80003020
+   \   0000002C   0068               LDR      R0,[R0, #+0]
+   \   0000002E   ........           BL       __aeabi_ui2d
+   \   00000032   0022               MOVS     R2,#+0
+   \   00000034   ....               LDR      R3,??DataTable16_7  ;; 0x401f4000
+   \   00000036   ........           BL       __aeabi_dmul
+   \   0000003A   ........           BL       __aeabi_d2uiz
+   \   0000003E   2018               ADDS     R0,R4,R0
+   \   00000040   ....               LDR      R1,??DataTable16_8  ;; 0x80004048
+   \   00000042   0860               STR      R0,[R1, #+0]
+   \   00000044   21E0               B        ??PWR_MacaTimerUpdate_2
+    745             }
+    746             else
+    747             {
+    748              mPWR_MacaClk = mSavedMacaClk + CRM_REGS_P->WuCount * mMACA_TIMER_UPDATE_FACTOR_HIB_2K;
+   \                     ??PWR_MacaTimerUpdate_1:
+   \   00000046   ....               LDR      R0,??DataTable16_5
+   \   00000048   0068               LDR      R0,[R0, #+0]
+   \   0000004A   ....               LDR      R1,??DataTable16_6  ;; 0x80003020
+   \   0000004C   0968               LDR      R1,[R1, #+0]
+   \   0000004E   7D22               MOVS     R2,#+125
+   \   00000050   5143               MULS     R1,R2,R1
+   \   00000052   4018               ADDS     R0,R0,R1
+   \   00000054   ....               LDR      R1,??DataTable16_8  ;; 0x80004048
+   \   00000056   0860               STR      R0,[R1, #+0]
+   \   00000058   17E0               B        ??PWR_MacaTimerUpdate_2
+    749             }
+    750           }
+    751           else
+    752           { 
+    753             if(CRM_STATUS.dozeWuEvt)
+   \                     ??PWR_MacaTimerUpdate_0:
+   \   0000005A   ....               LDR      R0,??DataTable16_3  ;; 0x80003018
+   \   0000005C   0068               LDR      R0,[R0, #+0]
+   \   0000005E   0100               MOVS     R1,R0
+   \   00000060   4907               LSLS     R1,R1,#+29       ;; ZeroExtS R1,R1,#+29,#+31
+   \   00000062   C90F               LSRS     R1,R1,#+31
+   \   00000064   0906               LSLS     R1,R1,#+24       ;; ZeroExtS R1,R1,#+24,#+24
+   \   00000066   090E               LSRS     R1,R1,#+24
+   \   00000068   0029               CMP      R1,#+0
+   \   0000006A   0ED0               BEQ      ??PWR_MacaTimerUpdate_2
+    754             {
+    755              mPWR_MacaClk = mSavedMacaClk + (uint32_t)(CRM_REGS_P->WuCount * mMACA_TIMER_UPDATE_FACTOR_DOZE);
+   \   0000006C   ....               LDR      R0,??DataTable16_5
+   \   0000006E   0468               LDR      R4,[R0, #+0]
+   \   00000070   ....               LDR      R0,??DataTable16_6  ;; 0x80003020
+   \   00000072   0068               LDR      R0,[R0, #+0]
+   \   00000074   ........           BL       __aeabi_ui2d
+   \   00000078   ....               ADR      R2,??DataTable16_9
+   \   0000007A   0CCA               LDM      R2,{R2,R3}
+   \   0000007C   ........           BL       __aeabi_dmul
+   \   00000080   ........           BL       __aeabi_d2uiz
+   \   00000084   2018               ADDS     R0,R4,R0
+   \   00000086   ....               LDR      R1,??DataTable16_8  ;; 0x80004048
+   \   00000088   0860               STR      R0,[R1, #+0]
+    756             }
+    757           }  
+    758          
+    759          }
+   \                     ??PWR_MacaTimerUpdate_2:
+   \   0000008A   10BC               POP      {R4}
+   \   0000008C   08BC               POP      {R3}
+   \   0000008E   1847               BX       R3               ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12:
+   \   00000000   ........           DC32     mExtOutPol
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_1:
+   \   00000000   ........           DC32     mLPMFlag
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_2:
+   \   00000000   50300080           DC32     0x80003050
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_3:
+   \   00000000   ........           DC32     mSavedMacaClk
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13:
+   \   00000000   34126587           DC32     0x87651234
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_1:
+   \   00000000   48400080           DC32     0x80004048
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_2:
+   \   00000000   ........           DC32     PWR_CallBeforeSleep
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14:
+   \   00000000   04300080           DC32     0x80003004
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_1:
+   \   00000000   18300080           DC32     0x80003018
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_2:
+   \   00000000   ........           DC32     gHardwareParameters
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_3:
+   \   00000000   48300080           DC32     0x80003048
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_4:
+   \   00000000   780F0000           DC32     0xf78
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_5:
+   \   00000000   00900080           DC32     0x80009000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_6:
+   \   00000000   000305C0           DC32     0xc0050300
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_7:
+   \   00000000   20300080           DC32     0x80003020
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15:
+   \   00000000   00300080           DC32     0x80003000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_1:
+   \   00000000   44300080           DC32     0x80003044
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_2:
+   \   00000000   ........           DC32     notCountedTmrTicksBeforeSleep
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_3:
+   \   00000000   ........           DC32     PWRLib_StackPS
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16:
+   \   00000000   ........           DC32     PWRLib_StackPS
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_1:
+   \   00000000   389C1C00           DC32     0x1c9c38
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_2:
+   \   00000000   ........           DC32     PWRLib_MCU_WakeupReason
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_3:
+   \   00000000   18300080           DC32     0x80003018
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_4:
+   \   00000000   00300080           DC32     0x80003000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_5:
+   \   00000000   ........           DC32     mSavedMacaClk
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_6:
+   \   00000000   20300080           DC32     0x80003020
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_7:
+   \   00000000   00401F40           DC32     0x401f4000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_8:
+   \   00000000   48400080           DC32     0x80004048
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_9:
+   \   00000000   5555555555D5       DC32     0x55555555,0x4094D555
+   \              9440        
+    760          #endif /* cPWR_UpdateMACAClockAtWakeUp */
+    761          #endif /* cPWR_UsePowerDownMode */
+    762          
+    763          /******************************************************************************
+    764          *******************************************************************************
+    765          * Private Debug stuff
+    766          *******************************************************************************
+    767          ******************************************************************************/
+
+   Maximum stack usage in bytes:
+
+     Function                       .cstack
+     --------                       -------
+     PWRLib_LVD_ReportLevel              0
+     PWRLib_Reset                        0
+     PWR_AllOff                          8
+     PWR_AllowDeviceToSleep              8
+     PWR_CallBeforeSleep                 0
+     PWR_CheckForAndEnterNewPowerState
+                                        16
+     PWR_CheckForAndEnterNewPowerState_Init
+                                         4
+     PWR_CheckIfDeviceCanGoToSleep       4
+     PWR_DeepSleepAllowed                8
+     PWR_DisallowDeviceToSleep           8
+     PWR_EnterLowPower                  16
+     PWR_HandleDeepSleep                24
+     PWR_HandleSleep                    16
+     PWR_MCUSleep                       16
+     PWR_MCUWait                         8
+     PWR_MacaTimerUpdate                 8
+     PWR_RunAgain                        8
+     PWR_SetDozeTimeSymbols              0
+     PWR_SetExtOutPol                    0
+     PWR_SleepAllowed                    8
+
+
+   Section sizes:
+
+     Function/Label                 Bytes
+     --------------                 -----
+     notCountedTmrTicksBeforeSleep     2
+     mExtOutPol                        1
+     mLPMFlag                          1
+     mSavedMacaClk                     4
+     PWRLib_MCU_WakeupReason           4
+     PWRLib_StackPS                    1
+     PWR_SetExtOutPol                  6
+     PWR_AllowDeviceToSleep           38
+     PWR_DisallowDeviceToSleep        26
+     PWR_CheckIfDeviceCanGoToSleep    24
+     PWRLib_Reset                      8
+     PWR_MCUWait                      10
+     PWR_CallBeforeSleep              10
+     PWR_MCUSleep                     96
+     PWR_AllOff                       48
+     PWR_RunAgain                    140
+     PWR_DeepSleepAllowed             32
+     PWR_SleepAllowed                 48
+     PWR_HandleDeepSleep             180
+     PWR_HandleSleep                  50
+     PWR_CheckForAndEnterNewPowerState
+                                     112
+     PWRLib_LVD_ReportLevel            4
+     PWR_CheckForAndEnterNewPowerState_Init
+                                      86
+     PWR_EnterLowPower               110
+     PWR_SetDozeTimeSymbols            2
+     PWR_MacaTimerUpdate             144
+     ??DataTable12                     4
+     ??DataTable12_1                   4
+     ??DataTable12_2                   4
+     ??DataTable12_3                   4
+     ??DataTable13                     4
+     ??DataTable13_1                   4
+     ??DataTable13_2                   4
+     ??DataTable14                     4
+     ??DataTable14_1                   4
+     ??DataTable14_2                   4
+     ??DataTable14_3                   4
+     ??DataTable14_4                   4
+     ??DataTable14_5                   4
+     ??DataTable14_6                   4
+     ??DataTable14_7                   4
+     ??DataTable15                     4
+     ??DataTable15_1                   4
+     ??DataTable15_2                   4
+     ??DataTable15_3                   4
+     ??DataTable16                     4
+     ??DataTable16_1                   4
+     ??DataTable16_2                   4
+     ??DataTable16_3                   4
+     ??DataTable16_4                   4
+     ??DataTable16_5                   4
+     ??DataTable16_6                   4
+     ??DataTable16_7                   4
+     ??DataTable16_8                   4
+     ??DataTable16_9                   8
+
+ 
+    13 bytes in section .bss
+ 1 294 bytes in section .text
+ 
+ 1 294 bytes of CODE memory
+    13 bytes of DATA memory
+
+Errors: none
+Warnings: none

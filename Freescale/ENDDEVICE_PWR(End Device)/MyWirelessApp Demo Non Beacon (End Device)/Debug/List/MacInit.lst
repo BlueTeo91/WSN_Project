@@ -1,0 +1,324 @@
+###############################################################################
+#                                                                             #
+#                                                       12/Oct/2015  10:21:27 #
+# IAR ANSI C/C++ Compiler V5.50.7.22081/W32 EVALUATION for ARM                #
+# Copyright (C) 1999-2010 IAR Systems AB.                                     #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  C:\Documents and Settings\Administrator\Desktop\MyWirele #
+#                    ssApp Demo Non Beacon (End Device)\MyWirelessApp Demo    #
+#                    Non Beacon (End Device)\Application\Init\MacInit.c       #
+#    Command line =  "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\Application\Init\MacInit.c" -D   #
+#                    gMacStandAlone_d=1 -D gSAPMessagesEnableLlc_d=0 -D       #
+#                    gZtcIncluded_d=0 -D gTargetMC1322xSRB=1 --preprocess     #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\Debug\List\" -lC "C:\Documents   #
+#                    and Settings\Administrator\Desktop\MyWirelessApp Demo    #
+#                    Non Beacon (End Device)\MyWirelessApp Demo Non Beacon    #
+#                    (End Device)\Debug\List\" -lB "C:\Documents and          #
+#                    Settings\Administrator\Desktop\MyWirelessApp Demo Non    #
+#                    Beacon (End Device)\MyWirelessApp Demo Non Beacon (End   #
+#                    Device)\Debug\List\" --diag_suppress                     #
+#                    Pe014,Pe001,Pe991,Pa039,Pe520 -o "C:\Documents and       #
+#                    Settings\Administrator\Desktop\MyWirelessApp Demo Non    #
+#                    Beacon (End Device)\MyWirelessApp Demo Non Beacon (End   #
+#                    Device)\Debug\Obj\" --no_cse --no_unroll --no_inline     #
+#                    --no_code_motion --no_tbaa --no_clustering               #
+#                    --no_scheduling --debug --endian=little                  #
+#                    --cpu=ARM7TDMI-S --fpu=None --dlib_config "C:\Program    #
+#                    Files\IAR Systems\Embedded Workbench 5.4                 #
+#                    Evaluation\arm\INC\DLib_Config_Normal.h" -I              #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\MacPhy\Interface\" -I            #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\Application\Init\" -I            #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\Application\Interface\" -I       #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\Application\Configure\" -I       #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\Application\UartUtil\" -I        #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\Application\Source\" -I          #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\SSM\TS\Interface\" -I            #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\SSM\TS\Source\" -I               #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\SSM\ZTC\Interface\" -I           #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\SSM\ZTC\Source\" -I              #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\PLM\Interface\" -I               #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\PLM\LibInterface\" -I            #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\PLM\Source\Display\" -I          #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\PLM\Source\Keyboard\" -I         #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\PLM\Source\NVM\" -I              #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\PLM\Source\TMR\" -I              #
+#                    "C:\Documents and Settings\Administrator\Desktop\MyWirel #
+#                    essApp Demo Non Beacon (End Device)\MyWirelessApp Demo   #
+#                    Non Beacon (End Device)\PLM\Source\UART\" -I             #
+#                    "C:\Program Files\IAR Systems\Embedded Workbench 5.4     #
+#                    Evaluation\arm\INC\" --interwork --cpu_mode thumb -On    #
+#    List file    =  C:\Documents and Settings\Administrator\Desktop\MyWirele #
+#                    ssApp Demo Non Beacon (End Device)\MyWirelessApp Demo    #
+#                    Non Beacon (End Device)\Debug\List\MacInit.lst           #
+#    Object file  =  C:\Documents and Settings\Administrator\Desktop\MyWirele #
+#                    ssApp Demo Non Beacon (End Device)\MyWirelessApp Demo    #
+#                    Non Beacon (End Device)\Debug\Obj\MacInit.o              #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+C:\Documents and Settings\Administrator\Desktop\MyWirelessApp Demo Non Beacon (End Device)\MyWirelessApp Demo Non Beacon (End Device)\Application\Init\MacInit.c
+      1          /******************************************************************************
+      2          *  This file is to Initialize the entire MAC.
+      3          *
+      4          * (c) Copyright 2007, Freescale, Inc. All rights reserved.
+      5          *
+      6          *
+      7          * No part of this document must be reproduced in any form - including copied,
+      8          * transcribed, printed or by any electronic means - without specific written
+      9          * permission from Freescale Semiconductor.
+     10          *
+     11          ******************************************************************************/
+     12          
+     13          #include "EmbeddedTypes.h"
+     14          #include "MacInit.h"
+     15          #include "TS_Interface.h"
+     16          #include "Mac_Globals.h"
+     17          
+     18          
+     19          /******************************************************************************
+     20          *******************************************************************************
+     21          * Private macros
+     22          *******************************************************************************
+     23          ******************************************************************************/
+     24          /* Number of elements in an array. */
+     25          #ifndef NumberOfElements
+     26          #define NumberOfElements(array)             ((sizeof(array) / (sizeof(array[0]))))
+     27          #endif
+     28          
+     29          /******************************************************************************
+     30          *******************************************************************************
+     31          * Private prototypes
+     32          *******************************************************************************
+     33          ******************************************************************************/
+     34          
+     35          void MacTaskInit(void);
+     36          void TS_PlaceHolderTaskInit(void);
+     37          
+     38          /******************************************************************************
+     39          *******************************************************************************
+     40          * Private type definitions
+     41          *******************************************************************************
+     42          ******************************************************************************/
+     43          
+     44          typedef struct macTaskEntry_tag {
+     45            tsTaskID_t *pTaskID;
+     46            void (*pInitFunction)(void);
+     47            void (*pEventHandler)(event_t);
+     48            tsTaskPriority_t priority;
+     49          } macTaskEntry_t;
+     50          
+     51          /******************************************************************************
+     52          *******************************************************************************
+     53          * Private memory declarations
+     54          *******************************************************************************
+     55          ******************************************************************************/
+     56          
+     57          #define Task(taskIdGlobal, taskInitFunc, taskMainFunc, priority) \
+     58            { &taskIdGlobal, taskInitFunc, taskMainFunc, priority },
+     59            
+
+   \                                 In section .rodata, align 4
+     60          macTaskEntry_t const MacTaskTable[] = {
+   \                     MacTaskTable:
+   \   00000000   ............       DC32 gMacTaskID_c, TS_PlaceHolderTaskInit, Mlme_Main
+   \              ............
+   \   0000000C   C6000000           DC8 198, 0, 0, 0
+     61          #include "MacTaskTbl.h"
+     62          };
+     63          
+     64          /******************************************************************************
+     65          *******************************************************************************
+     66          * Public memory declarations
+     67          *******************************************************************************
+     68          ******************************************************************************/
+     69          
+
+   \                                 In section .bss, align 1
+     70          tsTaskID_t gMacTaskID_c;
+   \                     gMacTaskID_c:
+   \   00000000                      DS8 1
+     71          
+     72          
+     73          /******************************************************************************
+     74          *******************************************************************************
+     75          * Public functions
+     76          *******************************************************************************
+     77          ******************************************************************************/
+     78          
+
+   \                                 In section .text, align 2, keep-with-next
+     79          void MacInit(void) {
+   \                     MacInit:
+   \   00000000   80B5               PUSH     {R7,LR}
+     80            MacTaskInit();
+   \   00000002   ........           BL       MacTaskInit
+     81          }
+   \   00000006   09BC               POP      {R0,R3}
+   \   00000008   1847               BX       R3               ;; return
+     82          
+     83          /******************************************************************************
+     84          *******************************************************************************
+     85          * Private functions
+     86          *******************************************************************************
+     87          ******************************************************************************/
+     88          
+     89          /* This function can be used in the table in MacTaskTbl.h for any task */
+     90          /* that does not have it's own init function. */
+
+   \                                 In section .text, align 2, keep-with-next
+     91          void TS_PlaceHolderTaskInit(void) {
+     92          }
+   \                     TS_PlaceHolderTaskInit:
+   \   00000000   7047               BX       LR               ;; return
+     93          
+     94          /*****************************************************************************/
+     95          
+     96          /* Init the MAC task. Add all of them to the kernel's task table, and */
+     97          /* call of the init functions. */
+
+   \                                 In section .text, align 2, keep-with-next
+     98          void MacTaskInit(void) {
+   \                     MacTaskInit:
+   \   00000000   10B5               PUSH     {R4,LR}
+     99            index_t i;
+    100          
+    101            /* Add the tasks to the kernel's task table first. That way, if any of the */
+    102            /* init functions want to set events, all of the task ids will be defined. */
+    103            for (i = 0; i < NumberOfElements(MacTaskTable); ++i) {
+   \   00000002   0020               MOVS     R0,#+0
+   \   00000004   0400               MOVS     R4,R0
+   \                     ??MacTaskInit_0:
+   \   00000006   2406               LSLS     R4,R4,#+24       ;; ZeroExtS R4,R4,#+24,#+24
+   \   00000008   240E               LSRS     R4,R4,#+24
+   \   0000000A   002C               CMP      R4,#+0
+   \   0000000C   18D1               BNE      ??MacTaskInit_1
+    104              *MacTaskTable[i].pTaskID = TS_CreateTask(MacTaskTable[i].priority,
+    105                                                       MacTaskTable[i].pEventHandler);
+   \   0000000E   2406               LSLS     R4,R4,#+24       ;; ZeroExtS R4,R4,#+24,#+24
+   \   00000010   240E               LSRS     R4,R4,#+24
+   \   00000012   1020               MOVS     R0,#+16
+   \   00000014   6043               MULS     R0,R4,R0
+   \   00000016   ....               LDR      R1,??DataTable0
+   \   00000018   0818               ADDS     R0,R1,R0
+   \   0000001A   8168               LDR      R1,[R0, #+8]
+   \   0000001C   2406               LSLS     R4,R4,#+24       ;; ZeroExtS R4,R4,#+24,#+24
+   \   0000001E   240E               LSRS     R4,R4,#+24
+   \   00000020   1020               MOVS     R0,#+16
+   \   00000022   6043               MULS     R0,R4,R0
+   \   00000024   ....               LDR      R2,??DataTable0
+   \   00000026   1018               ADDS     R0,R2,R0
+   \   00000028   007B               LDRB     R0,[R0, #+12]
+   \   0000002A   ........           BL       TS_CreateTask
+   \   0000002E   2406               LSLS     R4,R4,#+24       ;; ZeroExtS R4,R4,#+24,#+24
+   \   00000030   240E               LSRS     R4,R4,#+24
+   \   00000032   1021               MOVS     R1,#+16
+   \   00000034   6143               MULS     R1,R4,R1
+   \   00000036   ....               LDR      R2,??DataTable0
+   \   00000038   5158               LDR      R1,[R2, R1]
+   \   0000003A   0870               STRB     R0,[R1, #+0]
+    106            }
+   \   0000003C   641C               ADDS     R4,R4,#+1
+   \   0000003E   E2E7               B        ??MacTaskInit_0
+    107          
+    108            for (i = 0; i < NumberOfElements(MacTaskTable); ++i) {
+   \                     ??MacTaskInit_1:
+   \   00000040   0020               MOVS     R0,#+0
+   \   00000042   0400               MOVS     R4,R0
+   \                     ??MacTaskInit_2:
+   \   00000044   2406               LSLS     R4,R4,#+24       ;; ZeroExtS R4,R4,#+24,#+24
+   \   00000046   240E               LSRS     R4,R4,#+24
+   \   00000048   002C               CMP      R4,#+0
+   \   0000004A   0AD1               BNE      ??MacTaskInit_3
+    109              (*MacTaskTable[i].pInitFunction)();
+   \   0000004C   2406               LSLS     R4,R4,#+24       ;; ZeroExtS R4,R4,#+24,#+24
+   \   0000004E   240E               LSRS     R4,R4,#+24
+   \   00000050   1020               MOVS     R0,#+16
+   \   00000052   6043               MULS     R0,R4,R0
+   \   00000054   ....               LDR      R1,??DataTable0
+   \   00000056   0818               ADDS     R0,R1,R0
+   \   00000058   4068               LDR      R0,[R0, #+4]
+   \   0000005A   ........           BL       __iar_via_R0
+    110            }
+   \   0000005E   641C               ADDS     R4,R4,#+1
+   \   00000060   F0E7               B        ??MacTaskInit_2
+    111          }                                       /* MacTaskInit() */
+   \                     ??MacTaskInit_3:
+   \   00000062   10BC               POP      {R4}
+   \   00000064   08BC               POP      {R3}
+   \   00000066   1847               BX       R3               ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0:
+   \   00000000   ........           DC32     MacTaskTable
+
+   Maximum stack usage in bytes:
+
+     Function               .cstack
+     --------               -------
+     MacInit                     8
+     MacTaskInit                 8
+     TS_PlaceHolderTaskInit      0
+
+
+   Section sizes:
+
+     Function/Label         Bytes
+     --------------         -----
+     MacTaskTable             16
+     gMacTaskID_c              1
+     MacInit                  10
+     TS_PlaceHolderTaskInit    2
+     MacTaskInit             104
+     ??DataTable0              4
+      Others                   2
+
+ 
+   1 byte  in section .bss
+  16 bytes in section .rodata
+ 122 bytes in section .text
+ 
+ 120 bytes of CODE  memory (+ 2 bytes shared)
+  16 bytes of CONST memory
+   1 byte  of DATA  memory
+
+Errors: none
+Warnings: none
