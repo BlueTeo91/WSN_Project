@@ -4,10 +4,11 @@
 #include <SD.h>
 
 const int chipSelect = 4;
-const int sensorPin = A0;
+char value;
 
 void setup()
 {
+  pinMode(13, OUTPUT); //initialize LED
   // put your setup code here, to run once:
   Serial.begin(19200); //it opens a serial port
   Serial1.begin(19200); //it opens tx/rx communication
@@ -32,10 +33,15 @@ void setup()
 
 void loop()
 {
+  digitalWrite(13, HIGH); //LED ON  
   // make a string for assembling the data to log:
   String dataString = "";
 
-  Serial1.read(value);
+  // we read from serial only when the data is available
+  while(Serial1.available() == 0) {
+  };
+    
+  value = Serial1.read();
   dataString += String(value);
   
   // open the file. note that only one file can be open at a time,
@@ -52,7 +58,7 @@ void loop()
   // if the file isn't open, pop up an error:
   else {
     Serial.println("error opening datalog.txt");
-  } 
+  }
 }
 
 
